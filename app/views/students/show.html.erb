@@ -15,6 +15,6 @@
   <%= @student.phone %>
 </p>
 
-
+<%= link_to 'Add Interview', new_student_interview_path(@student) %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
