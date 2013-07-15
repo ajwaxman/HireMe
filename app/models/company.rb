@@ -3,6 +3,6 @@ class Company < ActiveRecord::Base
 
   has_many :interviews
   has_many :jobs
-  has_many :students
+  has_many :students, :through => :interviews
 
 end
