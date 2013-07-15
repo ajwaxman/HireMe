@@ -1,9 +1,19 @@
 HireCrm::Application.routes.draw do
 
-  resources :companies
-  resources :jobs
-  resources :interviews
-  resources :students
+  resources :companies do 
+    resources :jobs
+  end
+  
+  resources :jobs do 
+    resources :interviews
+  end
+
+  resources :students do 
+    resources :interviews
+  end
+
+  resources :interviews, only: [:index, :show, :edit]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

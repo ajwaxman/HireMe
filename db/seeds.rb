@@ -16,11 +16,22 @@ student_1 = Student.create(
   :phone => "867-5309"
 )
 
+student_2 = Student.create(
+  :email => "bob@flatironschool.com",
+  :name => "Bob",
+  :phone => "555-5555"
+)
+
 ## seed companies table
 
 company_1 = Company.create(
   :name => "Artsy",
   :website => "http://artsy.net/"
+)
+
+company_2 = Company.create(
+  :name => "Bondsy",
+  :website => "https://www.bondsy.com/"
 )
 
 ## seed jobs table
@@ -31,11 +42,23 @@ job_1 = Job.create(
   :title => "Software Developer"
 )
 
+job_2 = Job.create(
+  :company_id => 1,
+  :description => "Second job for artsy",
+  :title => "Senior Software Developer"
+)
+
+job_3 = Job.create(
+  :company_id => 2,
+  :description => "Job for bondsy",
+  :title => "Rails Developer"
+)
+
 ## seed interviews table
 
-interview_1 = Interview.create(
-  :company_id => 1,
-  :job_id => 1, 
-  :student_id => 1
-  :status => "none"
-)
+# interview_1 = Interview.create(
+#   :company_id => 1,
+#   :job_id => 1, 
+#   :student_id => 1
+#   :status => "none"
+# )
