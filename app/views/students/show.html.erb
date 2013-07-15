@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @student.name %>
-</p>
+ 	<h2><%= @student.name %></h2>
 
 <p>
   <b>Email:</b>
@@ -14,7 +11,19 @@
   <b>Phone:</b>
   <%= @student.phone %>
 </p>
-
-
+<h3>Interviews</h3>
+<% if @student.interviews.empty? == true %>
+	<p><%= @student.name %> has no interviews.</p>
+	<ul>
+<% else %>
+	<% @student.interviews.each do |interview| %>
+		<li>
+			<%= interview.company.name %>, <%= interview.status %>
+		</li>
+	<% end %>
+<% end %>
+	</ul>
+<br/>
+<%= link_to 'Add Interview', new_student_interview_path(@student) %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
