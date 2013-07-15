@@ -21,8 +21,7 @@ class InterviewsController < ApplicationController
     end
   end
 
-  # GET /interviews/new
-  # GET /interviews/new.json
+  # PUT /students/:id/interview/new
   def new
     @interview = Interview.new
     @student = Student.find(params[:student_id])
@@ -38,8 +37,7 @@ class InterviewsController < ApplicationController
     @interview = Interview.find(params[:id])
   end
 
-  # POST /interviews
-  # POST /interviews.json
+  # POST /students/:id/interview/
   def create
     @interview = Interview.new(params[:interview])
     @student = Student.find(params[:student_id])
