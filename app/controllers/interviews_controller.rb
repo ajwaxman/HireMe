@@ -42,11 +42,12 @@ class InterviewsController < ApplicationController
   # POST /interviews.json
   def create
     @interview = Interview.new(params[:interview])
-
+    @student = Student.find(params[:student_id])
+    
     respond_to do |format|
       if @interview.save
-        format.html { redirect_to @interview, notice: 'Interview was successfully created.' }
-        format.json { render json: @interview, status: :created, location: @interview }
+        format.html { redirect_to @student, notice: 'Interview was successfully created.' }
+        format.json { render json: @student, status: :created, location: @interview }
       else
         format.html { render action: "new" }
         format.json { render json: @interview.errors, status: :unprocessable_entity }
