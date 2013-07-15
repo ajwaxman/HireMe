@@ -1,6 +1,26 @@
 <h1>Editing interview</h1>
 
-<%= render 'form' %>
+<%= form_for(@interview) do |f| %>
+
+	<p>Interview: <b><%= @interview.id %> </b></p>
+
+	  <div class="field">
+	    <%= f.label :job_id %><br />
+	    <%= f.number_field :job_id, :value => @interview.job_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :company_id %><br />
+	    <%= f.number_field :company_id, :value => @interview.company_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :status %><br />
+	    <%= f.text_field :status, :value => @interview.status %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+
+<% end %>
 
 <%= link_to 'Show', @interview %> |
 <%= link_to 'Back', interviews_path %>

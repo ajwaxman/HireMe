@@ -12,8 +12,7 @@ HireCrm::Application.routes.draw do
     resources :interviews
   end
 
-  resources :interviews, only: [:index, :show, :edit, :destroy]
-
+  resources :interviews, only: [:index, :show, :edit, :destroy, :update]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

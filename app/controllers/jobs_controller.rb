@@ -5,7 +5,6 @@ class JobsController < ApplicationController
     @jobs = Job.all
     # @company = Company.find(params[:company_id])
 
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @jobs }
