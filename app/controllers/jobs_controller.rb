@@ -3,7 +3,7 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @jobs = Job.all
-    @company = Company.find(params[:company_id])
+    # @company = Company.find(params[:company_id])
 
 
     respond_to do |format|
