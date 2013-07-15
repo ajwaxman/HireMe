@@ -1,5 +1,5 @@
 class Job < ActiveRecord::Base
-  attr_accessible :company_id, :decription, :title
+  attr_accessible :company_id, :description, :title
 
   belongs_to :company
   has_many :interviews

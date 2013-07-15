@@ -5,3 +5,30 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+## rails console -s (test individual commands in sandbox mode)
+
+## seed students table
+
+student_1 = Student.create(
+  :email => "avi@flatironschool.com",
+  :name => "Avi",
+  :phone => "867-5309"
+)
+
+## seed companies table
+
+company_1 = Company.create(
+  :name => "Artsy",
+  :website => "http://artsy.net/"
+)
+
+## seed jobs table
+
+job_1 = Job.create(
+  :company_id => 1,
+  :de => "Job for artsy",
+  :title => "Software Developer"
+)
+
+## seed interviews table
