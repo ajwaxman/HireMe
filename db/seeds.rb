@@ -27,8 +27,15 @@ company_1 = Company.create(
 
 job_1 = Job.create(
   :company_id => 1,
-  :de => "Job for artsy",
+  :description => "Job for artsy",
   :title => "Software Developer"
 )
 
 ## seed interviews table
+
+interview_1 = Interview.create(
+  :company_id => 1,
+  :job_id => 1, 
+  :student_id => 1
+  :status => "none"
+)
