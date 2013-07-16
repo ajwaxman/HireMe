@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (3.0.19)
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
       mail (~> 2.5.3)
@@ -103,6 +104,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.13)
