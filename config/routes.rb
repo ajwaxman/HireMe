@@ -1,5 +1,15 @@
 HireCrm::Application.routes.draw do
 
+  #################
+  # Custom Routes #
+  #################
+
+  get 'jobs/indeed' => 'jobs#indeed_jobs'
+
+  ##################
+  # RESTful Routes #
+  ##################
+
   resources :companies do 
     resources :jobs
   end
