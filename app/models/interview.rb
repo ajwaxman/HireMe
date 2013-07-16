@@ -13,7 +13,7 @@
 #
 
 class Interview < ActiveRecord::Base
-  attr_accessible :company_id, :job_id, :status, :student_id
+  attr_accessible :company_id, :job_id, :status, :student_id, :date_time
 
   belongs_to :company
   belongs_to :job

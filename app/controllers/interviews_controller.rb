@@ -38,7 +38,7 @@ class InterviewsController < ApplicationController
   end
 
   # POST /students/:id/interview/
-  def create
+  def create    
     @interview = Interview.new(params[:interview])
     @student = Student.find(params[:student_id])
     
