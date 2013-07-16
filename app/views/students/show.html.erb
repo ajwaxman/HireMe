@@ -16,11 +16,7 @@
 	<p><%= @student.name %> has no interviews.</p>
 	<ul>
 <% else %>
-	<% @student.interviews.each do |interview| %>
-		<li>
-			<%= interview.company.name %>, <%= interview.status %>
-		</li>
-	<% end %>
+	<%= render :partial => "shared/interviews", :object => @student %>
 <% end %>
 	</ul>
 <br/>
