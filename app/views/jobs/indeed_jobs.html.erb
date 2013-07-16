@@ -1,0 +1,16 @@
+<br>
+
+<%= form_tag("/jobs_indeed") do %>
+	<%= label_tag(:query, "Search for:") %>
+	<%= text_field_tag(:query) %>
+
+	<br>
+
+	<%= label_tag(:location, "Location:") %>
+	<%= text_field_tag(:location) %>
+
+	<br>
+	
+	<%= submit_tag("Find Jobs") %>
+
+<% end %>
