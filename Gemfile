@@ -22,7 +22,13 @@ end
 
 gem 'jquery-rails'
 
-gem 'aasm'
+###########################
+# Custom Gems for Project #
+###########################
+
+gem 'aasm'					# => State Machine for interviews
+gem 'indeed'				# => Indeed API for jobs
+gem 'will_paginate'	# => Pagination for search results
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
