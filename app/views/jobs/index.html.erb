@@ -12,7 +12,7 @@
 
 <% @jobs.each do |job| %>
   <tr>
-    <td><%= job.company_id %></td>
+    <td><%= job.company.name %></td>
     <td><%= job.title %></td>
     <td><%= job.description %></td>
     <td><%= link_to 'Show', job %></td>

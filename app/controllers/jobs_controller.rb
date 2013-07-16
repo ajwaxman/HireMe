@@ -15,7 +15,7 @@ class JobsController < ApplicationController
   # GET /jobs/1.json
   def show
     @job = Job.find(params[:id])
-    @company = Company.find(params[:company_id])
+    @company = Company.find(@job.company_id)
 
 
     respond_to do |format|
@@ -39,6 +39,8 @@ class JobsController < ApplicationController
   # GET /jobs/1/edit
   def edit
     @job = Job.find(params[:id])
+    @company = Company.find(@job.company_id)
+
   end
 
   # POST /jobs
