@@ -13,8 +13,8 @@
 	    <%= f.number_field :company_id, :value => @interview.company_id %>
 	  </div>
 	  <div class="field">
-	    <%= f.label :status %><br />
-	    <%= f.text_field :status, :value => @interview.status %>
+	    <%= f.label :aasm_state, "State" %><br />
+      <%= f.select :aasm_state, Interview.aasm_states.each { |state| [state] } %>
 	  </div>
 	  <div class="actions">
 	    <%= f.submit %>

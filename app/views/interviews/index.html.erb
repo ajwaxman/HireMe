@@ -5,7 +5,7 @@
     <th>Student</th>
     <th>Job</th>
     <th>Company</th>
-    <th>Status</th>
+    <th>State</th>
     <th>Date/Time</th>
     <th></th>
     <th></th>
@@ -17,7 +17,7 @@
     <td><%= interview.student_id %></td>
     <td><%= interview.job_id %></td>
     <td><%= interview.company_id %></td>
-    <td><%= interview.status %></td>
+    <td><%= interview.aasm_state %></td>
     <td><%= interview.date_time %></td>
     <td><%= link_to 'Show', interview %></td>
     <td><%= link_to 'Edit', edit_interview_path(interview) %></td>
