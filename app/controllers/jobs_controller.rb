@@ -5,7 +5,14 @@ class JobsController < ApplicationController
   ##################
 
   def indeed_jobs
+    @query = params[:query]
+    @location = params[:location]
+
+    if @query && @location
+      @indeed_jobs = JobSearcher.indeed_search(@query, @location)
+    end
   end
+
 
   ###################
   # RESTful Actions #
