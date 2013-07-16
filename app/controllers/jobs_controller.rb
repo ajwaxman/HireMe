@@ -1,4 +1,16 @@
 class JobsController < ApplicationController
+  
+  ##################
+  # Custom Actions #
+  ##################
+
+  def indeed_jobs
+  end
+
+  ###################
+  # RESTful Actions #
+  ###################
+
   # GET /jobs
   # GET /jobs.json
   def index
@@ -89,4 +101,5 @@ class JobsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
