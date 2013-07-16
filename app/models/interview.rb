@@ -7,10 +7,12 @@ class Interview < ActiveRecord::Base
 
   include AASM
 
+
+
   aasm do
-    state :open, :initial => true
+    state :open_status, :initial => true
     state :in_progress
-    state :closed
+    state :close_status
 
     event :email do
       transitions :from => :open, :to => :in_progress
@@ -20,12 +22,5 @@ class Interview < ActiveRecord::Base
       transitions :from => :in_progress, :to => :closed
     end
 
-    event :sleep do
-      transitions :from => [:running, :cleaning], :to => :sleeping
-    end
   end
-
-end
-
-
 end
