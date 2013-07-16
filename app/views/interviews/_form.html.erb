@@ -1,39 +1,79 @@
-<%= form_for [@student, @interview] do |f| %>
+<% if @student %>
+  <%= form_for [@student, @interview] do |f| %>
+    <%= f.hidden_field(:student_id, :value => @student.id) %>
+    <!-- we're passing student_id twice, once "automagically" -->
 
-  <%= f.hidden_field(:student_id, :value => @student.id) %>
-  <!-- we're passing student_id twice, once "automagically" -->
+    <% if @interview.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
 
-  <% if @interview.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
+        <ul>
+        <% @interview.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-      <ul>
-      <% @interview.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <p>Student: <b><%= @student.name %> </b></p>
+
+    <div class="field">
+      <%= f.label :job_id %><br />
+      <%= f.number_field :job_id %>
+    </div>
+    <div class="field">
+      <%= f.label :company_id %><br />
+      <%= f.number_field :company_id %>
+    </div>
+    <div class="field">
+      <%= f.label :status %><br />
+      <%= f.text_field :status %>
+    </div>
+    <div class="field">
+        <%= f.label :date_time, "Interview Time" %> <br>
+        <%= f.datetime_select :date_time %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+<% elsif @job %>
+  <%= form_for [@job, @interview] do |f| %>
+    <%= f.hidden_field(:job_id, :value => @job.id) %>
+    <!-- we're passing student_id twice, once "automagically" -->
+
+    <% if @interview.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
+
+        <ul>
+        <% @interview.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <p>Job Title: <b><%= @job.title %> </b></p>
+
+    <div class="field">
+      <%= f.label :student_id %><br />
+      <%= f.number_field :student_id %>
+    </div>
+    <div class="field">
+      <%= f.label :company_id %><br />
+      <%= f.number_field :company_id %>
+    </div>
+    <div class="field">
+      <%= f.label :status %><br />
+      <%= f.text_field :status %>
+    </div>
+    <div class="field">
+        <%= f.label :date_time, "Interview Time" %> <br>
+        <%= f.datetime_select :date_time %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <p>Student: <b><%= @student.name %> </b></p>
-
-  <div class="field">
-    <%= f.label :job_id %><br />
-    <%= f.number_field :job_id %>
-  </div>
-  <div class="field">
-    <%= f.label :company_id %><br />
-    <%= f.number_field :company_id %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </div>
-  <div class="field">
-      <%= f.label :date_time, "Interview Time" %> <br>
-      <%= f.datetime_select :date_time %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

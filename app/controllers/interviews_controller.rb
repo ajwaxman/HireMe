@@ -24,7 +24,12 @@ class InterviewsController < ApplicationController
   # PUT /students/:id/interview/new
   def new
     @interview = Interview.new
-    @student = Student.find(params[:student_id])
+
+    if params[:student_id]
+      @student = Student.find(params[:student_id])
+    elsif params[:job_id]
+      @job = Job.find(params[:job_id])
+    end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -40,12 +45,22 @@ class InterviewsController < ApplicationController
   # POST /students/:id/interview/
   def create    
     @interview = Interview.new(params[:interview])
-    @student = Student.find(params[:student_id])
+
+    if params[:student_id]
+      @student = Student.find(params[:student_id])
+    elsif params[:job_id]
+      @job = Job.find(params[:job_id])
+    end
     
     respond_to do |format|
       if @interview.save
-        format.html { redirect_to @student, notice: 'Interview was successfully created.' }
-        format.json { render json: @student, status: :created, location: @interview }
+        if @student
+          format.html { redirect_to @student, notice: 'Interview was successfully created.' }
+          format.json { render json: @student, status: :created, location: @interview }
+        elsif @job
+          format.html { redirect_to @job, notice: 'Interview was successfully created.' }
+          format.json { render json: @job, status: :created, location: @interview }
+        end
       else
         format.html { render action: "new" }
         format.json { render json: @interview.errors, status: :unprocessable_entity }
