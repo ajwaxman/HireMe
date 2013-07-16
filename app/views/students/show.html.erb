@@ -16,7 +16,7 @@
 	<p><%= @student.name %> has no interviews.</p>
 	<ul>
 <% else %>
-	<%= render :partial => "shared/interviews", :object => @student %>
+	<%= render :partial => "shared/interviews", :object => @interviews %>
 <% end %>
 	</ul>
 <br/>
