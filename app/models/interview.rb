@@ -18,4 +18,6 @@ class Interview < ActiveRecord::Base
   belongs_to :company
   belongs_to :job
   belongs_to :student
+
+  default_scope :order => 'date_time ASC'
 end
