@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(:version => 20130716173834) do
     t.string   "status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "aasm_state"
     t.datetime "date_time"
+    t.string   "aasm_state"
   end
 
   create_table "jobs", :force => true do |t|

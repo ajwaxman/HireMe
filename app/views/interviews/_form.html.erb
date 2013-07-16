@@ -25,10 +25,14 @@
       <%= f.label :company_id %><br />
       <%= f.number_field :company_id %>
     </div>
+    
+
     <div class="field">
-      <%= f.label :status %><br />
-      <%= f.text_field :status %>
+      <%= f.label :aasm_state, "State" %><br />
+      <%= f.select :aasm_state, Interview.aasm_states.each { |state| [state] } %>
     </div>
+
+
     <div class="field">
         <%= f.label :date_time, "Interview Time" %> <br>
         <%= f.datetime_select :date_time %>
@@ -65,8 +69,8 @@
       <%= f.number_field :company_id %>
     </div>
     <div class="field">
-      <%= f.label :status %><br />
-      <%= f.text_field :status %>
+      <%= f.label :aasm_state, "State" %><br />
+      <%= f.select :aasm_state, Interview.aasm_states.each { |state| [state] } %>
     </div>
     <div class="field">
         <%= f.label :date_time, "Interview Time" %> <br>
