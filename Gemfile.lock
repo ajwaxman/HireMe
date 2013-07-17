@@ -41,6 +41,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    font-awesome-rails (3.2.1.2)
+      railties (>= 3.2, < 5.0)
     hike (1.2.3)
     i18n (0.6.1)
     indeed (0.1.2)
@@ -111,6 +113,7 @@ PLATFORMS
 DEPENDENCIES
   aasm
   coffee-rails (~> 3.2.1)
+  font-awesome-rails
   indeed (= 0.1.2)
   jquery-rails
   rails (= 3.2.13)

@@ -10,5 +10,7 @@
  *
  *= require_self
  *= require_tree .
- *= require_tree ../../../vendor/assets/stylesheets/.
+ *= require_tree ../../../vendor/assets/.
+ *= require_tree ../../../vendor/assets/fonts/fontawesome/.
  */
+

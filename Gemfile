@@ -29,6 +29,7 @@ gem 'jquery-rails'
 gem 'aasm'					# => State Machine for relationships
 gem 'indeed', '0.1.2'				# => Indeed API for jobs
 gem 'will_paginate'	# => Pagination for search results
+gem 'font-awesome-rails' # => gem to get awesome font icons working
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
