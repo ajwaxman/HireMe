@@ -12,11 +12,11 @@
   <%= @student.phone %>
 </p>
 <h3>Interviews</h3>
-<% if @interviews.empty? == true %>
-	<p><%= @student.name %> has no interviews.</p>
+<% if @relationships.empty? == true %>
+	<p><%= @student.name %> has no relationships.</p>
 	<ul>
 <% else %>
-	<%= render :partial => "shared/interviews", :object => @interviews %>
+	<%= render :partial => "shared/relationships", :object => @relationships %>
 <% end %>
 	</ul>
 
@@ -26,8 +26,8 @@
 <!-- find and return Status where Status == Open 
 			if empty ? "No Open Statuses" : List Statuses -->
 <ul>
-<% @student.interviews.where(aasm_state: "open_status").each do |interview|%>
-<li><%= interview.company_id %> - <%= interview.aasm_state %></li>
+<% @student.relationships.where(aasm_state: "open_status").each do |relationship|%>
+<li><%= relationship.company_id %> - <%= relationship.aasm_state %></li>
 <% end %>
 </ul>
 
@@ -40,6 +40,6 @@
 
 <br/><br/>
 
-<%= link_to 'Add Interview', new_student_interview_path(@student) %>
+<%= link_to 'Add Interview', new_student_relationship_path(@student) %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
