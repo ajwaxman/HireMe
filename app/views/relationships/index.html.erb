@@ -6,7 +6,7 @@
     <th>Job</th>
     <th>Company</th>
     <th>State</th>
-    <th>Date/Time</th>
+    <th>Start Time</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,7 +18,7 @@
     <td><%= relationship.job_id %></td>
     <td><%= relationship.company_id %></td>
     <td><%= relationship.aasm_state %></td>
-    <td><%= relationship.date_time %></td>
+    <td><%= relationship.interview.start_time %></td>
     <td><%= link_to 'Show', relationship %></td>
     <td><%= link_to 'Edit', edit_relationship_path(relationship) %></td>
     <td><%= link_to 'Destroy', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>

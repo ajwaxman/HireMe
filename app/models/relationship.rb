@@ -23,7 +23,7 @@ class Relationship < ActiveRecord::Base
   
   has_many   :records
 
-  default_scope :order => 'date_time ASC'
+  default_scope :order => 'created_at ASC'
 
   include AASM
 
