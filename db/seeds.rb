@@ -56,9 +56,42 @@ job_3 = Job.create(
 
 ## seed relationships table
 
-# relationship_1 = Relationship.create(
-#   :company_id => 1,
-#   :job_id => 1, 
-#   :user_id => 1
-#   :status => "none"
-# )
+relationship_1 = Relationship.create(
+  :aasm_state => "in_progress",
+  :company_id => 1,
+  :job_id => 1, 
+  :user_id => 1
+)
+
+relationship_2 = Relationship.create(
+  :aasm_state => "open_status",
+  :company_id => 2,
+  :job_id => 2, 
+  :user_id => 2
+)
+
+## seed interviews table
+
+interview_1 = Interview.create(
+  :start_time => "2013-07-16 12:57:39 EST",
+  :end_time => "2013-07-16 15:57:39 EST",
+  :relationship_id => 1
+)
+
+interview_2 = Interview.create(
+  :start_time => "2013-07-17 5:57:39 EST",
+  :end_time => "2013-07-17 13:57:39 EST",
+  :relationship_id => 2
+)
+
+## seed records table
+
+record_1 = Record.create(
+  :relationship_id => 2,
+  :event => "Interview scheduled on [SOME DAY HERE]."
+)
+
+record_2 = Record.create(
+  :relationship_id => 1,
+  :event => "Job offer made."
+)
