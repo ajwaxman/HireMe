@@ -13,14 +13,14 @@
 #
 
 class Relationship < ActiveRecord::Base
-  attr_accessible :company_id, :job_id, :user_id, :status, :date_time, :aasm_state
+  attr_accessible :company_id, :interview_id, :job_id, :user_id, :status, :date_time, :aasm_state
 
   belongs_to :company
   belongs_to :job
   belongs_to :user
-
-  has_many   :interviews
-  has_many   :record
+  belongs_to :interview
+  
+  has_many   :records
 
   default_scope :order => 'date_time ASC'
 

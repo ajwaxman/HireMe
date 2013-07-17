@@ -5,6 +5,8 @@ class Interview < ActiveRecord::Base
 
   has_one :company, :through => :relationships
   has_one :job, 		:through => :relationships
-  has_one :user, 		:through => :relationships
+  has_one :user,    :through => :relationships
+
+  has_many :records,	:through => :relationship
 
 end

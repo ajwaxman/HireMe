@@ -59,14 +59,16 @@ job_3 = Job.create(
 relationship_1 = Relationship.create(
   :aasm_state => "in_progress",
   :company_id => 1,
-  :job_id => 1, 
+  :job_id => 1,
+  :interview_id => 1, 
   :user_id => 1
 )
 
 relationship_2 = Relationship.create(
   :aasm_state => "open_status",
   :company_id => 2,
-  :job_id => 2, 
+  :job_id => 2,
+  :interview_id => 2, 
   :user_id => 2
 )
 
@@ -95,3 +97,15 @@ record_2 = Record.create(
   :relationship_id => 1,
   :event => "Job offer made."
 )
+
+record_3 = Record.create(
+  :relationship_id => 1,
+  :event => "Job offer declined!"
+)
+
+# c = Company.first
+# i = Interview.first
+# j = Job.first
+# u = User.first
+# rec = Record.first
+# rel = Relationship.first
