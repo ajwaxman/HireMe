@@ -1,4 +1,4 @@
-class CreateInterviews < ActiveRecord::Migration
+class CreateOldInterviews < ActiveRecord::Migration
   def change
     create_table :interviews do |t|
       t.integer :user_id

@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  start_time: 2013-07-17 14:52:28
-  end_time: 2013-07-17 14:52:28
   relationship_id: 1
+  event: MyText
 
 two:
-  start_time: 2013-07-17 14:52:28
-  end_time: 2013-07-17 14:52:28
   relationship_id: 1
+  event: MyText
