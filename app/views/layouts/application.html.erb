@@ -7,18 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	<span><b>Quick Navigation Bar</b></span>
-
-	<br>
-
-	<%= link_to 'Companies', companies_path %> | 
-	<%= link_to 'Jobs', jobs_path %> | 
-	<%= link_to 'Interviews', interviews_path %> | 
-	<%= link_to 'Students', students_path %>
-
-	<br>
-
+	<%= render 'shared/header' %>
+	
 	<%= yield %>
 
 </body>

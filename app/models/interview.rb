@@ -38,4 +38,10 @@ class Interview < ActiveRecord::Base
 
   end
 
+  # def self.find_states()
+  #   # Interview.where(aasm_state: state)
+  #   puts "I see Carlos"
+  # end
+
 end
+

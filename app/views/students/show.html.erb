@@ -19,7 +19,27 @@
 	<%= render :partial => "shared/interviews", :object => @interviews %>
 <% end %>
 	</ul>
+
+<h3>Status</h3>
+<h4>Open</h4>
+
+<!-- find and return Status where Status == Open 
+			if empty ? "No Open Statuses" : List Statuses -->
+<ul>
+<% @student.interviews.where(aasm_state: "open_status").each do |interview|%>
+<li><%= interview.company_id %> - <%= interview.aasm_state %></li>
+<% end %>
+</ul>
+
+<h4>In Progress</h4>
+
+
 <br/>
+<h4>Closed</h4>
+
+
+<br/><br/>
+
 <%= link_to 'Add Interview', new_student_interview_path(@student) %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
