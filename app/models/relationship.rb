@@ -1,9 +1,9 @@
 # == Schema Information
 #
-# Table name: interviews
+# Table name: relationships
 #
 #  id         :integer          not null, primary key
-#  student_id :integer
+#  user_id :integer
 #  job_id     :integer
 #  company_id :integer
 #  status     :string(255)
@@ -12,12 +12,12 @@
 #  date_time  :datetime
 #
 
-class Interview < ActiveRecord::Base
-  attr_accessible :company_id, :job_id, :status, :student_id, :date_time, :aasm_state
+class Relationship < ActiveRecord::Base
+  attr_accessible :company_id, :job_id, :status, :user_id, :date_time, :aasm_state
 
   belongs_to :company
   belongs_to :job
-  belongs_to :student
+  belongs_to :user
 
   default_scope :order => 'date_time ASC'
 

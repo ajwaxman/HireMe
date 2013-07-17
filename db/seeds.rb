@@ -8,15 +8,15 @@
 
 ## rails console -s (test individual commands in sandbox mode)
 
-## seed students table
+## seed users table
 
-student_1 = Student.create(
+user_1 = User.create(
   :email => "avi@flatironschool.com",
   :name => "Avi",
   :phone => "867-5309"
 )
 
-student_2 = Student.create(
+user_2 = User.create(
   :email => "bob@flatironschool.com",
   :name => "Bob",
   :phone => "555-5555"
@@ -54,11 +54,11 @@ job_3 = Job.create(
   :title => "Rails Developer"
 )
 
-## seed interviews table
+## seed relationships table
 
-# interview_1 = Interview.create(
+# relationship_1 = Relationship.create(
 #   :company_id => 1,
 #   :job_id => 1, 
-#   :student_id => 1
+#   :user_id => 1
 #   :status => "none"
 # )

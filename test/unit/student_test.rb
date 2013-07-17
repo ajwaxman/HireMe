@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: students
+# Table name: users
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
@@ -12,7 +12,7 @@
 
 require 'test_helper'
 
-class StudentTest < ActiveSupport::TestCase
+class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

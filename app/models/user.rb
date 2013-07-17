@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: students
+# Table name: users
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
@@ -10,12 +10,12 @@
 #  updated_at :datetime         not null
 #
 
-class Student < ActiveRecord::Base
+class User < ActiveRecord::Base
   attr_accessible :email, :name, :phone
 
-  has_many :interviews
+  has_many :relationships
   
-  has_many :companies, :through => :interviews
-  has_many :jobs, 		 :through => :interviews
+  has_many :companies, :through => :relationships
+  has_many :jobs, 		 :through => :relationships
   
 end

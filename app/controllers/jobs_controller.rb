@@ -5,7 +5,14 @@ class JobsController < ApplicationController
   ##################
 
   def indeed_jobs
+    @query = params[:query]
+    @location = params[:location]
+
+    if @query && @location
+      @indeed_jobs = JobSearcher.indeed_search(@query, @location)
+    end
   end
+
 
   ###################
   # RESTful Actions #
@@ -28,7 +35,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @company = Company.find(@job.company_id)
-    @interviews = @job.interviews
+    @relationships = @job.relationships
 
 
     respond_to do |format|

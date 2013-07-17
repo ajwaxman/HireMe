@@ -111,7 +111,7 @@ PLATFORMS
 DEPENDENCIES
   aasm
   coffee-rails (~> 3.2.1)
-  indeed
+  indeed (= 0.1.2)
   jquery-rails
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

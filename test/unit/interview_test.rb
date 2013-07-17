@@ -1,9 +1,9 @@
 # == Schema Information
 #
-# Table name: interviews
+# Table name: relationships
 #
 #  id         :integer          not null, primary key
-#  student_id :integer
+#  user_id :integer
 #  job_id     :integer
 #  company_id :integer
 #  status     :string(255)
@@ -14,7 +14,7 @@
 
 require 'test_helper'
 
-class InterviewTest < ActiveSupport::TestCase
+class RelationshipTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

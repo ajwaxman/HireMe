@@ -1,5 +1,5 @@
-class AddDateTimeToInterviews < ActiveRecord::Migration
+class AddDateTimeToRelationships < ActiveRecord::Migration
   def change
-  	add_column :interviews, :date_time, :datetime
+  	add_column :relationships, :date_time, :datetime
   end
 end

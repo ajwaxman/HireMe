@@ -1,0 +1,8 @@
+<!-- @relationships -->
+<ul>
+	<% @relationships.each do |relationship| %>
+		<li>
+			<%= relationship.company.name %>, <%= relationship.date_time.strftime("%m/%d/%Y, at %I:%M%p") %> (<%= distance_of_time_in_words_to_now(relationship.date_time) %> from now)
+		</li>
+	<% end %>
+</ul>

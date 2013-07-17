@@ -14,7 +14,7 @@ class Job < ActiveRecord::Base
   attr_accessible :company_id, :description, :title
 
   belongs_to :company
-  has_many :interviews
-  has_many :students, :through => :interviews
+  has_many :relationships
+  has_many :users, :through => :relationships
 
 end

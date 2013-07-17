@@ -1,21 +1,21 @@
-<% if @student %>
-  <%= form_for [@student, @interview] do |f| %>
-    <%= f.hidden_field(:student_id, :value => @student.id) %>
-    <!-- we're passing student_id twice, once "automagically" -->
+<% if @user %>
+  <%= form_for [@user, @relationship] do |f| %>
+    <%= f.hidden_field(:user_id, :value => @user.id) %>
+    <!-- we're passing user_id twice, once "automagically" -->
 
-    <% if @interview.errors.any? %>
+    <% if @relationship.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
+        <h2><%= pluralize(@relationship.errors.count, "error") %> prohibited this relationship from being saved:</h2>
 
         <ul>
-        <% @interview.errors.full_messages.each do |msg| %>
+        <% @relationship.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
         </ul>
       </div>
     <% end %>
 
-    <p>Student: <b><%= @student.name %> </b></p>
+    <p>User: <b><%= @user.name %> </b></p>
 
     <div class="field">
       <%= f.label :job_id %><br />
@@ -29,12 +29,12 @@
 
     <div class="field">
       <%= f.label :aasm_state, "State" %><br />
-      <%= f.select :aasm_state, Interview.aasm_states.each { |state| [state] } %>
+      <%= f.select :aasm_state, Relationship.aasm_states.each { |state| [state] } %>
     </div>
 
 
     <div class="field">
-        <%= f.label :date_time, "Interview Time" %> <br>
+        <%= f.label :date_time, "Relationship Time" %> <br>
         <%= f.datetime_select :date_time %>
     </div>
     <div class="actions">
@@ -42,16 +42,16 @@
     </div>
 <% end %>
 <% elsif @job %>
-  <%= form_for [@job, @interview] do |f| %>
+  <%= form_for [@job, @relationship] do |f| %>
     <%= f.hidden_field(:job_id, :value => @job.id) %>
-    <!-- we're passing student_id twice, once "automagically" -->
+    <!-- we're passing user_id twice, once "automagically" -->
 
-    <% if @interview.errors.any? %>
+    <% if @relationship.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
+        <h2><%= pluralize(@relationship.errors.count, "error") %> prohibited this relationship from being saved:</h2>
 
         <ul>
-        <% @interview.errors.full_messages.each do |msg| %>
+        <% @relationship.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
         </ul>
@@ -61,8 +61,8 @@
     <p>Job Title: <b><%= @job.title %> </b></p>
 
     <div class="field">
-      <%= f.label :student_id %><br />
-      <%= f.number_field :student_id %>
+      <%= f.label :user_id %><br />
+      <%= f.number_field :user_id %>
     </div>
     <div class="field">
       <%= f.label :company_id %><br />
@@ -70,10 +70,10 @@
     </div>
     <div class="field">
       <%= f.label :aasm_state, "State" %><br />
-      <%= f.select :aasm_state, Interview.aasm_states.each { |state| [state] } %>
+      <%= f.select :aasm_state, Relationship.aasm_states.each { |state| [state] } %>
     </div>
     <div class="field">
-        <%= f.label :date_time, "Interview Time" %> <br>
+        <%= f.label :date_time, "Relationship Time" %> <br>
         <%= f.datetime_select :date_time %>
     </div>
     <div class="actions">

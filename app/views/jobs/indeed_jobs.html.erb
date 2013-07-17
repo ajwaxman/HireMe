@@ -1,16 +1,41 @@
 <br>
 
-<%= form_tag("/jobs_indeed") do %>
+<%= form_tag("/jobs/indeed") do %>
 	<%= label_tag(:query, "Search for:") %>
-	<%= text_field_tag(:query) %>
+	<%= text_field_tag :query, @query, :placeholder => "Pick a keyword" %>
 
 	<br>
 
 	<%= label_tag(:location, "Location:") %>
-	<%= text_field_tag(:location) %>
+	<%= text_field_tag :location, @location, :placeholder => "Pick a location"%>
 
 	<br>
 	
 	<%= submit_tag("Find Jobs") %>
 
 <% end %>
+
+<% if  @indeed_jobs %>
+
+	<h3><%= "#{@query.capitalize} jobs in #{@location} from Indeed"%></h3>
+
+	<table>
+	  <tr>
+	    <th>Job Title</th>
+	    <th>Company</th>
+	    <th>Snippet</th>
+	    <th>URL</th>
+	  </tr>
+
+	<% @indeed_jobs.each do |job| %>
+	  <tr>
+	    <td><%= job["jobtitle"] %></td>
+	    <td><%= job["company"] %></td>
+	    <td><%= job["snippet"] %></td>
+	    <td><%= link_to("link", job["url"])  %></td>
+	  </tr>
+	<% end %>
+	</table>
+
+<% end %>
+

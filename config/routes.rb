@@ -5,6 +5,7 @@ HireCrm::Application.routes.draw do
   #################
 
   get 'jobs/indeed' => 'jobs#indeed_jobs'
+  post 'jobs/indeed' => 'jobs#indeed_jobs'
 
   ##################
   # RESTful Routes #
@@ -15,14 +16,14 @@ HireCrm::Application.routes.draw do
   end
   
   resources :jobs do 
-    resources :interviews
+    resources :relationships
   end
 
-  resources :students do 
-    resources :interviews
+  resources :users do 
+    resources :relationships
   end
 
-  resources :interviews
+  resources :relationships
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
