@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: interviews
+# Table name: relationships
 #
 #  id         :integer          not null, primary key
 #  user_id :integer
@@ -12,7 +12,7 @@
 #  date_time  :datetime
 #
 
-class Interview < ActiveRecord::Base
+class Relationship < ActiveRecord::Base
   attr_accessible :company_id, :job_id, :status, :user_id, :date_time, :aasm_state
 
   belongs_to :company

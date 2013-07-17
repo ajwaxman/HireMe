@@ -35,7 +35,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @company = Company.find(@job.company_id)
-    @interviews = @job.interviews
+    @relationships = @job.relationships
 
 
     respond_to do |format|

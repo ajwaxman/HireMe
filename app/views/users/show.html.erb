@@ -11,15 +11,15 @@
   <b>Phone:</b>
   <%= @user.phone %>
 </p>
-<h3>Interviews</h3>
-<% if @interviews.empty? == true %>
-	<p><%= @user.name %> has no interviews.</p>
+<h3>Relationships</h3>
+<% if @relationships.empty? == true %>
+	<p><%= @user.name %> has no relationships.</p>
 	<ul>
 <% else %>
-	<%= render :partial => "shared/interviews", :object => @interviews %>
+	<%= render :partial => "shared/relationships", :object => @relationships %>
 <% end %>
 	</ul>
 <br/>
-<%= link_to 'Add Interview', new_user_interview_path(@user) %>
+<%= link_to 'Add Relationship', new_user_relationship_path(@user) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

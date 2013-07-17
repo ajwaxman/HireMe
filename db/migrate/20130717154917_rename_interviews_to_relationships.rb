@@ -1,5 +1,5 @@
-class RenameInterviewsToRelationships < ActiveRecord::Migration
+class RenameRelationshipsToRelationships < ActiveRecord::Migration
   def change
-    rename_table :interviews, :relationships
+    rename_table :relationships, :relationships
   end 
 end

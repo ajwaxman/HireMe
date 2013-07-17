@@ -13,9 +13,9 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name, :phone
 
-  has_many :interviews
+  has_many :relationships
   
-  has_many :companies, :through => :interviews
-  has_many :jobs, 		 :through => :interviews
+  has_many :companies, :through => :relationships
+  has_many :jobs, 		 :through => :relationships
   
 end

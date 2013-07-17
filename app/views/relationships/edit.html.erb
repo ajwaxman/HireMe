@@ -1,0 +1,26 @@
+<h1>Editing relationship</h1>
+
+<%= form_for(@relationship) do |f| %>
+
+	<p>Relationship: <b><%= @relationship.id %> </b></p>
+
+	  <div class="field">
+	    <%= f.label :job_id %><br />
+	    <%= f.number_field :job_id, :value => @relationship.job_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :company_id %><br />
+	    <%= f.number_field :company_id, :value => @relationship.company_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :aasm_state, "State" %><br />
+      <%= f.select :aasm_state, Relationship.aasm_states.each { |state| [state] } %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+
+<% end %>
+
+<%= link_to 'Show', @relationship %> |
+<%= link_to 'Back', relationships_path %>

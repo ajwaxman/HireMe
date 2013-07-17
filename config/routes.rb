@@ -16,14 +16,14 @@ HireCrm::Application.routes.draw do
   end
   
   resources :jobs do 
-    resources :interviews
+    resources :relationships
   end
 
   resources :users do 
-    resources :interviews
+    resources :relationships
   end
 
-  resources :interviews
+  resources :relationships
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

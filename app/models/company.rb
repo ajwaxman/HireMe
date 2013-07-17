@@ -12,8 +12,8 @@
 class Company < ActiveRecord::Base
   attr_accessible :name, :website
 
-  has_many :interviews
+  has_many :relationships
   has_many :jobs
-  has_many :users, :through => :interviews
+  has_many :users, :through => :relationships
 
 end

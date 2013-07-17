@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @relationship.user_id %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%= @relationship.job_id %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @relationship.company_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @relationship.aasm_state %>
+</p>
+
+
+<%= link_to 'Edit', edit_relationship_path(@relationship) %> |
+<%= link_to 'Back', relationships_path %>

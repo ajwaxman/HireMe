@@ -1,5 +1,5 @@
-class AddStateToInterviews < ActiveRecord::Migration
+class AddStateToRelationships < ActiveRecord::Migration
   def change
-    add_column :interviews, :state, :string
+    add_column :relationships, :state, :string
   end
 end

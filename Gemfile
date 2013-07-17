@@ -26,7 +26,7 @@ gem 'jquery-rails'
 # Custom Gems for Project #
 ###########################
 
-gem 'aasm'					# => State Machine for interviews
+gem 'aasm'					# => State Machine for relationships
 gem 'indeed', '0.1.2'				# => Indeed API for jobs
 gem 'will_paginate'	# => Pagination for search results
 
