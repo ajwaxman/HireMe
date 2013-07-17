@@ -2,14 +2,15 @@
 #
 # Table name: relationships
 #
-#  id         :integer          not null, primary key
-#  user_id :integer
-#  job_id     :integer
-#  company_id :integer
-#  status     :string(255)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  date_time  :datetime
+#  id           :integer          not null, primary key
+#  user_id      :integer
+#  job_id       :integer
+#  company_id   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  date_time    :datetime
+#  aasm_state   :string(255)
+#  interview_id :integer
 #
 
 class Relationship < ActiveRecord::Base
