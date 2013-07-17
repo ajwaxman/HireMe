@@ -21,12 +21,12 @@ class InterviewsController < ApplicationController
     end
   end
 
-  # PUT /students/:id/interview/new
+  # PUT /users/:id/interview/new
   def new
     @interview = Interview.new
 
-    if params[:student_id]
-      @student = Student.find(params[:student_id])
+    if params[:user_id]
+      @user = User.find(params[:user_id])
     elsif params[:job_id]
       @job = Job.find(params[:job_id])
     end
@@ -42,21 +42,21 @@ class InterviewsController < ApplicationController
     @interview = Interview.find(params[:id])
   end
 
-  # POST /students/:id/interview/
+  # POST /users/:id/interview/
   def create    
     @interview = Interview.new(params[:interview])
 
-    if params[:student_id]
-      @student = Student.find(params[:student_id])
+    if params[:user_id]
+      @user = User.find(params[:user_id])
     elsif params[:job_id]
       @job = Job.find(params[:job_id])
     end
     
     respond_to do |format|
       if @interview.save
-        if @student
-          format.html { redirect_to @student, notice: 'Interview was successfully created.' }
-          format.json { render json: @student, status: :created, location: @interview }
+        if @user
+          format.html { redirect_to @user, notice: 'Interview was successfully created.' }
+          format.json { render json: @user, status: :created, location: @interview }
         elsif @job
           format.html { redirect_to @job, notice: 'Interview was successfully created.' }
           format.json { render json: @job, status: :created, location: @interview }

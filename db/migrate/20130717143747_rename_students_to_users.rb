@@ -1,5 +1,5 @@
-class RenameStudentsToUsers < ActiveRecord::Migration
+class RenameUsersToUsers < ActiveRecord::Migration
   def change
-    rename_table :students, :users
+    rename_table :users, :users
   end 
 end

@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Student</th>
+    <th>User</th>
     <th>Job</th>
     <th>Company</th>
     <th>State</th>
@@ -14,7 +14,7 @@
 
 <% @interviews.each do |interview| %>
   <tr>
-    <td><%= interview.student_id %></td>
+    <td><%= interview.user_id %></td>
     <td><%= interview.job_id %></td>
     <td><%= interview.company_id %></td>
     <td><%= interview.aasm_state %></td>

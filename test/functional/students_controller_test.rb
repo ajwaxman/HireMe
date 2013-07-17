@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class StudentsControllerTest < ActionController::TestCase
+class UsersControllerTest < ActionController::TestCase
   setup do
-    @student = students(:one)
+    @user = users(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:students)
+    assert_not_nil assigns(:users)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class StudentsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create student" do
-    assert_difference('Student.count') do
-      post :create, student: { email: @student.email, name: @student.name, phone: @student.phone }
+  test "should create user" do
+    assert_difference('User.count') do
+      post :create, user: { email: @user.email, name: @user.name, phone: @user.phone }
     end
 
-    assert_redirected_to student_path(assigns(:student))
+    assert_redirected_to user_path(assigns(:user))
   end
 
-  test "should show student" do
-    get :show, id: @student
+  test "should show user" do
+    get :show, id: @user
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @student
+    get :edit, id: @user
     assert_response :success
   end
 
-  test "should update student" do
-    put :update, id: @student, student: { email: @student.email, name: @student.name, phone: @student.phone }
-    assert_redirected_to student_path(assigns(:student))
+  test "should update user" do
+    put :update, id: @user, user: { email: @user.email, name: @user.name, phone: @user.phone }
+    assert_redirected_to user_path(assigns(:user))
   end
 
-  test "should destroy student" do
-    assert_difference('Student.count', -1) do
-      delete :destroy, id: @student
+  test "should destroy user" do
+    assert_difference('User.count', -1) do
+      delete :destroy, id: @user
     end
 
-    assert_redirected_to students_path
+    assert_redirected_to users_path
   end
 end

@@ -14,6 +14,6 @@ class Company < ActiveRecord::Base
 
   has_many :interviews
   has_many :jobs
-  has_many :students, :through => :interviews
+  has_many :users, :through => :interviews
 
 end

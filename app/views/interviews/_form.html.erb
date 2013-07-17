@@ -1,7 +1,7 @@
-<% if @student %>
-  <%= form_for [@student, @interview] do |f| %>
-    <%= f.hidden_field(:student_id, :value => @student.id) %>
-    <!-- we're passing student_id twice, once "automagically" -->
+<% if @user %>
+  <%= form_for [@user, @interview] do |f| %>
+    <%= f.hidden_field(:user_id, :value => @user.id) %>
+    <!-- we're passing user_id twice, once "automagically" -->
 
     <% if @interview.errors.any? %>
       <div id="error_explanation">
@@ -15,7 +15,7 @@
       </div>
     <% end %>
 
-    <p>Student: <b><%= @student.name %> </b></p>
+    <p>User: <b><%= @user.name %> </b></p>
 
     <div class="field">
       <%= f.label :job_id %><br />
@@ -44,7 +44,7 @@
 <% elsif @job %>
   <%= form_for [@job, @interview] do |f| %>
     <%= f.hidden_field(:job_id, :value => @job.id) %>
-    <!-- we're passing student_id twice, once "automagically" -->
+    <!-- we're passing user_id twice, once "automagically" -->
 
     <% if @interview.errors.any? %>
       <div id="error_explanation">
@@ -61,8 +61,8 @@
     <p>Job Title: <b><%= @job.title %> </b></p>
 
     <div class="field">
-      <%= f.label :student_id %><br />
-      <%= f.number_field :student_id %>
+      <%= f.label :user_id %><br />
+      <%= f.number_field :user_id %>
     </div>
     <div class="field">
       <%= f.label :company_id %><br />

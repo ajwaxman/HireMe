@@ -15,6 +15,6 @@ class Job < ActiveRecord::Base
 
   belongs_to :company
   has_many :interviews
-  has_many :students, :through => :interviews
+  has_many :users, :through => :interviews
 
 end

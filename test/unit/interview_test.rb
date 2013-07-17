@@ -3,7 +3,7 @@
 # Table name: interviews
 #
 #  id         :integer          not null, primary key
-#  student_id :integer
+#  user_id :integer
 #  job_id     :integer
 #  company_id :integer
 #  status     :string(255)

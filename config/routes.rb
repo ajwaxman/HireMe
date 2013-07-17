@@ -19,7 +19,7 @@ HireCrm::Application.routes.draw do
     resources :interviews
   end
 
-  resources :students do 
+  resources :users do 
     resources :interviews
   end
 

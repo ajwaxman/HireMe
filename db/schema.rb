@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20130717143747) do
   end
 
   create_table "interviews", :force => true do |t|
-    t.integer  "student_id"
+    t.integer  "user_id"
     t.integer  "job_id"
     t.integer  "company_id"
     t.string   "status"
