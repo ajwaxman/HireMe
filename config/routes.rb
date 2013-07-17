@@ -1,5 +1,11 @@
 HireCrm::Application.routes.draw do
 
+  resources :records
+
+
+  resources :interviews
+
+
   #################
   # Custom Routes #
   #################

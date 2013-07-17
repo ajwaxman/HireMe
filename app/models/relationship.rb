@@ -2,22 +2,26 @@
 #
 # Table name: relationships
 #
-#  id         :integer          not null, primary key
-#  user_id :integer
-#  job_id     :integer
-#  company_id :integer
-#  status     :string(255)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  date_time  :datetime
+#  id           :integer          not null, primary key
+#  user_id      :integer
+#  job_id       :integer
+#  company_id   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  date_time    :datetime
+#  aasm_state   :string(255)
+#  interview_id :integer
 #
 
 class Relationship < ActiveRecord::Base
-  attr_accessible :company_id, :job_id, :status, :user_id, :date_time, :aasm_state
+  attr_accessible :company_id, :interview_id, :job_id, :user_id, :status, :date_time, :aasm_state
 
   belongs_to :company
   belongs_to :job
   belongs_to :user
+  belongs_to :interview
+  
+  has_many   :records
 
   default_scope :order => 'date_time ASC'
 

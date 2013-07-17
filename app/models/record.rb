@@ -1,19 +1,17 @@
 # == Schema Information
 #
-# Table name: interviews
+# Table name: records
 #
 #  id              :integer          not null, primary key
-#  start_time      :datetime
-#  end_time        :datetime
 #  relationship_id :integer
+#  event           :text
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
 
-require 'test_helper'
+class Record < ActiveRecord::Base
+  attr_accessible :event, :relationship_id
 
-class InterviewTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  belongs_to :relationship
+
 end

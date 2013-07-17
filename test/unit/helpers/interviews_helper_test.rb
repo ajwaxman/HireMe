@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class RelationshipsHelperTest < ActionView::TestCase
+class InterviewsHelperTest < ActionView::TestCase
 end

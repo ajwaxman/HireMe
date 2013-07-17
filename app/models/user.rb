@@ -15,7 +15,9 @@ class User < ActiveRecord::Base
 
   has_many :relationships
   
-  has_many :companies, :through => :relationships
-  has_many :jobs, 		 :through => :relationships
+  has_many :companies, 	:through => :relationships
+  has_many :interviews, :through => :relationships
+  has_many :jobs, 		 	:through => :relationships
+  has_many :records, 		:through => :relationships
   
 end

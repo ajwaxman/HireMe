@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class RelationshipsControllerTest < ActionController::TestCase
+class InterviewsControllerTest < ActionController::TestCase
   setup do
-    @relationship = relationships(:one)
+    @interview = interviews(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:relationships)
+    assert_not_nil assigns(:interviews)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class RelationshipsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create relationship" do
-    assert_difference('Relationship.count') do
-      post :create, relationship: { company_id: @relationship.company_id, job_id: @relationship.job_id, status: @relationship.status, user_id: @relationship.user_id }
+  test "should create interview" do
+    assert_difference('Interview.count') do
+      post :create, interview: { end_time: @interview.end_time, relationship_id: @interview.relationship_id, start_time: @interview.start_time }
     end
 
-    assert_redirected_to relationship_path(assigns(:relationship))
+    assert_redirected_to interview_path(assigns(:interview))
   end
 
-  test "should show relationship" do
-    get :show, id: @relationship
+  test "should show interview" do
+    get :show, id: @interview
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @relationship
+    get :edit, id: @interview
     assert_response :success
   end
 
-  test "should update relationship" do
-    put :update, id: @relationship, relationship: { company_id: @relationship.company_id, job_id: @relationship.job_id, status: @relationship.status, user_id: @relationship.user_id }
-    assert_redirected_to relationship_path(assigns(:relationship))
+  test "should update interview" do
+    put :update, id: @interview, interview: { end_time: @interview.end_time, relationship_id: @interview.relationship_id, start_time: @interview.start_time }
+    assert_redirected_to interview_path(assigns(:interview))
   end
 
-  test "should destroy relationship" do
-    assert_difference('Relationship.count', -1) do
-      delete :destroy, id: @relationship
+  test "should destroy interview" do
+    assert_difference('Interview.count', -1) do
+      delete :destroy, id: @interview
     end
 
-    assert_redirected_to relationships_path
+    assert_redirected_to interviews_path
   end
 end
