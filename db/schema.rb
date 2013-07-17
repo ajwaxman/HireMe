@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(:version => 20130717154917) do
     t.integer  "user_id"
     t.integer  "job_id"
     t.integer  "company_id"
-    t.string   "status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.datetime "date_time"
