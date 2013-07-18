@@ -52,6 +52,7 @@ class InterviewsController < ApplicationController
 
     respond_to do |format|
       if @relationship.save && @interview.save
+        
         format.html { redirect_to @interview, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }
       else
