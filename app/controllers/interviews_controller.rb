@@ -26,6 +26,7 @@ class InterviewsController < ApplicationController
   def new
     @interview = Interview.new
     @jobs = Job.all
+    @users = User.all
 
     respond_to do |format|
       format.html # new.html.erb

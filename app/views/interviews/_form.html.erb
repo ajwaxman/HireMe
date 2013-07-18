@@ -12,8 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= hidden_field_tag :user_id, params[:user_id] %>
+    <% if params[:job_id] %>
+      <%= hidden_field_tag :job_id, params[:job_id] %>
+    <% else %>
+      <%= hidden_field_tag :user_id, params[:user_id] %>
+    <% end %>
+
   </div>
+
 
   <div class="field">
     <%= f.label :start_time %><br />
@@ -24,7 +30,11 @@
     <%= f.datetime_select :end_time %>
   </div>
   <div class="field">
-  <%= select_tag :job_id, options_from_collection_for_select(@jobs, "id", "title") %>
+    <% if params[:job_id] %>
+      <%= select_tag :user_id, options_from_collection_for_select(@users, "id", "name") %>
+    <% else %>
+      <%= select_tag :job_id, options_from_collection_for_select(@jobs, "id", "title") %>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
