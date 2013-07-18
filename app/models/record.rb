@@ -10,7 +10,7 @@
 #
 
 class Record < ActiveRecord::Base
-  attr_accessible :event, :relationship_id
+  attr_accessible :event, :relationship_id, :company, :job, :user
 
   belongs_to :relationship
 
