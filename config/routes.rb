@@ -3,13 +3,14 @@ HireCrm::Application.routes.draw do
   resources :records
   resources :interviews
 
-
   #################
   # Custom Routes #
   #################
 
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
+
+  root :to => 'records#index'
 
   ##################
   # RESTful Routes #
@@ -78,7 +79,6 @@ HireCrm::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
