@@ -32,11 +32,11 @@ class Relationship < ActiveRecord::Base
     state :interviewing
     state :close_status
 
-    event :email do
+    event :start_interview do
       transitions :from => :open_status, :to => :interviewing
     end
 
-    event :clean do
+    event :end_interview do
       transitions :from => :interviewing, :to => :close_status
     end
 

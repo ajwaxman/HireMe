@@ -49,10 +49,11 @@ class InterviewsController < ApplicationController
     @relationship = Relationship.find_or_create_by_user_id_and_job_id_and_company_id(user_id, job_id, company_id)
     @interview.relationship_id = @relationship.id
     @relationship.interview = @interview
+    Record.create(:event => "#{@relationship.user.name} has an interview scheduled at #{@relationship.company.name} for the #{@relationship.job.title} position. It starts on #{@relationship.interview.start_time.strftime("%B %d at %I:%M %p")}", :relationship_id => @relationship.id, :company => @relationship.company.name, :job => @relationship.job.title, :user => @relationship.user.name)
+    @relationship.start_interview
 
     respond_to do |format|
       if @relationship.save && @interview.save
-        
         format.html { redirect_to @interview, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }
       else
