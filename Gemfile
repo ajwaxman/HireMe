@@ -31,6 +31,12 @@ gem 'indeed', '0.1.2'				# => Indeed API for jobs
 gem 'will_paginate'	# => Pagination for search results
 gem 'font-awesome-rails' # => gem to get awesome font icons working
 
+
+group :development do
+  gem 'better_errors' # => gem to display errors better for debugging
+  gem 'binding_of_caller' # => works with better_errors to show instance variables
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
