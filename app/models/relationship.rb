@@ -14,7 +14,7 @@
 #
 
 class Relationship < ActiveRecord::Base
-  attr_accessible :company_id, :interview_id, :job_id, :user_id, :status, :date_time, :aasm_state
+  attr_accessible :company_id, :interview_id, :job_id, :user_id, :aasm_state
 
   belongs_to :company
   belongs_to :job
