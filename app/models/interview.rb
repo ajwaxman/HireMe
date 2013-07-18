@@ -13,7 +13,7 @@
 class Interview < ActiveRecord::Base
   attr_accessible :end_time, :relationship_id, :start_time
 
-  belongs_to :relationship
+  has_one :relationship
 
   has_one :company, :through => :relationship
   has_one :job, 		:through => :relationship
