@@ -1,4 +1,4 @@
-<h1>Listing relationships</h1>
+<h1>Relationships</h1>
 
 <table>
   <tr>
@@ -14,17 +14,15 @@
 
 <% @relationships.each do |relationship| %>
   <tr>
-    <td><%= relationship.user.name %> &nbsp;</td>
-    <td><%= relationship.job.title %> &nbsp;</td>
-    <td><%= relationship.company_id %> &nbsp;</td>
-    <td><%= relationship.aasm_state %> &nbsp;</td>
-    <td><%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> &nbsp;</td>
-    <td><%= link_to 'Show', relationship %> &nbsp;</td>
-    <td><%= link_to 'Edit', edit_relationship_path(relationship) %></td>
-    <td><%= link_to 'Destroy', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= relationship.user.name %></td>
+    <td>&nbsp; <%= relationship.job.title %> </td>
+    <td>&nbsp; <%= relationship.company.name %> </td>
+    <td>&nbsp; <%= relationship.aasm_state %> </td>
+    <td>&nbsp; <%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> </td>
+    <td>&nbsp; <%= link_to 'Show', relationship %> </td>
+    <td>&nbsp; | <%= link_to 'Edit', edit_relationship_path(relationship) %></td>
+    <td>&nbsp; | <%= link_to 'Delete', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
 
