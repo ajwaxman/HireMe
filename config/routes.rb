@@ -1,8 +1,6 @@
 HireCrm::Application.routes.draw do
 
   resources :records
-
-
   resources :interviews
 
 
@@ -22,11 +20,11 @@ HireCrm::Application.routes.draw do
   end
   
   resources :jobs do 
-    resources :relationships
+    resources :interviews
   end
 
   resources :users do 
-    resources :relationships
+    resources :interviews
   end
 
   resources :relationships

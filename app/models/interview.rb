@@ -15,9 +15,9 @@ class Interview < ActiveRecord::Base
 
   belongs_to :relationship
 
-  has_one :company, :through => :relationships
-  has_one :job, 		:through => :relationships
-  has_one :user,    :through => :relationships
+  has_one :company, :through => :relationship
+  has_one :job, 		:through => :relationship
+  has_one :user,    :through => :relationship
 
   has_many :records,	:through => :relationship
 

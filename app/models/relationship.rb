@@ -29,16 +29,16 @@ class Relationship < ActiveRecord::Base
 
   aasm do
     state :open_status, :initial => true
-    state :in_progress
+    state :interviewing
     state :close_status
 
-    # event :email do
-    #   transitions :from => :open, :to => :in_progress
-    # end
+    event :email do
+      transitions :from => :open_status, :to => :interviewing
+    end
 
-    # event :clean do
-    #   transitions :from => :in_progress, :to => :closed
-    # end
+    event :clean do
+      transitions :from => :interviewing, :to => :close_status
+    end
 
   end
 
