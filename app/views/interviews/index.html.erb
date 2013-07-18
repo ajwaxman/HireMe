@@ -13,8 +13,8 @@
 <% @interviews.each do |interview| %>
   <tr>
     <td><%= interview.company.name %></td>
-    <td>&nbsp; <%= interview.job.title %></td>
     <td>&nbsp; <%= interview.user.name %></td>
+    <td>&nbsp; <%= interview.job.title %></td>
     <td>&nbsp;  <%= interview.start_time.strftime("%B %d at %I:%M %p") %></td>
     <td>&nbsp;  <%= link_to 'Edit', edit_interview_path(interview) %></td>
     <td>&nbsp; | <%= link_to 'Delete', interview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
