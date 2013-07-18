@@ -146,7 +146,7 @@ namespace :db do
 		  :company => "Bondsy",
 		  :job => "Sinatra Developer",
 		  :user => "Christopher Lake",
-		  :event => "Christopher Lake has an interview scheduled at Bondsy for the Sinatara Developer position. It starts on September 15, 2013 at 8am."
+		  :event => "Christopher Lake has an interview scheduled at Bondsy for the Sinatara Developer position. It starts on September 15, 2013 at 1pm."
 		)
 
 		record_3 = Record.create(

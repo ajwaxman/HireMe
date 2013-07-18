@@ -1,29 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Company:</b>
-  <%= @job.company_id.to_i %>
-</p>
 
-<p>
-  <b>Title:</b>
-  <%= @job.title %>
-</p>
+<h2>
+  <%= @job.title %> at <%= @job.company.name %>
+</h2>
 
 <p>
   <b>Description:</b>
   <%= @job.description %>
 </p>
-
+<br/>
 <p>
-<h3>Relationships</h3>
-<% if @relationships.empty? == true %>
-	<p><%= @job.title %> has no relationships.</p>
-	<ul>
+<h4>Event History</h4>
+<% if @job.records.empty? == true %>
+	<p><%= @job.title %> has no event history.</p>
+
 <% else %>
-	<%= render :partial => "shared/relationships", :object => @relationships %>
+<ul>
+	<% @job.records.each do |record| %>
+	<li> 
+		<%= record.event %>
+	</li>
+	<% end %>
+</ul>
 <% end %>
+
 </p>
-<%= link_to 'Add Relationship', new_job_relationship_path(@job) %> |
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', company_jobs_path(@job.company_id) %>

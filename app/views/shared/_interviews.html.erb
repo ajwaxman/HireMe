@@ -2,9 +2,18 @@
 
 
 <ul>
-	<% @user.interviews.each do |interview| %>
-		<li>
-			<%= interview.company.name %>, <%= interview.start_time.strftime("%m/%d/%Y, at %I:%M%p") %> (<%= distance_of_time_in_words_to_now(interview.start_time) %> from now)
-		</li>
+	<% if @user %>
+		<% @user.interviews.each do |interview| %>
+			<li>
+				<%= interview.company.name %>, <%= interview.start_time.strftime("%m/%d/%Y, at %I:%M%p") %> (<%= distance_of_time_in_words_to_now(interview.start_time) %> from now)
+			</li>
+		<% end %>
+	<% end %>
+	<% if @company %>
+		<% @company.interviews.each do |interview| %>
+			<li>
+				<%= interview.user.name %>, <%= interview.start_time.strftime("%m/%d/%Y, at %I:%M%p") %> (<%= distance_of_time_in_words_to_now(interview.start_time) %> from now)
+			</li>
+		<% end %>
 	<% end %>
 </ul>
