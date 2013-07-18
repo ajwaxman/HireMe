@@ -16,14 +16,14 @@
 </p>
 
 <p>
-<h3>Relationships</h3>
-<% if @relationships.empty? == true %>
-	<p><%= @job.title %> has no relationships.</p>
+<h3>Interviews</h3>
+<% if @interviews.empty? == true %>
+	<p><%= @job.title %> has no upcoming interviews.</p>
 	<ul>
 <% else %>
-	<%= render :partial => "shared/relationships", :object => @relationships %>
+	<%= render :partial => "shared/interviews", :object => @interviews %>
 <% end %>
 </p>
-<%= link_to 'Add Relationship', new_job_relationship_path(@job) %> |
+<%= link_to 'Add Relationship', new_job_interview_path(@job) %> |
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', company_jobs_path(@job.company_id) %>
