@@ -11,14 +11,44 @@
   <b>Phone:</b>
   <%= @user.phone %>
 </p>
-<h3>Interviews</h3>
+
+<h4>Interviews</h4>
 <% if @user.interviews.empty? == true %>
 	<p><%= @user.name %> has no upcoming interviews.</p>
-	<ul>
+
 <% else %>
 	<%= render :partial => "shared/interviews", :object => @user %>
 <% end %>
-	</ul>
+
+<h4>Job Relationships</h4>
+<% if @user.relationships.empty? == true %>
+	<p><%= @user.name %> has no relationships.</p>
+
+<% else %>
+<ul>
+	<% @user.relationships.each do |relationship| %>
+	<li> 
+		<%= relationship.company.name %>, <%= relationship.aasm_state %>
+	</li>
+	<% end %>
+</ul>
+<% end %>
+
+<h4>Event History</h4>
+<% if @user.records.empty? == true %>
+	<p><%= @user.name %> has no event history.</p>
+
+<% else %>
+<ul>
+	<% @user.records.each do |record| %>
+	<li> 
+		<%= record.event %>
+	</li>
+	<% end %>
+</ul>
+<% end %>
+
+
 <br/>
 <%= link_to 'Add Interview', new_user_interview_path(@user) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |

@@ -125,6 +125,12 @@ namespace :db do
 		  :user_id => 3
 		)
 
+		relationship_4 = Relationship.create(
+		  :aasm_state => "open_status",
+		  :company_id => 1,
+		  :job_id => 5, 
+		  :user_id => 2
+		)
 		## seed records table
 
 		record_1 = Record.create(
@@ -157,6 +163,14 @@ namespace :db do
 		  :job => "Rails Developer",
 		  :user => "David Manaster",
 		  :event => "David Manaster liked the Rails Developer position at Amazon."
+		)
+
+		record_5 = Record.create(
+		  :relationship_id => 4,
+		  :company => "Artsy",
+		  :job => "Senior Software Engineer",
+		  :user => "Christopher Lake",
+		  :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
 		)
 
 		puts "\nRake task completed - database should now be seeded for MVP.\n"
