@@ -25,6 +25,7 @@ class InterviewsController < ApplicationController
   # GET /interviews/new.json
   def new
     @interview = Interview.new
+    @jobs = Job.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,6 +42,8 @@ class InterviewsController < ApplicationController
   # POST /interviews.json
   def create
     @interview = Interview.new(params[:interview])
+    @relationship = Relationship.where(:user_id => params[:user_id], :job_id => params[:job_id], :company_id => Job.find(params[:job_id]).company_id)
+    @interview.relationship_id = @relationship.first.id
 
     respond_to do |format|
       if @interview.save
