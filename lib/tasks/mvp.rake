@@ -104,7 +104,7 @@ namespace :db do
 		## seed relationships table
 
 		relationship_1 = Relationship.create(
-		  :aasm_state => "in_progress",
+		  :aasm_state => "interviewing",
 		  :company_id => 2,
 		  :job_id => 4,
 		  :interview_id => 1, 

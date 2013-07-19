@@ -30,13 +30,23 @@
     <%= f.datetime_select :end_time %>
   </div>
   <div class="field">
-    <% if params[:job_id] %>
-      <%= select_tag :user_id, options_from_collection_for_select(@users, "id", "name") %>
-    <% else %>
-      <%= select_tag :job_id, options_from_collection_for_select(@jobs, "id", "title") %>
-    <% end %>
-  </div>
+     <% if params[:job_id] %>
+      <label>Select A Student</label>
+       <select name="user_id">
+         <% @users.each do |u|%>a
+           <option value=<%= u.id %>><%= u.name %></option>      
+         <% end %>
+       </select>
+     <% else %>
+      <label>Select A Job</label>
+       <select name="job_id">
+         <% @jobs.each do |j|%>
+           <option value=<%= j.id %>><%= j.company.name %> - <%= j.title %></option>
+         <% end %>
+       </select>
+     <% end %>
+   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create Interview', {:class => "btn btn-info"} %>
   </div>
 <% end %>

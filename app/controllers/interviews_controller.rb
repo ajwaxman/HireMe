@@ -44,6 +44,7 @@ class InterviewsController < ApplicationController
   def create
     @interview = Interview.new(params[:interview])
     user_id = params[:user_id]
+    @user = User.find(user_id)
     job_id = params[:job_id]
     company_id = Job.find(job_id).company_id
     @relationship = Relationship.find_or_create_by_user_id_and_job_id_and_company_id(user_id, job_id, company_id)
@@ -54,7 +55,7 @@ class InterviewsController < ApplicationController
 
     respond_to do |format|
       if @relationship.save && @interview.save
-        format.html { redirect_to @interview, notice: 'Interview was successfully created.' }
+        format.html { redirect_to @user, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }
       else
         format.html { render action: "new" }
