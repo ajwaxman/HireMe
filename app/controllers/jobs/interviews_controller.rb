@@ -1,7 +1,6 @@
 class Jobs::InterviewsController < ApplicationController
 
-  # Route => /jobs/:id/interviews/new/
-
+  # GET 	=> /jobs/:job_id/interviews/new/
   def new
     @interview = Interview.new
     @job 			 = Job.find(params[:job_id])
@@ -13,22 +12,19 @@ class Jobs::InterviewsController < ApplicationController
     end
   end
 
-  # POST /interviews
-  # POST /interviews.json
+  # POST 	=> /jobs/:job_id/interviews/new/
   def create
-    @interview = Interview.new(params[:interview])
-    user_id = params[:user_id]
-    @user = User.find(user_id)
-    job_id = params[:job_id]
-    company_id = Job.find(job_id).company_id
-    @relationship = Relationship.find_or_create_by_user_id_and_job_id_and_company_id(user_id, job_id, company_id)
-    @interview.relationship_id = @relationship.id
-    @relationship.interview = @interview
-    Record.create(:event => "#{@relationship.user.name} has an interview scheduled at #{@relationship.company.name} for the #{@relationship.job.title} position. It starts on #{@relationship.interview.start_time.strftime("%B %d at %I:%M %p")}", :relationship_id => @relationship.id, :company => @relationship.company.name, :job => @relationship.job.title, :user => @relationship.user.name)
-    @relationship.start_interview
+
+    c_id, j_id, u_id = Job.find_ids(params[:job_id],params[:user_id])
+    int, rel 				 = Job.establish_relationship(params[:interview],c_id, j_id, u_id)
+    
+    @user = User.find(u_id)	# Find user for redirect.
 
     respond_to do |format|
-      if @relationship.save && @interview.save
+      if rel.save && int.save
+
+      	Record.create_record(rel)		# Create Record from relationship.
+
         format.html { redirect_to @user, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }
       else
