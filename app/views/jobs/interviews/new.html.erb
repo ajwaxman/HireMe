@@ -1,0 +1,32 @@
+<h2>Add Interview for <%= @job.title %> at <%= @job.company.name %></h2>
+
+<%= form_for(@interview) do |f| %>
+
+  <div class="field">
+      <%= hidden_field_tag :job_id, params[:job_id] %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.datetime_select :start_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.datetime_select :end_time %>
+  </div>
+
+  <div class="field">
+   <label>Select A User</label>
+     <select name="user_id">
+       <% @users.each do |u|%>
+         <option value=<%= u.id %>><%= u.name %></option>      
+       <% end %>
+     </select>
+   </div>
+
+  <div class="actions">
+    <%= f.submit 'Create Interview', {:class => "btn btn-info"} %>
+  </div>
+
+<% end %>
