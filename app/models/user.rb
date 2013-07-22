@@ -11,7 +11,11 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :phone
+  attr_accessible :email, :name, :phone, :password, :password_confirmation
+
+  has_secure_password
+
+  validates_uniqueness_of :email
 
   has_many :relationships
   
