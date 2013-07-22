@@ -27,7 +27,9 @@ HireCrm::Application.routes.draw do
   end
 
   resources :users do 
-    resources :interviews
+    resources :interviews,
+      :controller => 'users/interviews',
+      :only => [:new]
   end
 
   resources :relationships
