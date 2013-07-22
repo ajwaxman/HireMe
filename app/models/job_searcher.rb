@@ -13,5 +13,3 @@ class JobSearcher
 	end
 
 end
-
-# pp JobSearcher.indeed_search("Ruby","New York")

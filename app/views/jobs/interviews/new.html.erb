@@ -1,6 +1,8 @@
 <h2>Add Interview for <%= @job.title %> at <%= @job.company.name %></h2>
 
-<%= form_for(@interview, :url => job_interviews_path(@job)) do |f| %>
+<%= form_for(@interview) do |f| %>
+
+  <%= hidden_field_tag :job_id, @job.id %>
 
   <div class="field">
     <%= f.label :start_time %><br />
