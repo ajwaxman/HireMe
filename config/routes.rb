@@ -1,6 +1,5 @@
 HireCrm::Application.routes.draw do
 
-  resources :sessions
   resources :records
   resources :interviews
 
@@ -8,8 +7,8 @@ HireCrm::Application.routes.draw do
   # Custom Routes #
   #################
 
-  get 'signup', to: 'users#new', as: 'signup'
-  get 'login', to: 'sessions#new', as: 'login'
+  get 'signup',    to: 'users#new',        as: 'signup'
+  get 'login',     to: 'sessions#new',     as: 'login'
   delete 'logout', to: 'sessions#destroy', as: 'logout'
 
   get 'jobs/indeed' => 'jobs#indeed_jobs'
