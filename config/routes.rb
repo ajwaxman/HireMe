@@ -21,7 +21,9 @@ HireCrm::Application.routes.draw do
   ##################
 
   resources :companies do 
-    resources :jobs
+    resources :jobs,
+      :controller => 'companies/jobs',
+      :only => [:new]
   end
   
   resources :jobs do 

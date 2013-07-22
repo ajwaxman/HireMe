@@ -12,8 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.hidden_field :company_id, :value => @company.id %>
+    <label>Select A Company</label>
+     <select name="job[company_id]">
+       <% @companies.each do |c|%>
+         <option value=<%= c.id %>><%= c.name %></option>
+       <% end %>
+     </select>
   </div>
+
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>

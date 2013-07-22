@@ -48,7 +48,7 @@ class JobsController < ApplicationController
   # GET /jobs/new.json
   def new
     @job = Job.new
-    @company = Company.find(params[:company_id])
+    @companies = Company.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -63,16 +63,16 @@ class JobsController < ApplicationController
 
   end
 
-  # POST /jobs
-  # POST /jobs.json
-  def create
-    @job = Job.new(params[:job])
-    @company = Company.find(params[:job][:company_id])
+  # POST  => /companies/:company_id/jobs/new/
+  # POST  => /jobs/new/
 
+  def create
+    @job     = Job.new(params[:job])
+    @company = Company.find(params[:job][:company_id])
 
     respond_to do |format|
       if @job.save
-        format.html { redirect_to company_job_path(@company.id, @job.id), notice: 'Job was successfully created.' }
+        format.html { redirect_to @job, notice: 'Job was successfully created.' }
         format.json { render json: @job, status: :created, location: @job }
       else
         format.html { render action: "new" }
