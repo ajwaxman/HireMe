@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree . 
+ *= require jquery.ui.datepicker
  *= require_tree ../../../vendor/assets/stylesheets/.
  *= require_tree ../../../vendor/assets/fonts/fontawesome/.
  *= require custom.css.scss

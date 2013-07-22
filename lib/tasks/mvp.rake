@@ -96,8 +96,9 @@ namespace :db do
 		## seed interviews table
 
 		interview_1 = Interview.create(
-		  :start_time => "2013-09-15 08:00:00 EST",
-		  :end_time => "2013-09-15 12:00:00 EST",
+		  :start_time => "08:00:00 EST",
+		  :end_time => "12:00:00 EST",
+		  :date => "2013-09-15",
 		  :relationship_id => 1
 		)
 		

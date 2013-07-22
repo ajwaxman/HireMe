@@ -15,15 +15,7 @@
 
   <%= hidden_field_tag :user_id, @user.id %>
 
-  <div class="field">
-    <%= f.label :start_time %><br />
-    <%= f.datetime_select :start_time %>
-  </div>
-
-  <div class="field">
-    <%= f.label :end_time %><br />
-    <%= f.datetime_select :end_time %>
-  </div>
+  <%= render :partial => 'shared/datetime_picker', :locals => {:f => f} %>
 
   <div class="field">
     <label>Select A Job</label>

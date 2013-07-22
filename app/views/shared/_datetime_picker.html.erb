@@ -1,0 +1,26 @@
+
+<label>Date:</label>
+<input id="datepicker" type="text">
+<div class="field">
+  <%= f.hidden_field :date, :id => "alt-datepicker" %>
+</div>
+
+<div class="field">
+  <%= f.label :start_time %><br />
+  <%= f.time_select :start_time %>
+</div>
+
+<div class="field">
+  <%= f.label :end_time %><br />
+  <%= f.time_select :end_time %>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+	  $('#datepicker').datepicker({ 
+	  		dateFormat: 'mm/dd/yy',
+	  		altFormat: 'yy-mm-dd',
+	  		altField  : '#alt-datepicker'
+	  	});
+	});
+</script>

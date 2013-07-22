@@ -30,41 +30,41 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 	
-	$('#accent_color').ColorPicker({
-		onSubmit: function(hsb, hex, rgb, el) {
-			$(el).val(hex);
-			$(el).ColorPickerHide();
-		},
-		onBeforeShow: function () {
-			$(this).ColorPickerSetColor(this.value);
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('#accent_color').val(hex);
-			$('#accent_color').css('backgroundColor', '#' + hex);
-			accentColorUpdate(hex);
-		}
-	})
-	.bind('keyup', function(){
-		$(this).ColorPickerSetColor(this.value);
-	});
+	// $('#accent_color').ColorPicker({
+	// 	onSubmit: function(hsb, hex, rgb, el) {
+	// 		$(el).val(hex);
+	// 		$(el).ColorPickerHide();
+	// 	},
+	// 	onBeforeShow: function () {
+	// 		$(this).ColorPickerSetColor(this.value);
+	// 	},
+	// 	onChange: function (hsb, hex, rgb) {
+	// 		$('#accent_color').val(hex);
+	// 		$('#accent_color').css('backgroundColor', '#' + hex);
+	// 		accentColorUpdate(hex);
+	// 	}
+	// })
+	// .bind('keyup', function(){
+	// 	$(this).ColorPickerSetColor(this.value);
+	// });
 	
-	$('#bodybg_color').ColorPicker({
-		onSubmit: function(hsb, hex, rgb, el) {
-			$(el).val(hex);
-			$(el).ColorPickerHide();
-		},
-		onBeforeShow: function () {
-			$(this).ColorPickerSetColor(this.value);
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('#bodybg_color').val(hex);
-			$('#bodybg_color').css('backgroundColor', '#' + hex);
-			bodybgColorUpdate(hex);
-		}
-	})
-	.bind('keyup', function(){
-		$(this).ColorPickerSetColor(this.value);
-	});
+	// $('#bodybg_color').ColorPicker({
+	// 	onSubmit: function(hsb, hex, rgb, el) {
+	// 		$(el).val(hex);
+	// 		$(el).ColorPickerHide();
+	// 	},
+	// 	onBeforeShow: function () {
+	// 		$(this).ColorPickerSetColor(this.value);
+	// 	},
+	// 	onChange: function (hsb, hex, rgb) {
+	// 		$('#bodybg_color').val(hex);
+	// 		$('#bodybg_color').css('backgroundColor', '#' + hex);
+	// 		bodybgColorUpdate(hex);
+	// 	}
+	// })
+	// .bind('keyup', function(){
+	// 	$(this).ColorPickerSetColor(this.value);
+	// });
 	
 function accentColorUpdate(hex){
 

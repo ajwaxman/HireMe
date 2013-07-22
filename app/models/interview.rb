@@ -11,7 +11,7 @@
 #
 
 class Interview < ActiveRecord::Base
-  attr_accessible :end_time, :relationship_id, :start_time
+  attr_accessible :end_time, :relationship_id, :start_time, :date
 
   has_one :relationship
 
