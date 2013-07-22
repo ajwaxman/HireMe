@@ -17,7 +17,7 @@
     <td>&nbsp; <%= interview.job.title %></td>
     <td>&nbsp;  <%= interview.start_time.strftime("%B %d at %I:%M %p") %></td>
     <td>&nbsp;  <%= link_to 'Edit', edit_interview_path(interview) %></td>
-    <td>&nbsp; | <%= link_to 'Delete', interview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>&nbsp; | <%= link_to 'Delete', interview, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
