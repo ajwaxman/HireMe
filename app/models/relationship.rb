@@ -8,7 +8,6 @@
 #  company_id   :integer
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
-#  date_time    :datetime
 #  aasm_state   :string(255)
 #  interview_id :integer
 #
