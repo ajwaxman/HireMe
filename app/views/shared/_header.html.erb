@@ -15,6 +15,19 @@
 	<!-- start header -->
 	<header>	
 		<div class="container">
+
+			<div id="user_header" class="row nomargin">
+			  <% if current_user %>
+			    <span class = "pull-right">
+			    	Logged in as <%= current_user.name %>&nbsp;&nbsp;
+			    	<%= link_to "Log Out", session_path("current"), method: "delete", :class => "btn btn-warning" %>
+			    </span>
+			  <% else %>
+							<span class = "pull-right">
+								<%= link_to "Sign up", new_user_path, :class => "btn btn-success" %>&nbsp;&nbsp;<%= link_to "Log in", new_session_path, :class => "btn btn-primary" %>
+							</span>
+			   <% end %>
+			</div>
 			<div class="row nomargin">
 				<div class="span3">
 					<div class="logo">
