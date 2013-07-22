@@ -1,5 +1,7 @@
 HireCrm::Application.routes.draw do
 
+  resources :sessions
+
   resources :records
   resources :interviews
 
