@@ -31,13 +31,17 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user_only?
 
-
   def logged_in?
+    current_user.id = true
+  end
+  helper_method :logged_in?
+
+  def logged_in_only?
     unless current_user.id = true
       redirect_to root_url, alert: "Not authorized"
     end
   end
-  helper_method :logged_in?
+  helper_method :logged_in_only?
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message

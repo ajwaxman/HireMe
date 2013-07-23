@@ -1,4 +1,5 @@
 class Jobs::InterviewsController < ApplicationController
+  before_filter :logged_in_only?, :only => [:new, :create, :update, :show]
 
   # GET 	=> /jobs/:job_id/interviews/new/
   def new

@@ -1,4 +1,7 @@
 class InterviewsController < ApplicationController
+  before_filter :admin_only?, :only => [:index]
+  before_filter :current_user_only?, :only => [:edit, :show, :delete]
+  
   # GET /interviews
   # GET /interviews.json
   def index

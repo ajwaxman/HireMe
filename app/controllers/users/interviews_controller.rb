@@ -1,4 +1,5 @@
 class Users::InterviewsController < ApplicationController
+  before_filter :logged_in_only?, :only => [:new, :create, :update, :show]
 
   # GET 	=> /users/:user_id/interviews/new/
   def new

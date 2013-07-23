@@ -6,22 +6,21 @@
     <th>Title</th>
     <th>Description</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @jobs.each do |job| %>
   <tr>
-    <td><%= job.company.name %></td>
+    <td><%= link_to job.company.name, job %></td>
     <td><%= job.title %></td>
-    <td><%= job.description %></td>
-    <td><%= link_to 'Show', job %></td>
-    <td><%= link_to 'Edit', edit_job_path(job) %></td>
-    <td><%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to job.description, job %></td>
+    <% if logged_in? %>
+      <td><%= link_to 'Edit', edit_job_path(job) %></td>
+      <td><%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br>
 
-<%= link_to 'Add Job', new_job_path %>
+<%= link_to 'Add Job', new_job_path, :class => "btn btn-info" %>
