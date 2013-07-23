@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.datepicker
-//= require_tree ../../../vendor/assets/javascripts/.
 //= require_tree .
+//= require_tree ../../../vendor/assets/perfectum_dashboard_1_0_5/js/.
