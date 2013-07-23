@@ -12,65 +12,65 @@
 
 <div id="wrapper">
 	
-	<!-- start eterna header -->
+	<!-- Start Eterna Header -->
+
 	<header>	
-			<div class="top">
-				<div class="container">
-					<div class="row">
-						<div class="span6">
-							<p class="topcontact"><i class="icon-phone"></i> +62 088 999 123</p>
-						</div>
-						<div class="span6">
 
-								<ul class="social-network">
-									<li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li>
-									<li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
-									<li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-white"></i></a></li>
-									<li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest  icon-white"></i></a></li>
-									<li><a href="#" data-placement="bottom" title="Google +"><i class="icon-google-plus icon-white"></i></a></li>
-									<li><a href="#" data-placement="bottom" title="Dribbble"><i class="icon-dribbble icon-white"></i></a></li>
-								</ul>
+		<!-- Navigation Bar -->
 
-						</div>
-					</div>
-				</div>
-			</div>	
 		<div class="container">
-			
-
 			<div class="row nomargin">
+
+				<!-- Links to different Pages -->
+				
+				<div class="span9">
+					<div class="navbar navbar-static-top">
+						<div class="navigation">
+							<nav>
+								<ul class="nav topnav">
+
+									<%= nav_link raw('<i class="icon-home"></i> Home'), root_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+									<%= nav_link 'Companies', companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+									<%= nav_link  jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper dropdown', :selected_class => 'active'} do %>Jobs <i class="icon-angle-down"></i><ul class="dropdown-menu"><li><%= link_to 'Search Indeed', jobs_indeed_path %></li><li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
+		              	</ul>
+		              	<% end %>
+		              	
+									<%= nav_link 'Relationships', relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+									<%= nav_link 'Users', users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+									<%= nav_link 'Interviews', interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+									<%= nav_link 'Records', records_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+								</ul>
+							</nav>
+						</div>
+						<!-- end navigation -->
+					</div>
+				</div>
+
+				<!-- Create Login Buttons -->
+
 				<div class="span3">
-					<div class="logo">
-						<%= link_to image_tag("logo.png"), "/" %>
-					</div>
+					
+					<% if current_user %>
+						<span class = "pull-right">
+							Logged in as <%= current_user.name %>&nbsp;&nbsp;
+							<%= link_to "Log Out", logout_path, method: "delete", :class => "btn btn-warning" %>
+						</span>
+					<% else %>
+						<span class = "pull-right">
+						<%= link_to "Sign up", signup_path, :class => "btn btn-success" %>&nbsp;&nbsp;<%= link_to "Log in", login_path, :class => "btn btn-primary" %>
+						</span>
+					<% end %>
+
 				</div>
-			<div class="span9">
-				<div class="navbar navbar-static-top">
-					<div class="navigation">
-						<nav>
-						<ul class="nav topnav">
 
-								<%= nav_link raw('<i class="icon-home"></i> Home'), root_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-
-								<%= nav_link 'Companies', companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-
-								<%= nav_link  jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper dropdown', :selected_class => 'active'} do %>Jobs <i class="icon-angle-down"></i><ul class="dropdown-menu"><li><%= link_to 'Search Indeed', jobs_indeed_path %></li><li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
-	              	</ul>
-	              	<% end %>
-	              	
-								<%= nav_link 'Relationships', relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-								<%= nav_link 'Users', users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-								<%= nav_link 'Interviews', interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-
-								<%= nav_link 'Records', records_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
-
-						</ul>
-						</nav>
-					</div>
-					<!-- end navigation -->
-				</div>
-			</div>
 			</div>
 		</div>
+
 	</header>	
-	<!-- end eterna header -->
+
+	<!-- End Eterna Header -->
+
+</div>
