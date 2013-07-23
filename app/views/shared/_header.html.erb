@@ -28,21 +28,33 @@
 					<ul class="nav pull-right">
 						
 						<!-- start: User Dropdown -->
-						
-						<li class="dropdown">
 
-							<a class="btn dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-user icon-white"></i>
-								<span class="caret"></span>
-							</a>
+						<% if current_user %>
+             <span class = "pull-right">
 
-							<ul class="dropdown-menu">
-								<li><a href="<%= login_path %>"><i class="icon-user"></i> Profile</a></li>
-								<li><a href="<%= logout_path %>"><i class="icon-off"></i> Logout</a></li>
-							</ul>
+               <span class="dropdown">
 
-						</li>
-						
+								<a class="btn dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-user icon-white"></i>
+									<span class="caret"></span>
+								</a>
+
+								<ul class="dropdown-menu">
+									<li><a href="<%= login_path %>"><i class="icon-user"></i>Profile</a></li>
+									<li><%= link_to raw('<i class="icon-off"></i> Logout'), logout_path, method: "delete"%></li>
+								</ul>
+
+								Whaddup <%= current_user.name.split.first %>!
+
+							</span>
+
+             </span>
+           <% else %>
+             <span class = "pull-right">
+             <%= link_to "Sign up", signup_path, :class => "btn btn-success" %>  <%= link_to "Log in", login_path, :class => "btn btn-primary" %>
+             </span>
+           <% end %>
+
 						<!-- end: User Dropdown -->
 
 					</ul>
