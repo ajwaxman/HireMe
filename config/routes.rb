@@ -15,7 +15,7 @@ HireCrm::Application.routes.draw do
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 
-  root :to => 'records#index'
+  root :to => 'sessions#new'
 
   ##################
   # RESTful Routes #

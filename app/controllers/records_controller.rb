@@ -1,4 +1,7 @@
 class RecordsController < ApplicationController
+  before_filter :admin_only?
+
+
   # GET /records
   # GET /records.json
   def index

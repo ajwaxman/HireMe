@@ -23,6 +23,7 @@
 </ul>
 <% end %>
 
+
 <h4>Upcoming Interviews</h4>
 <% if @company.interviews.empty? == true %>
 	<p><%= @company.name %> has no upcoming interviews.</p>
@@ -30,10 +31,10 @@
 <%= render :partial => "shared/interviews_list", :locals => {:interview_list => @company} %>
 <% end %>
 
-
 <%= render 'shared/event_history' %>
 
-<div style="border-bottom: 1px dotted; margin:20px 0 20px 0;"></div>
+
+	<div style="border-bottom: 1px dotted; margin:20px 0 20px 0;"></div>
 
 <% if current_user.admin? %>
 	<%= link_to 'Edit', edit_company_path(@company) %>

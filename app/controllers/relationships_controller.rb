@@ -1,4 +1,5 @@
 class RelationshipsController < ApplicationController
+  before_filter :admin_only?
   # GET /relationships
   # GET /relationships.json
   def index

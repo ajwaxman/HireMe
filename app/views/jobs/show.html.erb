@@ -9,19 +9,21 @@
 </p>
 <br/>
 <p>
-<h4>Event History</h4>
-<% if @job.records.empty? == true %>
-	<p><%= @job.title %> has no event history.</p>
+	
 
-<% else %>
-<ul>
-	<% @job.records.each do |record| %>
-	<li> 
-		<%= record.event %>
-	</li>
+	<h4>Event History</h4>
+	<% if @job.records.empty? == true %>
+		<p><%= @job.title %> has no event history.</p>
+
+	<% else %>
+	<ul>
+		<% @job.records.each do |record| %>
+		<li> 
+			<%= record.event %>
+		</li>
+		<% end %>
+	</ul>
 	<% end %>
-</ul>
-<% end %>
 
 <br>
 
