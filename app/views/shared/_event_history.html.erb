@@ -1,33 +1,36 @@
 
 <h4>Event History</h4>
 
-<% if admin? %>
+<% if current_user.admin? %>
 
-	<% if @company.records.empty? == true %>
-		<p><%= @company.name %> has no event history.</p>
+		<% if @company.records.empty? == true %>
+			<p><%= @company.name %> has no event history.</p>
 
-	<% else %>
-	<ul>
-		<% @company.records.each do |record| %>
-		<li> 
-			<%= record.event %>
-		</li>
+		<% else %>
+		<ul>
+			<% @company.records.each do |record| %>
+			<li> 
+				<%= record.event %>
+			</li>
+			<% end %>
+		</ul>
 		<% end %>
-	</ul>
-	<% end %>
 
 <% elsif current_user? %>
-	<% if @company.records.where("user_id=#{current_user.id}").empty? == true %>
-		<p>You have no current event history at <%= @company.name %>.</p>
+		<% if @company.records.where("user_id=#{current_user.id}").empty? == true %>
+			<p>You have no current event history at <%= @company.name %>.</p>
 
-	<% else %>
-	<ul>
-		<% @company.records.where("user_id=#{current_user.id}").each do |record| %>
-		<li> 
-			<%= record.event %>
-		</li>
+		<% else %>
+		<ul>
+			<% @company.records.where("user_id=#{current_user.id}").each do |record| %>
+			<li> 
+				<%= record.event %>
+			</li>
+			<% end %>
+		</ul>
 		<% end %>
-	</ul>
-	<% end %>
+
+<% else %>
+	You have no current event history at <%= @company.name %>
 
 <% end %>

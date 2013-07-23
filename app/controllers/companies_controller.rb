@@ -1,6 +1,6 @@
 class CompaniesController < ApplicationController
   before_filter :admin?, :only => [:edit, :destroy]
-  before_filter :logged_in?, :only => [:index, :show, :update, :new]
+  before_filter :logged_in?, :only => [:index, :show, :update, :new, :create]
 
   # GET /companies
   # GET /companies.json
@@ -83,4 +83,5 @@ class CompaniesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
