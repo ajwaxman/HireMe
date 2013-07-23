@@ -13,7 +13,7 @@
     <td><%= link_to job.company.name, job %></td>
     <td><%= job.title %></td>
     <td><%= link_to job.description, job %></td>
-    <% if logged_in? %>
+    <% if current_user.admin? %>
       <td><%= link_to 'Edit', edit_job_path(job) %></td>
       <td><%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     <% end %>

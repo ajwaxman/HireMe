@@ -25,8 +25,8 @@
 
 <br>
 
-<div style="border-bottom: 1px dotted"></div>
-
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', job_path(@job) %><br />
-<%= link_to 'Add Interview', new_job_interview_path(@job) %>
+<div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
+<% if current_user.admin? %>
+	<%= link_to 'Edit', edit_job_path(@job) %>
+<% end %>
+<%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>

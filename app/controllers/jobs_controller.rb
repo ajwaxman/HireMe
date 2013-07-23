@@ -1,6 +1,5 @@
 class JobsController < ApplicationController
-  before_filter :admin_only?, :only => [:delete]
-  before_filter :current_user_only?, :only => [:edit]
+  before_filter :admin_only?, :only => [:destroy, :edit]
   before_filter :logged_in_only?, :only => [:create, :new, :show]
 
   ##################

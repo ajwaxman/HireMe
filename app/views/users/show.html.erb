@@ -47,8 +47,8 @@
 </ul>
 <% end %>
 
-<div style="border-bottom: 1px dotted"></div>
+<div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
-<br/>
+
 <%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info" %>
