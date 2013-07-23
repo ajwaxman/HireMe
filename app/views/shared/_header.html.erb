@@ -49,30 +49,21 @@
 					<div class="navigation">
 						<nav>
 						<ul class="nav topnav">
-							<li class="active">
-					       <%= link_to raw('<i class="icon-home"></i> Home'), root_path %>
-							</li>
-							<li>
-                <%= link_to 'Companies', companies_path %>
-							</li>
-							<li class="dropdown">
-                <%= link_to raw('Jobs <i class="icon-angle-down"></i>'), jobs_path %>
-                <ul class="dropdown-menu">
-                <li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
-              </ul>
-              </li>
-							<li>
-                <%= link_to 'Relationships', relationships_path %>
-							</li>
-              <li>
-                <%= link_to 'Users', users_path %>
-							</li>
-							<li>
-							  <%= link_to 'Interviews', interviews_path %>
-							</li>
-              <li>
-                <%= link_to 'Records', records_path %>
-              </li>
+
+								<%= nav_link raw('<i class="icon-home"></i> Home'), root_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+								<%= nav_link 'Companies', companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+								<%= nav_link  jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper dropdown', :selected_class => 'active'} do %>Jobs <i class="icon-angle-down"></i><ul class="dropdown-menu"><li><%= link_to 'Search Indeed', jobs_indeed_path %></li><li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
+	              	</ul>
+	              	<% end %>
+	              	
+								<%= nav_link 'Relationships', relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+								<%= nav_link 'Users', users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+								<%= nav_link 'Interviews', interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+								<%= nav_link 'Records', records_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
 						</ul>
 						</nav>
 					</div>
