@@ -22,6 +22,13 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user?
 
+  def logged_in?
+    unless current_user.id = true
+      redirect_to root_url, alert: "Not authorized"
+    end
+  end
+  helper_method :logged_in?
+
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
   end

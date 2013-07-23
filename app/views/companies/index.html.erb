@@ -6,16 +6,16 @@
     <th>Website</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @companies.each do |company| %>
   <tr>
-    <td><%= company.name %></td>
-    <td>&nbsp;  <%= company.website %></td>
-    <td>&nbsp;  <%= link_to 'Show', company %></td>
-    <td>&nbsp; | <%= link_to 'Edit', edit_company_path(company) %></td>
-    <td>&nbsp; | <%= link_to 'Delete', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>&nbsp;  <%= link_to company.name, company %></td>
+    <td>&nbsp;  <%= link_to company.website, company.website %></td>
+    <% if current_user.admin? %>
+      <td>&nbsp; | <%= link_to 'Edit', edit_company_path(company) %></td>
+      <td>&nbsp; | <%= link_to 'Delete', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

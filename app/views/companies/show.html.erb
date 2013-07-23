@@ -30,19 +30,8 @@
 <%= render :partial => "shared/interviews_list", :locals => {:interview_list => @company} %>
 <% end %>
 
-<h4>Event History</h4>
-<% if @company.records.empty? == true %>
-	<p><%= @company.name %> has no event history.</p>
 
-<% else %>
-<ul>
-	<% @company.records.each do |record| %>
-	<li> 
-		<%= record.event %>
-	</li>
-	<% end %>
-</ul>
-<% end %>
+<%= render 'shared/event_history' %>
 
 <div style="border-bottom: 1px dotted"></div>
 
