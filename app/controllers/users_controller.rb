@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   before_filter :admin?, :only => [:index]
-  before_filter :current_user?, :only => [:edit]
+  before_filter :current_user?, :only => [:edit, :show]
   # load_and_authorize_resource
 
   # GET /users

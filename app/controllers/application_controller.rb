@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   helper_method :admin?
 
   def current_user?
-    unless current_user.id == params[:user_id]
+    unless current_user.id == params[:id].to_i || current_user.admin?
       redirect_to root_url, alert: "Not authorized"
     end
   end
