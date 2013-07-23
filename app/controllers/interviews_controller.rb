@@ -37,6 +37,8 @@ class InterviewsController < ApplicationController
   # GET /interviews/1/edit
   def edit
     @interview = Interview.find(params[:id])
+    @jobs      = Job.all
+    @users     = User.all
   end
 
   # POST  => /jobs/:job_id/interviews/new/
