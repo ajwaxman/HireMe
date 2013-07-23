@@ -1,5 +1,5 @@
 class Companies::JobsController < ApplicationController
-
+	before_filter :logged_in?, :only => [:index, :show, :update, :new]
   # GET 	=> /companies/:company_id/jobs/new/
   def new
     @job     = Job.new
