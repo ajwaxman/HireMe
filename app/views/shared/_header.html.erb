@@ -39,73 +39,40 @@
 			
 
 			<div class="row nomargin">
-				<div class="span4">
+				<div class="span3">
 					<div class="logo">
-						<a href="index.html"><img src="img/logo.png" alt="" /></a>
+						<%= link_to image_tag("logo.png"), "/" %>
 					</div>
 				</div>
-			<div class="span8">
+			<div class="span9">
 				<div class="navbar navbar-static-top">
 					<div class="navigation">
 						<nav>
 						<ul class="nav topnav">
-							<li class="dropdown active">
-							<a href="index.html"><i class="icon-home"></i> Home <i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="index-alt2.html">Homepage 2</a></li>
-								<li><a href="index-alt3.html">Homepage 3</a></li>
-								<li><a href="index-alt4.html">Parallax slider</a></li>
-								<li><a href="index-landingpage.html">Landing page</a></li>
-							</ul>
-							</li>
-							<li class="dropdown">
-							<a href="#">Companies <i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="typography.html">Typography</a></li>
-								<li><a href="components.html">Components</a></li>
-								<li><a href="icons.html">Icons</a></li>
-								<li><a href="icon-variations.html">Icon variations</a></li>
-								<li class="dropdown"><a href="#">3rd menus<i class="icon-angle-right"></i></a>
-								<ul class="dropdown-menu sub-menu-level1">
-									<li><a href="index.html">Sub menu</a></li>
-									<li><a href="index.html">Sub menu</a></li>
-								</ul>
-								</li>
-							</ul>
-							</li>
-							<li class="dropdown">
-							<a href="#">Pages <i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="about.html">About us</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="team.html">Team</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="pricingbox.html">Pricing boxes</a></li>
-								<li><a href="404.html">404</a></li>
-							</ul>
-							</li>
-							<li class="dropdown">
-							<a href="#">Portfolio <i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-								<li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-								<li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-								<li><a href="portfolio-detail.html">Portfolio detail</a></li>
-							</ul>
-							</li>
-							<li class="dropdown">
-							<a href="#">Blog <i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-								<li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-								<li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
-								<li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-								<li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-							</ul>
+							<li class="active">
+					       <%= link_to raw('<i class="icon-home"></i> Home'), root_path %>
 							</li>
 							<li>
-							<a href="contact.html">Contact </a>
+                <%= link_to 'Companies', companies_path %>
 							</li>
+							<li class="dropdown">
+                <%= link_to raw('Jobs <i class="icon-angle-down"></i>'), jobs_path %>
+                <ul class="dropdown-menu">
+                <li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
+              </ul>
+              </li>
+							<li>
+                <%= link_to 'Relationships', relationships_path %>
+							</li>
+              <li>
+                <%= link_to 'Users', users_path %>
+							</li>
+							<li>
+							  <%= link_to 'Interviews', interviews_path %>
+							</li>
+              <li>
+                <%= link_to 'Records', records_path %>
+              </li>
 						</ul>
 						</nav>
 					</div>
@@ -116,65 +83,3 @@
 		</div>
 	</header>	
 	<!-- end eterna header -->
-
-	<!-- start header -->
-	<header>	
-		<div class="container">
-
-			<div id="user_header" class="row nomargin">
-			  <% if current_user %>
-			    <span class = "pull-right">
-			    	Logged in as <%= current_user.name %>&nbsp;&nbsp;
-			    	<%= link_to "Log Out", logout_path, method: "delete", :class => "btn btn-warning" %>
-			    </span>
-			  <% else %>
-							<span class = "pull-right">
-								<%= link_to "Sign up", signup_path, :class => "btn btn-success" %>&nbsp;&nbsp;<%= link_to "Log in", login_path, :class => "btn btn-primary" %>
-							</span>
-			   <% end %>
-			</div>
-			<div class="row nomargin">
-				<div class="span3">
-					<div class="logo">
-						<%= link_to image_tag("logo.png"), "/" %>
-					</div>
-				</div>
-				<div class="span9">
-					<div class="navbar navbar-static-top">
-						<div class="navigation">
-							<nav>
-								<ul class="nav topnav">
-									<li>
-										<%= link_to 'Home', root_path %>
-									</li>
-									<li>
-										<%= link_to 'Companies', companies_path %>
-									</li>
-									<li class="dropdown">
-										<%= link_to 'Jobs', jobs_path %>
-										<ul class="dropdown-menu">
-											<li><%= link_to 'Search Indeed', jobs_indeed_path %></li>
-										</ul>
-									</li>
-									<li>
-										<%= link_to 'Relationships', relationships_path %>
-									</li>
-									<li>
-										<%= link_to 'Users', users_path %>
-									</li>
-									<li>
-										<%= link_to 'Interviews', interviews_path %>
-									</li>
-									<li>
-										<%= link_to 'Records', records_path %>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!-- end navigation -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>	
-	<!-- end header -->
