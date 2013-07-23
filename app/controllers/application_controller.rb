@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
   
   helper_method :current_user
 
+  def admin_only?
+    current_user == "admin"
+  end
+  helper_method :admin_only?
+
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
   end
