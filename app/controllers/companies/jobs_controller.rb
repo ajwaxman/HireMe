@@ -4,7 +4,6 @@ class Companies::JobsController < ApplicationController
   def new
     @job     = Job.new
     @company = Company.find(params[:company_id])
-    @users 	 = User.all
 
     respond_to do |format|
       format.html

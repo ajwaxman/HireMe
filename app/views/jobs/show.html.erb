@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-
 <h2>
   <%= @job.title %> at <%= @job.company.name %>
 </h2>
@@ -24,7 +23,8 @@
 </ul>
 <% end %>
 
-<br/>
+<br>
+
 <div style="border-bottom: 1px dotted"></div>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |
