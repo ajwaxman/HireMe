@@ -1,4 +1,7 @@
 class CompaniesController < ApplicationController
+  before_filter :admin?, :only => [:index]
+  before_filter :current_user?, :only => [:edit, :show, :delete]
+
   # GET /companies
   # GET /companies.json
   def index
