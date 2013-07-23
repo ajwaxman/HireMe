@@ -30,14 +30,17 @@
 						<!-- start: User Dropdown -->
 						
 						<li class="dropdown">
-							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+
+							<a class="btn dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-user icon-white"></i>
 								<span class="caret"></span>
 							</a>
+
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="icon-user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+								<li><a href="<%= login_path %>"><i class="icon-user"></i> Profile</a></li>
+								<li><a href="<%= logout_path %>"><i class="icon-off"></i> Logout</a></li>
 							</ul>
+
 						</li>
 						
 						<!-- end: User Dropdown -->
