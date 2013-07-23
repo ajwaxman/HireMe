@@ -8,10 +8,19 @@ class ApplicationController < ActionController::Base
   
   helper_method :current_user
 
-  def admin_only?
-    current_user == "admin"
+  def admin?
+    unless current_user.role == "admin"
+      redirect_to root_url, alert: "Not authorized"
+    end
   end
-  helper_method :admin_only?
+  helper_method :admin?
+
+  def current_user?
+    unless current_user.id == params[:user_id]
+      redirect_to root_url, alert: "Not authorized"
+    end
+  end
+  helper_method :current_user?
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
