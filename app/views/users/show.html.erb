@@ -16,7 +16,7 @@
 <% if @user.interviews.empty? == true %>
 	<p><%= @user.name %> has no upcoming interviews.</p>
 <% else %>
-	<%= render :partial => "shared/interviews", :locals => {:interview_list => @user} %>
+	<%= render :partial => "shared/interviews_list", :locals => {:interview_list => @user} %>
 <% end %>
 
 

@@ -9,7 +9,6 @@
     <th>Start Time</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @relationships.each do |relationship| %>
@@ -19,7 +18,6 @@
     <td>&nbsp; <%= relationship.company.name %> </td>
     <td>&nbsp; <%= relationship.aasm_state %> </td>
     <td>&nbsp; <%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> </td>
-    <td>&nbsp; <%= link_to 'Show', relationship %> </td>
     <td>&nbsp; | <%= link_to 'Edit', edit_relationship_path(relationship) %></td>
     <td>&nbsp; | <%= link_to 'Delete', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
