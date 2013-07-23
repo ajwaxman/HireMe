@@ -11,18 +11,12 @@ namespace :db do
 		  :role => "student"
 		)
 
-		user_1.password = "carlos"
-		user_1.password_confirmation = "carlos"
-
 		user_2 = User.create(
 		  :email => "chris@flatironschool.com",
 		  :name => "Christopher Lake",
 		  :phone => "098-765-4321",
 		  :role => "student"
 		)
-
-		user_2.password = "chris"
-		user_2.password_confirmation = "chris"
 
 		user_3 = User.create(
 		  :email => "david@flatironschool.com",
@@ -31,9 +25,6 @@ namespace :db do
 		  :role => "student"
 		)
 
-		user_3.password = "david"
-		user_3.password_confirmation = "david"
-
 		user_4 = User.create(
 		  :email => "adam@flatironschool.com",
 		  :name => "Adam Waxman",
@@ -41,18 +32,12 @@ namespace :db do
 		  :role => "student"
 		)
 
-		user_4.password = "adam"
-		user_4.password_confirmation = "adam"
-
 		user_5 = User.create(
 		  :email => "avi@flatironschool.com",
 		  :name => "Avi Flombaum",
 		  :phone => "777-888-9999",
 		  :role => "admin"
 		)
-
-		user_5.password = "avi"
-		user_5.password_confirmation = "avi"
 
 
 		## seed companies table
