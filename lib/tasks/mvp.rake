@@ -5,34 +5,55 @@ namespace :db do
   	## seed users table
 
 		user_1 = User.create(
-		  :email => "carlos.lazo@flatironschool.com",
+		  :email => "carlos@flatironschool.com",
 		  :name => "Carlos Lazo",
-		  :phone => "123-456-7890"
+		  :phone => "123-456-7890",
+		  :role => "student"
 		)
+
+		user_1.password = "carlos"
+		user_1.password_confirmation = "carlos"
 
 		user_2 = User.create(
-		  :email => "chris.lake@flatironschool.com",
+		  :email => "chris@flatironschool.com",
 		  :name => "Christopher Lake",
-		  :phone => "098-765-4321"
+		  :phone => "098-765-4321",
+		  :role => "student"
 		)
+
+		user_2.password = "chris"
+		user_2.password_confirmation = "chris"
 
 		user_3 = User.create(
-		  :email => "david.manaster@flatironschool.com",
+		  :email => "david@flatironschool.com",
 		  :name => "David Manaster",
-		  :phone => "111-222-3333"
+		  :phone => "111-222-3333",
+		  :role => "student"
 		)
 
+		user_3.password = "david"
+		user_3.password_confirmation = "david"
+
 		user_4 = User.create(
-		  :email => "adam.waxman@flatironschool.com",
+		  :email => "adam@flatironschool.com",
 		  :name => "Adam Waxman",
-		  :phone => "444-555-6666"
+		  :phone => "444-555-6666",
+		  :role => "student"
 		)
+
+		user_4.password = "adam"
+		user_4.password_confirmation = "adam"
 
 		user_5 = User.create(
 		  :email => "avi@flatironschool.com",
 		  :name => "Avi Flombaum",
-		  :phone => "777-888-9999"
+		  :phone => "777-888-9999",
+		  :role => "admin"
 		)
+
+		user_5.password = "avi"
+		user_5.password_confirmation = "avi"
+
 
 		## seed companies table
 

@@ -13,7 +13,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :phone, :password, :password_confirmation
+  attr_accessible :email, :name, :phone, :password, :password_confirmation, :role
 
   has_secure_password
 
@@ -25,5 +25,17 @@ class User < ActiveRecord::Base
   has_many :interviews, :through => :relationships
   has_many :jobs, 		 	:through => :relationships
   has_many :records, 		:through => :relationships
-  
+
+  def admin?
+    self.role == "admin"
+  end
+
+  def student?
+    self.role == "student"
+  end
+
+  def guest?
+    self.role == "guest"
+  end
+
 end
