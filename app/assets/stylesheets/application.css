@@ -9,6 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/bootstrap.min.css
+ *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/bootstrap-responsive.min.css
+ *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/style.css
+ *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/style-responsive.css
  *= require_tree .
- *= require_tree ../../../vendor/assets/perfectum_dashboard_1_0_5/css/.
  */
