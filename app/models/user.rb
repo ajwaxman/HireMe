@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :name, :phone, :password, :password_confirmation, :role
 
-  has_secure_passwordrails
+  has_secure_password
 
   validates_uniqueness_of :email
 
