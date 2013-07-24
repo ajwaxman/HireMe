@@ -1,6 +1,27 @@
-<h1>Editing Interview for <%= @interview.relationship.user.name %></h1>
+<h1>Update Interview with <%= @interview.company.name %></h1>
 
-<%= render 'form' %>
+<%= form_for(@interview) do |f| %>
+  <% if @interview.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
 
-<%= link_to 'Show', @interview %> |
-<%= link_to 'Back', interviews_path %>
+      <ul>
+      <% @interview.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= hidden_field_tag :user_id, current_user.id %>
+  <%= hidden_field_tag :job_id,  @interview.job.id %>
+
+  <%= render :partial => 'shared/datetime_picker', :locals => {:f => f} %>
+
+  <div class="actions">
+    <%= f.submit 'Update Interview', {:class => "btn btn-info"} %>
+  </div>
+
+<% end %>
+
+<%= link_to 'Back to Profile Page', user_path(current_user) %>

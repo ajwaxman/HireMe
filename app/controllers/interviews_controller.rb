@@ -76,7 +76,7 @@ class InterviewsController < ApplicationController
 
     respond_to do |format|
       if @interview.update_attributes(params[:interview])
-        format.html { redirect_to @interview, notice: 'Interview was successfully updated.' }
+        format.html { redirect_to user_path(current_user), notice: 'Interview was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

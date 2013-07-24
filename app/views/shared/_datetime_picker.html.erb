@@ -1,13 +1,14 @@
 
 <label>Date:</label>
-<input id="datepicker" type="text">
+<input id="datepicker" type="text" value="<%= @interview.date.strftime('%m/%d/%Y') %>">
+
 <div class="field">
-  <%= f.hidden_field :date, :id => "alt-datepicker" %>
+  <%= f.hidden_field :date, :id => "alt-datepicker"%>
 </div>
 
 <div class="field">
   <%= f.label :start_time %><br />
-  <%= f.time_select :start_time %>
+  <%= f.time_select :start_time%>
 </div>
 
 <div class="field">
