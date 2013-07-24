@@ -102,10 +102,31 @@ namespace :db do
 		## seed interviews table
 
 		interview_1 = Interview.create(
-		  :start_time => "08:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-09-15",
+		  :start_time => "09:00:00 EST",
+		  :end_time => "10:00:00 EST",
+		  :date => "2013-07-24",
 		  :relationship_id => 1
+		)
+
+		interview_2 = Interview.create(
+		  :start_time => "09:00:00 EST",
+		  :end_time => "10:00:00 EST",
+		  :date => "2013-07-25",
+		  :relationship_id => 2
+		)
+
+		interview_3 = Interview.create(
+		  :start_time => "11:00:00 EST",
+		  :end_time => "12:00:00 EST",
+		  :date => "2013-07-24",
+		  :relationship_id => 3
+		)
+
+		interview_4 = Interview.create(
+		  :start_time => "11:00:00 EST",
+		  :end_time => "12:00:00 EST",
+		  :date => "2013-07-27",
+		  :relationship_id => 4
 		)
 		
 		## seed relationships table

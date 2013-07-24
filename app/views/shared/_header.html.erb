@@ -1,7 +1,7 @@
 <div id="wrapper">
 
 	<body>
-		<div id="overlay">
+<!-- 		<div id="overlay">
 		<ul>
 		  <li class="li1"></li>
 		  <li class="li2"></li>
@@ -10,7 +10,7 @@
 		  <li class="li5"></li>
 		  <li class="li6"></li>
 		</ul>
-	</div>	
+	</div>	 -->
 
 	<!-- START: Header -->
 
@@ -78,20 +78,21 @@
 			<div class="span2 main-menu-span">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						
-						<%= nav_link raw('<i class="icon-home icon-white"></i> Home'), root_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-briefcase icon-white"></i> Companies'), companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<%= nav_link raw('<i class="icon-home icon-white"></i><span class="hidden-tablet"> Home</span>'), root_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-thumbs-up icon-white"></i> Jobs'), jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-retweet icon-white"></i> Relationships'), relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<%= nav_link raw('<i class="icon-user icon-white"></i><span class="hidden-tablet"> Students</span>'), users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-user icon-white"></i> Users'), users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<%= nav_link raw('<i class="icon-briefcase icon-white"></i><span class="hidden-tablet"> Companies</span>'), companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-calendar icon-white"></i> Interviews'), interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<%= nav_link raw('<i class="icon-thumbs-up icon-white"></i><span class="hidden-tablet"> Jobs</span>'), jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
-						<%= nav_link raw('<i class="icon-pencil icon-white"></i> Records'), records_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<%= nav_link raw('<i class="fa-icon-group icon-white"></i><span class="hidden-tablet"> Relationships</span>'), relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+						<%= nav_link raw('<i class="icon-calendar icon-white"></i> <span class="hidden-tablet"> Interviews</span>'), interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+
+						<%= nav_link raw('<i class="fa-icon-list-ol icon-white"></i> <span class="hidden-tablet"> Records</span>'), records_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 						
 					</ul>
 				</div><!--/.well -->
