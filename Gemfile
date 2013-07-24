@@ -36,9 +36,10 @@ gem 'cancan' # => authorization
 
 
 group :development do
-  gem 'better_errors' # => gem to display errors better for debugging
-  gem 'binding_of_caller' # => works with better_errors to show instance variables
-  gem 'pry-debugger'
+  gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
+  gem 'better_errors'       # => gem to display errors better for debugging
+  gem 'binding_of_caller'   # => works with better_errors to show instance variables
+  gem 'pry-debugger'        # => debugger for project.
   gem 'quiet_assets'
 end
 
