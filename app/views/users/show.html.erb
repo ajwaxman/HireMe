@@ -10,11 +10,11 @@
   <%= @user.phone %>
 </p>
 
-<h4>Interviews</h4>
-<% if @user.interviews.empty? == true %>
+<h4>Upcoming Interviews</h4>
+<% if @user.interviews.empty? %>
 	<p><%= @user.name %> has no upcoming interviews.</p>
 <% else %>
-	<%= render :partial => "shared/interviews_list", :locals => {:interview_list => @user} %>
+	<%= render :partial => "shared/interview_list", :locals => {:interview_obj => @user} %>
 <% end %>
 
 
@@ -52,6 +52,7 @@
 <br/>
 <%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info" %>
 
+<<<<<<< HEAD
 <div class="row-fluid sortable">		
 	<div class="box span12">
 		<div class="box-header" data-original-title>

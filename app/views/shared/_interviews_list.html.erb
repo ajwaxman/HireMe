@@ -1,7 +1,0 @@
-<ul>
-		<% interview_list.interviews.each do |interview| %>
-			<li>
-				<%= interview.company.name %>, <%= interview.job.title %>, <%= interview.date.strftime("%m/%d/%Y") %> at <%= interview.start_time.strftime("%I:%M%p") %> (<%= distance_of_time_in_words_to_now("#{interview.date} + #{interview.start_time}") %> from now)
-			</li>
-		<% end %>
-</ul>

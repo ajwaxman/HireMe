@@ -1,26 +1,9 @@
-<h1>Upcoming Interviews</h1>
-
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Position</th>
-    <th>Student</th>
-    <th>Date / Time</th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @interviews.each do |interview| %>
-  <tr>
-    <td><%= interview.company.name %></td>
-    <td>&nbsp; <%= interview.user.name %></td>
-    <td>&nbsp; <%= interview.job.title %></td>
-    <td>&nbsp;  <%= interview.start_time.strftime("%B %d at %I:%M %p") %></td>
-    <td>&nbsp;  <%= link_to 'Edit', edit_interview_path(interview) %></td>
-    <td>&nbsp; | <%= link_to 'Delete', interview, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
-  </tr>
+<h4>Upcoming Interviews</h4>
+<% if Interview.all.empty? %>
+  <p>There are no upcoming interviews.</p>
+<% else %>
+  <%= render :partial => "shared/interview_list", :locals => {:interview_obj => @interviews} %>
 <% end %>
-</table>
 
 <br>
 
