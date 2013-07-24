@@ -23,17 +23,31 @@
 			  </thead>   
 			  <tbody>
 
-			  <% if interview_obj.first.class.to_s != "Interview" %>
+			  <% if interview_list.each do |interview| %>
 			  	
-			  	<% interview_obj.interviews.each do |interview| %>
-			  		<%= render :partial => "shared/interview_build", :locals => {:interview => interview} %>
-			  	<% end %>
-			  
-			  <% else %>
-					
-					<% interview_obj.each do |interview| %>
-						<%= render :partial => "shared/interview_build", :locals => {:interview => interview} %>
-					<% end %>
+			  	<tr>
+						<td><%= interview.user.name %></td>
+						<td><%= interview.company.name %></td>
+						<td><%= interview.job.title %></td>
+						<td><%= interview.date.strftime('%-m/%-d/%Y') %></td>
+						<td><%= interview.start_time.strftime('%-l:%M %P') %></td>
+						<td class="center">
+							<span class="label label-warning"><%= interview.relationship.aasm_state %></span>
+						</td>
+						<td class="center">
+							
+							<a class="btn btn-success" href="<%= interview_path(interview) %>">
+								<i class="icon-zoom-in icon-white"></i>  
+							</a>
+
+							<a class="btn btn-info" href="<%= edit_interview_path(interview) %>">
+								<i class="icon-edit icon-white"></i>  
+							</a>
+
+							<%= link_to raw('<i class="icon-trash icon-white"></i>'), interview, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+
+							</td>
+						</tr>
 
 				<% end %>
 

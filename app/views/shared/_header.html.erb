@@ -11,7 +11,9 @@
 		  <li class="li6"></li>
 		</ul>
 	</div>	
-	<!-- start: Header -->
+
+	<!-- START: Header -->
+
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
@@ -22,12 +24,12 @@
 				</a>
 				<a class="brand" href="index.html"> <span class="hidden-phone">Hire CRM</span></a>
 								
-				<!-- start: Header Menu -->
+				<!-- START: Header Menu -->
 
 				<div class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
 						
-						<!-- start: User Dropdown -->
+						<!-- START: User Dropdown -->
 
 						<% if current_user %>
              <span class = "pull-right">
@@ -40,7 +42,7 @@
 								</a>
 
 								<ul class="dropdown-menu">
-									<li><a href="<%= login_path %>"><i class="icon-user"></i>Profile</a></li>
+									<li><a href="<%= login_path %>"><i class="icon-user"></i> Profile</a></li>
 									<li><%= link_to raw('<i class="icon-off"></i> Logout'), logout_path, method: "delete"%></li>
 								</ul>
 
@@ -55,16 +57,18 @@
              </span>
            <% end %>
 
-						<!-- end: User Dropdown -->
+						<!-- END: User Dropdown -->
 
 					</ul>
 				</div>
 
-				<!-- end: Header Menu -->
+				<!-- END: Header Menu -->
 				
 			</div>
 		</div>
 	</div>
+
+	<!-- END: Header -->
 	
 	<div class="container-fluid">
 		<div class="row-fluid">
