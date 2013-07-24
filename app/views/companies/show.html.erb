@@ -29,7 +29,7 @@
 <% if @company.interviews.empty? == true %>
 	<p><%= @company.name %> has no upcoming interviews.</p>
 <% else %>
-	<%= render :partial => "shared/interview_list", :locals => {:interview_obj => @company} %>
+	<%= render :partial => "shared/interview_list", :locals => {:interview_list => @company.interviews} %>
 <% end %>
 
 <%= render 'shared/event_history' %>

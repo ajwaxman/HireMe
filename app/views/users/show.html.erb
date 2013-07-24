@@ -14,7 +14,7 @@
 <% if @user.interviews.empty? %>
 	<p><%= @user.name %> has no upcoming interviews.</p>
 <% else %>
-	<%= render :partial => "shared/interview_list", :locals => {:interview_obj => @user} %>
+	<%= render :partial => "shared/interview_list", :locals => {:interview_list => @user.interviews} %>
 <% end %>
 
 
@@ -50,6 +50,7 @@
 <div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
 <%= link_to 'Edit Profile', edit_user_path(@user) %> 
 <br/>
+
 <%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info" %>
 
 <<<<<<< HEAD

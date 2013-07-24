@@ -1,8 +1,8 @@
 <h4>Upcoming Interviews</h4>
-<% if Interview.all.empty? %>
+<% if @interviews.empty? %>
   <p>There are no upcoming interviews.</p>
 <% else %>
-  <%= render :partial => "shared/interview_list", :locals => {:interview_obj => @interviews} %>
+  <%= render :partial => "shared/interview_list", :locals => {:interview_list => @interviews} %>
 <% end %>
 
 <br>
