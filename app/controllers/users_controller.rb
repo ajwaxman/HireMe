@@ -26,8 +26,10 @@ class UsersController < ApplicationController
     json_interviews = []
     @interviews.each do |interview|
       i = {
-        :title => interview.company.name,
-        :start => interview.merge_datetime
+        :title => "#{interview.company.name} interview",
+        :start => interview.merge_datetime,
+        :url => interview_path(interview),
+        :allDay => false
       }
       json_interviews << i
     end
