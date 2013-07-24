@@ -1,0 +1,58 @@
+<style type="text/css">
+			body { background: url(/images/bg-login.jpg) !important; }
+		</style>
+
+
+<%= form_tag({:controller => "sessions", :action => "create", :method => "post"}) do %>
+
+<div class="container-fluid">
+		<div class="row-fluid">
+					
+			<div class="row-fluid">
+				<div class="login-box">
+					<h2>Create an account</h2>
+					<form class="form-horizontal" action="" method="post">
+						<fieldset>
+
+							<div class="input-prepend" title="Name">
+								<span class="add-on"><i class="icon-user"></i></span>
+								<input class="input-large span10" id="name" name="user[name]" type="text" placeholder="Your Name"/>
+							</div>
+							<div class="clearfix"></div>
+							
+							<div class="input-prepend" title="Username">
+								<span class="add-on"><i class="icon-user"></i></span>
+								<input class="input-large span10" id="email" name="user[email]" type="text" placeholder="Email"/>
+							</div>
+							<div class="clearfix"></div>
+
+							<div class="input-prepend" title="Password">
+								<span class="add-on"><i class="icon-lock"></i></span>
+								<input class="input-large span10" id="password" name="user[password]" type="password" placeholder="Password"/>
+							</div>
+
+							<div class="clearfix"></div>
+
+							<div class="input-prepend" title="Password_Confirmation">
+								<span class="add-on"><i class="icon-lock"></i></span>
+								<input class="input-large span10" id="password_confirmation" name="user[password_confirmation]" type="password" placeholder="Confirm Password"/>
+							</div>
+
+							<div class="clearfix"></div>
+							
+							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
+
+							<div class="button-login">
+								<%= submit_tag "Sign Up", :class => "btn btn-primary" %>	
+							</div>
+
+							<div class="clearfix"></div>
+					</form>
+					<br/>
+				</div><!--/span-->
+			</div><!--/row-->
+			
+				</div><!--/fluid-row-->
+				
+	</div><!--/.fluid-container-->
+<% end %>

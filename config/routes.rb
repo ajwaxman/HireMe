@@ -10,8 +10,9 @@ HireCrm::Application.routes.draw do
   root :to => 'sessions#new'
 
   get 'login',     to: 'sessions#new',     as: 'login'
-  post 'login',    to: 'sessions#create'
-  get 'signup',    to: 'users#new',        as: 'signup'
+  post 'login',    to: 'sessions#login'
+  get 'signup',    to: 'sessions#signup',  as: 'signup'
+  post 'signup',   to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy', as: 'logout'
 
   get 'jobs/indeed' => 'jobs#indeed_jobs'

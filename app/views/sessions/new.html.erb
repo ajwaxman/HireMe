@@ -3,17 +3,13 @@
 		</style>
 
 
-<%= form_tag({:controller => "sessions", :action => "create", :method => "post"}) do %>
+<%= form_tag({:controller => "sessions", :action => "login", :method => "post"}) do %>
 
 <div class="container-fluid">
 		<div class="row-fluid">
 					
 			<div class="row-fluid">
 				<div class="login-box">
-					<div class="icons">
-						<a href="index.html"><i class="icon-home"></i></a>
-						<a href="#"><i class="icon-cog"></i></a>
-					</div>
 					<h2>Login to your account</h2>
 					<form class="form-horizontal" action="" method="post">
 						<fieldset>
@@ -41,7 +37,7 @@
 					<hr>
 					<h3>Don't have an account?</h3>
 					<p>
-						No problem, <a href="#">click here</a> to Sign Up.
+						<a href="/signup" class="btn btn-primary">Sign up here</a>
 					</p>	
 				</div><!--/span-->
 			</div><!--/row-->
@@ -49,5 +45,4 @@
 				</div><!--/fluid-row-->
 				
 	</div><!--/.fluid-container-->
-
 <% end %>
