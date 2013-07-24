@@ -7,15 +7,15 @@ HireCrm::Application.routes.draw do
   # Custom Routes #
   #################
 
-  get 'signup',    to: 'users#new',        as: 'signup'
+  root :to => 'sessions#new'
+
   get 'login',     to: 'sessions#new',     as: 'login'
-  delete 'logout', to: 'sessions#destroy', as: 'logout'
   post 'login',    to: 'sessions#create'
+  get 'signup',    to: 'users#new',        as: 'signup'
+  delete 'logout', to: 'sessions#destroy', as: 'logout'
 
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
-
-  root :to => 'sessions#new'
 
   ##################
   # RESTful Routes #

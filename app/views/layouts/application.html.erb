@@ -9,7 +9,7 @@
 </head>
 <body>
 	
-	<%= render 'shared/header' %>
+	<%= render 'shared/header' unless @disable_nav %>
 		
 		<% flash.each do |key, value| %>
 			<%= content_tag(:div, value, class: "alert alert-#{key}") %>

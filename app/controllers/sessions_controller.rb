@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
+  
   def new
+    @disable_nav = true
   end
 
   def create
