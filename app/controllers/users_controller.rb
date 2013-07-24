@@ -21,23 +21,17 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
-    
 
-    gon.interview1 = 
-      {
-        :title => "test",
-        :start => '2013-07-24 12:00:00',
-        :end => '2013-07-24 13:00:00',
-        :allDay => false
-      } 
-
-    gon.interview2 = 
-      {
-        :title => "test_2",
-        :start => '2013-07-24 15:00:00',
-        :end => '2013-07-24 16:00:00',
-        :allDay => false
+    @interviews = @user.interviews
+    json_interviews = []
+    @interviews.each do |interview|
+      i = {
+        :title => interview.company.name,
+        :start => interview.merge_datetime
       }
+      json_interviews << i
+    end
+    gon.interview = json_interviews
 
     @relationships = @user.relationships
 

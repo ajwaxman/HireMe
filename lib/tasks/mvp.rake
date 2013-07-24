@@ -143,6 +143,7 @@ namespace :db do
 		  :aasm_state => "open_status",
 		  :company_id => 5,
 		  :job_id => 2, 
+		  :interview_id => 2, 
 		  :user_id => 5
 		)
 
@@ -150,13 +151,15 @@ namespace :db do
 		  :aasm_state => "open_status",
 		  :company_id => 3,
 		  :job_id => 3, 
+		  :interview_id => 3, 
 		  :user_id => 3
 		)
 
 		relationship_4 = Relationship.create(
 		  :aasm_state => "open_status",
 		  :company_id => 1,
-		  :job_id => 5, 
+		  :job_id => 5,
+		  :interview_id => 4,
 		  :user_id => 2
 		)
 		## seed records table

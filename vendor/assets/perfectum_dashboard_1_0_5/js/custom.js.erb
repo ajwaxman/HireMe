@@ -828,10 +828,7 @@ function calendars(){
 		},
 	   events:function(start,end,callback)
       {
-          var event = []; 
-          
-          event.push(gon.all_variables);
-
+          var event = gon.interview; 
          
           callback(event);
       }

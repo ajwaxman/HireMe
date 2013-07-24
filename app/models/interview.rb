@@ -22,4 +22,11 @@ class Interview < ActiveRecord::Base
 
   has_many :records,	:through => :relationship
 
+  def merge_datetime
+    date = self.date
+    time = self.start_time
+    new_datetime = DateTime.new(date.year, date.month, date.day, time.hour, time.min, time.sec)
+    date = new_datetime.strftime("%Y-%m-%d %H:%M:%S")
+  end 
+
 end
