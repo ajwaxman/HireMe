@@ -829,16 +829,9 @@ function calendars(){
 	   events:function(start,end,callback)
       {
           var event = []; 
-          <% Interview.all.each do |interview| %>
           
-          event.push({
-              title: "<%= interview.company.name %>",
-              start: 'interview.start_time',
-              end: 'interview.end_time',
-              allDay: false
-          });
+          event.push(gon.all_variables);
 
-          <% end %>
          
           callback(event);
       }

@@ -33,6 +33,7 @@ gem 'will_paginate'	# => Pagination for search results
 gem 'font-awesome-rails' # => gem to get awesome font icons working
 gem 'jquery-ui-rails'
 gem 'cancan' # => authorization
+gem 'gon'
 
 
 group :development do
