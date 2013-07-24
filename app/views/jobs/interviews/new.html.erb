@@ -18,6 +18,17 @@
 
   <%= render :partial => 'shared/datetime_picker', :locals => {:interview => @interview, :f => f} %>
 
+  <% if current_user.admin? %>
+    <div class="field">
+      <label>Select A User</label>
+      <select name="user_id">
+        <% @users.each do |u|%>
+          <option value=<%= u.id %>><%= u.name %></option>      
+        <% end %>
+      </select>
+    </div>
+  <% end %>
+
   <div class="actions">
     <%= f.submit 'Create Interview', {:class => "btn btn-info"} %>
   </div>
