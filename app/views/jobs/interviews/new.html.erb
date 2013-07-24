@@ -14,20 +14,25 @@
   <% end %>
 
   <%= hidden_field_tag :job_id, @job.id %>
+  <%= hidden_field_tag :user_id, current_user.id %>
 
-  <%= render :partial => 'shared/datetime_picker', :locals => {:f => f} %>
+  <%= render :partial => 'shared/datetime_picker', :locals => {:interview => @interview, :f => f} %>
 
-  <div class="field">
-   <label>Select A User</label>
-     <select name="user_id">
-       <% @users.each do |u|%>
-         <option value=<%= u.id %>><%= u.name %></option>      
-       <% end %>
-     </select>
-   </div>
+  <% if current_user.admin? %>
+    <div class="field">
+      <label>Select A User</label>
+      <select name="user_id">
+        <% @users.each do |u|%>
+          <option value=<%= u.id %>><%= u.name %></option>      
+        <% end %>
+      </select>
+    </div>
+  <% end %>
 
   <div class="actions">
     <%= f.submit 'Create Interview', {:class => "btn btn-info"} %>
   </div>
+
+  <% raise "I'm in my form!" %>
 
 <% end %>
