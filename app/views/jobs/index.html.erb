@@ -10,8 +10,8 @@
 
 <% @jobs.each do |job| %>
   <tr>
-    <td><%= link_to job.company.name, job %></td>
-    <td><%= job.title %></td>
+    <td><%= job.company.name %></td>
+    <td><%= link_to job.title, job %></td>
     <td><%= link_to job.description, job %></td>
     <% if current_user.admin? %>
       <td><%= link_to 'Edit', edit_job_path(job) %></td>
