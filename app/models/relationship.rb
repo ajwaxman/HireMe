@@ -53,12 +53,13 @@ class Relationship < ActiveRecord::Base
   # Establish relationship, along with interview, of models.
   def self.establish_relationship (params, c_id, j_id, u_id)
 
-    int = Interview.new(params)
+    int = Interview.create(params)
     rel = Relationship.find_or_create_by_company_id_and_job_id_and_user_id(c_id, j_id, u_id)
 
+
     int.relationship_id = rel.id
-    rel.interview       = int
-    rel.start_interview           # Interview is now in progress.
+    rel.interview_id    = int.id
+    rel.start_interview
 
     return int, rel
   end

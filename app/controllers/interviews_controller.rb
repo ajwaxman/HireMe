@@ -1,6 +1,6 @@
 class InterviewsController < ApplicationController
   before_filter :admin_only?, :only => [:index]
-  before_filter :current_user?, :only => [:edit, :show, :delete]
+  before_filter :current_user?, :only => [:edit, :show, :delete, :new, :create]
   
   # GET /interviews
   # GET /interviews.json
@@ -49,7 +49,8 @@ class InterviewsController < ApplicationController
   # POST  => /interviews/new/
 
   def create
-    
+    raise "Let's check user_id in params!"
+
     c_id, j_id, u_id = Relationship.find_ids(params[:job_id],params[:user_id])
     int, rel         = Relationship.establish_relationship(params[:interview],c_id, j_id, u_id)
     
@@ -57,10 +58,10 @@ class InterviewsController < ApplicationController
 
     respond_to do |format|
       if rel.save && int.save
-
+        
         Record.create_record(rel)   # Create Record from relationship.
 
-        format.html { redirect_to @user, notice: 'Interview was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }
       else
         format.html { render action: "new" }
