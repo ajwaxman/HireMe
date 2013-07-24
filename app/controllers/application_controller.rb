@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 
   def admin_only?
     unless current_user.role == "admin"
-      redirect_to root_url, alert: "Not authorized"
+      redirect_to user_path(current_user), alert: "Not authorized"
     end
   end
   helper_method :admin_only?
@@ -24,9 +24,10 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user?
 
+# only works with User Controller views
   def current_user_only?
     unless current_user.id == params[:id].to_i || current_user.admin?
-      redirect_to root_url, alert: "Not authorized"
+      redirect_to user_path(current_user), alert: "Not authorized"
     end
   end
   helper_method :current_user_only?
@@ -38,12 +39,12 @@ class ApplicationController < ActionController::Base
 
   def logged_in_only?
     unless current_user.id = true
-      redirect_to root_url, alert: "Not authorized"
+      redirect_to user_path(current_user), alert: "Not authorized"
     end
   end
   helper_method :logged_in_only?
 
   rescue_from CanCan::AccessDenied do |exception|
-    redirect_to root_url, :alert => exception.message
+    redirect_to user_path(current_user), :alert => exception.message
   end
 end
