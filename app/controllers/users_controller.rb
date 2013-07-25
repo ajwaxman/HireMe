@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 
   def dashboard
     @users = User.all
-
     json_interviews = []
     @users.each do |user| 
       user.interviews.each do |interview|
@@ -21,7 +20,7 @@ class UsersController < ApplicationController
     end
     gon.interview = json_interviews
 
-
+    @interviews = Interview.all
 
     respond_to do |format|
       format.html # index.html.erb
