@@ -1,1 +1,86 @@
-<h1>I'm in my dashboard as an admin!</h1>
+<div class="row-fluid sortable">
+        
+  <div class="box span12">
+    <div class="box-header">
+      <h2><i class="icon-th"></i> Upcoming Interviews</h2>
+    </div>
+    <div class="box-content">
+      <ul class="nav tab-menu nav-tabs" id="myTab">
+        <li class="active"><a href="#calendar_tab">Calendar View</a></li>
+        <li><a href="#list">List View</a></li>
+      </ul>
+       
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane active" id="calendar_tab">
+          <div class="row-fluid">
+
+            <%= render 'shared/calendar12' %>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="list">
+          <div class="row-fluid sortable">    
+            <div class="box span12">
+              <div class="box-content">
+                <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                  <thead>
+                    <tr>
+                    	<th>Student</th>
+                      <th>Company</th>
+                      <th>Job Title</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>   
+                  <tbody>
+
+                 <% @users.each do |user| %>
+                    <% user.interviews.each do |interview| %>
+                      <tr>
+                      	<td><%= user.name %></td>
+                        <td><%= interview.company.name %></td>
+                        <td><%= interview.job.title %></td>
+                        <td><%= interview.date.strftime('%-m/%-d/%Y') %></td>
+                        <td><%= interview.start_time.strftime('%-l:%M %P') %></td>
+                        <td class="center">
+                          <span class="label label-warning"><%= interview.relationship.aasm_state %></span>
+                        </td>
+                        <td class="center">
+
+                          <a class="btn btn-success" href="<%= interview_path(interview) %>">
+                            <i class="icon-zoom-in icon-white"></i>  
+                          </a>
+
+                          <a class="btn btn-info" href="<%= edit_interview_path(interview) %>">
+                            <i class="icon-edit icon-white"></i>  
+                          </a>
+
+                          <%= link_to raw('<i class="icon-trash icon-white"></i>'), interview, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+
+                        </td>
+                      </tr>
+                    <% end %>
+                  <% end %>
+
+                  </tbody>
+
+                </table>            
+              </div>
+            </div><!--/span-->
+
+          </div><!--/row-->
+
+        </div>
+      </div>
+    </div>
+  </div><!--/span-->
+      
+</div>
+
+
+
+
+
+
