@@ -28,20 +28,20 @@ class UsersController < ApplicationController
     start_date = DateTime.now.beginning_of_week(:sunday) - (weeks_back * days_in_week)
     end_date = start_date + ((weeks_back + weeks_forward) * days_in_week)
     array = Array.new
+    axis_array = Array.new
     
-    # Interview.where(:date => date).count
-     
-
-    # interview_count = 0
-    # (start_date..(start_date+7)).each do |date|
-      
-    #   Interview.where(:date => date).count 
-    # end
 
     (start_date..end_date).step(7).each_with_index do |date, index| 
-      array << [date, index]
+      interview_count = 0
+      (date.strftime("%Y-%m-%d")..(date+7).strftime("%Y-%m-%d")).each do |date|
+        interview_count += Interview.where(:date => date).count 
+      end
+      array << [index, interview_count]
+      axis_array << [index, date.strftime("%Y-%m-%d")]
     end
+    
     gon.chart_data = array
+    gon.axis_data = axis_array
 
     
 
