@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to user, notice: "Logged in!"
+      redirect_to (user.role == "admin" ? dashboard_path : user), notice: "Logged in!"
     else
       flash[:alert] = "Email or password is invalid."
       redirect_to root_url
