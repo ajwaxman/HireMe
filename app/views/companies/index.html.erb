@@ -11,11 +11,11 @@
         <div id="image-<%= i %>" class="masonry-thumb company-gallery">
             <div class="wrapper-cell">
               <div>
-              <%= link_to image_tag(company.logo_url, :size => "150x150"), company_path(company) %>
+              <%= link_to image_tag(company.logo_url, :size => "150x150", :title => company.name), company_path(company) %>
               </div>
             </div>
         </div>
-
+        
       <% end %>
                       
       </div>

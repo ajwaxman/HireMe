@@ -29,6 +29,10 @@
 .wrapper-cell {
 	display: table-cell;
 	vertical-align: middle;
+
+	div img {
+		max-height: 150px;
+	}
 }
 
 .navbar-inner a {
