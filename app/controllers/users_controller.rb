@@ -5,7 +5,27 @@ class UsersController < ApplicationController
   # load_and_authorize_resource
 
   def dashboard
-    
+    @users = User.all
+    json_interviews = []
+    @users.each do |user| 
+      user.interviews.each do |interview|
+        i = {
+          :title => "#{interview.company.name} interview",
+          :start => interview.merge_datetime,
+          :url => interview_path(interview),
+          :allDay => false
+        }
+        json_interviews << i
+      end
+    end
+    gon.interview = json_interviews
+
+    @interviews = Interview.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @users }
+    end
   end
 
   # GET /users
