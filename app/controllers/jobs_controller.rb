@@ -62,7 +62,6 @@ class JobsController < ApplicationController
   def edit
     @job = Job.find(params[:id])
     @company = Company.find(@job.company_id)
-
   end
 
   # POST  => /companies/:company_id/jobs/new/

@@ -1,11 +1,22 @@
 <style type="text/css">
-			body { background: url(/images/bg-login.jpg) !important; }
-		</style>
+	body { background: url(/images/bg-login.jpg) !important; }
+</style>
 
+<%= form_for @user, :url => {:controller => "sessions", :action => "create", :method => "post"} do |f| %>
 
-<%= form_tag({:controller => "sessions", :action => "create", :method => "post"}) do %>
+	<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2>There were <%= pluralize(@user.errors.count, "error") %> preventing the creation of your User Account.</h2>
 
-<div class="container-fluid">
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<div class="container-fluid">
 		<div class="row-fluid">
 					
 			<div class="row-fluid">
