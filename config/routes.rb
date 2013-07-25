@@ -15,6 +15,8 @@ HireCrm::Application.routes.draw do
   post 'signup',   to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy', as: 'logout'
 
+  get 'dashboard', to: 'users#dashboard'
+
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 

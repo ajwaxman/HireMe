@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
 
-  before_filter :admin_only?, :only => [:index]
+  before_filter :admin_only?, :only => [:index, :dashboard]
   before_filter :current_user_only?, :only => [:edit, :show, :delete]
   # load_and_authorize_resource
+
+  def dashboard
+    
+  end
 
   # GET /users
   # GET /users.json

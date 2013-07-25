@@ -81,6 +81,7 @@
 
 						<%= nav_link raw('<i class="icon-home icon-white"></i><span class="hidden-tablet"> Home</span>'), user_path(current_user), {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
+						<%= nav_link raw('<i class="icon-home icon-white"></i><span class="hidden-tablet"> Dashboard</span>'), dashboard_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
 						<%= nav_link raw('<i class="icon-user icon-white"></i><span class="hidden-tablet"> Students</span>'), users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
