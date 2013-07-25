@@ -27,6 +27,21 @@ namespace :db do
 	user_5.password_confirmation = "avi"
 	user_5.save
 
+	user_6 = User.find(6)
+	user_6.password = "katie"
+	user_6.password_confirmation = "katie"
+	user_6.save
+
+	user_7 = User.find(7)
+	user_7.password = "ruthie"
+	user_7.password_confirmation = "ruthie"
+	user_7.save
+
+	user_8 = User.find(8)
+	user_8.password = "kirin"
+	user_8.password_confirmation = "kirin"
+	user_8.save
+
 	puts "\nRake task completed - users should have pwd for MVP.\n"
 
   end
