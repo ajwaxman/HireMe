@@ -73,9 +73,15 @@
 <%= render 'shared/event_history' %>
 
 
-	<div style="border-bottom: 1px dotted; margin:20px 0 20px 0;"></div>
+<div style="border-bottom: 1px dotted; margin:20px 0 20px 0;"></div>
+
+<%= link_to 'Add new job', new_company_job_path(@company), :class => "btn btn-info" %>
+
+<br>
+<br>
 
 <% if current_user.admin? %>
 	<%= link_to 'Edit', edit_company_path(@company) %>
 <% end %>
-<%= link_to 'Add new job', new_company_job_path(@company), :class => "btn btn-info" %>
+
+<br>

@@ -120,7 +120,7 @@
 				<hr>
 				<ul class="breadcrumb">
 					<li>
-						<a href="<%= user_path(current_user) %>">Home</a> <span class="divider">/</span>
+						<a href="<%= current_user.role == "admin" ? dashboard_path : user_path(current_user) %>">Home</a> <span class="divider">/</span>
 					</li>
 					<li>
 						<a href="#"><%= controller_name.capitalize %></a>
