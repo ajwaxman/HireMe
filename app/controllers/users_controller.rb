@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # load_and_authorize_resource
 
   def dashboard
+    @interviews = Interview.all
     @users = User.all
     json_interviews = []
     @users.each do |user| 
@@ -19,8 +20,30 @@ class UsersController < ApplicationController
       end
     end
     gon.interview = json_interviews
+        
 
-    @interviews = Interview.all
+    weeks_back = 5
+    weeks_forward = 5
+    days_in_week = 7
+    start_date = DateTime.now.beginning_of_week(:sunday) - (weeks_back * days_in_week)
+    end_date = start_date + ((weeks_back + weeks_forward) * days_in_week)
+    array = Array.new
+    
+    # Interview.where(:date => date).count
+     
+
+    # interview_count = 0
+    # (start_date..(start_date+7)).each do |date|
+      
+    #   Interview.where(:date => date).count 
+    # end
+
+    (start_date..end_date).step(7).each_with_index do |date, index| 
+      array << [date, index]
+    end
+    gon.chart_data = array
+
+    
 
     respond_to do |format|
       format.html # index.html.erb
