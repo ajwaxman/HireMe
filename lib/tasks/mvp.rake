@@ -39,7 +39,26 @@ namespace :db do
 		  :role => "admin"
 		)
 
+		user_6 = User.create(
+		  :email => "katie@flatironschool.com",
+		  :name => "Katie Ishibashi",
+		  :phone => "212-555-6666",
+		  :role => "student"
+		)
 
+		user_7 = User.create(
+		  :email => "ruthie@flatironschool.com",
+		  :name => "Ruthie Nachmany",
+		  :phone => "646-888-9999",
+		  :role => "student"
+		)
+
+		user_8 = User.create(
+		  :email => "kirin@flatironschool.com",
+		  :name => "Kirin Masood",
+		  :phone => "917-888-9999",
+		  :role => "student"
+		)
 		## seed companies table
 
 		company_1 = Company.create(
@@ -94,9 +113,58 @@ namespace :db do
 		)
 
 		job_5 = Job.create(
-		  :company_id => 1,
+		  :company_id => 3,
 		  :description => "We're looking for a software architect to lead our team of developers here at Artsy.",
 		  :title => "Senior Software Developer"
+		)
+
+		job_6 = Job.create(
+		  :company_id => 4,
+		  :description => "Facebook is seeking an experienced Software Engineer to join the Infrastructure Engineering team. The position is full-time and is based in our main office in Menlo Park, CA. There are minimal travel requirements for this position. Infrastructure Engineering builds large, distributed components that run Facebook. Our code serves millions of requests per second, and it does so with subsecond latency and in a fault tolerant manner. We handle everything from Facebook scale data storage, to synchronization and coordination of large server clusters, to providing a runtime environment for front end Facebook code. We are looking for candidates who share a passion for tackling complexity and building platforms that can scale through multiple orders of magnitude.
+Responsibilities
+Design core, backend software components
+Code using primarily C/C++, Java, and PHP
+Interface with other teams to incorporate their innovations and vice versa
+Conduct design and code reviews
+Analyze and improve efficiency, scalability, and stability of various system resources
+Requirements
+B.S. Computer Science or related field preferred
+Extensive experience building large-scale server applications
+Expert knowledge developing and debugging in C/C++ or Java/C#
+Knowledge of Perl, PHP or Python a plus
+Experience with operating system internals, filesystems, programming language design, compilers also a plus",
+		  :title => "Haskell Developer"
+		)
+
+		job_7 = Job.create(
+		  :company_id => 2,
+		  :description => ""Betaworks is a large part of what’s moving us forward: inspiring us, competing with us, making us jealous and dismissive and goading our creative monsters to come out and play." - Wired
+ 
+Are you an iOS engineer with an inexplicable urge to conquer mobile terrain like it’s the wild west? Are you excited by apps that hit the top of the app store in less than a week? Then hey, 
+nice to meet you. We’re betaworks. 
+ 
+
+About you: 
+ 
+You are a creative, risky thinker with a track record of shipping. 
+ 
+Experience building, testing and distributing iOS apps
+Object Oriented programming skills in a client/server environment
+Experience incorporating 3rd party APIs 
+Strong mastery of Objective-C and the all the necessary tools (Xcode, iOS SDK, etc)
+Experience working with web services, JSON, and XML
+ 
+
+About us: 
+ 
+We’re a studio of small dev-heavy teams with sharp product focus. Over the past few months, we’ve built 6 products that we’re incredibly excited about [see => Giphy, Dots, Telecast, Blend, Done Not Done and Poncho]. We’re also very invested in improving the consumption and discovery of content [see => Digg, Digg Reader, Instapaper, Bloglovin, and Tapestry] Check out betaworks.com for more information on all of our studio products, plus our investments, events and other internal media experiments. ",
+		  :title => "Bondsy iOS Growth Hacker"
+		)
+
+		job_8 = Job.create(
+		  :company_id => 3,
+		  :description => "We're looking for a software architect to lead our team of developers here at Artsy.",
+		  :title => "Super Senior Software Developer"
 		)
 
 		## seed interviews table
