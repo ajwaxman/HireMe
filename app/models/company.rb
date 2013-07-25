@@ -10,7 +10,7 @@
 #
 
 class Company < ActiveRecord::Base
-  attr_accessible :name, :website
+  attr_accessible :name, :website, :logo_url
 
   has_many :relationships
   has_many :jobs

@@ -1,3 +1,12 @@
 .alert{
 	margin-right: 25px
 }
+
+.company_logo_div {
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.company_logo_div img {
+  vertical-align: middle !important;
+}

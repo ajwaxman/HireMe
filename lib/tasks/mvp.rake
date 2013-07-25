@@ -63,27 +63,32 @@ namespace :db do
 
 		company_1 = Company.create(
 		  :name => "Artsy",
-		  :website => "http://artsy.net/"
+		  :website => "http://artsy.net/",
+		  :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0008/2612/82612v6-max-250x250.png"
 		)
 
 		company_2 = Company.create(
 		  :name => "Bondsy",
-		  :website => "http://www.bondsy.com/"
+		  :website => "http://www.bondsy.com/",
+		  :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0018/2288/182288v4-max-250x250.png"
 		)
 
 		company_3 = Company.create(
 		  :name => "Amazon",
-		  :website => "http://www.amazon.com/"
+		  :website => "http://www.amazon.com/",
+		  :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0000/3898/3898v1-max-250x250.jpg"
 		)
 
 		company_4 = Company.create(
 		  :name => "Facebook",
-		  :website => "http://www.facebook.com/"
+		  :website => "http://www.facebook.com/",
+		  :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0000/4561/4561v1-max-250x250.png"
 		)
 
 		company_5 = Company.create(
 		  :name => "Google",
-		  :website => "http://www.google.com/"
+		  :website => "http://www.google.com/",
+		  :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0002/9578/29578v31-max-250x250.png"
 		)
 
 		## seed jobs table
