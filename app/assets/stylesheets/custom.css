@@ -7,6 +7,12 @@
   padding-bottom: 25%;
 }
 
-.company_logo_div img {
-  vertical-align: middle !important;
+.interview_title {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.interview_overview_list li {
+  list-style-type: none;
 }

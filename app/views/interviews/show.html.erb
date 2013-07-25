@@ -1,19 +1,60 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Start time:</b>
-  <%= @interview.start_time %>
-</p>
+<div class="row-fluid sortable">
 
-<p>
-  <b>End time:</b>
-  <%= @interview.end_time %>
-</p>
-
-<p>
-  <b>Relationship:</b>
-  <%= @interview.relationship_id %>
-</p>
+  <div class="box span4">
+    <div class="box-content pagination-centered company_logo_div">
+      <%= image_tag @interview.company.logo_url, :size => "200x200" %>
+    </div>
+  </div><!--/span-->
+  <div class="box span8">
+    <div class="box-content">
+      <h1><%= @interview.job.title %></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>               
+     </div>
+  </div><!--/span-->
+</div><!--/row-->
+<div class="row-fluid sortable">
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>Interview Overview</h2>
+    </div>
+    <div class="box-content">
+        <% if current_user.admin? %>
+          <p><strong>Student</strong>: <%= @interview.user.name%></p>
+        <% end %>
+        <p><strong>Position</strong>: <%= @interview.job.title %></p>
+        <p><strong>Interview Date</strong>:<%= @interview.date.strftime('%-m/%-d/%Y') %></p>
+        <p><strong>Start Time</strong>: <%= @interview.start_time.strftime('%-l:%M %P') %></p>               
+    </div>
+  </div><!--/span-->
+  
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>People</h2>
+    </div>
+    <div class="box-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>                     
+    </div>
+  </div><!--/span-->
+  
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>TBD</h2>
+    </div>
+    <div class="box-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>                 
+    </div>
+  </div><!--/span-->
+</div><!--/row-->
+      
+<hr>
 
 <div style="border-bottom: 1px dotted"></div>
 <%= link_to 'Edit', edit_interview_path(@interview) %> |
