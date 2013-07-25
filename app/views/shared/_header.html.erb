@@ -46,7 +46,7 @@
 									<li><%= link_to raw('<i class="icon-off"></i> Logout'), logout_path, method: "delete"%></li>
 								</ul>
 
-								<a href="<%= user_path(current_user) %>" class = "remove-hyperlink">Whaddup <%= current_user.name.split.first %>!</a>
+								<a href="<%= user_path(current_user) %>" class = "remove-hyperlink">Hello, <%= current_user.name.split.first %>!</a>
 
 							</span>
 
