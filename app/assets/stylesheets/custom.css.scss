@@ -17,3 +17,21 @@
 .interview_overview_list li {
   list-style-type: none;
 }
+
+.company-gallery {
+	background: grey;
+	height: 150px;
+	width: 150px;
+	display: table;
+	text-align: center
+}
+
+.wrapper-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.navbar-inner a {
+	text-decoration:none;
+	color: white;
+}

@@ -3,20 +3,19 @@
 <div class="row-fluid sortable">
   <div class="box span12">
     <div class="box-header" data-original-title>
-      <h2><i class="icon-picture"></i> Gallery</h2>
-      <div class="box-icon">
-        <a href="#" id="toggle-fullscreen" class="hidden-phone hidden-tablet"><i class="icon-fullscreen"></i></a>
-        <a href="#" class="btn-setting"><i class="icon-wrench"></i></a>
-        <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
-        <a href="#" class="btn-close"><i class="icon-remove"></i></a>
-      </div>
+      <h2><i class="icon-picture"></i> Company Gallery</h2>
     </div>
     <div class="box-content">
       <div class="masonry-gallery">
 
       <% @companies.each_with_index do |company, i| %>
-        <div id="image-<%= i %>" class="masonry-thumb">
-          <a style="background:url(<%= company.logo_url %>); size: 200x200;" title="<%= company.name %>" href="<%= company_path(company) %>"><img class="grayscale" src="<%= company.logo_url %>"></a>
+
+        <div id="image-<%= i %>" class="masonry-thumb company-gallery">
+            <div class="wrapper-cell">
+              <div>
+              <%= link_to image_tag(company.logo_url, :size => "150x150"), company_path(company) %>
+              </div>
+            </div>
         </div>
 
       <% end %>
@@ -48,38 +47,6 @@
 
 <div class="clearfix"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Website</th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @companies.each do |company| %>
-  <tr>
-    <td>&nbsp;  <%= link_to company.name, company %></td>
-    <td>&nbsp;  <%= link_to company.website, company.website %></td>
-    <% if current_user.admin? %>
-      <td>&nbsp; | <%= link_to 'Edit', edit_company_path(company) %></td>
-      <td>&nbsp; | <%= link_to 'Delete', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <% end %>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<br>
 
 <%= link_to 'New Company', new_company_path, :class => "btn btn-info" %>
