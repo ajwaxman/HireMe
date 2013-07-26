@@ -3,11 +3,11 @@ module UsersHelper
   # Interviewing Statistics
 
   def total_students
-    @users.count{|u| u.role = "student"}
+    User.where(:role => 'student').count
   end
 
   def total_students_interviewing
-    @users.count{|u| u.interviews.any?}
+    @users.count{|u| u.student? && u.interviews.any? }
   end
 
   def percentage_not_interviewing
