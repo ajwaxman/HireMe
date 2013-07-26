@@ -1,26 +1,9 @@
 <h1>Available Jobs</h1>
 
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-  </tr>
-
-<% @jobs.each do |job| %>
-  <tr>
-    <td><%= job.company.name %></td>
-    <td><%= link_to job.title, job %></td>
-    <td><%= link_to job.description, job %></td>
-    <% if current_user.admin? %>
-      <td><%= link_to 'Edit', edit_job_path(job) %></td>
-      <td><%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <% end %>
-  </tr>
+<% if @jobs.empty? %>
+  <p>There are no jobs in the system.</p>
+<% else %>
+  <%= render :partial => "shared/job_list", :locals => {:job_list => @jobs} %>
 <% end %>
-</table>
-
-<br>
 
 <%= link_to 'Add Job', new_job_path, :class => "btn btn-info" %>
