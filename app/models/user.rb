@@ -50,13 +50,5 @@ class User < ActiveRecord::Base
   def guest?
     self.role == "guest"
   end
-
-  def self.already_exists?(email)
-    if !User.find_by_email(email).nil? == true
-      flash[:alert] = "User with given email already exists."
-      redirect_to signup_path
-      return
-    end
-  end
-
+  
 end

@@ -1,19 +1,22 @@
 module UsersHelper
 
+  # Interviewing Statistics
+
   def total_students
-    @users.select {|u| u.role ="student"}.size.to_f
+    User.where(:role => 'student').count
   end
 
   def total_students_interviewing
-    @users.select {|u| !u.interviews.empty?}.size.to_f
+    @users.count{|u| u.student? && u.interviews.any? }
   end
 
   def percentage_not_interviewing
-    ((total_students - total_students_interviewing) / total_students * 100)
+    ((total_students - total_students_interviewing) / total_students.to_f * 100)
   end
 
   def percentage_interviewing
     100.5 - percentage_not_interviewing
   end
+
   
 end

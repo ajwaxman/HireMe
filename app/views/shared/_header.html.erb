@@ -87,7 +87,9 @@
 							<%= nav_link raw('<i class="icon-home icon-white"></i><span class="hidden-tablet"> Dashboard</span>'), dashboard_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 						<% end %>
 
-						<%= nav_link raw('<i class="icon-user icon-white"></i><span class="hidden-tablet"> Students</span>'), users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<% if current_user.admin? %>
+							<%= nav_link raw('<i class="icon-user icon-white"></i><span class="hidden-tablet"> Students</span>'), users_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
+						<% end %>
 
 						<%= nav_link raw('<i class="icon-briefcase icon-white"></i><span class="hidden-tablet"> Companies</span>'), companies_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
