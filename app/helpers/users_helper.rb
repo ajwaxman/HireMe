@@ -15,5 +15,6 @@ module UsersHelper
   def percentage_interviewing
     100.5 - percentage_not_interviewing
   end
+
   
 end
