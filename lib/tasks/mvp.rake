@@ -562,8 +562,8 @@ namespace :db do
 		  :relationship_id => 10,
 		  :company => "Artsy",
 		  :job => "Senior Software Engineer",
-		  :user => "Carlos Lazos",
-		  :event => "Carlos Lazos liked the Senior Software Engineer position at Artsy."
+		  :user => "Carlos Lazo",
+		  :event => "Carlos Lazo liked the Senior Software Engineer position at Artsy."
 		)
 
 		record_16 = Record.create(
