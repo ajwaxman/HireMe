@@ -23,42 +23,23 @@ module UsersHelper
 
 
 
-# old
-    weeks_back = 3
-    weeks_forward = 4
-    days_in_week = 7
-    start_date = DateTime.now.beginning_of_week(:sunday) - (weeks_back * days_in_week)
-    end_date = start_date + ((weeks_back + weeks_forward) * days_in_week)
-    array = Array.new
-    axis_array = Array.new
-    (start_date..end_date).step(7).each_with_index do |date, index| 
-      interview_count = 0
-      (date.strftime("%Y-%m-%d")..(date+7).strftime("%Y-%m-%d")).each do |date|
-        interview_count += Interview.where(:date => date).count 
-      end
-      array << [index, interview_count]
-      axis_array << [index, date.strftime("%Y-%m-%d")]
-    end
-    gon.chart_data = array
-    gon.axis_data = axis_array
+# new_old
+    # start_date = DateTime.now - 14
+    # end_date = DateTime.now + 21
+    # array = Array.new
+    # axis_array = Array.new
+    # (start_date..end_date).step(1).each_with_index do |date, index| 
+    #   interview_count = 0
+    #   (date.strftime("%Y-%m-%d")..(date+1).strftime("%Y-%m-%d")).each do |date|
+    #     interview_count += Interview.where(:date => date).count 
+    #   end
+    #   array << [index, interview_count]
+    #   axis_array << [index, date.strftime("%Y-%m-%d")]
+    # end
+    # gon.chart_data = array
+    # gon.axis_data = axis_array
 
-# new
-    def interviews_past
-      DateTime.now - 14
+# new_incomplete
 
-    end
-
-    def interviews_future
-      DateTime.now + 21
-    end
-
-    def interviews_chart
-      (interviews_past..interviews_future).each_with_index do |date, index| 
-      interview_count = 0
-      (date.strftime("%Y-%m-%d")..(date+7).strftime("%Y-%m-%d")).each do |date|
-        interview_count += Interview.where(:date => date).count 
-      end
-    end
-
-
+  
 end
