@@ -60,8 +60,8 @@ class InterviewsController < ApplicationController
         
         Record.write_record(rel)   # Create Record from relationship.
 
-        format.html { redirect_to @user, notice: 'Interview was successfully created.' }
-        format.json { render json: @interview, status: :created, location: @interview }
+        format.html { redirect_to relationship_path(rel), notice: 'Interview was successfully created.' }
+        format.json { render json: relationship_path(rel), status: :created, location: @interview }
       else
         format.html { render action: "new" }
         format.json { render json: @interview.errors, status: :unprocessable_entity }

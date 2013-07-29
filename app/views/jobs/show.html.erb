@@ -13,6 +13,8 @@
     <% case @state %>
     <% when "like" %>
       You like this job!
+    <% when "interviewing" %>
+      You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', relationship_path(@relationship) %>
     <% else %>
       You have no relationship with this job
     <% end %>

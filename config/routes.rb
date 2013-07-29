@@ -30,21 +30,26 @@ HireCrm::Application.routes.draw do
   get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
   post 'jobs/:id/unlike_company' => 'states#unlike_company'
 
-  get 'jobs/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
-  post 'jobs/:id/rel_like_company' => 'states#rel_like_company'
+  get 'relationships/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
+  post 'relationships/:id/rel_like_company' => 'states#rel_like_company'
 
-  get 'jobs/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
-  post 'jobs/:id/rel_unlike_company' => 'states#rel_unlike_company'
+  get 'relationships/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
+  post 'relationships/:id/rel_unlike_company' => 'states#rel_unlike_company'
 
-  get 'jobs/:id/rel_company_declined' => 'states#rel_company_declined'
-  post 'jobs/:id/rel_company_declined' => 'states#rel_company_declined'
+  get 'relationships/:id/rel_company_declined' => 'states#rel_company_declined'
+  post 'relationships/:id/rel_company_declined' => 'states#rel_company_declined'
 
-  get 'jobs/:id/rel_user_declined' => 'states#rel_user_declined'
-  post 'jobs/:id/rel_user_declined' => 'states#rel_user_declined'
+  get 'relationships/:id/rel_user_declined' => 'states#rel_user_declined'
+  post 'relationships/:id/rel_user_declined' => 'states#rel_user_declined'
 
-  get 'jobs/:id/rel_offer_received' => 'states#rel_offer_received'
-  post 'jobs/:id/rel_offer_received' => 'states#rel_offer_received'
-  
+  get 'relationships/:id/rel_offer_received' => 'states#rel_offer_received'
+  post 'relationships/:id/rel_offer_received' => 'states#rel_offer_received'
+
+  get 'relationships/:id/accept_offer' => 'states#accept_offer'
+  post 'relationships/:id/accept_offer' => 'states#accept_offer'
+
+  get 'relationships/:id/reject_offer' => 'states#reject_offer'
+  post 'relationships/:id/reject_offer' => 'states#reject_offer'  
 
   ##################
   # RESTful Routes #
