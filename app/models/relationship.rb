@@ -27,16 +27,54 @@ class Relationship < ActiveRecord::Base
   include AASM
 
   aasm do
-    state :open_status, :initial => true
+    state :start, :initial => true
+    state :like
     state :interviewing
-    state :close_status
+    state :pending
+    state :user_decline
+    state :company_decline
+    state :offer_received
+    state :offer_accepted
+    state :offer_declined
 
-    event :start_interview do
-      transitions :from => :open_status, :to => :interviewing
+    event :like_company do
+      transitions :from => :start, :to => :like
     end
 
-    event :end_interview do
-      transitions :from => :interviewing, :to => :close_status
+    event :no_interview do
+      transitions :from => :like, :to => :company_decline
+    end
+
+    event :start_interview do
+      transitions :from => :like, :to => :interviewing
+    end
+
+    event :post_interview do
+      transitions :from => :interviewing, :to => :pending
+    end
+
+    event :additional_interview do
+      transitions :from => :pending, :to => :interviewing
+    end
+
+    event :user_declines do
+      transitions :from => :pending, :to => :user_decline
+    end
+
+    event :company_declines do
+      transitions :from => :pending, :to => :company_decline
+    end
+
+    event :receives_offer do
+      transitions :from => :pending, :to => :offer_received
+    end
+
+    event :declines_offer do
+      transitions :from => :offer_received, :to => :offer_declined
+    end
+
+    event :accepts_offer do
+      transitions :from => :offer_received, :to => :offer_accepted
     end
 
   end
