@@ -7,6 +7,7 @@ module UsersHelper
   end
 
   def students_receiving_offers
+  end
 
   # Interviewing Statistics
 
