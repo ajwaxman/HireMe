@@ -60,10 +60,11 @@
 
 <div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
 
-<div class="switch" data-on="primary" data-off="info">
-    <input type="checkbox" checked />
-</div>
-
+<% if @state.nil? || @state == "start" %>
+  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success" %>
+<% else %> 
+  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn" %>
+<% end %>
 
 <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
 

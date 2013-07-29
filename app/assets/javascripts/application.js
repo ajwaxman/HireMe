@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/bootstrap-switch.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery-1.9.1.min.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery-migrate-1.0.0.min.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery-ui-1.10.0.custom.min.js
@@ -39,4 +40,3 @@
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.knob.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.sparkline.min.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/custom.js
-//= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/bootstrap-switch.js

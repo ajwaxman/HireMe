@@ -20,6 +20,12 @@ HireCrm::Application.routes.draw do
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 
+  get 'jobs/:id/like_company' => 'states#like_company', as: 'like_company'
+  post 'jobs/:id/like_company' => 'states#like_company'
+
+  get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
+  post 'jobs/:id/unlike_company' => 'states#unlike_company'
+
   ##################
   # RESTful Routes #
   ##################

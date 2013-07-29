@@ -34,7 +34,7 @@
               , offLabel = "OFF"
               , icon = false;
 
-            $.each(['switch-mini', 'switch-small', 'switch-large'], function (i, el) {
+            $.each(['switch', 'switch-small', 'switch-large'], function (i, el) {
               if (classes.indexOf(el) >= 0)
                 myClasses = el;
             });
