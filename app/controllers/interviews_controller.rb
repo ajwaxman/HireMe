@@ -58,7 +58,7 @@ class InterviewsController < ApplicationController
     respond_to do |format|
       if rel.save && int.save
         
-        Record.create_record(rel)   # Create Record from relationship.
+        Record.write_record(rel)   # Create Record from relationship.
 
         format.html { redirect_to @user, notice: 'Interview was successfully created.' }
         format.json { render json: @interview, status: :created, location: @interview }

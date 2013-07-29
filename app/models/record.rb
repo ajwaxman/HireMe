@@ -16,18 +16,18 @@ class Record < ActiveRecord::Base
   attr_accessible :event, :relationship_id, :company, :job, :user
 
   belongs_to :relationship
+  has_one		 :event
 
   default_scope :order => 'created_at DESC'
 
-  # Create record based on current state of relationship.
-	def self.create_record(rel)
+  # Write record based on current state of relationship.
+	def self.write_record(rel)
 
 		rec = Record.new(
 				:relationship_id => rel.id,
 				:company => rel.company.name,
 				:job => rel.job.title,
 				:user => rel.user.name)
-
 
 		# These will be replaced with lookups from "event" model.
 		case rel.aasm_state
@@ -39,5 +39,3 @@ class Record < ActiveRecord::Base
 	end
 
 end
-
-# :event => 
