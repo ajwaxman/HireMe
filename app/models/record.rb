@@ -13,11 +13,11 @@
 #
 
 class Record < ActiveRecord::Base
-  attr_accessible :relationship_id, :company, :job, :user
+  attr_accessible :relationship_id, :event_id, :company, :job, :user, :event
 
   belongs_to :relationship
-  has_one 	 :event
-  
+  belongs_to :event
+
   default_scope :order => 'created_at DESC'
 
   # Write record based on current state of relationship.

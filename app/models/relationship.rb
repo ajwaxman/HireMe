@@ -21,6 +21,7 @@ class Relationship < ActiveRecord::Base
   belongs_to :interview
   
   has_many   :records
+  has_many   :events, :through => :records
 
   default_scope :order => 'created_at ASC'
 

@@ -444,167 +444,176 @@ namespace :db do
 		:interview_id => 20, 
 		:user_id => 8
 		)
+
+		## seed events table
+
+		event_1 = Event.create(
+			:description => "<%=record.user%> has liked the <%=record.job%> position at <%=record.company%>.")
+
+		event_2 = Event.create(
+			:description => "<%=record.user%> has an interview scheduled at <%=record.company%> for the <%=record.job%> position. It starts on <%=record.relationship.interview.start_time.strftime('%B %d at %I:%M %p')%>")
+
 		## seed records table
 
 		record_1 = Record.create(
 		  :relationship_id => 1,
+		  :event_id => 1,
 		  :company => "Bondsy",
 		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake liked the Sinatra Developer position at Bondsy."
+		  :user => "Christopher Lake"
 		)
 
 		record_2 = Record.create(
 		  :relationship_id => 1,
+		  :event_id => 2,
 		  :company => "Bondsy",
 		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake has an interview scheduled at Bondsy for the Sinatara Developer position. It starts on July 28, 2013 at 10am."
+		  :user => "Christopher Lake"
 		)
 
-		record_3 = Record.create(
-		  :relationship_id => 2,
-		  :company => "Google",
-		  :job => "SQL Engineer",
-		  :user => "Avi Flombaum",
-		  :event => "Avi Flombaum liked the SQL Engineer position at Google."
-		)
+		# record_3 = Record.create(
+		#   :relationship_id => 2,
+		#   :company => "Google",
+		#   :job => "SQL Engineer",
+		#   :user => "Avi Flombaum",
+		#   :event => "Avi Flombaum liked the SQL Engineer position at Google."
+		# )
 
-		record_4 = Record.create(
-		  :relationship_id => 3,
-		  :company => "Amazon",
-		  :job => "Rails Developer",
-		  :user => "David Manaster",
-		  :event => "David Manaster liked the Rails Developer position at Amazon."
-		)
+		# record_4 = Record.create(
+		#   :relationship_id => 3,
+		#   :company => "Amazon",
+		#   :job => "Rails Developer",
+		#   :user => "David Manaster",
+		#   :event => "David Manaster liked the Rails Developer position at Amazon."
+		# )
 
-		record_5 = Record.create(
-		  :relationship_id => 4,
-		  :company => "Artsy",
-		  :job => "Senior Software Engineer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
-		)
+		# record_5 = Record.create(
+		#   :relationship_id => 4,
+		#   :company => "Artsy",
+		#   :job => "Senior Software Engineer",
+		#   :user => "Christopher Lake",
+		#   :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
+		# )
 
-		record_6 = Record.create(
-		  :relationship_id => 6,
-		  :company => "Bondsy",
-		  :job => "Sinatra Developer",
-		  :user => "Kirin Masood",
-		  :event => "Kirin Masood liked the Sinatra Developer position at Bondsy."
-		)
+		# record_6 = Record.create(
+		#   :relationship_id => 6,
+		#   :company => "Bondsy",
+		#   :job => "Sinatra Developer",
+		#   :user => "Kirin Masood",
+		#   :event => "Kirin Masood liked the Sinatra Developer position at Bondsy."
+		# )
 
-		record_7 = Record.create(
-		  :relationship_id => 7,
-		  :company => "Facebook",
-		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake has an interview scheduled at Facebook for the Sinatara Developer position. It starts on July 28, 2013 at 10am."
-		)
+		# record_7 = Record.create(
+		#   :relationship_id => 7,
+		#   :company => "Facebook",
+		#   :job => "Sinatra Developer",
+		#   :user => "Christopher Lake",
+		#   :event => "Christopher Lake has an interview scheduled at Facebook for the Sinatara Developer position. It starts on July 28, 2013 at 10am."
+		# )
 
-		record_8 = Record.create(
-		  :relationship_id => 8,
-		  :company => "Google",
-		  :job => "SQL Engineer",
-		  :user => "Adam Waxman",
-		  :event => "Adam Waxman liked the SQL Engineer position at Google."
-		)
+		# record_8 = Record.create(
+		#   :relationship_id => 8,
+		#   :company => "Google",
+		#   :job => "SQL Engineer",
+		#   :user => "Adam Waxman",
+		#   :event => "Adam Waxman liked the SQL Engineer position at Google."
+		# )
 
-		record_9 = Record.create(
-		  :relationship_id => 9,
-		  :company => "Amazon",
-		  :job => "Rails Developer",
-		  :user => "David Manaster",
-		  :event => "David Manaster liked the Rails Developer position at Amazon."
-		)
+		# record_9 = Record.create(
+		#   :relationship_id => 9,
+		#   :company => "Amazon",
+		#   :job => "Rails Developer",
+		#   :user => "David Manaster",
+		#   :event => "David Manaster liked the Rails Developer position at Amazon."
+		# )
 
-		record_10 = Record.create(
-		  :relationship_id => 10,
-		  :company => "Artsy",
-		  :job => "Senior Software Engineer",
-		  :user => "Ruthie Nachmany",
-		  :event => "Ruthie Nachmany liked the Senior Software Engineer position at Artsy."
-		)
+		# record_10 = Record.create(
+		#   :relationship_id => 10,
+		#   :company => "Artsy",
+		#   :job => "Senior Software Engineer",
+		#   :user => "Ruthie Nachmany",
+		#   :event => "Ruthie Nachmany liked the Senior Software Engineer position at Artsy."
+		# )
 
-		record_11 = Record.create(
-		  :relationship_id => 11,
-		  :company => "Artsy",
-		  :job => "iOS Growth Hacker",
-		  :user => "Ruthie Nachmany",
-		  :event => "Ruthie Nachmany liked the iOS Growth Hacker position at Artsy."
-		)
+		# record_11 = Record.create(
+		#   :relationship_id => 11,
+		#   :company => "Artsy",
+		#   :job => "iOS Growth Hacker",
+		#   :user => "Ruthie Nachmany",
+		#   :event => "Ruthie Nachmany liked the iOS Growth Hacker position at Artsy."
+		# )
 
-		record_12 = Record.create(
-		  :relationship_id => 12,
-		  :company => "Bondsy",
-		  :job => "Facebook Haskell Baller",
-		  :user => "Kirin Masood",
-		  :event => "Kirin Masood has an interview scheduled at Bondsy for the Facebook Haskell position. It starts on July 30, 2013 at 1pm."
-		)
+		# record_12 = Record.create(
+		#   :relationship_id => 12,
+		#   :company => "Bondsy",
+		#   :job => "Facebook Haskell Baller",
+		#   :user => "Kirin Masood",
+		#   :event => "Kirin Masood has an interview scheduled at Bondsy for the Facebook Haskell position. It starts on July 30, 2013 at 1pm."
+		# )
 
-		record_13 = Record.create(
-		  :relationship_id => 11,
-		  :company => "Google",
-		  :job => "SQL Engineer",
-		  :user => "Katie Ishibashi",
-		  :event => "Katie Ishibashi liked the SQL Engineer position at Google."
-		)
+		# record_13 = Record.create(
+		#   :relationship_id => 11,
+		#   :company => "Google",
+		#   :job => "SQL Engineer",
+		#   :user => "Katie Ishibashi",
+		#   :event => "Katie Ishibashi liked the SQL Engineer position at Google."
+		# )
 
-		record_14 = Record.create(
-		  :relationship_id => 19,
-		  :company => "Amazon",
-		  :job => "Rails Developer",
-		  :user => "David Manaster",
-		  :event => "David Manaster liked the Rails Developer position at Amazon."
-		)
+		# record_14 = Record.create(
+		#   :relationship_id => 19,
+		#   :company => "Amazon",
+		#   :job => "Rails Developer",
+		#   :user => "David Manaster",
+		#   :event => "David Manaster liked the Rails Developer position at Amazon."
+		# )
 
-		record_15 = Record.create(
-		  :relationship_id => 10,
-		  :company => "Artsy",
-		  :job => "Senior Software Engineer",
-		  :user => "Carlos Lazo",
-		  :event => "Carlos Lazo liked the Senior Software Engineer position at Artsy."
-		)
+		# record_15 = Record.create(
+		#   :relationship_id => 10,
+		#   :company => "Artsy",
+		#   :job => "Senior Software Engineer",
+		#   :user => "Carlos Lazo",
+		#   :event => "Carlos Lazo liked the Senior Software Engineer position at Artsy."
+		# )
 
-		record_16 = Record.create(
-		  :relationship_id => 16,
-		  :company => "Bondsy",
-		  :job => "Sinatra Developer",
-		  :user => "Kirin Masood",
-		  :event => "Kirin Masood liked the Sinatra Developer position at Bondsy."
-		)
+		# record_16 = Record.create(
+		#   :relationship_id => 16,
+		#   :company => "Bondsy",
+		#   :job => "Sinatra Developer",
+		#   :user => "Kirin Masood",
+		#   :event => "Kirin Masood liked the Sinatra Developer position at Bondsy."
+		# )
 
-		record_17 = Record.create(
-		  :relationship_id => 17,
-		  :company => "Facebook",
-		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake has an interview scheduled at Facebook for the Sinatara Developer position. It starts on July 30, 2013 at 1pm."
-		)
+		# record_17 = Record.create(
+		#   :relationship_id => 17,
+		#   :company => "Facebook",
+		#   :job => "Sinatra Developer",
+		#   :user => "Christopher Lake",
+		#   :event => "Christopher Lake has an interview scheduled at Facebook for the Sinatara Developer position. It starts on July 30, 2013 at 1pm."
+		# )
 
-		record_18 = Record.create(
-		  :relationship_id => 18,
-		  :company => "Google",
-		  :job => "SQL Engineer",
-		  :user => "Katie Ishibashi",
-		  :event => "Katie Ishibashi liked the SQL Engineer position at Google."
-		)
+		# record_18 = Record.create(
+		#   :relationship_id => 18,
+		#   :company => "Google",
+		#   :job => "SQL Engineer",
+		#   :user => "Katie Ishibashi",
+		#   :event => "Katie Ishibashi liked the SQL Engineer position at Google."
+		# )
 
-		record_19 = Record.create(
-		  :relationship_id => 19,
-		  :company => "Amazon",
-		  :job => "Rails Developer",
-		  :user => "David Manaster",
-		  :event => "David Manaster liked the Rails Developer position at Amazon."
-		)
+		# record_19 = Record.create(
+		#   :relationship_id => 19,
+		#   :company => "Amazon",
+		#   :job => "Rails Developer",
+		#   :user => "David Manaster",
+		#   :event => "David Manaster liked the Rails Developer position at Amazon."
+		# )
 
-		record_20 = Record.create(
-		  :relationship_id => 20,
-		  :company => "Artsy",
-		  :job => "Senior Software Engineer",
-		  :user => "Christopher Lake",
-		  :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
-		)
+		# record_20 = Record.create(
+		#   :relationship_id => 20,
+		#   :company => "Artsy",
+		#   :job => "Senior Software Engineer",
+		#   :user => "Christopher Lake",
+		#   :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
+		# )
 
 		puts "\nRake task completed - database should now be seeded for MVP.\n"
 
