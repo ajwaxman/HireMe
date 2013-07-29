@@ -1,19 +1,9 @@
-<h1>CRM History</h1>
-<table>
-  <tr>
-    <th>Time Stamp</th>
-    <th>Event</th>
-    <th></th>
-  </tr>
+<h1>CRM Newsfeed</h1>
 
-<% @records.each do |record| %>
-  <tr>
-    <td><%= record.created_at.strftime("%B %d at %I:%M %p") %></td>
-    <td><%= record.print_description %></td>
-    <td><%= link_to 'Delete', record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<% if @records.empty? %>
+  <p>No activity has been tracked in CRM.</p>
+<% else %>
+  <%= render :partial => "shared/record_list", :locals => {:record_list => @records} %>
 <% end %>
-</table>
-<br />
 
-<%= link_to 'New Record', new_record_path, :class => "btn btn-info" %>
+<br>
