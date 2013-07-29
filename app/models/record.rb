@@ -13,17 +13,12 @@
 #
 
 class Record < ActiveRecord::Base
-  attr_accessible :relationship_id, :event_id, :company, :job, :user, :event
+  attr_accessible :relationship_id, :event_id, :company, :job, :user, :event, :event_text
 
   belongs_to :relationship
   belongs_to :event
 
   default_scope :order => 'created_at DESC'
-
-  # Print the description of the record.
-  def print_description
-  	eval(event.description)
-  end
 
   # Write record based on current state of relationship.
 	def self.write_record(rel)
@@ -34,12 +29,7 @@ class Record < ActiveRecord::Base
 				:job => rel.job.title,
 				:user => rel.user.name)
 
-		# These will be replaced with lookups from "event" model.
-		# case rel.aasm_state
-		# when "interviewing" 
-		# 	rec.event = "#{rec.user} has an interview scheduled at #{rec.company} for the #{rec.job} position. It starts on #{rel.interview.start_time.strftime("%B %d at %I:%M %p")}"
-		# end
-
+		rec.event = Event.find_by_state(rel.aasm_state)
 		rec.save
 	end
 

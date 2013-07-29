@@ -1,5 +1,5 @@
 namespace :db do
-  desc "Seed database with data for MVP demo."
+  desc "Seed events in database."
   task :mvp_seed => :environment do
     
   	## seed users table
@@ -445,31 +445,23 @@ namespace :db do
 		:user_id => 8
 		)
 
-		## seed events table
-
-		event_1 = Event.create(
-			:description => '"#{user} has liked the #{job} position at #{company}."')
-
-		event_2 = Event.create(
-			:description => '"#{user} has an interview scheduled at #{company} for the #{job} position. It starts on #{relationship.interview.date.strftime(\'%A, %B %d %Y\')} at #{relationship.interview.start_time.strftime(\'%I:%M %p\')}."')
-
 		## seed records table
 
-		record_1 = Record.create(
-		  :relationship_id => 1,
-		  :event_id => 1,
-		  :company => "Bondsy",
-		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake"
-		)
+		# record_1 = Record.create(
+		#   :relationship_id => 1,
+		#   :event_id => 1,
+		#   :company => "Bondsy",
+		#   :job => "Sinatra Developer",
+		#   :user => "Christopher Lake"
+		# )
 
-		record_2 = Record.create(
-		  :relationship_id => 1,
-		  :event_id => 2,
-		  :company => "Bondsy",
-		  :job => "Sinatra Developer",
-		  :user => "Christopher Lake"
-		)
+		# record_2 = Record.create(
+		#   :relationship_id => 1,
+		#   :event_id => 2,
+		#   :company => "Bondsy",
+		#   :job => "Sinatra Developer",
+		#   :user => "Christopher Lake"
+		# )
 
 		# record_3 = Record.create(
 		#   :relationship_id => 2,
