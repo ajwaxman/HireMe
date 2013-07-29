@@ -1,0 +1,50 @@
+<% case @state %>
+<% when "start" %>
+  <%= link_to 'Like This Job', {:controller => :states, :action => :rel_like_company}, :class => "btn btn-success status_btn" %>
+  <%= link_to 'Add Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info" %>
+<% when "like" %>
+  <%= link_to 'Unlike This Job', {:controller => :states, :action => :rel_unlike_company}, :class => "btn status_btn" %>
+  <%= link_to 'Add Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info" %>
+<% when "interviewing" %>
+  <%= link_to 'Edit Interview', edit_interview_path(@relationship.interview_id), :class => "btn btn-info" %>
+<% when "pending" %>
+  <!-- Add Additional Interview -->
+  <%= link_to 'Add Another Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info status_btn" %>
+  
+  <!-- Offer Received -->
+  <%= link_to 'Offer Received!', {:controller => :states, :action => :rel_offer_received}, :class => "btn btn-success status_btn" %>
+
+  <!-- User Declines  -->
+  <%= link_to 'You Declined', {:controller => :states, :action => :rel_user_declined}, :class => "btn btn-warning status_btn" %>
+
+  <!-- Company Declines -->
+  <%= link_to 'Rejected', {:controller => :states, :action => :rel_company_declined}, :class => "btn btn-danger status_btn" %>
+
+<% when "user_decline" %>
+<span class="pull-right">
+  <p style="font-style: italic">
+    You declined to continue discussions with <%= @relationship.company.name %> about this job
+  </p>
+</span>
+<% when "company_decline" %>
+  Hello
+<% when "offer_received" %>
+  Hello
+<% when "offer_accepted" %>
+  Hello
+<% when "offer_declined" %>
+  Hello
+<% else %>
+  Bye
+<% end %>
+
+<span class="pull-right">
+  <p style="font-style: italic">
+    TBD
+  </p>
+</span>
+
+
+
+
+<br>

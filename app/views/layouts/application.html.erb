@@ -11,9 +11,9 @@
 	
 	<%= render 'shared/header' unless @disable_nav %>
 		
-		<% flash.each do |key, value| %>
-			<%= content_tag(:div, value, class: "alert alert-#{key}") %>
-		<% end %>
+  <% flash.each do |key, value| %>
+		<%= content_tag(:div, value, class: "alert alert-#{key}") %>
+	<% end %>
 
 		<h1> <%= %></h1>
 

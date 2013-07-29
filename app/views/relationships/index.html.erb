@@ -11,16 +11,35 @@
     <th></th>
   </tr>
 
-<% @relationships.each do |relationship| %>
-  <tr>
-    <td><%= relationship.user.name %></td>
-    <td>&nbsp; <%= relationship.job.title %> </td>
-    <td>&nbsp; <%= relationship.company.name %> </td>
-    <td>&nbsp; <%= relationship.aasm_state %> </td>
-    <td>&nbsp; <%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> </td>
-    <td>&nbsp; <%= link_to 'Edit', edit_relationship_path(relationship) %></td>
-    <td>&nbsp; | <%= link_to 'Delete', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<% if current_user.admin? %>
+
+  <% @relationships.each do |relationship| %>
+    <tr>
+      <td><%= relationship.user.name %></td>
+      <td>&nbsp; <%= relationship.job.title %> </td>
+      <td>&nbsp; <%= relationship.company.name %> </td>
+      <td>&nbsp; <%= relationship.aasm_state %> </td>
+      <td>&nbsp; <%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> </td>
+      <td>&nbsp; <%= link_to 'Edit', edit_relationship_path(relationship) %></td>
+      <td>&nbsp; | <%= link_to 'Delete', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+
+<% else %>
+
+  <% current_user.relationships.each do |relationship| %>
+    <tr>
+      <td><%= relationship.user.name %></td>
+      <td>&nbsp; <%= relationship.job.title %> </td>
+      <td>&nbsp; <%= relationship.company.name %> </td>
+      <td>&nbsp; <%= relationship.aasm_state %> </td>
+      <td>&nbsp; <%= relationship.interview.nil? ? "No interviews scheduled." : relationship.interview.start_time %> </td>
+      <td>&nbsp; <%= link_to 'Edit', edit_relationship_path(relationship) %></td>
+      <td>&nbsp; | <%= link_to 'Delete', relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+
 <% end %>
+
 </table>
 

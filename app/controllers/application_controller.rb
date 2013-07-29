@@ -24,6 +24,13 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user?
 
+  def current_user_relationship_only?
+    unless current_user.id == Relationship.find(params[:id]).user_id || current_user.admin?
+      redirect_to user_path(current_user), alert: "Not authorized"
+    end
+  end
+  helper_method :current_user_relationship_only?
+
 # only works with User Controller views
   def current_user_only?
     unless current_user.id == params[:id].to_i || current_user.admin?

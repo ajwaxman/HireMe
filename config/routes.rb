@@ -20,11 +20,31 @@ HireCrm::Application.routes.draw do
   get 'jobs/indeed' => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 
+  #############################
+  # Buttons for State Machine #
+  #############################
+
   get 'jobs/:id/like_company' => 'states#like_company', as: 'like_company'
   post 'jobs/:id/like_company' => 'states#like_company'
 
   get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
   post 'jobs/:id/unlike_company' => 'states#unlike_company'
+
+  get 'jobs/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
+  post 'jobs/:id/rel_like_company' => 'states#rel_like_company'
+
+  get 'jobs/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
+  post 'jobs/:id/rel_unlike_company' => 'states#rel_unlike_company'
+
+  get 'jobs/:id/rel_company_declined' => 'states#rel_company_declined'
+  post 'jobs/:id/rel_company_declined' => 'states#rel_company_declined'
+
+  get 'jobs/:id/rel_user_declined' => 'states#rel_user_declined'
+  post 'jobs/:id/rel_user_declined' => 'states#rel_user_declined'
+
+  get 'jobs/:id/rel_offer_received' => 'states#rel_offer_received'
+  post 'jobs/:id/rel_offer_received' => 'states#rel_offer_received'
+  
 
   ##################
   # RESTful Routes #

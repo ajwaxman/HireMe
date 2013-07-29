@@ -47,6 +47,7 @@ class Relationship < ActiveRecord::Base
 
     event :start_interview do
       transitions :from => :like, :to => :interviewing
+      transitions :from => :start, :to => :interviewing
     end
 
     event :post_interview do

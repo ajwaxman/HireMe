@@ -1,5 +1,5 @@
 class RelationshipsController < ApplicationController
-  before_filter :admin_only?
+  before_filter :current_user_relationship_only?, :only => [:show]
   # GET /relationships
   # GET /relationships.json
   def index
@@ -15,6 +15,7 @@ class RelationshipsController < ApplicationController
   # GET /relationships/1.json
   def show
     @relationship = Relationship.find(params[:id])
+    @state = @relationship.aasm_state if @relationship
 
     respond_to do |format|
       format.html # show.html.erb

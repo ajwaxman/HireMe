@@ -22,4 +22,34 @@ class StatesController < ApplicationController
     redirect_to job_path(@job), :flash => { :notice => "You've unliked the #{@job.title} position at #{@job.company.name}."}
   end
 
+  def rel_like_company
+    @relationship = Relationship.find(params[:id])
+    @job = @relationship.job
+    @user = @relationship.user
+    @relationship.aasm_state = "like"
+    @relationship.save if @relationship
+    redirect_to relationship_path(@relationship), :flash => { :success => "You've liked the #{@job.title} position at #{@job.company.name}."}
+  end
+
+   def rel_unlike_company
+    @relationship = Relationship.find(params[:id])
+    @job = @relationship.job
+    @user = @relationship.user
+    @relationship.aasm_state = "start"
+    @relationship.save if @relationship
+    redirect_to relationship_path(@relationship), :flash => { :notice => "You've unliked the #{@job.title} position at #{@job.company.name}."}
+  end
+
+  def rel_company_declined
+    
+  end
+
+  def rel_user_declined
+    
+  end
+
+  def received_offer
+    
+  end
+
 end

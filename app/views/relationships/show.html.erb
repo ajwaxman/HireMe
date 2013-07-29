@@ -1,3 +1,65 @@
+<%= render "shared/relationship_state", :state => @state, :relationship => @relationship %>
+
+<hr>
+
+<div class="row-fluid sortable">
+
+  <div class="box span4">
+    <div class="box-content pagination-centered company_logo_div">
+      <%= image_tag @relationship.company.logo_url, :size => "200x200" %>
+    </div>
+  </div><!--/span-->
+  <div class="box span8">
+    <div class="box-content">
+      <h1><%= @relationship.job.title %></h1>
+      <p><%= @relationship.job.description %></p>               
+     </div>
+  </div><!--/span-->
+</div><!--/row-->
+<div class="row-fluid sortable">
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>Company Overview</h2>
+    </div>
+    <div class="box-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>              
+    </div>
+  </div><!--/span-->
+  
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>Your Job History</h2>
+    </div>
+    <div class="box-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>                     
+    </div>
+  </div><!--/span-->
+  
+  <div class="box span4">
+    <div class="box-header">
+      <h2><i class="icon-th"></i><span class="break"></span>Other Jobs at <%= @relationship.company.name %></h2>
+    </div>
+    <div class="box-content">
+      <% other_jobs = @relationship.company.jobs - [@relationship.job] %>
+      <% if !other_jobs.empty? %>
+      <ul>
+        <% other_jobs.each do |job| %>
+          <li><%= link_to job.title, job_path(job) %></li>
+        <% end %>
+      </ul>  
+      <% else %>   
+        <p>There are currently no other job postings for this company.</p>
+      <% end %>                
+    </div>
+  </div><!--/span-->
+</div><!--/row-->
+      
+<div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
+
 <p id="notice"><%= notice %></p>
 
 <p>

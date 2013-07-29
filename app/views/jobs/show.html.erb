@@ -1,5 +1,34 @@
 <p id="notice"><%= notice %></p>
 
+<% if @state.nil? || @state == "start" %>
+  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success status_btn" %>
+<% else %> 
+  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
+<% end %>
+
+<%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+
+<span class="pull-right">
+  <p style="font-style: italic">
+    <% case @state %>
+    <% when "like" %>
+      You like this job!
+    <% else %>
+      You have no relationship with this job
+    <% end %>
+  </p>
+</span>
+
+<br>
+
+<% if current_user.admin? %>
+  <%= link_to 'Edit', edit_job_path(@job) %>
+<% end %>
+
+
+
+<hr>
+
 <div class="row-fluid sortable">
 
   <div class="box span4">
@@ -28,7 +57,7 @@
   
   <div class="box span4">
     <div class="box-header">
-      <h2><i class="icon-th"></i><span class="break"></span>TBD</h2>
+      <h2><i class="icon-th"></i><span class="break"></span>Your Job History</h2>
     </div>
     <div class="box-content">
       <p>
@@ -56,20 +85,5 @@
   </div><!--/span-->
 </div><!--/row-->
       
-<hr>
-
 <div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
 
-<% if @state.nil? || @state == "start" %>
-  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success" %>
-<% else %> 
-  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn" %>
-<% end %>
-
-<%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
-
-<br><br>
-
-<% if current_user.admin? %>
-	<%= link_to 'Edit', edit_job_path(@job) %>
-<% end %>
