@@ -48,5 +48,7 @@ namespace :db do
 			:state => "offer_declined"
 		)
 
+		puts "\nRake Task completed - database should now be seeded with Event information.\n\n"
+
 	end
 end

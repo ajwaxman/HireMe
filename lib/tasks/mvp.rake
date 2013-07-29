@@ -143,307 +143,307 @@ namespace :db do
 
 		## seed interviews table
 
-		interview_1 = Interview.create(
-		  :start_time => "09:00:00 EST",
-		  :end_time => "10:00:00 EST",
-		  :date => "2013-07-26",
-		  :relationship_id => 1
-		)
+		# interview_1 = Interview.create(
+		#   :start_time => "09:00:00 EST",
+		#   :end_time => "10:00:00 EST",
+		#   :date => "2013-07-26",
+		#   :relationship_id => 1
+		# )
 
-		interview_2 = Interview.create(
-		  :start_time => "09:00:00 EST",
-		  :end_time => "10:00:00 EST",
-		  :date => "2013-07-28",
-		  :relationship_id => 2
-		)
+		# interview_2 = Interview.create(
+		#   :start_time => "09:00:00 EST",
+		#   :end_time => "10:00:00 EST",
+		#   :date => "2013-07-28",
+		#   :relationship_id => 2
+		# )
 
-		interview_3 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-29",
-		  :relationship_id => 3
-		)
+		# interview_3 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-29",
+		#   :relationship_id => 3
+		# )
 
-		interview_4 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-27",
-		  :relationship_id => 4
-		)
+		# interview_4 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-27",
+		#   :relationship_id => 4
+		# )
 
-		interview_5 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-26",
-		  :relationship_id => 5
-		)
+		# interview_5 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-26",
+		#   :relationship_id => 5
+		# )
 
-		interview_6 = Interview.create(
-		  :start_time => "14:00:00 EST",
-		  :end_time => "15:00:00 EST",
-		  :date => "2013-07-30",
-		  :relationship_id => 6
-		)
+		# interview_6 = Interview.create(
+		#   :start_time => "14:00:00 EST",
+		#   :end_time => "15:00:00 EST",
+		#   :date => "2013-07-30",
+		#   :relationship_id => 6
+		# )
 
-		interview_7 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-24",
-		  :relationship_id => 7
-		)
+		# interview_7 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-24",
+		#   :relationship_id => 7
+		# )
 
-		interview_8 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-29",
-		  :relationship_id => 8
-		)
+		# interview_8 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-29",
+		#   :relationship_id => 8
+		# )
 
-		interview_9 = Interview.create(
-		  :start_time => "15:00:00 EST",
-		  :end_time => "16:00:00 EST",
-		  :date => "2013-07-29",
-		  :relationship_id => 9
-		)
+		# interview_9 = Interview.create(
+		#   :start_time => "15:00:00 EST",
+		#   :end_time => "16:00:00 EST",
+		#   :date => "2013-07-29",
+		#   :relationship_id => 9
+		# )
 
-		interview_10 = Interview.create(
-		  :start_time => "10:00:00 EST",
-		  :end_time => "11:00:00 EST",
-		  :date => "2013-07-28",
-		  :relationship_id => 110
-		)
+		# interview_10 = Interview.create(
+		#   :start_time => "10:00:00 EST",
+		#   :end_time => "11:00:00 EST",
+		#   :date => "2013-07-28",
+		#   :relationship_id => 110
+		# )
 
-		interview_11 = Interview.create(
-		  :start_time => "12:00:00 EST",
-		  :end_time => "13:00:00 EST",
-		  :date => "2013-07-29",
-		  :relationship_id => 11
-		)
+		# interview_11 = Interview.create(
+		#   :start_time => "12:00:00 EST",
+		#   :end_time => "13:00:00 EST",
+		#   :date => "2013-07-29",
+		#   :relationship_id => 11
+		# )
 
-		interview_12 = Interview.create(
-		  :start_time => "09:00:00 EST",
-		  :end_time => "10:00:00 EST",
-		  :date => "2013-07-25",
-		  :relationship_id => 12
-		)
+		# interview_12 = Interview.create(
+		#   :start_time => "09:00:00 EST",
+		#   :end_time => "10:00:00 EST",
+		#   :date => "2013-07-25",
+		#   :relationship_id => 12
+		# )
 
-		interview_13 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-29",
-		  :relationship_id => 13
-		)
+		# interview_13 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-29",
+		#   :relationship_id => 13
+		# )
 
-		interview_14 = Interview.create(
-		  :start_time => "15:00:00 EST",
-		  :end_time => "16:00:00 EST",
-		  :date => "2013-07-27",
-		  :relationship_id => 14
-		)
+		# interview_14 = Interview.create(
+		#   :start_time => "15:00:00 EST",
+		#   :end_time => "16:00:00 EST",
+		#   :date => "2013-07-27",
+		#   :relationship_id => 14
+		# )
 
-		interview_15 = Interview.create(
-		  :start_time => "16:00:00 EST",
-		  :end_time => "17:00:00 EST",
-		  :date => "2013-07-28",
-		  :relationship_id => 15
-		)
+		# interview_15 = Interview.create(
+		#   :start_time => "16:00:00 EST",
+		#   :end_time => "17:00:00 EST",
+		#   :date => "2013-07-28",
+		#   :relationship_id => 15
+		# )
 
-		interview_16 = Interview.create(
-		  :start_time => "09:00:00 EST",
-		  :end_time => "10:00:00 EST",
-		  :date => "2013-07-28",
-		  :relationship_id => 16
-		)
+		# interview_16 = Interview.create(
+		#   :start_time => "09:00:00 EST",
+		#   :end_time => "10:00:00 EST",
+		#   :date => "2013-07-28",
+		#   :relationship_id => 16
+		# )
 
-		interview_17 = Interview.create(
-		  :start_time => "11:30:00 EST",
-		  :end_time => "12:30:00 EST",
-		  :date => "2013-07-31",
-		  :relationship_id => 17
-		)
+		# interview_17 = Interview.create(
+		#   :start_time => "11:30:00 EST",
+		#   :end_time => "12:30:00 EST",
+		#   :date => "2013-07-31",
+		#   :relationship_id => 17
+		# )
 
-		interview_18 = Interview.create(
-		  :start_time => "11:00:00 EST",
-		  :end_time => "12:00:00 EST",
-		  :date => "2013-07-28",
-		  :relationship_id => 18
-		)
+		# interview_18 = Interview.create(
+		#   :start_time => "11:00:00 EST",
+		#   :end_time => "12:00:00 EST",
+		#   :date => "2013-07-28",
+		#   :relationship_id => 18
+		# )
 
-		interview_19 = Interview.create(
-		  :start_time => "15:00:00 EST",
-		  :end_time => "16:00:00 EST",
-		  :date => "2013-07-30",
-		  :relationship_id => 19
-		)
+		# interview_19 = Interview.create(
+		#   :start_time => "15:00:00 EST",
+		#   :end_time => "16:00:00 EST",
+		#   :date => "2013-07-30",
+		#   :relationship_id => 19
+		# )
 
-		interview_20 = Interview.create(
-		  :start_time => "09:30:00 EST",
-		  :end_time => "10:30:00 EST",
-		  :date => "2013-07-31",
-		  :relationship_id => 20
-		)
+		# interview_20 = Interview.create(
+		#   :start_time => "09:30:00 EST",
+		#   :end_time => "10:30:00 EST",
+		#   :date => "2013-07-31",
+		#   :relationship_id => 20
+		# )
 
 		## seed relationships table
 
-		relationship_1 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 2,
-		:job_id => 4,
-		:interview_id => 1, 
-		:user_id => 2
-		)
+		# relationship_1 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 2,
+		# :job_id => 4,
+		# :interview_id => 1, 
+		# :user_id => 2
+		# )
 
-		relationship_2 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 5,
-		:job_id => 2, 
-		:interview_id => 2, 
-		:user_id => 7
-		)
+		# relationship_2 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 5,
+		# :job_id => 2, 
+		# :interview_id => 2, 
+		# :user_id => 7
+		# )
 
-		relationship_3 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 3,
-		:job_id => 3, 
-		:interview_id => 3, 
-		:user_id => 8
-		)
+		# relationship_3 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 3,
+		# :job_id => 3, 
+		# :interview_id => 3, 
+		# :user_id => 8
+		# )
 
-		relationship_4 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 1,
-		:job_id => 5,
-		:interview_id => 4,
-		:user_id => 6
-		)
+		# relationship_4 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 1,
+		# :job_id => 5,
+		# :interview_id => 4,
+		# :user_id => 6
+		# )
 
-		relationship_5 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 2,
-		:job_id => 4,
-		:interview_id => 5, 
-		:user_id => 7
-		)
+		# relationship_5 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 2,
+		# :job_id => 4,
+		# :interview_id => 5, 
+		# :user_id => 7
+		# )
 
-		relationship_6 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 5,
-		:job_id => 2, 
-		:interview_id => 6, 
-		:user_id => 8
-		)
+		# relationship_6 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 5,
+		# :job_id => 2, 
+		# :interview_id => 6, 
+		# :user_id => 8
+		# )
 
-		relationship_7 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 3,
-		:job_id => 3, 
-		:interview_id => 7, 
-		:user_id => 8
-		)
+		# relationship_7 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 3,
+		# :job_id => 3, 
+		# :interview_id => 7, 
+		# :user_id => 8
+		# )
 
-		relationship_8 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 1,
-		:job_id => 5,
-		:interview_id => 8,
-		:user_id => 2
-		)
+		# relationship_8 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 1,
+		# :job_id => 5,
+		# :interview_id => 8,
+		# :user_id => 2
+		# )
 
-		relationship_9 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 2,
-		:job_id => 4,
-		:interview_id => 9, 
-		:user_id => 6
-		)
+		# relationship_9 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 2,
+		# :job_id => 4,
+		# :interview_id => 9, 
+		# :user_id => 6
+		# )
 
-		relationship_10 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 5,
-		:job_id => 2, 
-		:interview_id => 10, 
-		:user_id => 5
-		)
+		# relationship_10 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 5,
+		# :job_id => 2, 
+		# :interview_id => 10, 
+		# :user_id => 5
+		# )
 
-		relationship_11 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 3,
-		:job_id => 3, 
-		:interview_id => 11, 
-		:user_id => 3
-		)
+		# relationship_11 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 3,
+		# :job_id => 3, 
+		# :interview_id => 11, 
+		# :user_id => 3
+		# )
 
-		relationship_12 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 1,
-		:job_id => 5,
-		:interview_id => 12,
-		:user_id => 8
-		)
+		# relationship_12 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 1,
+		# :job_id => 5,
+		# :interview_id => 12,
+		# :user_id => 8
+		# )
 
-		relationship_13 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 3,
-		:job_id => 6, 
-		:interview_id => 13, 
-		:user_id => 7
-		)
+		# relationship_13 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 3,
+		# :job_id => 6, 
+		# :interview_id => 13, 
+		# :user_id => 7
+		# )
 
-		relationship_14 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 1,
-		:job_id => 7,
-		:interview_id => 14,
-		:user_id => 8
-		)
+		# relationship_14 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 1,
+		# :job_id => 7,
+		# :interview_id => 14,
+		# :user_id => 8
+		# )
 
-		relationship_15 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 2,
-		:job_id => 6,
-		:interview_id => 15, 
-		:user_id => 8
-		)
+		# relationship_15 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 2,
+		# :job_id => 6,
+		# :interview_id => 15, 
+		# :user_id => 8
+		# )
 
-		relationship_16 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 5,
-		:job_id => 5, 
-		:interview_id => 16, 
-		:user_id => 2
-		)
+		# relationship_16 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 5,
+		# :job_id => 5, 
+		# :interview_id => 16, 
+		# :user_id => 2
+		# )
 
-		relationship_17 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 3,
-		:job_id => 1, 
-		:interview_id => 17, 
-		:user_id => 1
-		)
+		# relationship_17 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 3,
+		# :job_id => 1, 
+		# :interview_id => 17, 
+		# :user_id => 1
+		# )
 
-		relationship_18 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 1,
-		:job_id => 8,
-		:interview_id => 18,
-		:user_id => 6
-		)
+		# relationship_18 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 1,
+		# :job_id => 8,
+		# :interview_id => 18,
+		# :user_id => 6
+		# )
 
-		relationship_19 = Relationship.create(
-		:aasm_state => "interviewing",
-		:company_id => 2,
-		:job_id => 7,
-		:interview_id => 19, 
-		:user_id => 6
-		)
+		# relationship_19 = Relationship.create(
+		# :aasm_state => "interviewing",
+		# :company_id => 2,
+		# :job_id => 7,
+		# :interview_id => 19, 
+		# :user_id => 6
+		# )
 
-		relationship_20 = Relationship.create(
-		:aasm_state => "open_status",
-		:company_id => 5,
-		:job_id => 8, 
-		:interview_id => 20, 
-		:user_id => 8
-		)
+		# relationship_20 = Relationship.create(
+		# :aasm_state => "open_status",
+		# :company_id => 5,
+		# :job_id => 8, 
+		# :interview_id => 20, 
+		# :user_id => 8
+		# )
 
 		## seed records table
 
@@ -607,7 +607,7 @@ namespace :db do
 		#   :event => "Christopher Lake liked the Senior Software Engineer position at Artsy."
 		# )
 
-		puts "\nRake task completed - database should now be seeded for MVP.\n"
+		puts "\nRake Task completed - database should now be seeded with User | Company | Job data.\n\n"
 
   end
 end

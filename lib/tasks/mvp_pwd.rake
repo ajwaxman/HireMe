@@ -42,7 +42,7 @@ namespace :db do
 	user_8.password_confirmation = "kirin"
 	user_8.save
 
-	puts "\nRake task completed - users should have pwd for MVP.\n"
+	puts "\nRake Task completed - database should now be seeded with password data.\n\n"
 
   end
 end
