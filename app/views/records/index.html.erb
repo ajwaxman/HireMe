@@ -9,7 +9,7 @@
 <% @records.each do |record| %>
   <tr>
     <td><%= record.created_at.strftime("%B %d at %I:%M %p") %></td>
-    <td><%= record.event.description %></td>
+    <td><%= record.print_description %></td>
     <td><%= link_to 'Delete', record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>

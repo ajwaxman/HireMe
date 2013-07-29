@@ -20,6 +20,11 @@ class Record < ActiveRecord::Base
 
   default_scope :order => 'created_at DESC'
 
+  # Print the description of the record.
+  def print_description
+  	eval(event.description)
+  end
+
   # Write record based on current state of relationship.
 	def self.write_record(rel)
 

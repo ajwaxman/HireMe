@@ -448,10 +448,10 @@ namespace :db do
 		## seed events table
 
 		event_1 = Event.create(
-			:description => "<%=record.user%> has liked the <%=record.job%> position at <%=record.company%>.")
+			:description => '"#{user} has liked the #{job} position at #{company}."')
 
 		event_2 = Event.create(
-			:description => "<%=record.user%> has an interview scheduled at <%=record.company%> for the <%=record.job%> position. It starts on <%=record.relationship.interview.start_time.strftime('%B %d at %I:%M %p')%>")
+			:description => '"#{user} has an interview scheduled at #{company} for the #{job} position. It starts on #{relationship.interview.date.strftime(\'%A, %B %d %Y\')} at #{relationship.interview.start_time.strftime(\'%I:%M %p\')}."')
 
 		## seed records table
 
