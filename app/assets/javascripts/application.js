@@ -39,3 +39,4 @@
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.knob.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.sparkline.min.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/custom.js
+//= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/bootstrap-switch.js
