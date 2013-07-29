@@ -60,13 +60,11 @@
 
 <div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
 
-<label class="control-label" for="notification1">Notification 1</label>
-  <div class="controls">
-    <div class="switch" tabindex="0">
-      <input id="notification1" type="checkbox" />
-    </div>
-  </div>
-<br/>
+<div class="switch" data-on="primary" data-off="info">
+    <input type="checkbox" checked />
+</div>
+
+
 <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
 
 <br><br>
