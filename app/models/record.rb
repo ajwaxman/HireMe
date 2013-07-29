@@ -13,11 +13,11 @@
 #
 
 class Record < ActiveRecord::Base
-  attr_accessible :event, :relationship_id, :company, :job, :user
+  attr_accessible :relationship_id, :company, :job, :user
 
   belongs_to :relationship
-  has_one		 :event
-
+  has_one 	 :event
+  
   default_scope :order => 'created_at DESC'
 
   # Write record based on current state of relationship.
@@ -30,10 +30,10 @@ class Record < ActiveRecord::Base
 				:user => rel.user.name)
 
 		# These will be replaced with lookups from "event" model.
-		case rel.aasm_state
-		when "interviewing" 
-			rec.event = "#{rec.user} has an interview scheduled at #{rec.company} for the #{rec.job} position. It starts on #{rel.interview.start_time.strftime("%B %d at %I:%M %p")}"
-		end
+		# case rel.aasm_state
+		# when "interviewing" 
+		# 	rec.event = "#{rec.user} has an interview scheduled at #{rec.company} for the #{rec.job} position. It starts on #{rel.interview.start_time.strftime("%B %d at %I:%M %p")}"
+		# end
 
 		rec.save
 	end
