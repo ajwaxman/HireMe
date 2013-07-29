@@ -21,30 +21,46 @@
   <%= link_to 'Rejected', {:controller => :states, :action => :rel_company_declined}, :class => "btn btn-danger status_btn" %>
 
 <% when "user_decline" %>
-<span class="pull-right">
-  <p style="font-style: italic">
-    You declined to continue discussions with <%= @relationship.company.name %> about this job
-  </p>
-</span>
+  <span class="pull-right">
+    <p style="font-style: italic">
+      You declined to continue discussions with <%= @relationship.company.name %> about this job.
+    </p>
+  </span>
+
 <% when "company_decline" %>
-  Hello
+  <span class="pull-right">
+    <p style="font-style: italic">
+      <%= @relationship.company.name %> has passed (for now).
+    </p>
+  </span>
+
 <% when "offer_received" %>
-  Hello
+  <%= link_to 'Accept Offer', {:controller => :states, :action => :accept_offer}, :class => "btn btn-success status_btn" %>
+  <%= link_to 'Reject Offer', {:controller => :states, :action => :reject_offer}, :class => "btn btn-danger status_btn" %>  
+  <span class="pull-right">
+    <p style="font-style: italic">
+      You received an offer from <%= @relationship.company.name %>!
+    </p>
+  </span>
+
 <% when "offer_accepted" %>
-  Hello
+  <span class="pull-right">
+    <p style="font-style: italic">
+      You accepted an offer from <%= @relationship.company.name %>!
+    </p>
+  </span>
 <% when "offer_declined" %>
-  Hello
+  <span class="pull-right">
+    <p style="font-style: italic">
+      You declined an offer from <%= @relationship.company.name %>.
+    </p>
+  </span>
 <% else %>
-  Bye
+  <span class="pull-right">
+    <p style="font-style: italic">
+      If you see this message, something's not working!
+    </p>
+  </span>
 <% end %>
-
-<span class="pull-right">
-  <p style="font-style: italic">
-    TBD
-  </p>
-</span>
-
-
-
 
 <br>

@@ -52,4 +52,18 @@ class StatesController < ApplicationController
     
   end
 
+  def accept_offer
+    @relationship = Relationship.find(params[:id])
+    @relationship.aasm_state = "offer_accepted"
+    @relationship.save if @relationship
+    redirect_to relationship_path(@relationship), :flash => { :success => "You were offered and accepted the #{@relationship.job.title} position at #{@relationship.company.name}. Congrats!"}
+  end
+
+  def reject_offer
+    @relationship = Relationship.find(params[:id])
+    @relationship.aasm_state = "offer_declined"
+    @relationship.save if @relationship
+    redirect_to relationship_path(@relationship), :flash => { :notice => "You declined the #{@relationship.job.title} position at #{@relationship.company.name}. To greener pastures!"}
+  end
+
 end
