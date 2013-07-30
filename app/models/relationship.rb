@@ -47,15 +47,11 @@ class Relationship < ActiveRecord::Base
     end
 
     event :start_interview do
-      transitions :from => [:like, :start, :interviewing], :to => :interviewing
+      transitions :from => [:like, :start, :interviewing, :pending, :user_decline, :offer_received, :offer_accepted, :offer_declined], :to => :interviewing
     end
 
     event :post_interview do
       transitions :from => :interviewing, :to => :pending
-    end
-
-    event :additional_interview do
-      transitions :from => :pending, :to => :interviewing
     end
 
     event :user_declines do
