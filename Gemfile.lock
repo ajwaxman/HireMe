@@ -109,6 +109,7 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-cron-logger (1.0.3)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -166,6 +167,7 @@ DEPENDENCIES
   pry-debugger
   quiet_assets
   rails (= 3.2.13)
+  rails-cron-logger
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

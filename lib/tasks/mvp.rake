@@ -184,7 +184,7 @@ namespace :db do
 		)
 
 		event_7 = Event.create(
-			:description => "User has declined job offer from company.",
+			:description => "Company has passed (for now).",
 			:state => "company_decline"
 		)
 

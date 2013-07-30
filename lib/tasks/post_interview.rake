@@ -9,8 +9,9 @@ namespace :cron do
 		i_date = i.merge_datetime_object
 		if i_date < Time.now
 			rel.post_interview
-			rel.save
+			Record.write_record(rel) if rel.save
 		end
+		
 	end
 
 	end
