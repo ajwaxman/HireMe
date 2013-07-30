@@ -96,7 +96,6 @@
 						<%= nav_link raw('<i class="icon-thumbs-up icon-white"></i><span class="hidden-tablet"> Jobs</span>'), jobs_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
 						<% if current_user.admin? %>
-							<%= nav_link raw('<i class="fa-icon-group icon-white"></i><span class="hidden-tablet"> Relationships</span>'), relationships_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 
 							<%= nav_link raw('<i class="icon-calendar icon-white"></i> <span class="hidden-tablet"> Interviews</span>'), interviews_path, {:class => 'link'}, {:wrapper => 'li', :wrapper_class => 'test-wrapper', :selected_class => 'active'} %>
 

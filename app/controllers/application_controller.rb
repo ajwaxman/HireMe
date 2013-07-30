@@ -39,6 +39,14 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user_only?
 
+# only works with Interview Controller views
+  def current_interview_owner_only?
+    unless current_user.admin? == true || current_user.id == Interview.find_by_id(params[:id]).user.id.to_i
+      redirect_to user_path(current_user), alert: "Not authorized"
+    end
+  end
+  helper_method :current_interview_owner_only?
+
   def logged_in?
     current_user.id = true
   end

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
-  before_filter :admin_only?, :only => [:index, :dashboard]
-  before_filter :current_user_only?, :only => [:edit, :show, :delete]
+  before_filter :admin_only?, :only => [:index, :dashboard, :new, :create, :delete]
+  before_filter :current_user_only?, :only => [:edit, :show]
   
   helper_method :get_calendar_data
   helper_method :interviews_past

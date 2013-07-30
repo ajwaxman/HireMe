@@ -17,7 +17,7 @@ HireCrm::Application.routes.draw do
 
   get 'dashboard', to: 'users#dashboard'
 
-  get 'jobs/indeed' => 'jobs#indeed_jobs'
+  get 'jobs/indeed'  => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 
   #############################
@@ -72,8 +72,6 @@ HireCrm::Application.routes.draw do
       :controller => 'users/interviews',
       :only => [:new]
   end
-
-  resources :relationships
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

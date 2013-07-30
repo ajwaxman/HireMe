@@ -1,6 +1,9 @@
 class InterviewsController < ApplicationController
   before_filter :admin_only?, :only => [:index]
-  before_filter :current_user?, :only => [:edit, :show, :delete, :new, :create]
+  before_filter :current_user?, :only => [:new, :create]
+  before_filter :current_interview_owner_only?, :only => [:edit, :show, :destroy]
+  
+
   
   # GET /interviews
   # GET /interviews.json
@@ -60,8 +63,8 @@ class InterviewsController < ApplicationController
         
         Record.write_record(rel)   # Create Record from relationship.
 
-        format.html { redirect_to relationship_path(rel), notice: 'Interview was successfully created.' }
-        format.json { render json: relationship_path(rel), status: :created, location: @interview }
+        format.html { redirect_to interview_path(rel), notice: 'Interview was successfully created.' }
+        format.json { render json: interview_path(rel), status: :created, location: @interview }
       else
         format.html { render action: "new" }
         format.json { render json: @interview.errors, status: :unprocessable_entity }
@@ -92,7 +95,7 @@ class InterviewsController < ApplicationController
     @interview.destroy
 
     respond_to do |format|
-      format.html { redirect_to interviews_url }
+      format.html { redirect_to (current_user.student? ? user_path(current_user) : interviews_url), notice: 'Interview was successfully deleted!' }
       format.json { head :no_content }
     end
   end
