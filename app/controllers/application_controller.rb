@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :verify_logged_in, :except => :login
+
   private
   def current_user
     @current_user = User.find(session[:user_id]) if session[:user_id]
@@ -48,7 +50,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_interview_owner_only?
 
   def logged_in?
-    current_user.id = true
+    !current_user.nil?
   end
   helper_method :logged_in?
 
@@ -58,6 +60,14 @@ class ApplicationController < ActionController::Base
     end
   end
   helper_method :logged_in_only?
+
+  def verify_logged_in
+    unless logged_in?
+      redirect_to root_path, alert: "You must be logged in."
+    end
+  end
+  helper_method :verify_logged_in
+
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to user_path(current_user), :alert => exception.message

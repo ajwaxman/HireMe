@@ -1,5 +1,6 @@
 class RelationshipsController < ApplicationController
   before_filter :current_user_relationship_only?, :only => [:show]
+
   # GET /relationships
   # GET /relationships.json
   def index
