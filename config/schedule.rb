@@ -1,6 +1,8 @@
-every 10.minutes do
-	rake "cron:post_interview"
+every 1.minutes do
+	rake "cron:post_interview", :output => 'cron.log' 
 end
+
+set :output, "log/cron.log"
 
 # Use this file to easily define all of your cron jobs.
 #
