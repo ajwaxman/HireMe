@@ -14,7 +14,7 @@
 
 class User < ActiveRecord::Base
 
-  attr_accessible :email, :name, :phone, :password, :password_confirmation, :role
+  attr_accessible :email, :name, :phone, :password, :password_confirmation, :role, :hireable
 
   has_many :relationships
   
@@ -31,9 +31,9 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
 
   has_secure_password
-  # validates :password,
-  #   :presence => true,
-  #   :confirmation => true
+  validates :password,
+    :presence => true,
+    :confirmation => true
 
   ##########################
   # Authentication Methods #
