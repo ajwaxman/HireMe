@@ -42,6 +42,7 @@ group :development do
   gem 'binding_of_caller'   # => works with better_errors to show instance variables
   gem 'pry-debugger'        # => debugger for project.
   gem 'quiet_assets'
+  gem 'tux'
 end
 
 # To use ActiveModel has_secure_password

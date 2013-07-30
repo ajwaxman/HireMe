@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130729185921) do
+ActiveRecord::Schema.define(:version => 20130730141009) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20130729185921) do
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
     t.string   "role"
+    t.boolean  "hireable"
   end
 
 end
