@@ -10,6 +10,7 @@
 #  updated_at      :datetime         not null
 #  password_digest :string(255)
 #  role            :string(255)
+#  hireable        :boolean
 #
 
 class User < ActiveRecord::Base

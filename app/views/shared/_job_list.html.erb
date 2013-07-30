@@ -31,7 +31,9 @@
               <a class="btn btn-info" href="<%= edit_job_path(job) %>">
                 <i class="icon-edit icon-white"></i>  
               </a>
-              <%= link_to raw('<i class="icon-trash icon-white"></i>'), job, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+              <% if current_user.admin? %>
+                <%= link_to raw('<i class="icon-trash icon-white"></i>'), job, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+              <% end %>
               </td>
             </tr>
         <% end %>
