@@ -9,10 +9,8 @@
 <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
 
 <span class="pull-right">
-  <% if @relationship.nil? %>
-    You have no relationship with this job.
-  <% else %>
-    <p style="font-style: italic">
+  <p style="font-style: italic">
+    <% unless @relationship.nil? %>
       <% case @relationship.aasm_state %>
       <% when "like" %>
         You like this job!
@@ -31,7 +29,7 @@
       <% else %>
         You have no relationship with this job
       <% end %>
-  <% end %>
+    <% end %>
   </p>
 </span>
 
