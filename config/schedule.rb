@@ -1,5 +1,5 @@
 every 1.minutes do
-	rake "cron:post_interview", :output => 'cron.log' 
+	rake "cron:post_interview", :output => 'cron.log' , :environment => "development"
 end
 
 set :output, "log/cron.log"

@@ -35,6 +35,7 @@ gem 'jquery-ui-rails'
 gem 'cancan' # => authorization
 gem 'gon'
 gem 'whenever', :require => false
+gem 'rails-cron-logger'
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
