@@ -34,7 +34,7 @@ gem 'font-awesome-rails' # => gem to get awesome font icons working
 gem 'jquery-ui-rails'
 gem 'cancan' # => authorization
 gem 'gon'
-
+gem 'whenever', :require => false
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
