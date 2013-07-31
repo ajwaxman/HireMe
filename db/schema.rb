@@ -11,14 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130730141009) do
+ActiveRecord::Schema.define(:version => 20130731182438) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
     t.string   "website"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "logo_url"
+    t.string   "crunchbase_url"
+    t.string   "blog_url"
+    t.string   "twitter_username"
+    t.integer  "number_of_employees"
+    t.integer  "founded_year"
+    t.text     "overview"
   end
 
   create_table "events", :force => true do |t|

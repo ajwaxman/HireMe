@@ -146,27 +146,3 @@ class TopRubyScraper < JobScraper
 	end
 
 end
-
-#############
-# TestBench #
-#############
-
-signals_job   		= JobScraper.determine_scraper("http://jobs.37signals.com/jobs/13250")
-signals_job.scrape
-
-indeed_job 	  		= JobScraper.determine_scraper("http://www.indeed.com/viewjob?jk=7085a9d9a3b0910e&q=ruby&l=New+York%2C+NY&tk=180qkhigv0mp12rd&from=web")
-indeed_job.scrape
-
-github_job 	  		= JobScraper.determine_scraper("https://jobs.github.com/positions/0a9333c4-71da-11e0-9ac7-692793c00b45")
-github_job.scrape
-
-coderwall_job 		= JobScraper.determine_scraper("https://coderwall.com/team/lithium-technologies/Lead-Java-Engineer-CDE-5csdkq")
-coderwall_job.scrape
-
-teamtreehouse_job = JobScraper.determine_scraper("https://teamtreehouse.com/jobs/at-lightspeed-463f105c-7905-4547-a7a2-23bd672bda59")
-teamtreehouse_job.scrape
-
-topruby_job 			= JobScraper.determine_scraper("https://toprubyjobs.com/jobs/600-housetrip-ruby-developers")
-topruby_job.scrape
-
-binding.pry
