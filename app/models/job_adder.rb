@@ -36,13 +36,14 @@ class JobAdder
 		description = doc.css("p.job-text").text
 	when "teamtreehouse.com"
 		doc = Nokogiri::HTML(open(url))
+
+		full_header = doc.css(".job-headline h1").text
+	  company_header = doc.css(".job-headline h1 strong").text
+
 	  job_title = full_header.gsub!(company_header, "").strip
 	  compan_title = company_header.gsub!("at ","").strip
 	  location = doc.css(".job-location").text.strip
-	  description = doc.css("#job-details p").first.text
-
-	  full_header = doc.css(".job-headline h1").text
-	  company_header = doc.css(".job-headline h1 strong").text		
+	  description = doc.css("#job-details p").first.text		
 	when "toprubyjobs.com"
 		doc = Nokogiri::HTML(open(url))
 	  job_title = doc.css("#col-left h2")
