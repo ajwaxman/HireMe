@@ -25,15 +25,15 @@
       <table>
         <tr>
           <td><strong>Website</strong></td>
-          <td><%= link_to @company.website, :target => "_blank" %></td>
+          <td><%= link_to @company.website, @company.website, :target => "_blank" %></td>
         </tr>
         <tr>
           <td><strong>Crunchbase Profile &nbsp&nbsp</strong></td>
-          <td><%= link_to @company.crunchbase_url, :target => "_blank" %></td>
+          <td><%= link_to @company.crunchbase_url, @company.crunchbase_url, :target => "_blank" %></td>
         </tr>
         <tr>
           <td><strong>Blog</strong></td>
-          <td><%= link_to @company.blog_url, :target => "_blank" %></td>
+          <td><%= link_to @company.blog_url, @company.blog_url, :target => "_blank" %></td>
         </tr> 
         <tr>
           <td><strong>Twitter Handle</strong></td>
