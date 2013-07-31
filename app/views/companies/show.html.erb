@@ -11,22 +11,51 @@
     <div class="box-content">
       <h2><%= @company.name %></h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <%= raw(@company.overview) %>
       </p>               
      </div>
   </div><!--/span-->
 </div><!--/row-->
 <div class="row-fluid sortable">
-  <div class="box span4">
+  <div class="box span8">
     <div class="box-header">
       <h2><i class="icon-th"></i><span class="break"></span>General Information</h2>
     </div>
     <div class="box-content">
-                <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>                 
-            </div>
+      <table>
+        <tr>
+          <td><strong>Website</strong></td>
+          <td><%= link_to @company.website, :target => "_blank" %></td>
+        </tr>
+        <tr>
+          <td><strong>Crunchbase Profile &nbsp&nbsp</strong></td>
+          <td><%= link_to @company.crunchbase_url, :target => "_blank" %></td>
+        </tr>
+        <tr>
+          <td><strong>Blog</strong></td>
+          <td><%= link_to @company.blog_url, :target => "_blank" %></td>
+        </tr> 
+        <tr>
+          <td><strong>Twitter Handle</strong></td>
+          <td><%= link_to @company.twitter_username, "http://twitter.com/#{@company.twitter_username}", :target => "_blank" %></td>
+        </tr> 
+        <tr>
+          <td><strong>Num of Employees</strong></td>
+          <td><%= @company.number_of_employees %></td>
+        </tr> 
+        <tr>
+          <td><strong>Year Founded</strong></td>
+          <td><%= @company.founded_year %></td>
+        </tr> 
+      </table>              
+    </div>
   </div><!--/span-->
+
+<!-- #  blog_url            :string(255)
+#  twitter_username    :string(255)
+#  number_of_employees :integer
+#  founded_year        :integer
+#  overview            :text -->
   
   <div class="box span4">
     <div class="box-header">
@@ -42,17 +71,6 @@
       <% else %>   
         <p>There are currently no available jobs postings for this company.  >:(</p>
       <% end %>      
-    </div>
-  </div><!--/span-->
-  
-  <div class="box span4">
-    <div class="box-header">
-      <h2><i class="icon-th"></i><span class="break"></span>People</h2>
-    </div>
-    <div class="box-content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>                 
     </div>
   </div><!--/span-->
 </div><!--/row-->
