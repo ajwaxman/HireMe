@@ -62,7 +62,6 @@ class InterviewsController < ApplicationController
       if rel.save && int.save
         
         Record.write_record(rel)   # Create Record from relationship.
-
         format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
         format.json { render json: interview_path(int), status: :created, location: @interview }
       else

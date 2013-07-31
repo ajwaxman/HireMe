@@ -15,17 +15,17 @@
       <% when "like" %>
         You like this job!
       <% when "interviewing" %>
-        You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', relationship_path(@relationship) %>
+        You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% when "pending" %>
-        You interviewed with <%= @job.company.name %>! <%= link_to '[Update]', relationship_path(@relationship) %>
+        You interviewed with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% when "company_decline" %>
-        Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '[Update]', relationship_path(@relationship) %>
+        Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% when "offer_received" %>
-        You received an offer from <%= @job.company.name %>! <%= link_to '[Update]', relationship_path(@relationship) %>
+        You received an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% when "offer_accepted" %>
-        You accepted an offer from <%= @job.company.name %>! <%= link_to '[Update]', relationship_path(@relationship) %>
+        You accepted an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% when "offer_declined" %>
-        You declined an offer from <%= @job.company.name %>. <%= link_to '[Update]', relationship_path(@relationship) %>
+        You declined an offer from <%= @job.company.name %>. <%= link_to '[Update]', interview_path(@relationship.interview) %>
       <% else %>
         You have no relationship with this job
       <% end %>
