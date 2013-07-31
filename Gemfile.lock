@@ -81,9 +81,12 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
+    mini_portile (0.5.1)
     multi_json (1.7.7)
     nav_lynx (1.0.0)
       rails (~> 3.2.13)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -164,6 +167,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   nav_lynx
+  nokogiri
   pry-debugger
   quiet_assets
   rails (= 3.2.13)
