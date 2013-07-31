@@ -6,7 +6,7 @@ class CompanyScraper
 
   def initialize(company_name)
     begin
-      @company_name = company_name
+      @company_name = company_name.gsub(' ', '-')
       @valid = true
       @cb_company_hash = Crunchbase::Company.get(company_name)
     rescue Crunchbase::CrunchException
@@ -22,7 +22,7 @@ class CompanyScraper
     Company.create(
       :name => @cb_company_hash.name,
       :website => (@cb_company_hash.homepage_url ? @cb_company_hash.homepage_url : "Unknown"),
-      :logo_url => ("http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" ? "http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" : "http://mitchwainer.com/digitalocean/flatiron-school-logo.png"), 
+      :logo_url => (@cb_company_hash.image["available_sizes"][0][1] ? "http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" : "http://mitchwainer.com/digitalocean/flatiron-school-logo.png"), 
       :crunchbase_url => (@cb_company_hash.crunchbase_url ? @cb_company_hash.crunchbase_url : "Unknown"),
       :blog_url => (@cb_company_hash.blog_url ? @cb_company_hash.blog_url : "Unknown"),
       :twitter_username => (@cb_company_hash.twitter_username ? @cb_company_hash.twitter_username : "Unknown"),

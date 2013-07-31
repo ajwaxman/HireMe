@@ -40,16 +40,6 @@ class JobScraper
 		end
 
 	end
-
-	def method_name
-		
-	end
-
-	# Add created job into database.
-	def self.add_job_to_db
-
-	end
-
 end
 
 class SignalsScraper < JobScraper
@@ -92,7 +82,7 @@ class GithubScraper < JobScraper
 		@job_title 		= @doc.css(".inner h1").text
 		@company_name = @doc.css(".inner h2").first.text.strip.split("\n").last.strip
 		@location 		= @doc.css(".supertitle").text.split("/").last.strip
-		@description 	= @doc.css(".main p").first.text
+		@description 	= @doc.css(".main p").text
 	end
 
 end
