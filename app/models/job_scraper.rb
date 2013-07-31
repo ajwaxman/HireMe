@@ -41,8 +41,13 @@ class JobScraper
 
 	end
 
+	def method_name
+		
+	end
+
 	# Add created job into database.
 	def self.add_job_to_db
+
 	end
 
 end
