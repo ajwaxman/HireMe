@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130731182438) do
+ActiveRecord::Schema.define(:version => 20130731195354) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20130731182438) do
     t.string   "crunchbase_url"
     t.string   "blog_url"
     t.string   "twitter_username"
-    t.integer  "number_of_employees"
-    t.integer  "founded_year"
+    t.string   "number_of_employees"
+    t.string   "founded_year"
     t.text     "overview"
   end
 
