@@ -39,4 +39,5 @@
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.masonry.min.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.knob.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/jquery.sparkline.min.js
+//= require ../../../vendor/assets/bootstrap-timepicker/js/bootstrap-timepicker.js
 //= require ../../../vendor/assets/perfectum_dashboard_1_0_5/js/custom.js

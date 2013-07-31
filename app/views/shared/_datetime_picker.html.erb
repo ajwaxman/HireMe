@@ -6,9 +6,9 @@
   <%= f.hidden_field :date, :id => "alt-datepicker"%>
 </div>
 
-<div class="field">
-  <%= f.label :start_time %><br />
-  <%= f.time_select :start_time%>
+<div class="input-append bootstrap-timepicker">
+  <input id="start_time" type="text" class="input-small">
+  <span class="add-on"><i class="icon-time"></i></span>
 </div>
 
 <div class="field">
@@ -24,4 +24,5 @@
 	  		altField  : '#alt-datepicker'
 	  	});
 	});
+  $('#start_time').timepicker();
 </script>

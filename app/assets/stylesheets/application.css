@@ -14,5 +14,6 @@
  *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/style.css
  *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/style-responsive.css
  *= require ../../../vendor/assets/perfectum_dashboard_1_0_5/css/bootstrap-switch.css
+ *= require ../../../vendor/assets/bootstrap-timepicker/css/bootstrap-timepicker.css 
  *= require_tree .
  */

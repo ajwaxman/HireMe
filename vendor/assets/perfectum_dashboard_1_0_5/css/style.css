@@ -640,7 +640,7 @@ a.brand span {
 
 .dropdown-menu a {
   	display: block;
-  	padding: 5px 10px !important;
+  	padding: 5px 10px; /* We removed an !important here */
   	clear: both;
   	font-weight: normal;
   	line-height: 20px;
