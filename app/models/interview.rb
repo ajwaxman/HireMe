@@ -24,9 +24,9 @@ class Interview < ActiveRecord::Base
 
   has_many :records,	:through => :relationship
 
-  # validates_presence_of   :date
-  # validates_presence_of   :start_time
-  # validates_presence_of   :end_time
+  validates_presence_of   :date
+  validates_presence_of   :start_time
+  validates_presence_of   :end_time
 
   validate :validates_start_time_and_end_time
 

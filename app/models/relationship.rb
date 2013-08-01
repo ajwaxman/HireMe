@@ -85,11 +85,8 @@ class Relationship < ActiveRecord::Base
     return c_id, j_id, u_id
   end
 
-  # Establish relationship, along with interview, of models.
-  def self.establish_relationship (params, c_id, j_id, u_id)
-    int = Interview.create(params)
+  def self.establish_relationship (c_id, j_id, u_id, int)
     rel = Relationship.find_or_create_by_company_id_and_job_id_and_user_id(c_id, j_id, u_id)
-
 
     int.relationship_id = rel.id
     rel.interview_id    = int.id
