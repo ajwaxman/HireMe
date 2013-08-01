@@ -116,16 +116,10 @@ class JobsController < ApplicationController
   def import_job
     @url = params[:url]
     ChromeJobAdder.new(@url).create_job_from_link
+  end
 
-    respond_to do |format|
-      if @job.save
-        format.html { redirect_to @job, notice: 'Job was successfully created.' }
-        format.json { render json: @job, status: :created, location: @job }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @job.errors, status: :unprocessable_entity }
-      end
-    end
+  def import_result
+    
   end
 
 end
