@@ -1,5 +1,7 @@
 <h1 class="text-center"><%= @user.name %></h1>
 
+<%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info" %>
+
 <div class="row-fluid sortable">
         
   <div class="box span12">

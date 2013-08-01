@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
     <div class="field">
@@ -20,15 +20,15 @@
     <%= f.check_box :hireable %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br />
+    <%= f.label :phone %>
     <%= f.text_field :phone %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Update Student', :class => "btn btn-success" %>
   </div>
 <% end %>

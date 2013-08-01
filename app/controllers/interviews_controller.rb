@@ -20,6 +20,7 @@ class InterviewsController < ApplicationController
   # GET /interviews/1.json
   def show
     @interview = Interview.find(params[:id])
+    @job       = @interview.job
 
     respond_to do |format|
       format.html # show.html.erb

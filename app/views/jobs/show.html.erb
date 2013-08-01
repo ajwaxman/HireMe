@@ -40,10 +40,6 @@
 
 <br>
 
-<% if current_user.admin? %>
-  <%= link_to 'Edit', edit_job_path(@job) %>
-<% end %>
-
 <hr>
 
 <div class="row-fluid sortable">
@@ -102,5 +98,8 @@
   </div><!--/span-->
 </div><!--/row-->
       
-<div style="border-bottom: 1px dotted; margin: 10px 0;"></div>
+<hr>
 
+<% if current_user.admin? %>
+  <%= link_to 'Edit Job', edit_job_path(@job), :class => "btn btn-warning" %>
+<% end %>
