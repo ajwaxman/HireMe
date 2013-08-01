@@ -1,4 +1,4 @@
-every 1.minutes do
+every 10.minutes do
 	rake "cron:post_interview", :output => 'cron.log' , :environment => "development"
 end
 
