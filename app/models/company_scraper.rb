@@ -25,13 +25,13 @@ class CompanyScraper
   def add_company_from_crunchbase
     Company.create(
       :name => @cb_company_hash.name,
-      :website => (@cb_company_hash.homepage_url ? @cb_company_hash.homepage_url : "Please Update"),
+      :website => (@cb_company_hash.homepage_url ? @cb_company_hash.homepage_url : "Please update"),
       :logo_url => (@cb_company_hash.image["available_sizes"][0][1] ? "http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" : "http://farm1.staticflickr.com/72/173447991_3bf67f3f92.jpg"), 
-      :crunchbase_url => (@cb_company_hash.crunchbase_url ? @cb_company_hash.crunchbase_url : "Please Update"),
-      :blog_url => (@cb_company_hash.blog_url ? @cb_company_hash.blog_url : "Please Update"),
-      :twitter_username => (@cb_company_hash.twitter_username ? @cb_company_hash.twitter_username : "Please Update"),
-      :number_of_employees => (@cb_company_hash.number_of_employees ? @cb_company_hash.number_of_employees : "Please Update"),
-      :founded_year => (@cb_company_hash.founded ? @cb_company_hash.founded.year : "Please Update" ),
+      :crunchbase_url => (@cb_company_hash.crunchbase_url ? @cb_company_hash.crunchbase_url : "Please update"),
+      :blog_url => (@cb_company_hash.blog_url ? @cb_company_hash.blog_url : "Please update"),
+      :twitter_username => (@cb_company_hash.twitter_username ? @cb_company_hash.twitter_username : "Please update"),
+      :number_of_employees => (@cb_company_hash.number_of_employees ? @cb_company_hash.number_of_employees : "Please update"),
+      :founded_year => (@cb_company_hash.founded ? @cb_company_hash.founded.year : "Please update" ),
       :overview => @cb_company_hash.overview
     )   
   end
@@ -44,9 +44,9 @@ class CompanyScraper
       :logo_url => "http://farm1.staticflickr.com/72/173447991_3bf67f3f92.jpg",
       :crunchbase_url => "Please update",
       :blog_url => "Please update",
-      :twitter_username => "Please Update",
-      :number_of_employees => 0,
-      :founded_year => "Please Update",
+      :twitter_username => "Please update",
+      :number_of_employees => "Please update",
+      :founded_year => "Please update",
       :overview => "Please add a company overview."
     )   
   end

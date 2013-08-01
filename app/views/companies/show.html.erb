@@ -57,11 +57,19 @@
         </tr> 
         <tr>
           <td><strong>Num of Employees</strong></td>
-          <td><%= @company.number_of_employees %></td>
+          <% if @company.number_of_employees == "Please update" %>
+            <td><%= link_to @company.number_of_employees, edit_company_path(@company), :target => "_blank" %></td> 
+          <% else %>
+            <td><%= @company.number_of_employees %></td>
+          <% end %>
         </tr> 
         <tr>
           <td><strong>Year Founded</strong></td>
-          <td><%= @company.founded_year %></td>
+          <% if @company.founded_year == "Please update" %>
+            <td><%= link_to @company.founded_year, edit_company_path(@company), :target => "_blank" %></td> 
+          <% else %>
+            <td><%= @company.founded_year %></td>
+          <% end %>
         </tr> 
       </table>              
     </div>
