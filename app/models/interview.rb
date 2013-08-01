@@ -12,6 +12,8 @@
 #
 
 class Interview < ActiveRecord::Base
+  include Validations::StartTime
+  
   attr_accessible :end_time, :relationship_id, :start_time, :date
 
   has_one :relationship
@@ -21,6 +23,12 @@ class Interview < ActiveRecord::Base
   has_one :user,    :through => :relationship
 
   has_many :records,	:through => :relationship
+
+  validates_presence_of   :date
+  validates_presence_of   :start_time
+  validates_presence_of   :end_time
+
+  validate :validates_start_time_and_end_time
 
   def merge_datetime
     date = self.date

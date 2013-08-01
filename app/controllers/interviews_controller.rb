@@ -52,23 +52,47 @@ class InterviewsController < ApplicationController
   # POST  => /interviews/new/
 
   def create
-
     c_id, j_id, u_id = Relationship.find_ids(params[:job_id],params[:user_id])
-    int, rel         = Relationship.establish_relationship(params[:interview],c_id, j_id, u_id)
+    int = Interview.new(params[:interview])
     
-    @user = User.find(u_id) # Find user for redirect.
-
     respond_to do |format|
-      if rel.save && int.save
-        
-        Record.write_record(rel)   # Create Record from relationship.
+      if int.save
+        int, rel = Relationship.establish_relationship(c_id, j_id, u_id, int)
+        rel.save
+        Record.write_record(rel)
         format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
         format.json { render json: interview_path(int), status: :created, location: @interview }
       else
-        format.html { render action: "new" }
-        format.json { render json: @interview.errors, status: :unprocessable_entity }
+        # if user
+          @interview = int
+          @users = User.all
+          @job = Job.find_by_id(j_id)
+          @user = User.find_by_id(u_id)
+          format.html { render "jobs/interviews/new", :controller => "jobs/interviews", notice: 'Interview was not created properly.' }
+          format.json { render json: @interview.errors, status: :unprocessable_entity }
+        # else if Admin
+
       end
     end
+    
+    # @user = User.find(u_id) # Find user for redirect.
+
+
+
+    # respond_to do |format|
+    #   if rel.save && int.save
+    #     Record.write_record(rel)   # Create Record from relationship.
+    #     format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
+    #     format.json { render json: interview_path(int), status: :created, location: @interview }
+    #   elsif rel.save
+    #     rel.aasm_state = "start"
+    #     rel.save
+    #     format.html { redirect_to new_job_interview_path(j_id), notice: 'Interview was not created properly.' }
+    #     format.json { render json: @interview.errors, status: :unprocessable_entity }
+    #   else
+        
+    #   end
+    # end
   end
 
   # PUT /interviews/1

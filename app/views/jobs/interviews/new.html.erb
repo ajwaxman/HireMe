@@ -20,12 +20,20 @@
 
   <% if current_user.admin? %>
     <div class="field">
-      <label>Select A User</label>
+      <label>Select a User</label>
       <select name="user_id">
-        <% @users.each do |u|%>
-          <option value=<%= u.id %>><%= u.name %></option>      
+        <% unless @user %>
+          <option selected="selected">Select a User</option>
+        <% end %>
+          <% @users.each do |u|%>
+            <% if @user && (@user.name == u.name) %>
+              <option value=<%= u.id %> selected="selected"><%= u.name %></option> 
+            <% else %>
+              <option value=<%= u.id %>><%= u.name %></option> 
+            <% end %>
         <% end %>
       </select>
+
     </div>
   <% end %>
 
