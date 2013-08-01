@@ -17,6 +17,8 @@ HireCrm::Application.routes.draw do
 
   get 'dashboard', to: 'users#dashboard'
 
+  post 'jobs/import_job' => 'jobs#import_job'
+
   get 'jobs/indeed'  => 'jobs#indeed_jobs'
   post 'jobs/indeed' => 'jobs#indeed_jobs'
 

@@ -6,7 +6,8 @@
   "version": "1.0",
 
   "permissions": [
-    "http://localhost:3000/"
+    "http://localhost:3000/", 
+    "tabs"
   ],
   "browser_action": {
     "default_icon": "acdc_logo.png",

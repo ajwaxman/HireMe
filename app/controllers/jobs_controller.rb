@@ -1,6 +1,8 @@
 class JobsController < ApplicationController
   before_filter :admin_only?, :only => [:destroy, :edit]
   before_filter :logged_in_only?, :only => [:create, :new, :show]
+  skip_before_filter :verify_authenticity_token, :only => [:import_job]
+  skip_before_filter :verify_logged_in, :only => [:import_job]
 
   ##################
   # Custom Actions #
@@ -108,6 +110,21 @@ class JobsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to jobs_url, notice: 'Job was successfully deleted.' }
       format.json { head :no_content }
+    end
+  end
+
+  def import_job
+    @url = params[:url]
+    ChromeJobAdder.new(@url).create_job_from_link
+
+    respond_to do |format|
+      if @job.save
+        format.html { redirect_to @job, notice: 'Job was successfully created.' }
+        format.json { render json: @job, status: :created, location: @job }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @job.errors, status: :unprocessable_entity }
+      end
     end
   end
 
