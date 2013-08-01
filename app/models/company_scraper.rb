@@ -6,10 +6,14 @@ class CompanyScraper
 
   def initialize(company_name)
     begin
-      @company_name = company_name.gsub(' ', '-')
+      @company_name = company_name
       @valid = true
       @cb_company_hash = Crunchbase::Company.get(company_name)
     rescue Crunchbase::CrunchException
+      @valid = false 
+    rescue URI::InvalidURIError
+      @valid = false 
+    rescue Yajl::ParseError
       @valid = false 
     end
   end
@@ -21,27 +25,28 @@ class CompanyScraper
   def add_company_from_crunchbase
     Company.create(
       :name => @cb_company_hash.name,
-      :website => (@cb_company_hash.homepage_url ? @cb_company_hash.homepage_url : "Unknown"),
-      :logo_url => (@cb_company_hash.image["available_sizes"][0][1] ? "http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" : "http://mitchwainer.com/digitalocean/flatiron-school-logo.png"), 
-      :crunchbase_url => (@cb_company_hash.crunchbase_url ? @cb_company_hash.crunchbase_url : "Unknown"),
-      :blog_url => (@cb_company_hash.blog_url ? @cb_company_hash.blog_url : "Unknown"),
-      :twitter_username => (@cb_company_hash.twitter_username ? @cb_company_hash.twitter_username : "Unknown"),
-      :number_of_employees => (@cb_company_hash.number_of_employees ? @cb_company_hash.number_of_employees : "Unknown"),
-      :founded_year => (@cb_company_hash.founded ? @cb_company_hash.founded.year : "Unknown" ),
+      :website => (@cb_company_hash.homepage_url ? @cb_company_hash.homepage_url : "Please Update"),
+      :logo_url => (@cb_company_hash.image["available_sizes"][0][1] ? "http://www.crunchbase.com/#{@cb_company_hash.image["available_sizes"][0][1]}" : "http://farm1.staticflickr.com/72/173447991_3bf67f3f92.jpg"), 
+      :crunchbase_url => (@cb_company_hash.crunchbase_url ? @cb_company_hash.crunchbase_url : "Please Update"),
+      :blog_url => (@cb_company_hash.blog_url ? @cb_company_hash.blog_url : "Please Update"),
+      :twitter_username => (@cb_company_hash.twitter_username ? @cb_company_hash.twitter_username : "Please Update"),
+      :number_of_employees => (@cb_company_hash.number_of_employees ? @cb_company_hash.number_of_employees : "Please Update"),
+      :founded_year => (@cb_company_hash.founded ? @cb_company_hash.founded.year : "Please Update" ),
       :overview => @cb_company_hash.overview
     )   
   end
 
   def add_company_from_scratch
+    @company_name.gsub!('-',' ')
     Company.create(
       :name => @company_name,
-      :website => "http://flatironschool.com",
-      :logo_url => "http://mitchwainer.com/digitalocean/flatiron-school-logo.png",
-      :crunchbase_url => "http://crunchbase.com",
-      :blog_url => "http://blog.flatironschool.com",
-      :twitter_username => "flatironschool",
+      :website => "Please update",
+      :logo_url => "http://farm1.staticflickr.com/72/173447991_3bf67f3f92.jpg",
+      :crunchbase_url => "Please update",
+      :blog_url => "Please update",
+      :twitter_username => "Please Update",
       :number_of_employees => 0,
-      :founded_year => "Unknown",
+      :founded_year => "Please Update",
       :overview => "Please add a company overview."
     )   
   end
