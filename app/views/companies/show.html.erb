@@ -74,32 +74,36 @@
     </div>
   </div><!--/span-->
 </div><!--/row-->
-      
-<hr>
 
+<% if current_user.admin? %>
+  <hr>
 
+  <h4>Upcoming Interviews</h4>
 
+  <% if @company.interviews.empty? == true %>
+  	<p><%= @company.name %> has no upcoming interviews.</p>
+  <% else %>
+  	<%= render :partial => "shared/interview_list", :locals => {:interview_list => @company.interviews} %>
+  <% end %>
 
-<h4>Upcoming Interviews</h4>
+  <hr>
 
-<% if @company.interviews.empty? == true %>
-	<p><%= @company.name %> has no upcoming interviews.</p>
-<% else %>
-	<%= render :partial => "shared/interview_list", :locals => {:interview_list => @company.interviews} %>
+  <h4>Record History</h4>
+
+  <% if @company.records.empty? == true %>
+    <p><%= @company.name %> has no record history.</p>
+  <% else %>
+    <%= render :partial => "shared/record_list", :locals => {:record_list => @company.records} %>
+  <% end %>
+
 <% end %>
 
-<%= render 'shared/event_history' %>
-
-
-<div style="border-bottom: 1px dotted; margin:20px 0 20px 0;"></div>
+<hr>
 
 <%= link_to 'Add new job', new_company_job_path(@company), :class => "btn btn-info" %>
 <% if current_user.admin? %>
   <%= link_to raw('<i class="icon-trash icon-white"></i>'), @company, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
 <% end %>
-
-<br>
-<br>
 
 <% if current_user.admin? %>
 	<%= link_to 'Edit', edit_company_path(@company) %>
