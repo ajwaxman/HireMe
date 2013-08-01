@@ -515,7 +515,7 @@ namespace :db do
 
 		record_2 = Record.create(
 		  :relationship_id => 1,
-		  :event_id => 2,
+		  :event_id => 3,
 		  :company => "Bondsy",
 		  :job => "Sinatra Developer",
 		  :user => "Christopher Lake"
@@ -534,7 +534,7 @@ namespace :db do
 		  :company => "Amazon",
 		  :job => "Rails Developer",
 		  :user => "David Manaster",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_5 = Record.create(
@@ -542,7 +542,7 @@ namespace :db do
 		  :company => "Artsy",
 		  :job => "Senior Software Engineer",
 		  :user => "Christopher Lake",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_6 = Record.create(
@@ -550,7 +550,7 @@ namespace :db do
 		  :company => "Bondsy",
 		  :job => "Sinatra Developer",
 		  :user => "Kirin Masood",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_7 = Record.create(
@@ -558,7 +558,7 @@ namespace :db do
 		  :company => "Facebook",
 		  :job => "Sinatra Developer",
 		  :user => "Christopher Lake",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_8 = Record.create(
@@ -566,7 +566,7 @@ namespace :db do
 		  :company => "Google",
 		  :job => "SQL Engineer",
 		  :user => "Adam Waxman",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_9 = Record.create(
@@ -574,7 +574,7 @@ namespace :db do
 		  :company => "Amazon",
 		  :job => "Rails Developer",
 		  :user => "David Manaster",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_10 = Record.create(
@@ -582,7 +582,7 @@ namespace :db do
 		  :company => "Artsy",
 		  :job => "Senior Software Engineer",
 		  :user => "Ruthie Nachmany",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_11 = Record.create(
@@ -590,7 +590,7 @@ namespace :db do
 		  :company => "Artsy",
 		  :job => "iOS Growth Hacker",
 		  :user => "Ruthie Nachmany",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_12 = Record.create(
@@ -598,7 +598,7 @@ namespace :db do
 		  :company => "Bondsy",
 		  :job => "Facebook Haskell Baller",
 		  :user => "Kirin Masood",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_13 = Record.create(
@@ -606,7 +606,7 @@ namespace :db do
 		  :company => "Google",
 		  :job => "SQL Engineer",
 		  :user => "Katie Ishibashi",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_14 = Record.create(
@@ -614,7 +614,7 @@ namespace :db do
 		  :company => "Amazon",
 		  :job => "Rails Developer",
 		  :user => "David Manaster",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_15 = Record.create(
@@ -622,7 +622,7 @@ namespace :db do
 		  :company => "Artsy",
 		  :job => "Senior Software Engineer",
 		  :user => "Carlos Lazo",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_16 = Record.create(
@@ -654,7 +654,7 @@ namespace :db do
 		  :company => "Amazon",
 		  :job => "Rails Developer",
 		  :user => "David Manaster",
-		  :event_id => 2
+		  :event_id => 3
 		)
 
 		record_20 = Record.create(
