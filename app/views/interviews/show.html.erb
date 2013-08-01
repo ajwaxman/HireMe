@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Interview Details for <%= @interview.user.name %></h1>
+<h1>Interview Details for <%= link_to @interview.user.name, user_path(@interview.user) %></h1>
 
 <div class="row-fluid sortable">
 

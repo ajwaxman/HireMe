@@ -18,7 +18,7 @@ class Record < ActiveRecord::Base
   belongs_to :relationship
   belongs_to :event
 
-  default_scope :order => 'created_at ASC'
+  default_scope :order => 'created_at DESC'
 
   # Write record based on current state of relationship.
 	def self.write_record(rel)

@@ -341,6 +341,31 @@ h6 {
           	border-radius: 2px 2px 0px 0px;
 	overflow: hidden;
 }
+.box-tab {
+	margin: 0px 0px;
+}
+.box-tab-header {
+	height: 20px;
+  	border-top: 1px solid #ddd;
+  	border-left: 1px solid #ddd;
+  	border-right: 1px solid #ddd;
+	margin-bottom: -1px;
+  	padding: 10px;
+  	background-color: white;
+  	background-image: -moz-linear-gradient(top, #fff, #fff);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
+  	background-image: -webkit-linear-gradient(top, #fff, #fff);
+  	background-image: -o-linear-gradient(top, #fff, #fff);
+  	background-image: linear-gradient(to bottom, #fff, #fff);
+  	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#efefef', GradientType=0);
+  	-webkit-box-shadow: none;
+     	-moz-box-shadow: none;
+          box-shadow: none;
+  	-webkit-border-radius: 2px 2px 0px 0px;
+       -moz-border-radius: 2px 2px 0px 0px;
+          	border-radius: 2px 2px 0px 0px;
+	overflow: hidden;
+}
 
 .box-header h2{
 	font-size: 16px;

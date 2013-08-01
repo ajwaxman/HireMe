@@ -27,8 +27,20 @@
     <%= f.label :phone %>
     <%= f.text_field :phone %>
   </div>
+  <div class="input-prepend" title="Password">
+    <span class="add-on"><i class="icon-lock"></i></span>
+    <input class="input-large span10" id="password" name="user[password]" type="password" placeholder="Password"/>
+  </div>
 
+  <div class="clearfix"></div>
+
+  <div class="input-prepend" title="Password_Confirmation">
+    <span class="add-on"><i class="icon-lock"></i></span>
+    <input class="input-large span10" id="password_confirmation" name="user[password_confirmation]" type="password" placeholder="Confirm Password"/>
+  </div>
+  
   <div class="actions">
     <%= f.submit 'Update Student', :class => "btn btn-success" %>
   </div>
 <% end %>
+<%= link_to 'Cancel', user_path(current_user) %>

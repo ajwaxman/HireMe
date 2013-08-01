@@ -26,5 +26,9 @@ module UsersHelper
   def percentage_interviewing
     100.5 - percentage_not_interviewing
   end
+
+  def company_likes(user)
+    user.relationships.select {|like| like.aasm_state == "like"}    
+  end
   
 end

@@ -2,4 +2,6 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Cancel', users_path %>
+<% if current_user.admin? %>
+	<%= link_to 'Cancel', users_path %>
+<% end %>
