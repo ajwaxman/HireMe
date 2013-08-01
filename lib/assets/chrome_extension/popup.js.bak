@@ -1,0 +1,16 @@
+var job_url = window.location.href
+
+// chrome.tabs.query({'active': true}, function(tabs) {
+//   chrome.tabs.update(tabs[0].id, {url: "http://localhost:3000/new_job"})
+// });
+var http = new XMLHttpRequest();
+var url = "http://localhost:3000/new_job";
+var params = "lorem=ipsum&name=binny";
+http.open("GET", url+"?"+params, true);
+http.onreadystatechange = function() {//Call a function when the state changes.
+  if(http.readyState == 4 && http.status == 200) {
+    alert(http.responseText);
+  }
+}
+http.send(null);
+
