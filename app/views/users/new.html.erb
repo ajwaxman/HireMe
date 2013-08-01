@@ -1,4 +1,4 @@
-<h1>Sign up</h1>
+<h1>Registration</h1>
 
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
@@ -14,24 +14,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :hireable %>
+    <%= f.label 'Job Seeker?' %>
     <%= f.check_box :hireable, {checked: true} %>
   </div>
   <br />
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
     <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :password %>
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
@@ -39,5 +39,3 @@
   </div>
 
 <% end %>
-
-<%= link_to 'Back', users_path %>
