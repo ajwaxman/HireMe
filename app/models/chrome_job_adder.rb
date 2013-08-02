@@ -27,7 +27,7 @@ class ChromeJobAdder
 
 	# Associates company to job.
 	def create_and_associate_job
-		@company.jobs.build(
+		@job = @company.jobs.build(
 			:title => @scraper.job_title,
 			:description => @scraper.description
 		)
@@ -39,6 +39,8 @@ class ChromeJobAdder
 		scrape_job
 		find_or_create_company
 		create_and_associate_job
+
+		@job
 	end
 
 end
