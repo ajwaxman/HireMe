@@ -2,11 +2,28 @@ module UsersHelper
 
   # Employment Statistics
 
+  def students_hireable
+    User.where(:role => "student", :hireable => true)
+  end
+
+  def number_students_hireable
+    students_hireable.count
+  end
+
   def students_employed
-    (Relationship.where(:aasm_state => 'offer_accepted').count / User.where(:role => 'student').count.to_f) * 100
+    students_hireable.select{|u| u.relationships.where(:aasm_state => "offer_accepted").any? }.count
+  end
+
+  def display_employed_students
+    (students_employed / number_students_hireable.to_f) * 100
   end
 
   def students_receiving_offers
+    students_hireable.select{|u| u.relationships.where('aasm_state = "offer_received" or aasm_state = "offer_accepted" or aasm_state = "offer_declined"').any? }.count
+  end
+
+  def display_students_receiving_offers
+    (students_receiving_offers / number_students_hireable.to_f) * 100
   end
 
   # Interviewing Statistics
@@ -16,7 +33,7 @@ module UsersHelper
   end
 
   def total_students_interviewing
-    @users.count{|u| u.student? && u.interviews.any? }
+    students_hireable.count{|u| u.student? && u.interviews.any? }
   end
 
   def percentage_not_interviewing
@@ -24,7 +41,7 @@ module UsersHelper
   end
 
   def percentage_interviewing
-    100.5 - percentage_not_interviewing
+    100 - percentage_not_interviewing
   end
 
   def company_likes(user)

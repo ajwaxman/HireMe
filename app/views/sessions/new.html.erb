@@ -1,16 +1,29 @@
 <style type="text/css">
-			body { background: url(/images/bg-login.jpg) !important; }
-		</style>
+body { 
+				background: url(/images/bg-login.png) no-repeat center center fixed !important; 
+				background-size: cover!important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+			}
+</style>
 
 
 <%= form_tag({:controller => "sessions", :action => "login", :method => "post"}) do %>
 
 <div class="container-fluid">
 		<div class="row-fluid">
+
 					
 			<div class="row-fluid">
+
+				<h1 id="homepage-logo-text">Let There Be Hiring</h1>
+				<h1 class="homepage-subtitle homepage-subtitle-top">An</h1>
+				<div id="ac-dc-div"><%= image_tag('ac-dc.png', :id => "ac-dc-logo", :width => "100") %></div>
+				<h1 class="homepage-subtitle homepage-subtitle-bottom">Production</h1>
+
 				<div class="login-box">
-					<h2>Login to your account</h2>
+					<h2>Login</h2>
 					<form class="form-horizontal" action="" method="post">
 						<fieldset>
 							
@@ -24,7 +37,6 @@
 								<span class="add-on"><i class="icon-lock"></i></span>
 								<input class="input-large span10" name="password" id="password" type="password" placeholder="Enter Password"/>
 							</div>
-							<div class="clearfix"></div>
 							
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 
@@ -35,10 +47,8 @@
 							<div class="clearfix"></div>
 					</form>
 					<hr>
-					<h3>Don't have an account?</h3>
-					<p>
-						<a href="/signup" class="btn btn-primary">Sign up here</a>
-					</p>	
+					<p>Don't have an account?</p>
+						<p><a href="/signup" class="btn-small btn">Sign up here</a></p>
 				</div><!--/span-->
 			</div><!--/row-->
 			
