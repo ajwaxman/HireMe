@@ -56,7 +56,8 @@
 #homepage-logo-text {
   text-align: center;
   color: white;
-  padding-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 70px;
   font-family: 'Kaushan Script', cursive;
   line-height: 100%;
@@ -66,15 +67,14 @@
   text-align: center;
   color: white;
   font-size: 20px;
-  padding-top: 40px;
   font-style: italic;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
 
 .homepage-subtitle-top {
-  padding-top: 20px;
   padding-bottom: 0;
+  position: relative;
 }
 
 .homepage-subtitle-bottom {
@@ -84,7 +84,9 @@
 }
 
 .login-box {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  background: white;
 }
 
 
@@ -93,19 +95,35 @@
 }
 
 
-
 .login-box hr {
 	margin: 10px 2px 5px 2px;
 }
 
 .login-box h2 {
 	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 18px;
+	font-size: 25px;
+  text-align: center;
+  margin-left: 0;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 
 #ac-dc-div, #ac-dc-logo {
   text-align: center;
   position: relative;
   top: -5px;
+}
+
+
+#no-account {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; 
+}
+
+.brand {
+  font-family: 'Kaushan Script', cursive;  
+}
+
+.sign-up-box {
+  margin-top: 100px;
 }
