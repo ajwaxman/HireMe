@@ -53,7 +53,40 @@
                         <td><%= interview.date.strftime('%-m/%-d/%Y') %></td>
                         <td><%= interview.start_time.strftime('%-l:%M %P') %></td>
                         <td class="center">
-                          <span class="label label-warning"><%= interview.relationship.aasm_state %></span>
+                          <% if interview.relationship.aasm_state == "open_status" %> 
+                            <span class="label label-info">
+                              Liked
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "pending" %>
+                            <span class="label label-warning">
+                              Update Status
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "interviewing" %>
+                            <span class="label label-success">
+                              Interview Scheduled
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "user_decline" %>
+                            <span class="label label-inverse">
+                              Student Declined
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "company_decline" %>
+                            <span class="label label-danger">
+                              Company Declined
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "offer_received" %>
+                            <span class="label">
+                              Offer Received
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "offer_accepted" %>
+                            <span class="label label-success">
+                              Offer Accepted
+                            </span>
+                          <% elsif interview.relationship.aasm_state == "offer_declined" %>
+                            <span class="label label-inverse">
+                              Offer Declined
+                            </span>
+                          <% end %>
+
                         </td>
                         <td class="center">
 
