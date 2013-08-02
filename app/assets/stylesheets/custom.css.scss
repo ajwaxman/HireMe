@@ -53,9 +53,46 @@
 	color: navy;
 }
 
+#homepage-logo-text {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  font-size: 70px;
+  font-family: 'Kaushan Script', cursive;
+  line-height: 100%;
+}
+
+.homepage-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 40px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.homepage-subtitle-top {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.homepage-subtitle-bottom {
+  padding-top: 0px;
+  position: relative;
+  top: -20px;
+}
+
+.login-box {
+  margin-top: 40px;
+}
+
+
 .login-box .input-prepend {
 	padding-bottom: 0;
 }
+
+
 
 .login-box hr {
 	margin: 10px 2px 5px 2px;
@@ -65,4 +102,10 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 18px;
+}
+
+#ac-dc-div, #ac-dc-logo {
+  text-align: center;
+  position: relative;
+  top: -5px;
 }
