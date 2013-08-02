@@ -1,5 +1,11 @@
 <style type="text/css">
-	body { background: url(/images/bg-login.jpg) !important; }
+	body { 
+					background: url(/images/bg-login.png) no-repeat center center fixed !important; 
+					background-size: cover!important;
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+				}
 </style>
 
 <%= form_for @user, :url => {:controller => "sessions", :action => "create", :method => "post"} do |f| %>
