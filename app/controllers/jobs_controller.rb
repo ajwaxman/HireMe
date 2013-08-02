@@ -115,7 +115,8 @@ class JobsController < ApplicationController
 
   def import_job
     @url = params[:url]
-    ChromeJobAdder.new(@url).create_job_from_link
+    @job = ChromeJobAdder.new(@url).create_job_from_link
+    render :json => @job
   end
 
   def import_result
