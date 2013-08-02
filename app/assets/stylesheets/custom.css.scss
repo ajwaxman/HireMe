@@ -71,6 +71,17 @@
   font-weight: 300;
 }
 
-.login_box {
-  margin-top: 0px;
+
+.login-box .input-prepend {
+	padding-bottom: 0;
+}
+
+.login-box hr {
+	margin: 10px 2px 5px 2px;
+}
+
+.login-box h2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
 }
