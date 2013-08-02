@@ -30,26 +30,27 @@ HireCrm::Application.routes.draw do
   get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
   post 'jobs/:id/unlike_company' => 'states#unlike_company'
 
-  get 'relationships/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
-  post 'relationships/:id/rel_like_company' => 'states#rel_like_company'
+  get 'interviews/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
+  post 'interviews/:id/rel_like_company' => 'states#rel_like_company'
 
-  get 'relationships/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
-  post 'relationships/:id/rel_unlike_company' => 'states#rel_unlike_company'
+  get 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
+  post 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company'
 
-  get 'relationships/:id/rel_company_declined' => 'states#rel_company_declined'
-  post 'relationships/:id/rel_company_declined' => 'states#rel_company_declined'
+  get 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
+  post 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
 
-  get 'relationships/:id/rel_user_declined' => 'states#rel_user_declined'
-  post 'relationships/:id/rel_user_declined' => 'states#rel_user_declined'
+  get 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
+  post 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
 
-  get 'relationships/:id/rel_offer_received' => 'states#rel_offer_received'
-  post 'relationships/:id/rel_offer_received' => 'states#rel_offer_received'
+  get 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
+  post 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
 
-  get 'relationships/:id/accept_offer' => 'states#accept_offer'
-  post 'relationships/:id/accept_offer' => 'states#accept_offer'
+  get 'interviews/:id/accept_offer' => 'states#accept_offer'
+  post 'interviews/:id/accept_offer' => 'states#accept_offer'
 
-  get 'relationships/:id/reject_offer' => 'states#reject_offer'
-  post 'relationships/:id/reject_offer' => 'states#reject_offer'  
+  get 'interviews/:id/reject_offer' => 'states#reject_offer'
+  post 'interviews/:id/reject_offer' => 'states#reject_offer'  
+
 
   ##################
   # RESTful Routes #

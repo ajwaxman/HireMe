@@ -1,7 +1,4 @@
 <p id="notice"><%= notice %></p>
-
-<%= render "shared/relationship_state", :state => @state, :relationship => @relationship %>
-
 <span class="pull-right">
   <p style="font-style: italic">
     <% unless @relationship.nil? %>
@@ -14,17 +11,17 @@
         <% unless @relationship.interview.nil? %>  
           <% case @relationship.aasm_state %>
             <% when "interviewing" %>
-                You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
+                You have an interview scheduled with <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
             <% when "pending" %>
-              You interviewed with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
+              You interviewed with <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
             <% when "company_decline" %>
-              Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '[Update]', interview_path(@relationship.interview) %>
+              Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '(Update)', interview_path(@relationship.interview) %>
             <% when "offer_received" %>
-              You received an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
+              You received an offer from <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
             <% when "offer_accepted" %>
-              You accepted an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@relationship.interview) %>
+              You accepted an offer from <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
             <% else "offer_declined" %>
-              You declined an offer from <%= @job.company.name %>. <%= link_to '[Update]', interview_path(@relationship.interview) %>
+              You declined an offer from <%= @job.company.name %>. <%= link_to '(Update)', interview_path(@relationship.interview) %>
           <% end %>
         <% end%>
       <% end %>
@@ -32,7 +29,7 @@
   </p>
 </span>
 
-<hr>
+<br><hr>
 
 <div class="row-fluid sortable">
 

@@ -6,7 +6,7 @@
   <%= link_to 'Unlike This Job', {:controller => :states, :action => :rel_unlike_company}, :class => "btn status_btn" %>
   <%= link_to 'Add Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info" %>
 <% when "interviewing" %>
-  <%= link_to 'Edit Interview', edit_interview_path(@relationship.interview_id), :class => "btn btn-info" %>
+  <%= link_to 'Edit Interview', edit_interview_path(@relationship.interview_id), :class => "btn btn-warning" %>
 <% when "pending" %>
   <!-- Add Additional Interview -->
   <%= link_to 'Add Another Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info status_btn" %>

@@ -146,7 +146,7 @@
     )
 
     job_5 = Job.create(
-      :company_id => 3,
+      :company_id => 1,
       :description => "We're looking for a software architect to lead our team of developers here at Artsy.",
       :title => "Senior Software Developer"
     )
