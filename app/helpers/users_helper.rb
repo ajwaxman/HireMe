@@ -33,7 +33,7 @@ module UsersHelper
   end
 
   def total_students_interviewing
-    @users.count{|u| u.student? && u.interviews.any? }
+    students_hireable.count{|u| u.student? && u.interviews.any? }
   end
 
   def percentage_not_interviewing
@@ -41,7 +41,7 @@ module UsersHelper
   end
 
   def percentage_interviewing
-    100.5 - percentage_not_interviewing
+    100 - percentage_not_interviewing
   end
 
   def company_likes(user)
