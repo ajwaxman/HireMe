@@ -1,4 +1,9 @@
-<p id="notice"><%= notice %></p>
+<% if @state.nil? || @state == "start" %>
+  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success status_btn" %>
+<% else %> 
+  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
+<% end %>
+
 <span class="pull-right">
   <p style="font-style: italic">
     <% unless @relationship.nil? %>
