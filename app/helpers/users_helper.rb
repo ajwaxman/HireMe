@@ -19,6 +19,11 @@ module UsersHelper
   end
 
   def students_receiving_offers
+    students_hireable.select{|u| u.relationships.where('aasm_state = "offer_received" or aasm_state = "offer_accepted" or aasm_state = "offer_declined"').any? }.count
+  end
+
+  def display_students_receiving_offers
+    (students_receiving_offers / number_students_hireable.to_f) * 100
   end
 
   # Interviewing Statistics
