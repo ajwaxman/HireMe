@@ -21,6 +21,8 @@ class InterviewsController < ApplicationController
   def show
     @interview = Interview.find(params[:id])
     @job       = @interview.job
+    @relationship = @interview.relationship
+    @state = @relationship.aasm_state if @relationship
 
     respond_to do |format|
       format.html # show.html.erb

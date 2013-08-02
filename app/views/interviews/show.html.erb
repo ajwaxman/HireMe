@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= render "shared/relationship_state", :state => @state, :relationship => @interview.relationship %>
+<%= render "shared/relationship_state", :state => @state, :relationship => @relationship %>
 
 <span class="pull-right">
   <p style="font-style: italic">
@@ -14,17 +14,17 @@
         <% unless @interview.nil? %>  
           <% case @interview.relationship.aasm_state %>
             <% when "interviewing" %>
-                You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+                You have an interview scheduled with <%= @job.company.name %>!
             <% when "pending" %>
-              You interviewed with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+              You interviewed with <%= @job.company.name %>!
             <% when "company_decline" %>
-              Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '[Update]', interview_path(@interview) %>
+              Talks with <%= @job.company.name %> didn't bear fruit.
             <% when "offer_received" %>
-              You received an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+              You received an offer from <%= @job.company.name %>!
             <% when "offer_accepted" %>
-              You accepted an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+              You accepted an offer from <%= @job.company.name %>!
             <% else "offer_declined" %>
-              You declined an offer from <%= @job.company.name %>. <%= link_to '[Update]', interview_path(@interview) %>
+              You declined an offer from <%= @job.company.name %>.
           <% end %>
         <% end%>
       <% end %>
@@ -32,7 +32,7 @@
   </p>
 </span>
 
-<hr>
+<br><hr>
 
 <h1>Interview Details for <%= link_to @interview.user.name, user_path(@interview.user) %></h1>
 
