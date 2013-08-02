@@ -16,8 +16,7 @@ class UsersController < ApplicationController
     # Calendar view data
 
     gon.interview  = get_calendar_data(@users)
-    gon.chart_data = interviews_chart
-    gon.axis_data  = interviews_chart_dates
+    gon.chart_data, gon.axis_data = interviews_chart
 
     # boilerplate rails code
     respond_to do |format|
@@ -127,27 +126,15 @@ class UsersController < ApplicationController
   end
 
   def interviews_chart
-    array = Array.new
-        (interviews_past..interviews_future).step(1).each_with_index do |date, index| 
-        interview_count = 0
-        (date.strftime("%Y-%m-%d")..(date+1).strftime("%Y-%m-%d")).each do |date|
-          interview_count += Interview.where(:date => date).count 
-        end
-          array << [index, interview_count]
-      end
-    array
-  end
+    interview_array = []; axis_array = []
 
-  def interviews_chart_dates
-    axis_array = Array.new
     (interviews_past..interviews_future).step(1).each_with_index do |date, index| 
-      interview_count = 0
-      (date.strftime("%Y-%m-%d")..(date+1).strftime("%Y-%m-%d")).each do |date|
-        interview_count += Interview.where(:date => date).count 
-      end
+      interview_count = Interview.where(:date => date.strftime("%Y-%m-%d")).count 
+      interview_array << [index, interview_count]
       axis_array << [index, date.strftime("%b-%d")]
     end
-    axis_array
+    
+    return interview_array, axis_array
   end
 
   def get_calendar_data(users)
