@@ -33,7 +33,7 @@ module UsersHelper
   end
 
   def total_students_interviewing
-    students_hireable.count{|u| u.student? && u.interviews.any? }
+    students_hireable.select{|u| u.student? && u.interviews.any? }.count
   end
 
   def percentage_not_interviewing
