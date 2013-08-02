@@ -1,5 +1,39 @@
 <p id="notice"><%= notice %></p>
 
+<%= render "shared/relationship_state", :state => @state, :relationship => @interview.relationship %>
+
+<span class="pull-right">
+  <p style="font-style: italic">
+    <% unless @interview.relationship.nil? %>
+      <% case @interview.relationship.aasm_state %>
+      <% when "like" %>
+        You like this job!
+      <% when "start" %>
+        You have no relationship with this job.
+      <% else %>  
+        <% unless @interview.nil? %>  
+          <% case @interview.relationship.aasm_state %>
+            <% when "interviewing" %>
+                You have an interview scheduled with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+            <% when "pending" %>
+              You interviewed with <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+            <% when "company_decline" %>
+              Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '[Update]', interview_path(@interview) %>
+            <% when "offer_received" %>
+              You received an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+            <% when "offer_accepted" %>
+              You accepted an offer from <%= @job.company.name %>! <%= link_to '[Update]', interview_path(@interview) %>
+            <% else "offer_declined" %>
+              You declined an offer from <%= @job.company.name %>. <%= link_to '[Update]', interview_path(@interview) %>
+          <% end %>
+        <% end%>
+      <% end %>
+    <% end %>
+  </p>
+</span>
+
+<hr>
+
 <h1>Interview Details for <%= link_to @interview.user.name, user_path(@interview.user) %></h1>
 
 <div class="row-fluid sortable">

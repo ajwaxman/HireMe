@@ -1,12 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<% if @state.nil? || @state == "start" %>
-  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success status_btn" %>
-<% else %> 
-  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
-<% end %>
-
-<%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+<%= render "shared/relationship_state", :state => @state, :relationship => @relationship %>
 
 <span class="pull-right">
   <p style="font-style: italic">
@@ -37,8 +31,6 @@
     <% end %>
   </p>
 </span>
-
-<br>
 
 <hr>
 
