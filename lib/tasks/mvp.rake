@@ -9,7 +9,9 @@ namespace :db do
 		  :name => "Carlos Lazo",
 		  :phone => "123-456-7890",
 		  :role => "student",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_2 = User.create(
@@ -17,7 +19,9 @@ namespace :db do
 		  :name => "Christopher Lake",
 		  :phone => "098-765-4321",
 		  :role => "student",
-		  :hireable => false
+		  :hireable => false, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_3 = User.create(
@@ -25,7 +29,9 @@ namespace :db do
 		  :name => "David Manaster",
 		  :phone => "111-222-3333",
 		  :role => "student",
-		  :hireable => false
+		  :hireable => false, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_4 = User.create(
@@ -33,7 +39,9 @@ namespace :db do
 		  :name => "Adam Waxman",
 		  :phone => "444-555-6666",
 		  :role => "student",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_5 = User.create(
@@ -41,7 +49,9 @@ namespace :db do
 		  :name => "Avi Flombaum",
 		  :phone => "777-888-9999",
 		  :role => "admin",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_6 = User.create(
@@ -49,7 +59,9 @@ namespace :db do
 		  :name => "Katie Ishibashi",
 		  :phone => "212-555-6666",
 		  :role => "student",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_7 = User.create(
@@ -57,7 +69,9 @@ namespace :db do
 		  :name => "Ruthie Nachmany",
 		  :phone => "646-888-9999",
 		  :role => "student",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 
 		user_8 = User.create(
@@ -65,7 +79,9 @@ namespace :db do
 		  :name => "Kirin Masood",
 		  :phone => "917-888-9999",
 		  :role => "student",
-		  :hireable => true
+		  :hireable => true, 
+		  :password => 'acdc', 
+		  :password_confirmation => 'acdc'
 		)
 		## seed companies table
 
