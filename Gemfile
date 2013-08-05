@@ -38,6 +38,7 @@ gem 'whenever', :require => false
 gem 'rails-cron-logger'
 gem 'nokogiri'
 gem 'crunchbase'
+gem 'tire'
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
