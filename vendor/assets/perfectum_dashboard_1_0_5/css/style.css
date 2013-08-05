@@ -1718,11 +1718,11 @@ input[type="file"],
 }
 
 .login-box .input-prepend-focus {
-	background: #fcfcfc;
+	/*background: #fcfcfc;*/
 	width: 100%;
 	text-align: center;
 	padding: 15px 0px;
-	border-left: 3px solid #646464;
+	/*border-left: 3px solid #646464;*/
 }
 
 .login-box .add-on {
@@ -1733,7 +1733,7 @@ input[type="file"],
 }
 
 .login-box .add-on i{
-	opacity: .1;
+	opacity: .5;
 }
 
 .login-box input[type="text"],
@@ -1747,10 +1747,23 @@ input[type="file"],
 	height: 42px !important;		
 }
 
+/*  .login-box input:focus[type="text"],
+  .login-box input:focus[type="password"] {
+    border-top: 1px solid #2FABE9 !important;
+    border-right: 1px solid #2FABE9 !important;
+    border-bottom: 1px solid #2FABE9 !important;  
+  }*/
+
+  .login-box .add-on-password, .login-box .add-on-username  {
+    border: 1px solid #2FABE9 !important;  
+  }
+
 .login-box .remember {
 	margin-top: 20px;
 	margin-left: 20px;
 	float: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .login-box .button-login {
