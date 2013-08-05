@@ -120,16 +120,16 @@
       </div>
       <div class="box-content">
         <ul class="dashboard-list">
+          
           <% company_likes(@user).each do |like| %>
-          <li>
-            <!-- <i class="fa-icon-heart-empty red">&nbsp;</i> -->
-            <span class="dash_sidebar">
-                <%= link_to like.company.name, company_path(like.company), :class => "blue"%>
-              - <strong><%= link_to like.job.title, job_path(like.job)%></strong>
-            </span>
-
-          </li>
+            <li>
+              <span class="dash_sidebar">
+                  <%= link_to like.company.name, company_path(like.company), :class => "blue"%>
+                - <strong><%= link_to like.job.title, job_path(like.job)%></strong> (<%= like.aasm_state %>)
+              </span>
+            </li>
           <% end %>
+
         </ul>
       </div>
     <hr><!-- end Liked Companies // begin News Feed-->

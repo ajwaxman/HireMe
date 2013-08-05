@@ -44,8 +44,11 @@ module UsersHelper
     100 - percentage_not_interviewing
   end
 
+  # Company Methods
+
   def company_likes(user)
-    user.relationships.select {|like| like.aasm_state == "like"}    
+    decline_states = ["start", "user_decline", "company_decline", "offer_declined"]
+    user.relationships.reject {|like| decline_states.include?(like.aasm_state)}    
   end
   
 end
