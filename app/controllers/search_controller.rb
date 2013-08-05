@@ -1,18 +1,18 @@
 class SearchController < ApplicationController
   def index
 
-  	@search = Sunspot.search(User, Company, Job) do
-		  fulltext params[:search]
-		end
-		@searches = @search.results
-		raise params.inspect
+    sunspot_search = Sunspot.search(Job, Company, User) do
+      fulltext params[:search] 
+      # paginate :per_page => 10
+    end
 
+    # raise sunspot_search
+    @search_results = sunspot_search.results
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @searches }
+      format.json { render json: @companies }
     end
+  end
 
-
-    end
 end

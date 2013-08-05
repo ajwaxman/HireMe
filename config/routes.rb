@@ -2,6 +2,7 @@ HireCrm::Application.routes.draw do
 
   resources :records
   resources :interviews
+  resources :search
 
   #################
   # Custom Routes #

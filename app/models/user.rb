@@ -51,5 +51,9 @@ class User < ActiveRecord::Base
   def guest?
     self.role == "guest"
   end
+
+  searchable do
+    text :name
+  end
   
 end

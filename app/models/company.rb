@@ -28,4 +28,9 @@ class Company < ActiveRecord::Base
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 
+  searchable do
+    text :name
+  end
+
+
 end
