@@ -39,7 +39,8 @@ gem 'rails-cron-logger'
 gem 'nokogiri'
 gem 'crunchbase'
 gem 'figaro'
-gem 'tire'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
