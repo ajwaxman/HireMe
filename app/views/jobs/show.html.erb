@@ -1,38 +1,5 @@
-<% if @state.nil? || @state == "start" %>
-  <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success status_btn" %>
-<% else %> 
-  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
-<% end %>
-
-<span class="pull-right">
-  <p style="font-style: italic">
-    <% unless @relationship.nil? %>
-      <% case @relationship.aasm_state %>
-      <% when "like" %>
-        You like this job!
-      <% when "start" %>
-        You have no relationship with this job.
-      <% else %>  
-        <% unless @relationship.interview.nil? %>  
-          <% case @relationship.aasm_state %>
-            <% when "interviewing" %>
-                You have an interview scheduled with <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
-            <% when "pending" %>
-              You interviewed with <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
-            <% when "company_decline" %>
-              Talks with <%= @job.company.name %> didn't bear fruit. <%= link_to '(Update)', interview_path(@relationship.interview) %>
-            <% when "offer_received" %>
-              You received an offer from <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
-            <% when "offer_accepted" %>
-              You accepted an offer from <%= @job.company.name %>! <%= link_to '(Update)', interview_path(@relationship.interview) %>
-            <% else "offer_declined" %>
-              You declined an offer from <%= @job.company.name %>. <%= link_to '(Update)', interview_path(@relationship.interview) %>
-          <% end %>
-        <% end%>
-      <% end %>
-    <% end %>
-  </p>
-</span>
+<%= render :partial => "shared/job_button_logic",
+  :locals => {:job => @job, :relationship => @relationship, :state => @state} %>
 
 <br><hr>
 
