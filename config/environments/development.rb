@@ -21,7 +21,7 @@ HireCrm::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
 
-  # How mail is sent in action mailer, options are :smtp, :sendmail, :file, and :test
+  # How mail is sent in action mailer, options are :smtp, :letter_opener, :sendmail, :file, and :test
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {

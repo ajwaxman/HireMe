@@ -8,7 +8,12 @@ class UserMailer < ActionMailer::Base
   #
   def signup_confirmation(user)
     @user = user
-    puts "Starting to send email"
     mail to: user.email, subject: "Welcome to Hire Me!"
+  end
+
+  def interview_reminder(interview)
+    @interview = interview
+    @user = 
+    
   end
 end
