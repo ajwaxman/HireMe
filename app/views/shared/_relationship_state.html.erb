@@ -3,7 +3,7 @@
   <%= link_to 'Like This Job', {:controller => :states, :action => :rel_like_company}, :class => "btn btn-success status_btn" %>
   <%= link_to 'Add Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info" %>
 <% when "like" %>
-  <%= link_to 'Unlike This Job', {:controller => :states, :action => :rel_unlike_company}, :class => "btn status_btn" %>
+  <%= link_to 'Unlike Job', {:controller => :states, :action => :rel_unlike_company}, :class => "btn status_btn" %>
   <%= link_to 'Add Interview', new_job_interview_path(@relationship.job), :class => "btn btn-info" %>
 <% when "interviewing" %>
   <%= link_to 'Edit Interview', edit_interview_path(@relationship.interview_id), :class => "btn btn-warning" %>

@@ -178,7 +178,7 @@
 
     event_2 = Event.create(
       :description => "Job has been un-liked.",
-      :state       => "start"
+      :state       => "like"
     )
 
     event_3 = Event.create(
@@ -372,7 +372,7 @@
     )
 
     relationship_2 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 5,
     :job_id => 2, 
     :interview_id => 2, 
@@ -380,7 +380,7 @@
     )
 
     relationship_3 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 3,
     :job_id => 3, 
     :interview_id => 3, 
@@ -484,7 +484,7 @@
     )
 
     relationship_16 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 5,
     :job_id => 5, 
     :interview_id => 16, 
@@ -492,7 +492,7 @@
     )
 
     relationship_17 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 3,
     :job_id => 1, 
     :interview_id => 17, 
@@ -500,7 +500,7 @@
     )
 
     relationship_18 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 1,
     :job_id => 8,
     :interview_id => 18,
@@ -516,7 +516,7 @@
     )
 
     relationship_20 = Relationship.create(
-    :aasm_state => "open_status",
+    :aasm_state => "like",
     :company_id => 5,
     :job_id => 8, 
     :interview_id => 20, 

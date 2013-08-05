@@ -37,11 +37,12 @@ class JobsController < ApplicationController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
-    @job = Job.find(params[:id])
-    @company = Company.find(@job.company_id)
+    @job        = Job.find(params[:id])
+    @company    = Company.find(@job.company_id)
     @interviews = @job.interviews
+
     @relationship = Relationship.find_by_user_id_and_job_id_and_company_id(current_user.id, @job.id, @job.company_id)
-    @state = @relationship.aasm_state if @relationship
+    @state        = @relationship.aasm_state if @relationship
 
     respond_to do |format|
       format.html # show.html.erb

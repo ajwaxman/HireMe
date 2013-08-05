@@ -1,7 +1,7 @@
 <% if @state.nil? || @state == "start" %>
   <%= link_to 'Like This Job', {:controller => :states, :action => :like_company}, :class => "btn btn-success status_btn" %>
 <% else %> 
-  <%= link_to 'Unlike This Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
+  <%= link_to 'Unlike Job', {:controller => :states, :action => :unlike_company}, :class => "btn status_btn" %>
   <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
 <% end %>
 
