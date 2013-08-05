@@ -38,6 +38,7 @@ gem 'whenever', :require => false
 gem 'rails-cron-logger'
 gem 'nokogiri'
 gem 'crunchbase'
+gem 'figaro'
 gem 'tire'
 
 group :development do
@@ -46,6 +47,7 @@ group :development do
   gem 'binding_of_caller'   # => works with better_errors to show instance variables
   gem 'pry-debugger'        # => debugger for project.
   gem 'quiet_assets'
+  gem "letter_opener"
 end
 
 # To use ActiveModel has_secure_password

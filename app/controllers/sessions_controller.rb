@@ -42,6 +42,7 @@ class SessionsController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        UserMailer.signup_confirmation(@user).deliver
         session[:user_id] = @user.id
         format.html { redirect_to @user, notice: "Thanks for signing up!" }
       else
