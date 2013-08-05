@@ -1,9 +1,15 @@
 class SearchController < ApplicationController
   def index
-
-    sunspot_search = Sunspot.search(Job, Company, User) do
-      fulltext params[:search] 
-      # paginate :per_page => 10
+    if current_user.admin?
+      sunspot_search = Sunspot.search(Job, Company, User) do
+        fulltext params[:search] 
+        # paginate :per_page => 10
+      end
+    else
+      sunspot_search = Sunspot.search(Job, Company) do
+        fulltext params[:search] 
+        # paginate :per_page => 10
+      end
     end
 
     # raise sunspot_search

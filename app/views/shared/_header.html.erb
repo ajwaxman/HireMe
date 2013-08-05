@@ -117,15 +117,39 @@
 			<div id="content" class="span10">
 			<!-- start: Content -->
 			
+			<hr>
+
 			<div>
-				<hr>
-				<ul class="breadcrumb">
-					<li>
-						<a href="<%= current_user.role == "admin" ? dashboard_path : user_path(current_user) %>">Home</a> <span class="divider">/</span>
-					</li>
-					<li>
-						<a href="#"><%= controller_name.capitalize %></a>
-					</li>
-				</ul>
-				<hr>
+				
+				<div class="row-fluid">
+					<div class="span12">
+
+					<!-- header breadcrumb -->
+					<div class="pull-left">
+						<ul class="breadcrumb">
+							<li>
+								<a href="<%= current_user.role == "admin" ? dashboard_path : user_path(current_user) %>">Home</a> <span class="divider">/</span>
+							</li>
+							<li>
+								<a href="#"><%= controller_name.capitalize %></a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- search box -->
+					<div class="pull-right">
+						<div class="form-search">
+						  <div class="input-append">
+							  <%= form_tag search_index_path, :method => :get do %>
+							      <%= text_field_tag :search, params[:search], :class => "search-query"  %>
+							      <%= submit_tag "Search", :name => nil, :class => "btn" %>
+							  <% end %>
+							</div>
+						</div>
+					</div>
+					<!-- </div> -->
+
+					</div>
+				</div>
 			</div>
+		<hr>
