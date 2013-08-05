@@ -69,11 +69,11 @@
                                                               Hi <%= @user.name.split.first %>,
                                                               <br>
                                                               <br>
-                                                              Just wanted to remind you about your interview tomorrow! Details below:
+                                                              Just wanted to remind you about tomorrow's interview! Details below:
                                                               <br>
                                                               <br>
                                                               <strong>Company</strong>: <%= @interview.company.name %><br>
-                                                              <strong>Time</strong>: <%= @interview.date.strftime('%-m/%-d/%Y') +" @ "+ @interview.start_time.strftime('%-l:%M %P') %><br>
+                                                              <strong>When</strong>: <%= @interview.date.strftime('%a %-m/%-d') +" @ "+ @interview.start_time.strftime('%-l:%M %P') %><br>
                                                               <% if @interview.company.crunchbase_url %>
                                                                 <strong>Info</strong>: <%= link_to "#{@interview.company.name} Profile", @interview.company.crunchbase_url %>
                                                               <% end %>
