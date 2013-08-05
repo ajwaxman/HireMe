@@ -21549,3 +21549,93 @@ Run `git checkout HEAD -- Gemfile.lock` first to get a clean lock.
 	from /Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
 	from /Users/carloslazo/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
 	from /Users/carloslazo/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:10: syntax error, unexpected $end, expecting keyword_end
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:10: syntax error, unexpected $end, expecting keyword_end
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:9: syntax error, unexpected $end, expecting keyword_end
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:9: syntax error, unexpected $end, expecting keyword_end
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+(See full trace by running task with --trace)
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:13: syntax error, unexpected $end, expecting keyword_end
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/lib/tasks/send_interview_reminder.rake:13: syntax error, unexpected $end, expecting keyword_end
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/carloslazo/Development/FlatironSchool/projects/HireCRM/Rakefile:7:in `<top (required)>'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/carloslazo/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)

@@ -9,7 +9,7 @@
 ## rails console -s (test individual commands in sandbox mode)
 
     user_1 = User.create(
-      :email => "carlos@flatironschool.com",
+      :email => "carlos.jose.lazo@gmail.com",
       :name => "Carlos Lazo",
       :phone => "123-456-7890",
       :role => "student",
@@ -39,7 +39,7 @@
     )
 
     user_4 = User.create(
-      :email => "adam@flatironschool.com",
+      :email => "awaxman11@gmail.com",
       :name => "Adam Waxman",
       :phone => "444-555-6666",
       :role => "student",

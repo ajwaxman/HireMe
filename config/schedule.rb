@@ -1,8 +1,10 @@
 every 1.minutes do
-	rake "cron:post_interview", :output => 'cron.log' , :environment => "development"
+	rake "cron:post_interview", :environment => "development"
 end
 
-set :output, "log/cron.log"
+every :day, :at => '12:00pm' do
+	rake "cron:send_interview_reminder", :environment => "development"
+end
 
 # Use this file to easily define all of your cron jobs.
 #
