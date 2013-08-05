@@ -21,4 +21,8 @@ class Job < ActiveRecord::Base
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 
+  searchable do
+    text :title
+  end
+
 end

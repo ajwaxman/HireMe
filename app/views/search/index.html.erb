@@ -1,0 +1,51 @@
+<%= form_tag search_index_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<div class="row-fluid sortable">
+  <div class="box span12">
+    <div class="box-header" data-original-title>
+      <h2><i class="icon-picture"></i> Search results</h2>
+    </div>
+    <div class="box-content">
+      <div class="masonry-gallery">
+        <% if @search_results.empty? %>
+          <div>No results</div>
+        <% else %>
+          <% @search_results.each_with_index do |object, i| %>
+            <div id="image-<%= i %>" class="masonry-thumb company-gallery">
+              <% if object.class ==  Company %>
+                <div class="wrapper-cell">
+                  <div>
+                     <%= link_to image_tag(object.logo_url, :size => "150x150", :title => object.name), company_path(object) %>
+                  </div>
+                </div>
+              <% elsif object.class ==  Job %>
+                <div class="wrapper-cell">
+                  <div>
+                    <%= link_to object.title, job_path(object) %>
+                  </div>
+                </div>
+              <% elsif object.class ==  User %>
+                <div class="wrapper-cell">
+                  <div>
+                    <%= link_to object.name, user_path(object) %>
+                  </div>
+                </div>
+              <% end %>
+            </div>  
+          <% end %>
+        <% end %>           
+      </div>
+    </div>
+  </div><!--/span-->
+
+</div><!--/row-->
+
+<hr>
+
+<!-- end: Content -->
+
+<%= link_to 'New Company', new_company_path, :class => "btn btn-info" %>
