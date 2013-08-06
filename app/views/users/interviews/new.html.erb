@@ -2,12 +2,13 @@
 
 <%= form_for(@interview) do |f| %>
   <% if @interview.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
-
-      <ul>
-      <% @interview.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+    <div>
+      <ul class="alert alert-error" style = "list-style-type: none;">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h4>
+        <br>
+        <% @interview.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
