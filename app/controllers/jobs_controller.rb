@@ -38,6 +38,7 @@ class JobsController < ApplicationController
   def show
     @job        = Job.find(params[:id])
     @company    = Company.find(@job.company_id)
+    @interview = @job.relationships.where(:user_id => current_user.id).first
     @interviews = @job.interviews
 
     @relationship = Relationship.find_by_user_id_and_job_id_and_company_id(current_user.id, @job.id, @job.company_id)

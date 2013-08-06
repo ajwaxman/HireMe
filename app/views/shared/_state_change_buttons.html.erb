@@ -1,0 +1,33 @@
+<% if @state %>
+
+  The state exists<br>
+  Job: <%= @job %><br>
+  Interview: <%= @interview %><br>
+  State: <%= @state %><br>
+
+  <% case @state %>
+  <% when "start" %>
+    <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "like_company"}, :class => "btn btn-success status_btn" %>
+    <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+  <% when "like" %>
+    <%= link_to 'Unlike This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "unlike_company"}, :class => "btn status_btn" %>
+    <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+  <% when "interviewing" %>
+  <%= link_to 'Edit Interview', edit_interview_path(@interview.id), :class => "btn btn-warning" %>
+  <% end %>
+
+<% else %>
+
+  The state doesn't exist<br>
+  Job: <%= @job %><br>
+  Interview: <%= @interview %><br>
+  State: <%= @state %><br>
+
+  <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id}, :class => "btn btn-success status_btn" %>
+
+<% end %>
+
+
+
+
+
