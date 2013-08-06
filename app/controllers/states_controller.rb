@@ -54,7 +54,7 @@ class StatesController < ApplicationController
 
   def create_relationship_and_like
     r = Relationship.create(:user_id => @u_id, :job_id => @j_id, :company_id => @c_id)
-    r.link_company
+    r.like_company
     r.save
   end
 

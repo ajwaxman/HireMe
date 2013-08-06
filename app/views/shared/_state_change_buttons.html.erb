@@ -14,6 +14,15 @@
     <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
   <% when "interviewing" %>
   <%= link_to 'Edit Interview', edit_interview_path(@interview.id), :class => "btn btn-warning" %>
+  <p> Cancel Interview</p>
+  <% when "pending" %>
+  <%= link_to 'Add Another Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+  <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
+  <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
+  <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
+  
+  
+  <p> Delete Interview</p>
   <% end %>
 
 <% else %>
