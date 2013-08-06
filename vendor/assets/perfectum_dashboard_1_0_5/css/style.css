@@ -2193,6 +2193,7 @@ div.uploader{
 =================================================================== */
 
 footer {
+	margin-top: 20px;
 	position: relative;
 	min-height: 24px;
 	background: url(../img/dbg.jpg);
