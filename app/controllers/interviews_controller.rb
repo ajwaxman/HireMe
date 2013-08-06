@@ -64,14 +64,12 @@ class InterviewsController < ApplicationController
         format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
         format.json { render json: interview_path(int), status: :created, location: @interview }
       else
-        # if user
           @interview = int
           @users = User.all
-          @job = Job.find_by_id(j_id)
-          @user = User.find_by_id(u_id)
+          @job   = Job.find_by_id(j_id)
+          @user  = User.find_by_id(u_id)
           format.html { render "jobs/interviews/new", :controller => "jobs/interviews", notice: 'Interview was not created properly.' }
           format.json { render json: @interview.errors, status: :unprocessable_entity }
-        # else if Admin
 
       end
     end

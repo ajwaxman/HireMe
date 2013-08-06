@@ -24,11 +24,15 @@ class Interview < ActiveRecord::Base
 
   has_many :records,	:through => :relationship
 
-  validates_presence_of   :date
-  validates_presence_of   :start_time
-  validates_presence_of   :end_time
+  validates_presence_of   :date,
+    :message => " should not be blank."
+  validates_presence_of   :start_time,
+    :message => " should not be blank."
+  validates_presence_of   :end_time,
+    :message => " should not be blank."
 
-  validate :validates_start_time_and_end_time
+  validate :validates_start_time_and_end_time,
+    :message => "Start time must come before end time."
 
   def merge_datetime
     date = self.date
