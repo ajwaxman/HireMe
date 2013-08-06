@@ -126,11 +126,13 @@
 
 <%= link_to 'Add New Job', new_company_job_path(@company), :class => "btn btn-info" %>
 
-<br>
-<br>
+<hr>
 
 <% if current_user.admin? %>
   <%= link_to 'Edit Company', edit_company_path(@company), :class => 'btn btn-warning' %>
 
   <%= link_to raw('<i class="icon-trash icon-white"></i> Delete Company'), @company, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
 <% end %>
+<br/>
+
+<br/><br/><br/>
