@@ -20,9 +20,9 @@
   <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
   <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
   <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
-  
-  
   <p> Delete Interview</p>
+    <% when "pending" %>
+
   <% end %>
 
 <% else %>
@@ -35,8 +35,3 @@
   <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id}, :class => "btn btn-success status_btn" %>
 
 <% end %>
-
-
-
-
-
