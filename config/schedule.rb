@@ -1,3 +1,6 @@
+set :output, nil
+set :output, {:error => nil, :standard => nil}
+
 every 1.minutes do
 	rake "cron:post_interview", :environment => "development"
 end

@@ -35,7 +35,6 @@ gem 'jquery-ui-rails'
 gem 'cancan' # => authorization
 gem 'gon'
 gem 'whenever', :require => false
-gem 'rails-cron-logger'
 gem 'nokogiri'
 gem 'crunchbase'
 gem 'figaro'
