@@ -41,7 +41,7 @@ class CompanyScraper
     Company.create(
       :name => @company_name,
       :website => "Please update",
-      :logo_url => "http://farm1.staticflickr.com/72/173447991_3bf67f3f92.jpg",
+      :logo_url => 'computer.png',
       :crunchbase_url => "Please update",
       :blog_url => "Please update",
       :twitter_username => "Please update",

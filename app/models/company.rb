@@ -28,6 +28,10 @@ class Company < ActiveRecord::Base
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 
+  validates_presence_of   :logo_url
+  validates_presence_of   :name
+  validates_presence_of   :website
+
   searchable do
     text :name
   end
