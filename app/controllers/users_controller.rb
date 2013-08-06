@@ -127,7 +127,8 @@ class UsersController < ApplicationController
   end
 
   def interviews_chart
-    interview_array = []; axis_array = []
+    interview_array = []
+    axis_array      = []
 
     (interviews_past..interviews_future).step(1).each_with_index do |date, index| 
       interview_count = Interview.where(:date => date.strftime("%Y-%m-%d")).count 
@@ -141,7 +142,7 @@ class UsersController < ApplicationController
   def get_calendar_data(users)
     json_interviews = []
 
-    @users.each do |user|
+    users.each do |user|
       json_interviews << collect_calendar_data(user.interviews) 
     end
 

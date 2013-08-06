@@ -17,7 +17,6 @@ class JobsController < ApplicationController
     end
   end
 
-
   ###################
   # RESTful Actions #
   ###################

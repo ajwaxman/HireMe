@@ -3,8 +3,6 @@ class InterviewsController < ApplicationController
   before_filter :current_user?, :only => [:new, :create]
   before_filter :current_interview_owner_only?, :only => [:edit, :show, :destroy]
   
-
-  
   # GET /interviews
   # GET /interviews.json
   def index
@@ -77,25 +75,6 @@ class InterviewsController < ApplicationController
 
       end
     end
-    
-    # @user = User.find(u_id) # Find user for redirect.
-
-
-
-    # respond_to do |format|
-    #   if rel.save && int.save
-    #     Record.write_record(rel)   # Create Record from relationship.
-    #     format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
-    #     format.json { render json: interview_path(int), status: :created, location: @interview }
-    #   elsif rel.save
-    #     rel.aasm_state = "start"
-    #     rel.save
-    #     format.html { redirect_to new_job_interview_path(j_id), notice: 'Interview was not created properly.' }
-    #     format.json { render json: @interview.errors, status: :unprocessable_entity }
-    #   else
-        
-    #   end
-    # end
   end
 
   # PUT /interviews/1
