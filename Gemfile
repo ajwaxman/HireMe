@@ -40,6 +40,7 @@ gem 'crunchbase'
 gem 'figaro'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
