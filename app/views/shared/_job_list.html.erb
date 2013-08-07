@@ -14,29 +14,38 @@
           <tr>
             <th>Job Title</th>
             <th>Company</th>
-            <th>Actions</th>
+            <% if current_user.student? %>
+              <th>Status</th>
+            <% end %>
+            <% if current_user.admin? %>
+              <th>Actions</th>
+            <% end %>
           </tr>
         </thead>   
         <tbody>
 
-        <% job_list.each do |job| %>
-          
+        <% job_list.each do |job| %>    
           <tr>
             <td><%= link_to job.title, job_path(job) %></td>
             <td><%= job.company.name %></td>
-            <td class="center">
-              <a class="btn btn-success" href="<%= job_path(job) %>">
-                <i class="icon-zoom-in icon-white"></i>  
-              </a>
+            <% if current_user.student? %>
+                <% @rel = job.relationships.where(:user_id => current_user.id).first %>
+                <% if @rel %>
+                  <%= render :partial => "shared/pretty_state", :locals => {:relationship => @rel} %>
+                <% else %>
+                  <td></td>
+                <% end %>  
+            <% end %>
               <% if current_user.admin? %>
-                <a class="btn btn-info" href="<%= edit_job_path(job) %>">
-                  <i class="icon-edit icon-white"></i>  
-                </a>
-                <%= link_to raw('<i class="icon-trash icon-white"></i>'), job, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+                <td class="center">
+                  <a class="btn btn-info" href="<%= edit_job_path(job) %>">
+                    <i class="icon-edit icon-white"></i>  
+                  </a>
+                  <%= link_to raw('<i class="icon-trash icon-white"></i>'), job, :class => 'btn btn-danger', :confirm => "Are you sure you want to delete this?", :method => :delete %>
+                </td>
               <% end %>
-              </td>
             </tr>
-        <% end %>
+          <% end %>
         </tbody>
       </table>            
     </div>
