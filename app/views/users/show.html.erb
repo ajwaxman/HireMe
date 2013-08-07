@@ -93,8 +93,8 @@
           <% company_likes(@user).each do |like| %>
             <li>
               <span class="dash_sidebar">
-                  <%= link_to like.company.name, company_path(like.company), :class => "blue"%>
-                - <strong><%= link_to like.job.title, job_path(like.job)%></strong>
+                  <%= link_to like.company.name, company_path(like.company)%>
+                - <strong><%= link_to like.job.title, job_path(like.job), :class => "blue"%></strong>
                 <br><%= render :partial => "shared/pretty_state",
                           :locals => {:relationship => like} %>
               </span>
