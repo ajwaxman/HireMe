@@ -11,8 +11,8 @@
 #  crunchbase_url      :string(255)
 #  blog_url            :string(255)
 #  twitter_username    :string(255)
-#  number_of_employees :integer
-#  founded_year        :integer
+#  number_of_employees :string(255)
+#  founded_year        :string(255)
 #  overview            :text
 #
 
