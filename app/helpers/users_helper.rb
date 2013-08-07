@@ -44,6 +44,10 @@ module UsersHelper
     100 - percentage_not_interviewing
   end
 
+  def interviews_completed
+    Interview.where("date < ?", Date.current).count
+  end
+
   # Company Methods
 
   def company_likes(user)
