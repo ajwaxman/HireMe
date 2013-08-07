@@ -59,10 +59,12 @@ class InterviewsController < ApplicationController
     respond_to do |format|
       if int.save
         int, rel = Relationship.establish_relationship(c_id, j_id, u_id, int)
+        int.relationship_id = rel.id 
+        int.save
         rel.save
         Record.write_record(rel)
-        format.html { redirect_to interview_path(int), notice: 'Interview was successfully created.' }
-        format.json { render json: interview_path(int), status: :created, location: @interview }
+        format.html { redirect_to job_path(Job.find(j_id)), notice: 'Interview was successfully created.' }
+        format.json { render json: job_path(Job.find(j_id)), status: :created, location: @interview }
       else
           @interview = int
           @users = User.all
@@ -79,6 +81,7 @@ class InterviewsController < ApplicationController
   # PUT /interviews/1.json
   def update
     @interview = Interview.find(params[:id])
+    j_id = @interview.job.id
 
     respond_to do |format|
       if @interview.update_attributes(params[:interview])
