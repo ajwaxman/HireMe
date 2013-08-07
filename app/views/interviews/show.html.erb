@@ -1,4 +1,4 @@
-<%= render "shared/relationship_state", :state => @state, :relationship => @relationship %>
+<%= render "shared/state_change_buttons", :state => @state, :relationship => @relationship %>
 
 <br><hr>
 
@@ -21,7 +21,8 @@
         <% end %>
         <p><strong>Position</strong>: <%= @interview.job.title %></p>
         <p><strong>Interview Date</strong>:<%= @interview.date.strftime('%-m/%-d/%Y') %></p>
-        <p><strong>Start Time</strong>: <%= @interview.start_time.strftime('%-l:%M %P') %></p>               
+        <p><strong>Start Time</strong>: <%= @interview.start_time.strftime('%-l:%M %P') %></p>
+        <p><strong>End Time</strong>: <%= @interview.end_time.strftime('%-l:%M %P') %></p>
     </div>
   </div>
   <div class="box span5">
