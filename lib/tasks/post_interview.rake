@@ -14,5 +14,17 @@ namespace :cron do
 		
 	end
 
+	relationships_with_interviews = Relationship.all.select {|rel| rel.aasm_state == "pending"}
+	
+	relationships_with_interviews.each do |rel|
+		i = Interview.find(rel.interview_id)
+		i_date = i.merge_datetime_object
+		if i_date > Time.now
+			rel.aasm_state = "interviewing"
+			Record.write_record(rel) if rel.save
+		end
+		
+	end
+
 	end
 end
