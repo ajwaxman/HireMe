@@ -42,6 +42,10 @@ class Relationship < ActiveRecord::Base
       transitions :from => :start, :to => :like
     end
 
+    event :unlike_company do
+      transitions :from => :like, :to => :start
+    end
+
     event :no_interview do
       transitions :from => :like, :to => :company_decline
     end

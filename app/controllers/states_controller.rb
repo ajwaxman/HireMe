@@ -29,6 +29,54 @@ class StatesController < ApplicationController
     redirect_to job_path(job), :flash => { :notice => "You've unliked the #{job.title} position at #{job.company.name}."}
   end
 
+  # Check to see if Relationship exists 
+  # If the relationship exists, find the relationship
+  # If not, allow for a button to create a relationship
+  # Given the button pressed and current state, change the state appropriately
+
+  #################
+  ## Constraints ##
+  #################
+  # => On the job page, no relationship initially exists
+  # => params[:id] is different on the jobs page and the interview page
+
+  def find_relationship
+    @u_id = current_user.id
+    @j_id = params[:job_id] if params.keys.include?("job_id")
+    @c_id = Job.find(@j_id).company_id if @j_id
+    @r_id = params[:relationship_id] if params.keys.include?("relationship_id")
+    Relationship.find_by_user_id_and_job_id_and_company_id(@u_id, @j_id, @c_id)
+  end
+
+  def relationship_exist?
+    find_relationship.present?
+  end
+
+  def create_relationship_and_like
+    r = Relationship.create(:user_id => @u_id, :job_id => @j_id, :company_id => @c_id)
+    r.like_company
+    r.save
+  end
+
+  def change_state
+    r = find_relationship
+    r.send(params["event"])
+    r.save 
+  end
+
+  def state_action
+    if relationship_exist?
+      change_state
+    else
+      create_relationship_and_like
+    end
+      puts "The end"
+      redirect_to job_path(Job.find(params[:job_id]))
+  end
+
+
+
+
   # Like and Unlike companies from the relationship page.
 
   def rel_like_company

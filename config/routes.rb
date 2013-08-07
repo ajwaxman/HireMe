@@ -21,36 +21,50 @@ HireCrm::Application.routes.draw do
   post 'jobs/import_job' => 'jobs#import_job'
   get 'jobs/import_result' => 'jobs#import_result'
 
+  ###############################################
+  # Routes for Refactored State Maching Buttons #
+  ###############################################
+
+  get 'jobs/:id/state_action' => 'states#state_action', as: 'change_state'
+  post 'jobs/:id/state_action' => 'states#state_action', as: 'change_state'
+
+  get 'interviews/:interview_id/state_action' => 'states#state_action', as: 'change_state'
+  post 'interviews/:interview_id/state_action' => 'states#state_action', as: 'change_state'
+
+
+
+
+
   #############################
   # Buttons for State Machine #
   #############################
 
-  get 'jobs/:id/like_company' => 'states#like_company', as: 'like_company'
-  post 'jobs/:id/like_company' => 'states#like_company'
+  # get 'jobs/:id/like_company' => 'states#like_company', as: 'like_company'
+  # post 'jobs/:id/like_company' => 'states#like_company'
 
-  get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
-  post 'jobs/:id/unlike_company' => 'states#unlike_company'
+  # get 'jobs/:id/unlike_company' => 'states#unlike_company', as: 'unlike_company'
+  # post 'jobs/:id/unlike_company' => 'states#unlike_company'
 
-  get 'interviews/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
-  post 'interviews/:id/rel_like_company' => 'states#rel_like_company'
+  # get 'interviews/:id/rel_like_company' => 'states#rel_like_company', as: 'rel_like_company'
+  # post 'interviews/:id/rel_like_company' => 'states#rel_like_company'
 
-  get 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
-  post 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company'
+  # get 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company', as: 'rel_unlike_company'
+  # post 'interviews/:id/rel_unlike_company' => 'states#rel_unlike_company'
 
-  get 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
-  post 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
+  # get 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
+  # post 'interviews/:id/rel_company_declined' => 'states#rel_company_declined'
 
-  get 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
-  post 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
+  # get 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
+  # post 'interviews/:id/rel_user_declined' => 'states#rel_user_declined'
 
-  get 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
-  post 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
+  # get 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
+  # post 'interviews/:id/rel_offer_received' => 'states#rel_offer_received'
 
-  get 'interviews/:id/accept_offer' => 'states#accept_offer'
-  post 'interviews/:id/accept_offer' => 'states#accept_offer'
+  # get 'interviews/:id/accept_offer' => 'states#accept_offer'
+  # post 'interviews/:id/accept_offer' => 'states#accept_offer'
 
-  get 'interviews/:id/reject_offer' => 'states#reject_offer'
-  post 'interviews/:id/reject_offer' => 'states#reject_offer'  
+  # get 'interviews/:id/reject_offer' => 'states#reject_offer'
+  # post 'interviews/:id/reject_offer' => 'states#reject_offer'  
 
 
   ##################

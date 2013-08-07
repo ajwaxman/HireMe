@@ -1,0 +1,40 @@
+      <div class="box-content">
+      <ul class="nav tab-menu nav-tabs dash" id="myTab">
+        <li class="active"><a href="#liked_tab"><i class="fa-icon-heart red"></i> Liked Jobs</a></li>
+        <li><a href="#interview_tab">Active Jobs</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane active" id="liked_tab">
+          <div class="row-fluid">  
+            <ul class = "dashboard-list">
+              <% hotlist_jobs(@user).each do |rel| %>
+                <li>
+                  <span class="dash_sidebar">
+                      <%= link_to rel.company.name, company_path(rel.company)%>
+                    - <strong><%= link_to rel.job.title, job_path(rel.job), :class => "blue"%></strong>
+                    <br><%= render :partial => "shared/pretty_state",
+                              :locals => {:relationship => rel} %>
+                  </span>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane" id="interview_tab">
+          <div class="row-fluid">  
+            <ul class = "dashboard-list">
+              <% active_jobs(@user).each do |rel| %>
+                <li>
+                  <span class="dash_sidebar">
+                      <%= link_to rel.company.name, company_path(rel.company)%>
+                    - <strong><%= link_to rel.job.title, job_path(rel.job), :class => "blue"%></strong>
+                    <br><%= render :partial => "shared/pretty_state",
+                              :locals => {:relationship => rel} %>
+                  </span>
+                </li>
+              <% end %>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>

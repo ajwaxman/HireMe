@@ -85,24 +85,8 @@
   <div class="box span4">
     <div>
       <div class="box-header">
-        <h2><i class="fa-icon-heart red"></i><span class="break"></span>Liked Jobs</h2>
       </div>
-      <div class="box-content">
-        <ul class="dashboard-list">
-          
-          <% company_likes(@user).each do |like| %>
-            <li>
-              <span class="dash_sidebar">
-                  <%= link_to like.company.name, company_path(like.company), :class => "blue"%>
-                - <strong><%= link_to like.job.title, job_path(like.job)%></strong>
-                <br><%= render :partial => "shared/pretty_state",
-                          :locals => {:relationship => like} %>
-              </span>
-            </li>
-          <% end %>
-
-        </ul>
-      </div>
+      <%= render "shared/hotlist", :user => @user %>
     <hr><!-- end Liked Companies // begin News Feed-->
     <div>
       <div class="box-header">
