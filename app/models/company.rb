@@ -36,5 +36,4 @@ class Company < ActiveRecord::Base
     text :name
   end
 
-
 end

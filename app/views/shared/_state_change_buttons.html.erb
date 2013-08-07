@@ -1,10 +1,5 @@
 <% if @state %>
 
-  The state exists<br>
-  Job: <%= @job %><br>
-  Interview: <%= @interview %><br>
-  State: <%= @state %><br>
-
   <% case @state %>
   <% when "start" %>
     <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "like_company"}, :class => "btn btn-success status_btn" %>
@@ -40,11 +35,6 @@
   <% end %>
 
 <% else %>
-
-  The state doesn't exist<br>
-  Job: <%= @job %><br>
-  Interview: <%= @interview %><br>
-  State: <%= @state %><br>
 
   <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id}, :class => "btn btn-success status_btn" %>
 
