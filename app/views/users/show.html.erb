@@ -1,6 +1,7 @@
 <div class="row-fluid">
 
-<%= gravatar_image_tag(@user.email, :alt => @user.name, :class => "gravatar-image") %>
+<%= gravatar_image_tag(@user.email, :alt => @user.name, :class => "gravatar-image", :gravatar => { :default => random_avatar }) %>
+
 <h1><%= @user.name %></h1>
 </div>
 <hr>
