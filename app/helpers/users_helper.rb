@@ -46,9 +46,14 @@ module UsersHelper
 
   # Company Methods
 
-  def company_likes(user)
+  def hotlist_jobs(user)
     decline_states = ["start", "user_decline", "company_decline", "offer_declined"]
-    user.relationships.reject {|like| decline_states.include?(like.aasm_state)}    
+    user.relationships.reject {|rel| decline_states.include?(rel.aasm_state)}    
   end
-  
+
+  def active_jobs(user)
+    accept_states = ["interviewing", "pending", "offer_received"]
+    user.relationships.select {|rel| accept_states.include?(rel.aasm_state)}    
+  end
+
 end
