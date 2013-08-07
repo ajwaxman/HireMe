@@ -48,6 +48,11 @@ module UsersHelper
     Interview.where("date < ?", Date.current).count
   end
 
+ def total_likes
+    relationships = Relationship.all 
+    relationships.collect {|rel| rel.aasm_state == "like"}.count
+  end
+
   # Company Methods
 
   def company_likes(user)
