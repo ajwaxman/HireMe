@@ -21,6 +21,7 @@ class InterviewsController < ApplicationController
     @job       = @interview.job
     @relationship = @interview.relationship
     @state = @relationship.aasm_state if @relationship
+    @company = @job.company
 
     respond_to do |format|
       format.html # show.html.erb
