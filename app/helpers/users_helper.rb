@@ -68,13 +68,23 @@ module UsersHelper
   end
 
  def total_likes
-    relationships = Relationship.all
-    relationships.select {|rel| rel.aasm_state == "like"}.count
+    records = Record.all
+    records.select {|record| record.event_id == 1}.count
   end
 
   def offers_made
-    relationships = Relationship.all
-    relationships.select {|rel| rel.aasm_state == "offer_received"}.count
+    records = Record.all
+    records.select {|record| record.event_id == 5}.count
+  end
+
+  def offers_accepted
+    records = Record.all
+    records.select {|record| record.event_id == 8}.count
+  end
+
+  def offers_rejected
+    records = Record.all
+    records.select {|record| record.event_id == 9}.count
   end
 
   # Company Methods
