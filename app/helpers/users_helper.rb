@@ -68,8 +68,13 @@ module UsersHelper
   end
 
  def total_likes
-    relationships = Relationship.all 
-    relationships.collect {|rel| rel.aasm_state == "like"}.count
+    relationships = Relationship.all
+    relationships.select {|rel| rel.aasm_state == "like"}.count
+  end
+
+  def offers_made
+    relationships = Relationship.all
+    relationships.select {|rel| rel.aasm_state == "offer_received"}.count
   end
 
   # Company Methods
