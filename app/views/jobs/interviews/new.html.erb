@@ -14,8 +14,8 @@
     </div>
   <% end %>
 
-  <%= hidden_field_tag :job_id, @job.id %>
-  <%= hidden_field_tag :user_id, current_user.id %>
+  <%= f.hidden_field :job_id, :value => @job.id %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
 
   <%= render :partial => 'shared/datetime_picker', :locals => {:interview => @interview, :f => f} %>
 
