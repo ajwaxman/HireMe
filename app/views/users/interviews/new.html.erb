@@ -14,13 +14,13 @@
     </div>
   <% end %>
 
-  <%= hidden_field_tag :user_id, @user.id %>
+  <%= f.hidden_field :user_id, :value => @user.id %>
 
   <%= render :partial => 'shared/datetime_picker', :locals => {:interview => @interview, :f => f} %>
 
   <div class="field">
     <label>Select A Job</label>
-    <select name="job_id">
+    <select name="interview[job_id]">
       <% @jobs.each do |j| %>
          <option value=<%= j.id %>><%= j.title %> - <%= j.company.name %></option>      
       <% end %>

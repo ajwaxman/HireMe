@@ -10,7 +10,7 @@
     "tabs"
   ],
   "page_action": {
-    "default_icon": "acdc_logo.png",
+    "default_icon": "hire_me_logo.png",
     "default_popup": "popup.html"
   }
 }

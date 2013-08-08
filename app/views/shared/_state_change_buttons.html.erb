@@ -1,5 +1,5 @@
+<% a %>
 <% if @state %>
-
   <% case @state %>
   <% when "start" %>
     <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "like_company"}, :class => "btn btn-success status_btn" %>

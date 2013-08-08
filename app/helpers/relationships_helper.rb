@@ -22,7 +22,6 @@ module RelationshipsHelper
       ["label-inverse", "Offer Declined"]
     end
 
-
     content_tag :span, :class => "label #{span_class}" do
       text
     end
