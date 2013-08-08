@@ -53,7 +53,7 @@ class InterviewsController < ApplicationController
   # POST  => /interviews/new/
 
   def create
-    c_id, j_id, u_id = Relationship.find_ids(params[:job_id],params[:user_id])
+    c_id, j_id, u_id = Relationship.find_ids(params[:interview][:job_id],params[:interview][:user_id])
     int = Interview.new(params[:interview])
     
     respond_to do |format|
