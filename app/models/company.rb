@@ -23,8 +23,8 @@ class Company < ActiveRecord::Base
   has_many :relationships
   
   has_many :jobs, 			:dependent => :destroy
+  has_many :interviews
 
-  has_many :interviews, :through => :relationships
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 

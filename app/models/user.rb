@@ -18,9 +18,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :name, :phone, :password, :password_confirmation, :role, :hireable
 
   has_many :relationships
+  has_many :interviews
   
   has_many :companies, 	:through => :relationships
-  has_many :interviews, :through => :relationships
   has_many :jobs, 		 	:through => :relationships
   has_many :records, 		:through => :relationships
 

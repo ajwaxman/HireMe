@@ -13,13 +13,13 @@
 #
 
 class Relationship < ActiveRecord::Base
-  attr_accessible :company_id, :interview_id, :job_id, :user_id, :aasm_state
+  attr_accessible :company_id, :job_id, :user_id, :aasm_state
 
   belongs_to :company
   belongs_to :job
   belongs_to :user
-  belongs_to :interview
   
+  has_many   :interviews
   has_many   :records
   has_many   :events, :through => :records
 
