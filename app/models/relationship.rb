@@ -93,7 +93,6 @@ class Relationship < ActiveRecord::Base
     rel = Relationship.find_or_create_by_company_id_and_job_id_and_user_id(c_id, j_id, u_id)
 
     int.relationship_id = rel.id
-    rel.interview_id    = int.id
     rel.start_interview
 
     return int, rel
