@@ -14,13 +14,13 @@
 class Interview < ActiveRecord::Base
   include Validations::StartTime
   
-  attr_accessible :end_time, :relationship_id, :start_time, :date
+  attr_accessible :end_time, :relationship_id, :start_time, :date, :user_id, :job_id
 
-  has_one :relationship
+  belongs_to :user
+  belongs_to :job
+  belongs_to :relationship
 
-  has_one :company, :through => :relationship
-  has_one :job, 		:through => :relationship
-  has_one :user,    :through => :relationship
+  has_one :company, :through => :job
 
   has_many :records,	:through => :relationship
 

@@ -16,8 +16,8 @@ class Job < ActiveRecord::Base
   belongs_to :company
 
   has_many :relationships
-
-  has_many :interviews, :through => :relationships
+  has_many :interviews
+  
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 

@@ -225,140 +225,180 @@
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
       :date => "2013-07-26",
-      :relationship_id => 1
+      :relationship_id => 1,
+      :job_id => 4,
+      :user_id => 2
     )
 
     interview_2 = Interview.create(
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
       :date => "2013-07-28",
-      :relationship_id => 2
+      :relationship_id => 2,
+      :job_id => 2,
+      :user_id => 7
     )
 
     interview_3 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-29",
-      :relationship_id => 3
+      :relationship_id => 3,
+      :job_id => 3,
+      :user_id => 8
     )
 
     interview_4 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-27",
-      :relationship_id => 4
+      :relationship_id => 4,
+      :job_id => 5,
+      :user_id => 6
     )
 
     interview_5 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-26",
-      :relationship_id => 5
+      :relationship_id => 5,
+      :job_id => 4,
+      :user_id => 7
     )
 
     interview_6 = Interview.create(
       :start_time => "14:00:00 EST",
       :end_time => "15:00:00 EST",
       :date => "2013-07-30",
-      :relationship_id => 6
+      :relationship_id => 6,
+      :job_id => 2,
+      :user_id => 8
     )
 
     interview_7 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-24",
-      :relationship_id => 7
+      :relationship_id => 7,
+      :job_id => 3,
+      :user_id => 8
     )
 
     interview_8 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-29",
-      :relationship_id => 8
+      :relationship_id => 8,
+      :job_id => 5,
+      :user_id => 2
     )
 
     interview_9 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
       :date => "2013-07-29",
-      :relationship_id => 9
+      :relationship_id => 9,
+      :job_id => 4,
+      :user_id => 6
     )
 
     interview_10 = Interview.create(
       :start_time => "10:00:00 EST",
       :end_time => "11:00:00 EST",
       :date => "2013-07-28",
-      :relationship_id => 110
+      :relationship_id => 10,
+      :job_id => 2,
+      :user_id => 5
     )
 
     interview_11 = Interview.create(
       :start_time => "12:00:00 EST",
       :end_time => "13:00:00 EST",
       :date => "2013-07-29",
-      :relationship_id => 11
+      :relationship_id => 11,
+      :job_id => 3,
+      :user_id => 3
     )
 
     interview_12 = Interview.create(
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
       :date => "2013-07-25",
-      :relationship_id => 12
+      :relationship_id => 12,
+      :job_id => 5,
+      :user_id => 8
     )
 
     interview_13 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-29",
-      :relationship_id => 13
+      :relationship_id => 13,
+      :job_id => 6,
+      :user_id => 7
     )
 
     interview_14 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
       :date => "2013-07-27",
-      :relationship_id => 14
+      :relationship_id => 14,
+      :job_id => 7,
+      :user_id => 8
     )
 
     interview_15 = Interview.create(
       :start_time => "16:00:00 EST",
       :end_time => "17:00:00 EST",
       :date => "2013-07-28",
-      :relationship_id => 15
+      :relationship_id => 15,
+      :job_id => 6,
+      :user_id => 8
     )
 
     interview_16 = Interview.create(
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
       :date => "2013-07-28",
-      :relationship_id => 16
+      :relationship_id => 16,
+      :job_id => 5,
+      :user_id => 2
     )
 
     interview_17 = Interview.create(
       :start_time => "11:30:00 EST",
       :end_time => "12:30:00 EST",
       :date => "2013-07-31",
-      :relationship_id => 17
+      :relationship_id => 17,
+      :job_id => 1,
+      :user_id => 1
     )
 
     interview_18 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
       :date => "2013-07-28",
-      :relationship_id => 18
+      :relationship_id => 18,
+      :job_id => 8,
+      :user_id => 6
     )
 
     interview_19 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
       :date => "2013-07-30",
-      :relationship_id => 19
+      :relationship_id => 19,
+      :job_id => 7,
+      :user_id => 6
     )
 
     interview_20 = Interview.create(
       :start_time => "09:30:00 EST",
       :end_time => "10:30:00 EST",
       :date => "2013-07-31",
-      :relationship_id => 20
+      :relationship_id => 20,
+      :job_id => 8, 
+      :user_id => 8
     )
 
     # seed relationships table
@@ -367,7 +407,6 @@
     :aasm_state => "interviewing",
     :company_id => 2,
     :job_id => 4,
-    :interview_id => 1, 
     :user_id => 2
     )
 
@@ -375,7 +414,6 @@
     :aasm_state => "like",
     :company_id => 5,
     :job_id => 2, 
-    :interview_id => 2, 
     :user_id => 7
     )
 
@@ -383,7 +421,6 @@
     :aasm_state => "like",
     :company_id => 3,
     :job_id => 3, 
-    :interview_id => 3, 
     :user_id => 8
     )
 
@@ -391,7 +428,6 @@
     :aasm_state => "interviewing",
     :company_id => 1,
     :job_id => 5,
-    :interview_id => 4,
     :user_id => 6
     )
 
@@ -399,7 +435,6 @@
     :aasm_state => "interviewing",
     :company_id => 2,
     :job_id => 4,
-    :interview_id => 5, 
     :user_id => 7
     )
 
@@ -407,7 +442,6 @@
     :aasm_state => "interviewing",
     :company_id => 5,
     :job_id => 2, 
-    :interview_id => 6, 
     :user_id => 8
     )
 
@@ -415,7 +449,6 @@
     :aasm_state => "interviewing",
     :company_id => 3,
     :job_id => 3, 
-    :interview_id => 7, 
     :user_id => 8
     )
 
@@ -423,7 +456,6 @@
     :aasm_state => "interviewing",
     :company_id => 1,
     :job_id => 5,
-    :interview_id => 8,
     :user_id => 2
     )
 
@@ -431,7 +463,6 @@
     :aasm_state => "interviewing",
     :company_id => 2,
     :job_id => 4,
-    :interview_id => 9, 
     :user_id => 6
     )
 
@@ -439,7 +470,6 @@
     :aasm_state => "interviewing",
     :company_id => 5,
     :job_id => 2, 
-    :interview_id => 10, 
     :user_id => 5
     )
 
@@ -447,7 +477,6 @@
     :aasm_state => "interviewing",
     :company_id => 3,
     :job_id => 3, 
-    :interview_id => 11, 
     :user_id => 3
     )
 
@@ -455,7 +484,6 @@
     :aasm_state => "interviewing",
     :company_id => 1,
     :job_id => 5,
-    :interview_id => 12,
     :user_id => 8
     )
 
@@ -463,7 +491,6 @@
     :aasm_state => "interviewing",
     :company_id => 3,
     :job_id => 6, 
-    :interview_id => 13, 
     :user_id => 7
     )
 
@@ -471,7 +498,6 @@
     :aasm_state => "interviewing",
     :company_id => 1,
     :job_id => 7,
-    :interview_id => 14,
     :user_id => 8
     )
 
@@ -479,7 +505,6 @@
     :aasm_state => "interviewing",
     :company_id => 2,
     :job_id => 6,
-    :interview_id => 15, 
     :user_id => 8
     )
 
@@ -487,7 +512,6 @@
     :aasm_state => "like",
     :company_id => 5,
     :job_id => 5, 
-    :interview_id => 16, 
     :user_id => 2
     )
 
@@ -495,7 +519,6 @@
     :aasm_state => "like",
     :company_id => 3,
     :job_id => 1, 
-    :interview_id => 17, 
     :user_id => 1
     )
 
@@ -503,7 +526,6 @@
     :aasm_state => "like",
     :company_id => 1,
     :job_id => 8,
-    :interview_id => 18,
     :user_id => 6
     )
 
@@ -511,7 +533,6 @@
     :aasm_state => "interviewing",
     :company_id => 2,
     :job_id => 7,
-    :interview_id => 19, 
     :user_id => 6
     )
 
@@ -519,7 +540,6 @@
     :aasm_state => "like",
     :company_id => 5,
     :job_id => 8, 
-    :interview_id => 20, 
     :user_id => 8
     )
 
