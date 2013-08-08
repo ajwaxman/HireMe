@@ -96,7 +96,7 @@ class CoderWallScraper < JobScraper
 
 	def scrape
 		@job_title 		= @doc.css("h1.job-title").text
-		@company_name = @doc.css(".opportunities h3").text.split(' ')[-2..-1].join(' ').delete!("at").strip
+		@company_name = @doc.css(".team-header h1").text
 		@location 		= @doc.css("ul.locations.cf li").text
 		@description 	= @doc.css("p.job-text").text
 	end

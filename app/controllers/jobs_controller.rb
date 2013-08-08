@@ -24,7 +24,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+    @jobs = Job.includes(:relationships, :company).all
     # @company = Company.find(params[:company_id])
 
     respond_to do |format|

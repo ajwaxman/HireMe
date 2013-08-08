@@ -29,12 +29,9 @@
             <td><%= link_to job.title, job_path(job) %></td>
             <td><%= job.company.name %></td>
             <% if current_user.student? %>
-                <% @rel = job.relationships.where(:user_id => current_user.id).first %>
-                <% if @rel %>
-                  <%= render :partial => "shared/pretty_state", :locals => {:relationship => @rel} %>
-                <% else %>
-                  <td></td>
-                <% end %>  
+                <td class="center">
+                  <%= span_for_job_relationship_status(job, current_user) %>
+                </td>
             <% end %>
               <% if current_user.admin? %>
                 <td class="center">

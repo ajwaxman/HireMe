@@ -12,8 +12,12 @@
                   <span class="dash_sidebar">
                       <%= link_to rel.company.name, company_path(rel.company)%>
                     - <strong><%= link_to rel.job.title, job_path(rel.job), :class => "blue"%></strong>
-                    <br><%= render :partial => "shared/pretty_state",
-                              :locals => {:relationship => rel} %>
+                    <br>
+
+                    <td class="center">
+                      <%= span_for_job_relationship_status(rel.job, current_user) %>
+                    </td>
+
                   </span>
                 </li>
               <% end %>
@@ -28,8 +32,10 @@
                   <span class="dash_sidebar">
                       <%= link_to rel.company.name, company_path(rel.company)%>
                     - <strong><%= link_to rel.job.title, job_path(rel.job), :class => "blue"%></strong>
-                    <br><%= render :partial => "shared/pretty_state",
-                              :locals => {:relationship => rel} %>
+                    <br>
+                    <td class="center">
+                      <%= span_for_job_relationship_status(rel.job, current_user) %>
+                    </td>
                   </span>
                 </li>
               <% end %>

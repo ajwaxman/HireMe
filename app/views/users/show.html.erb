@@ -57,8 +57,9 @@
                         <td><%= interview.start_time.strftime('%-l:%M %P') %></td>
                         
 
-                        <%= render :partial => "shared/pretty_state",
-                          :locals => {:relationship => interview.relationship} %>
+                        <td class="center">
+                          <%= span_for_job_relationship_status(interview.job, current_user) %>
+                        </td>
 
                         <td class="center">
 

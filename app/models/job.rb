@@ -25,4 +25,8 @@ class Job < ActiveRecord::Base
     text :title
   end
 
+  def relationship_for_user(user)
+    @relationship_for_user ||= relationships.detect{|r| r.user_id == user.id}
+  end
+  
 end
