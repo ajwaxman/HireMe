@@ -21,12 +21,24 @@ class Job < ActiveRecord::Base
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 
+  after_initialize :set_relationship_for_users
+
   searchable do
     text :title
   end
 
   def relationship_for_user(user)
-    @relationship_for_user ||= relationships.detect{|r| r.user_id == user.id}
+   @relationship_for_users[user.id] ||= if relationships.loaded?
+     relationships.detect{|r| r.user_id == user.id} 
+   else
+     relationships.where(:relationships => {:user_id => user.id})
+    end
   end
   
+  private
+    def set_relationship_for_users
+      @relationship_for_users ||= {}
+    end
 end
+
+#<Job
