@@ -1,11 +1,17 @@
 <h4>Upcoming Interviews</h4>
 
+<% if current_user.admin? %>
 	<% if @interviews.empty? %>
 	  <p>There are no upcoming interviews.</p>
 	<% else %>
 	  <%= render :partial => "shared/interview_list", :locals => {:interview_list => @interviews} %>
 	<% end %>
-
 	<br>
-
 	<%= link_to 'Add Interview', new_interview_path, :class => "btn btn-info" %>
+<% else %>
+	<% if current_user.interviews.empty? %>
+		<p>You have no upcoming interviews.</p>
+	<% else %>
+		<%= render :partial => "shared/interview_list", :locals => {:interview_list => current_user.interviews} %>
+		<% end %>
+<% end %>
