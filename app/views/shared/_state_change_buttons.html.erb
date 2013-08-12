@@ -3,31 +3,33 @@
   <% when "start" %>
     <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "like_company"}, :class => "btn btn-success status_btn" %>
     <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+  
   <% when "like" %>
     <%= link_to 'Unlike This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "unlike_company"}, :class => "btn status_btn" %>
     <%= link_to 'Add Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
+  
   <% when "interviewing" %>
   <%= link_to 'Reschedule Interview', edit_interview_path(@interview.id), :class => "btn btn-warning" %>
   <p> Cancel Interview</p>
+
   <% when "pending" %>
-  <%= link_to 'Add Another Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
-  <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
-  <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
-  <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
-  <p> Delete Interview</p>
-    <% when "pending" %>
     <%= link_to 'Add Another Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
     <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
-    <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "user_not_interested"}, :class => "btn status_btn btn-warning" %>
-    <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "company_not_interested"}, :class => "btn status_btn btn-danger" %>
+    <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
+    <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
     <p> Delete Interview</p>
+
+  
   <% when "offer_received" %>
     <%= link_to 'Accept offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "accepts_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'Decline offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :event => "declines_offer"}, :class => "btn status_btn btn-danger" %>
+  
   <% when "user_decline" %>
     <div> You have declined an offer to be a <%= @job.title %> at <%= @company.name %>.</div>
+  
   <% when "company_decline" %>
     <div> Sorry, but <%= @company.name %> doesn't think that there is a good fit right now.</div>
+  
   <% when "offer_accepted" %>
     <div> Time to have a drink on Avi!</div>
     <img src="http://media1.giphy.com/media/MhHXeM4SpKrpC/original.gif">
