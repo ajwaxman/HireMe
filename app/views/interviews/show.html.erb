@@ -41,7 +41,11 @@
     <%= link_to 'Add Interview Notes', new_interview_comment_path(@interview), :class => "btn btn-default" %>
   <% else %>
       <h3>Questions asked:</h3>
-      <p><%= @interview.comment.questions %>
+      <ul>
+        <% @interview.comment.questions.split('***').each do |question|%>
+          <li><%= question %></li>
+        <% end %>
+      </ul>
       <h3>Interview notes:</h3>
       <p><%= @interview.comment.notes %>
   <% end %>
