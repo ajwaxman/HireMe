@@ -1,7 +1,6 @@
 HireCrm::Application.routes.draw do
 
   resources :records
-  resources :interviews
   resources :search
 
   #################
@@ -87,6 +86,12 @@ HireCrm::Application.routes.draw do
     resources :interviews,
       :controller => 'users/interviews',
       :only => [:new]
+  end
+
+  resources :interviews do
+    resource :comment,
+      :controller => 'interviews/comments',
+      :only => [:new, :create]
   end
 
   # The priority is based upon order of creation:

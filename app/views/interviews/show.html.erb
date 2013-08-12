@@ -37,3 +37,16 @@
 </div>
 
 <hr>
+
+<% if @interview.comment.nil? %>
+  <%= link_to 'Add Interview Notes', new_interview_comment_path(@interview), :class => "btn btn-default" %>
+<% else %>
+  <div class="row">
+    <h3>Questions asked:</h3>
+    <p><%= @interview.comment.questions %>
+  </div>
+  <div class="row">
+    <h3>Interview notes:</h3>
+    <p><%= @interview.comment.notes %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<% if @comment.id.nil? %>
+  <%= form_for :comment, :url => {:controller => "comments", :action => "create", :method => "post"} do |f| %>
+    <% if @comment.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+        <ul>
+        <% @comment.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :interview_questions %>
+      <%= f.text_field :questions %>
+    </div>
+      <div class="field">
+      <%= f.label :notes %>
+      <%= f.text_field :notes %>
+    </div>
+
+    <div class="clearfix"></div>
+    
+    <div class="actions">
+      <%= f.submit 'Save Notes', :class => "btn btn-success" %>
+    </div>
+  <% end %>
+
+<% else %>
+  <h3>Questions asked:</h3>  
+  <p><%= @comment.questions %></p>
+  <h3>Notes:</h3>
+  <p><%= @comment.notes %></p>
+
+<% end %>

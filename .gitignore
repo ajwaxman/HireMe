@@ -18,3 +18,6 @@
 # Ignore application configuration
 /config/application.yml
 cron.log
+.DS_Store
+app/.DS_Store
+app/controllers/.DS_Store
