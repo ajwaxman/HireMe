@@ -23,6 +23,7 @@ class User < ActiveRecord::Base
   has_many :companies, 	:through => :relationships
   has_many :jobs, 		 	:through => :relationships
   has_many :records, 		:through => :relationships
+  has_many :comments
 
   # Validation of attributes #
 

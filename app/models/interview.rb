@@ -21,7 +21,7 @@ class Interview < ActiveRecord::Base
   belongs_to :relationship
 
   has_one :company, :through => :job
-
+  has_one :comment
   has_many :records,	:through => :relationship
 
   validates_presence_of   :date,

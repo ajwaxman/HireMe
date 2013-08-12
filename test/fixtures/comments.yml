@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  notes: MyText
+  questions: MyText
+  user_id: 1
+  interview_id: 1
+
+two:
+  notes: MyText
+  questions: MyText
+  user_id: 1
+  interview_id: 1
