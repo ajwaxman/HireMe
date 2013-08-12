@@ -1,6 +1,6 @@
 class InterviewsController < ApplicationController
-  before_filter :admin_only?, :only => [:index]
-  before_filter :current_user?, :only => [:new, :create]
+  # before_filter :admin_only?, :only => [:index]
+  before_filter :current_user?, :only => [:index, :new, :create]
   before_filter :current_interview_owner_only?, :only => [:edit, :show, :destroy]
   
   # GET /interviews
