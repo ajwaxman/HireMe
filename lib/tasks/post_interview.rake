@@ -6,10 +6,13 @@ namespace :cron do
 	
 	relationships_with_interviews.each do |rel|
 		i = Interview.find_by_user_id_and_job_id(rel.user_id, rel.job_id)
-		i_date = i.merge_datetime_object
-		if i_date < Time.now
-			rel.post_interview
-			Record.write_record(rel) if rel.save
+		
+		if i
+			i_date = i.merge_datetime_object
+			if i_date < Time.now
+				rel.post_interview
+				Record.write_record(rel) if rel.save
+			end
 		end
 		
 	end
@@ -18,12 +21,14 @@ namespace :cron do
 	
 	relationships_with_interviews.each do |rel|
 		i = Interview.find_by_user_id_and_job_id(rel.user_id, rel.job_id)
-		i_date = i.merge_datetime_object
-		if i_date > Time.now
-			rel.aasm_state = "interviewing"
-			Record.write_record(rel) if rel.save
-		end
 		
+		if i
+			i_date = i.merge_datetime_object
+			if i_date > Time.now
+				rel.aasm_state = "interviewing"
+				Record.write_record(rel) if rel.save
+			end
+		end
 	end
 
 	end
