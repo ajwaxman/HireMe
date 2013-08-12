@@ -36,6 +36,8 @@ class User < ActiveRecord::Base
     :presence => true,
     :confirmation => true
 
+  after_initialize :set_relationship_for_jobs
+
   ##########################
   # Authentication Methods #
   ##########################
@@ -56,4 +58,16 @@ class User < ActiveRecord::Base
     text :name
   end
   
+  def relationship_for_job(job)
+    @relationship_for_jobs[job.id] ||= if relationships.loaded?
+      relationships.detect{|r| r.job_id == job.id }
+    else
+      relationships.where(:relationships => {:job_id => job.id}).first
+    end
+  end
+  
+  private
+    def set_relationship_for_jobs
+      @relationship_for_jobs ||= {}
+    end
 end

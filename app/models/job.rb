@@ -21,6 +21,7 @@ class Job < ActiveRecord::Base
   has_many :records, 		:through => :relationships
   has_many :users, 			:through => :relationships
 
+
   after_initialize :set_relationship_for_users
 
   searchable do
@@ -29,9 +30,9 @@ class Job < ActiveRecord::Base
 
   def relationship_for_user(user)
    @relationship_for_users[user.id] ||= if relationships.loaded?
-     relationships.detect{|r| r.user_id == user.id} 
+     relationships.detect{|r| r.user_id == user.id}
    else
-     relationships.where(:relationships => {:user_id => user.id})
+     relationships.where(:relationships => {:user_id => user.id}).first
     end
   end
   
@@ -39,6 +40,7 @@ class Job < ActiveRecord::Base
     def set_relationship_for_users
       @relationship_for_users ||= {}
     end
+
 end
 
 #<Job
