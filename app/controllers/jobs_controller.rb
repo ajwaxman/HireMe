@@ -42,8 +42,10 @@ class JobsController < ApplicationController
     @interview  = @job.relationships.where(:user_id => current_user.id).first
     @interviews = @job.interviews
 
+    
     @relationship = @job.relationship_for_user(current_user)
     @state        = @relationship.aasm_state if @relationship
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @job }

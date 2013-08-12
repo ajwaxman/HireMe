@@ -1,5 +1,9 @@
+<% if current_user.student? %>
+
 <%= render :partial => "shared/state_change_buttons",
   :locals => {:job => @job, :interview => @interview, :state => @state} %>
+
+<% end %>
 
 <br><hr>
 

@@ -41,11 +41,24 @@ class StatesController < ApplicationController
   # => params[:id] is different on the jobs page and the interview page
 
   def find_relationship
-    @u_id = current_user.id
-    @j_id = params[:job_id] if params.keys.include?("job_id")
+    # check to see which controller we're coming from 
+    if params[:controller_name] == "jobs"
+      find_relationship_from_jobs
+    elsif params[:controller_name] == "interviews"
+      find_relationship_from_interviews
+    end
+  end
+
+  def find_relationship_from_jobs
+    @j_id = params[:job_id]
     @c_id = Job.find(@j_id).company_id if @j_id
     @r_id = params[:relationship_id] if params.keys.include?("relationship_id")
-    Relationship.find_by_user_id_and_job_id_and_company_id(@u_id, @j_id, @c_id)
+    Relationship.find_by_user_id_and_job_id_and_company_id(@u_id, @j_id, @c_id)  
+  end
+
+  def find_relationship_from_interviews
+    i = Interview.find(params[:id])
+    i.relationship
   end
 
   def relationship_exist?
@@ -71,7 +84,15 @@ class StatesController < ApplicationController
       create_relationship_and_like
     end
       puts "The end"
+      state_action_redirect
+  end
+
+  def state_action_redirect
+    if params[:controller_name] == "jobs"
       redirect_to job_path(Job.find(params[:job_id]))
+    elsif params[:controller_name] == "interviews"
+      redirect_to interview_path(Interview.find(params[:id]))
+    end
   end
 
 
