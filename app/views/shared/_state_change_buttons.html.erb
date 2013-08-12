@@ -24,7 +24,7 @@
     <%= link_to 'Accept offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "accepts_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'Decline offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "declines_offer"}, :class => "btn status_btn btn-danger" %>
   
-  <% when "user_decline" %>
+  <% when "offer_declined" %>
     <div> You have declined an offer to be a <%= @job.title %> at <%= @company.name %>.</div>
   
   <% when "company_decline" %>
@@ -37,6 +37,6 @@
 
 <% else %>
 
-  <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id}, :class => "btn btn-success status_btn" %>
+  <%= link_to 'Like This Job', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "like_company"}, :class => "btn btn-success status_btn" %>
 
 <% end %>

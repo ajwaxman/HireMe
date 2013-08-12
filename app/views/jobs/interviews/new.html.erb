@@ -15,14 +15,15 @@
   <% end %>
 
   <%= f.hidden_field :job_id, :value => @job.id %>
-  <%= f.hidden_field :user_id, :value => current_user.id %>
+  
 
   <%= render :partial => 'shared/datetime_picker', :locals => {:interview => @interview, :f => f} %>
 
   <% if current_user.admin? %>
+
     <div class="field">
       <label>Select a User</label>
-      <select name="user_id">
+      <select name="interview[user_id]">
         <% unless @user %>
           <option selected="selected">Select a User</option>
         <% end %>
@@ -36,6 +37,8 @@
       </select>
 
     </div>
+  <% else %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
   <% end %>
 
   <div class="actions">

@@ -40,6 +40,20 @@ class StatesController < ApplicationController
   # => On the job page, no relationship initially exists
   # => params[:id] is different on the jobs page and the interview page
 
+  def state_action
+    if relationship_exist?
+      change_state
+    else
+      create_relationship_and_like
+    end
+      puts "The end"
+      state_action_redirect
+  end
+
+  def relationship_exist?
+    find_relationship.present?
+  end
+
   def find_relationship
     # check to see which controller we're coming from 
     if params[:controller_name] == "jobs"
@@ -50,6 +64,7 @@ class StatesController < ApplicationController
   end
 
   def find_relationship_from_jobs
+    @u_id = current_user.id
     @j_id = params[:job_id]
     @c_id = Job.find(@j_id).company_id if @j_id
     @r_id = params[:relationship_id] if params.keys.include?("relationship_id")
@@ -61,30 +76,16 @@ class StatesController < ApplicationController
     i.relationship
   end
 
-  def relationship_exist?
-    find_relationship.present?
-  end
-
-  def create_relationship_and_like
-    r = Relationship.create(:user_id => @u_id, :job_id => @j_id, :company_id => @c_id)
-    r.like_company
-    r.save
-  end
-
   def change_state
     r = find_relationship
     r.send(params["event"])
     r.save 
   end
 
-  def state_action
-    if relationship_exist?
-      change_state
-    else
-      create_relationship_and_like
-    end
-      puts "The end"
-      state_action_redirect
+  def create_relationship_and_like
+    r = Relationship.create(:user_id => @u_id, :job_id => @j_id, :company_id => @c_id)
+    r.like_company
+    r.save
   end
 
   def state_action_redirect
@@ -94,9 +95,6 @@ class StatesController < ApplicationController
       redirect_to interview_path(Interview.find(params[:id]))
     end
   end
-
-
-
 
   # Like and Unlike companies from the relationship page.
 
