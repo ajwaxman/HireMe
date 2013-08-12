@@ -36,6 +36,7 @@ class JobsController < ApplicationController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
+
     @job        = Job.find(params[:id])
     @company    = @job.company
     @interview  = @job.relationships.where(:user_id => current_user.id).first

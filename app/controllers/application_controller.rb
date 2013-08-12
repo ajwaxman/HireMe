@@ -55,7 +55,7 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?
 
   def logged_in_only?
-    unless current_user.id = true
+    unless current_user.id
       redirect_to user_path(current_user), alert: "Not authorized"
     end
   end
