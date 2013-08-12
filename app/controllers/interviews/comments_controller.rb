@@ -18,7 +18,7 @@ class Interviews::CommentsController < ApplicationController
 		@comment = Comment.new
 		@comment.interview = Interview.find(params[:interview_id])
 		@comment.user = current_user
-		@comment.questions = params[:comment][:questions]
+		@comment.questions = "Rails1\nRails2\nRails3"#params[:comment][:questions]
 		@comment.notes = params[:comment][:notes]
 
 		int = @comment.interview

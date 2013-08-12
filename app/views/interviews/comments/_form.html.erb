@@ -12,10 +12,13 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :interview_questions %>
-      <%= f.text_field :questions %>
+    <div class="field" id="questions">
+      <div class="question">
+        <input type="text" name="comment[questions][]">
+      </div>
     </div>
+    <button id="add_question" class="btn btn-mini btn-default">Add Question</button>
+      <br><br>
       <div class="field">
       <%= f.label :notes %>
       <%= f.text_field :notes %>
