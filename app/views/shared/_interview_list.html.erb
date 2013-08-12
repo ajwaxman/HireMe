@@ -31,6 +31,7 @@
 						<td><%= interview.date.strftime('%-m/%-d/%Y') %></td>
 						<td><%= interview.start_time.strftime('%-l:%M %P') %></td>
 						<td><%= span_for_job_relationship_status(interview.job, interview.user) %></td>
+
 						
 						<td class="center">
 							<a class="btn btn-success" href="<%= interview_path(interview) %>">

@@ -3,9 +3,7 @@
 <br><hr>
 
 <h1>Interview Details for <%= link_to @interview.user.name, user_path(@interview.user) %></h1>
-
 <div class="row-fluid sortable">
-
   <div class="box span3">
     <div class="box-content pagination-centered company_logo_div">
       <%= image_tag @interview.company.logo_url, :size => "200x200" %>
@@ -33,20 +31,22 @@
       </p>               
      </div>
   </div>
-
 </div>
 
 <hr>
 
-<% if @interview.comment.nil? %>
-  <%= link_to 'Add Interview Notes', new_interview_comment_path(@interview), :class => "btn btn-default" %>
-<% else %>
-  <div class="row">
-    <h3>Questions asked:</h3>
-    <p><%= @interview.comment.questions %>
-  </div>
-  <div class="row">
-    <h3>Interview notes:</h3>
-    <p><%= @interview.comment.notes %>
-  </div>
-<% end %>
+<h1>Interview Notes</h1>
+<div class="box-content">
+  <% if @interview.comment.nil? %>
+    <%= link_to 'Add Interview Notes', new_interview_comment_path(@interview), :class => "btn btn-default" %>
+  <% else %>
+      <h3>Questions asked:</h3>
+      <ul>
+        <% @interview.comment.questions.split('***').each do |question|%>
+          <li><%= question %></li>
+        <% end %>
+      </ul>
+      <h3>Interview notes:</h3>
+      <p><%= @interview.comment.notes %>
+  <% end %>
+</div>

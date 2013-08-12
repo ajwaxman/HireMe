@@ -17,9 +17,9 @@ class Interviews::CommentsController < ApplicationController
 	def create
 		@comment = Comment.new
 		@comment.interview = Interview.find(params[:interview_id])
-		@comment.user = current_user
-		@comment.questions = params[:comment][:questions]
-		@comment.notes = params[:comment][:notes]
+		@comment.user 		 = current_user
+		@comment.questions = params[:comment][:questions].join('***')
+		@comment.notes 		 = params[:comment][:notes]
 
 		int = @comment.interview
 
