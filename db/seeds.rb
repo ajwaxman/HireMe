@@ -233,15 +233,10 @@
     interview_2 = Interview.create(
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-28",
       :relationship_id => 2,
       :job_id => 2,
       :user_id => 7
-=======
-      :date => "2013-08-15",
-      :relationship_id => 2
->>>>>>> details
     )
 
     interview_3 = Interview.create(
@@ -256,113 +251,73 @@
     interview_4 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-27",
       :relationship_id => 4,
       :job_id => 5,
       :user_id => 6
-=======
-      :date => "2013-08-13",
-      :relationship_id => 4
->>>>>>> details
     )
 
     interview_5 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-26",
       :relationship_id => 5,
       :job_id => 4,
       :user_id => 7
-=======
-      :date => "2013-08-26",
-      :relationship_id => 5
->>>>>>> details
     )
 
     interview_6 = Interview.create(
       :start_time => "14:00:00 EST",
       :end_time => "15:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-30",
       :relationship_id => 6,
       :job_id => 2,
       :user_id => 8
-=======
-      :date => "2013-08-11",
-      :relationship_id => 6
->>>>>>> details
     )
 
     interview_7 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-24",
       :relationship_id => 7,
       :job_id => 3,
       :user_id => 8
-=======
-      :date => "2013-08-24",
-      :relationship_id => 7
->>>>>>> details
     )
 
     interview_8 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-29",
       :relationship_id => 8,
       :job_id => 5,
       :user_id => 2
-=======
-      :date => "2013-08-17",
-      :relationship_id => 8
->>>>>>> details
     )
 
     interview_9 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-29",
       :relationship_id => 9,
       :job_id => 4,
       :user_id => 6
-=======
-      :date => "2013-08-29",
-      :relationship_id => 9
->>>>>>> details
     )
 
     interview_10 = Interview.create(
       :start_time => "10:00:00 EST",
       :end_time => "11:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-28",
       :relationship_id => 10,
       :job_id => 2,
       :user_id => 5
-=======
-      :date => "2013-08-16",
-      :relationship_id => 110
->>>>>>> details
     )
 
     interview_11 = Interview.create(
       :start_time => "12:00:00 EST",
       :end_time => "13:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-29",
       :relationship_id => 11,
       :job_id => 3,
       :user_id => 3
-=======
-      :date => "2013-08-10",
-      :relationship_id => 11
->>>>>>> details
     )
 
     interview_12 = Interview.create(
@@ -377,29 +332,19 @@
     interview_13 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-29",
       :relationship_id => 13,
       :job_id => 6,
       :user_id => 7
-=======
-      :date => "2013-08-12",
-      :relationship_id => 13
->>>>>>> details
     )
 
     interview_14 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-27",
       :relationship_id => 14,
       :job_id => 7,
       :user_id => 8
-=======
-      :date => "2013-08-13",
-      :relationship_id => 14
->>>>>>> details
     )
 
     interview_15 = Interview.create(
@@ -414,15 +359,10 @@
     interview_16 = Interview.create(
       :start_time => "09:00:00 EST",
       :end_time => "10:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-28",
       :relationship_id => 16,
       :job_id => 5,
       :user_id => 2
-=======
-      :date => "2013-08-10",
-      :relationship_id => 16
->>>>>>> details
     )
 
     interview_17 = Interview.create(
@@ -437,43 +377,28 @@
     interview_18 = Interview.create(
       :start_time => "11:00:00 EST",
       :end_time => "12:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-28",
       :relationship_id => 18,
       :job_id => 8,
       :user_id => 6
-=======
-      :date => "2013-08-16",
-      :relationship_id => 18
->>>>>>> details
     )
 
     interview_19 = Interview.create(
       :start_time => "15:00:00 EST",
       :end_time => "16:00:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-30",
       :relationship_id => 19,
       :job_id => 7,
       :user_id => 6
-=======
-      :date => "2013-08-20",
-      :relationship_id => 19
->>>>>>> details
     )
 
     interview_20 = Interview.create(
       :start_time => "09:30:00 EST",
       :end_time => "10:30:00 EST",
-<<<<<<< HEAD
       :date => "2013-07-31",
       :relationship_id => 20,
       :job_id => 8, 
       :user_id => 8
-=======
-      :date => "2013-08-18",
-      :relationship_id => 20
->>>>>>> details
     )
 
     # seed relationships table
