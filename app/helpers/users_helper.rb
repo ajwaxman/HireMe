@@ -2,19 +2,17 @@ module UsersHelper
 
 
   def random_avatar
-    octocats = ["http://octodex.github.com/images/daftpunktocat-guy.gif", 
-                "http://octodex.github.com/images/daftpunktocat-thomas.gif", 
-                "http://octodex.github.com/images/stormtroopocat.png", 
-                "http://octodex.github.com/images/dojocat.jpg", 
-                "http://octodex.github.com/images/linktocat.jpg",
-                "http://octodex.github.com/images/octotron.jpg",
-                "http://octodex.github.com/images/nyantocat.gif",
-                "http://octodex.github.com/images/octobiwan.jpg",
-                "http://octodex.github.com/images/daftpunktocat-guy.gif", 
-                "http://octodex.github.com/images/daftpunktocat-thomas.gif", 
-                "http://octodex.github.com/images/daftpunktocat-guy.gif", 
+    octocats = ["http://octodex.github.com/images/daftpunktocat-thomas.gif",
                 "http://octodex.github.com/images/daftpunktocat-thomas.gif",
-                "http://octodex.github.com/images/nyantocat.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/daftpunktocat-thomas.gif",
+                "http://octodex.github.com/images/nyantocat.gif"
               ]
     num = octocats.length
     octocats[rand(num)]

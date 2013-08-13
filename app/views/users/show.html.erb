@@ -1,11 +1,18 @@
 <div class="row-fluid">
-
-<%= gravatar_image_tag(@user.email, :alt => @user.name, :class => "gravatar-image", :gravatar => { :default => random_avatar }) %>
-
-<h1><%= @user.name %></h1>
+  <div class="pull-left">
+    <span class = "gravatar-show-page"><%= gravatar_image_tag(@user.email, :alt => @user.name, :class => "gravatar-image", :gravatar => { :default => random_avatar }) %></span>
+  </div>
+  <div class="pull-left">
+    <span>
+      <span class="user-contact-name">
+        <%= @user.name %><br>
+      </span>
+      <i class="fa-icon-envelope-alt user-contact-icon"></i><span class="user-contact-text"> <%= @user.email %></span></span> &nbsp&nbsp <span><i class="fa-icon-phone user-contact-icon"></i><span class="user-contact-text"> <%= @user.phone %></span><br>
+      <%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info user-contact-button" %>
+    </span>
+  </div>
 </div>
-<hr>
-<%= link_to 'Add Interview', new_user_interview_path(@user), :class => "btn btn-info" %>
+
 
 <div class="row-fluid">
         

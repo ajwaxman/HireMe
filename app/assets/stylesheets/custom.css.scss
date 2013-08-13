@@ -132,7 +132,29 @@
   margin-top: 20px;
 }
 .gravatar-image {
-  border-radius: 100px;
+  border-radius: 7px;
+}
+
+.gravatar-show-page {
+  padding-right: 10px;
+}
+
+.user-contact-name {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.user-contact-text {
+  color: #999;
+}
+
+.user-contact-icon {
+  color: #CCC;
+}
+
+.user-contact-button {
+  margin-top: 4px;
 }
 
 .question input {
