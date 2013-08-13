@@ -58,7 +58,6 @@ namespace :solr do
   end
 end
 
-after "deploy:update_code", "solr:stop"
 after "deploy:update_code", "solr:start"
 after "deploy:update_code", "solr:reindex"
 after "deploy:update_code", "solr:symlink"
