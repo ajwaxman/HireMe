@@ -149,3 +149,9 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (min-width: 979px) and (max-width: 1055px) {
+  .hidden-activity-buttons {
+    display: none !important;
+  }
+}
