@@ -30,7 +30,7 @@
        You may also set this to false using by setting the system property:
          -Dsolr.abortOnConfigurationError=false
      -->
-  <abortOnConfigurationError>${solr.abortOnConfigurationError:true}</abortOnConfigurationError>
+  <abortOnConfigurationError>${solr.abortOnConfigurationError:false}</abortOnConfigurationError>
   <!-- lib directives can be used to instruct Solr to load an Jars identified
        and use them to resolve any "plugins" specified in your solrconfig.xml or
        schema.xml (ie: Analyzers, Request Handlers, etc...).
