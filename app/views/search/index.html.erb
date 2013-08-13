@@ -25,6 +25,7 @@
               <% elsif object.class ==  User %>
                 <div class="wrapper-cell">
                   <div>
+                    <%= link_to gravatar_image_tag(object.email, :alt => object.name, :class => "gravatar-image", :gravatar => { :default => random_avatar }), user_path(object) %><br>
                     <%= link_to object.name, user_path(object) %>
                   </div>
                 </div>
