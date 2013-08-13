@@ -30,34 +30,3 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
-
-namespace :solr do
-  desc "start solr"
-  task :start, :roles => :app, :except => { :no_release => true } do
-    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake sunspot:solr:start"
-  end
-
-  desc "stop solr"
-  task :stop, :roles => :app, :except => { :no_release => true } do
-    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake sunspot:solr:stop"
-  end
-
-  desc "reindex the whole database"
-  task :reindex, :roles => :app do
-    stop
-    run "rm -rf #{shared_path}/solr/data/*"
-    start
-    puts "You need to run this yourself now:"
-    puts "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake sunspot:solr:reindex"
-  end
-
-  desc "Symlink in-progress deployment to a shared Solr index"
-  task :symlink, :except => { :no_release => true } do
-    run "ln -s #{shared_path}/solr/data/ #{release_path}/solr/data"
-    run "ln -s #{shared_path}/solr/pids/ #{release_path}/solr/pids"
-  end
-end
-
-after "deploy:update_code", "solr:start"
-after "deploy:update_code", "solr:reindex"
-after "deploy:update_code", "solr:symlink"
