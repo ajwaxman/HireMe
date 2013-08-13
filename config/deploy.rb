@@ -1,4 +1,5 @@
 require 'bundler/capistrano' # for bundler support
+load 'deploy/assets'         # precompile assets
 
 set :application, "HireCRM"
 set :repository,  "git@github.com:flatiron-school/hire-redux.git"
@@ -58,4 +59,7 @@ namespace :solr do
   end
 end
 
+after "deploy:update_code", "solr:stop"
+after "deploy:update_code", "solr:start"
+after "deploy:update_code", "solr:reindex"
 after "deploy:update_code", "solr:symlink"
