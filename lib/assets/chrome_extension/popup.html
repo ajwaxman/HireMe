@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400italic' rel='stylesheet' type='text/css'>
     <style>
       body {
-        min-width: 357px;
+        min-width: 200px;
         overflow-x: hidden;
       }
 
@@ -12,6 +13,7 @@
         margin: 5px;
         border: 2px solid black;
         vertical-align: middle;
+        text-align: center;
         width: 75px;
         height: 75px;
       }
@@ -24,11 +26,12 @@
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
   </head>
-  <body style="background-color:#000333; color: white;">
+  <body style="background-color:#34495e; text-alighn:center; color: white;">
     <div id="test"></div>
-    <span style="font-family:'Droid', san-serif; font-color:white; font-size:2em;">We added this job.</span>
-    <script src="jquery-1.9.1.min.js"></script>
-    <script src="popup.js"></script>
+    <div style="text-align:center; font-family:'Lato', san-serif;font-weight: 400; font-style:italic; font-color:white; font-size:1.2em; padding: 10px 0;">We added this job!</div>
+    <script src="popup.js" type="text/javascript"></script>
+    <script src="close.js" type="text/javascript"></script>
+  
   </body>
 </html>
 
