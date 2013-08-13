@@ -7,18 +7,13 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-  gem 'nav_lynx'
 end
 
 gem 'jquery-rails'
@@ -41,6 +36,8 @@ gem 'figaro'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'gravatar_image_tag'
+gem 'uglifier', '>= 1.0.3'
+gem 'nav_lynx'
 
 group :development do
   gem 'webrick', '~> 1.3.1' # => Prevents warning display when running rails s.
@@ -61,7 +58,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
