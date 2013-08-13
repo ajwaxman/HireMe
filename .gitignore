@@ -11,20 +11,11 @@
 /db/*.sqlite3
 
 # Ignore all logfiles and tempfiles.
-/cron.log
-/log/*.log
 /tmp
+/log/*.log
+
 # Ignore application configuration
 /config/application.yml
-cron.log
-.DS_Store
-app/.DS_Store
-app/controllers/.DS_Store
 
-/solr/*
-solr/*
-log/sunspot-solr-development.log.1
-solr/data/development/index/segments.gen
-solr/data/development/spellchecker/segments_1
-solr/pids/development/sunspot-solr-development.pid
-log/sunspot-solr-development.log.1.lck
+# Ignore all solr data.
+/solr/data
