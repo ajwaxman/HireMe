@@ -1,8 +1,5 @@
-require 'crunchbase'
-require 'pry'
-
 class CompanyScraper
-  Crunchbase::API.key = '4c663fqra6dx82549gxtcd5r'
+  Crunchbase::API.key = ENV['CRUNCHBASE_API']
 
   def initialize(company_name)
     begin

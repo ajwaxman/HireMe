@@ -12,7 +12,6 @@
 
 # Ignore all logfiles and tempfiles.
 /cron.log
-/solr/*
 /log/*.log
 /tmp
 # Ignore application configuration
@@ -21,3 +20,11 @@ cron.log
 .DS_Store
 app/.DS_Store
 app/controllers/.DS_Store
+
+/solr/*
+solr/*
+log/sunspot-solr-development.log.1
+solr/data/development/index/segments.gen
+solr/data/development/spellchecker/segments_1
+solr/pids/development/sunspot-solr-development.pid
+log/sunspot-solr-development.log.1.lck
