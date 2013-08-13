@@ -1,5 +1,4 @@
 require 'bundler/capistrano' # for bundler support
-load 'deploy/assets'         # precompile assets
 
 set :application, "HireCRM"
 set :repository,  "git@github.com:flatiron-school/hire-redux.git"
