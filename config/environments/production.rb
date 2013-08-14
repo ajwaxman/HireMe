@@ -20,6 +20,29 @@ HireCrm::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+    ###################
+  ## MAILER CONFIG ##
+  ###################
+
+  # Don't care if the mailer can't send
+  config.action_mailer.raise_delivery_errors = true
+
+  # How mail is sent in action mailer, options are :smtp, :letter_opener, :sendmail, :file, and :test
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "gmail.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
+  }
+
+  # specify what domain to use for mailer URLs
+  config.action_mailer.default_url_options = { host: "192.241.176.112" }
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
