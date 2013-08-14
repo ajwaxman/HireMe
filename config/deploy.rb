@@ -34,6 +34,6 @@ namespace :deploy do
   end
 
   task :copy_themed_css do
-  	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* public"
+  	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public"
   end
 end
