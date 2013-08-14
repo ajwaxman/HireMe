@@ -16,7 +16,7 @@
 
   <div class="field">
     <label>Select A User</label>
-     <select name="interview[:user_id]">
+     <select name="interview[user_id]">
        <% @users.each do |u|%>a
          <option value=<%= u.id %>><%= u.name %></option>      
        <% end %>
@@ -25,7 +25,7 @@
 
   <div class="field">
     <label>Select A Job</label>
-     <select name="interview[:job_id]">
+     <select name="interview[job_id]">
        <% @jobs.each do |j|%>
          <option value=<%= j.id %>><%= j.company.name %> - <%= j.title %></option>
        <% end %>
