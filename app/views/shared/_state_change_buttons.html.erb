@@ -17,9 +17,7 @@
     <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
     <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
-    <p> Delete Interview</p>
 
-  
   <% when "offer_received" %>
     <%= link_to 'Accept offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "accepts_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'Decline offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "declines_offer"}, :class => "btn status_btn btn-danger" %>
@@ -31,8 +29,9 @@
     <div> Sorry, but <%= @company.name %> doesn't think that there is a good fit right now.</div>
   
   <% when "offer_accepted" %>
-    <div> Time to have a drink on Avi!</div>
-    <img src="http://media1.giphy.com/media/MhHXeM4SpKrpC/original.gif">
+    <h2>Congratulations. You're going to be an awesome <%= @job.title %> at <%= @job.company.name %>!</h2>
+    <p style = "font-style: italic">Remember: Push code all day, every day.</p>
+    <%= image_tag("http://media1.giphy.com/media/MhHXeM4SpKrpC/original.gif", :width => "300px", :style => "border-radius: 10px;")  %>
   <% end %>
 
 <% else %>
