@@ -37,6 +37,6 @@ namespace :deploy do
   	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public"
   	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public/assets"
 		run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/img"
-  	run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/assets/images"
+  	run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/assets/img"
   end
 end
