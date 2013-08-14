@@ -15,7 +15,7 @@ role :web, "192.241.176.112"                          # Your HTTP server, Apache
 role :app, "192.241.176.112"                          # This may be the same as your `Web` server
 
 # Load assets here and create symlinks.
-before 'deploy:update_code','deploy:symlink_config'
+# after 'deploy:update_code','deploy:symlink_config'
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
