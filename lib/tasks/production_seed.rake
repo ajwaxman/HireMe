@@ -2,8 +2,6 @@ namespace :db do
   desc "Seed our production DB."
   task :final_seed => :environment do
 
-  	puts "Why did this one run?"
-
 		user_1 = User.create(
       :email => "carlos.jose.lazo@gmail.com",
       :name => "Carlos Lazo",
