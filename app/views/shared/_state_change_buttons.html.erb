@@ -17,9 +17,7 @@
     <%= link_to 'Received offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "receives_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'I\'m not interested', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "user_declines"}, :class => "btn status_btn btn-warning" %>
     <%= link_to 'Rejected!', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "company_declines"}, :class => "btn status_btn btn-danger" %>
-    <p> Delete Interview</p>
 
-  
   <% when "offer_received" %>
     <%= link_to 'Accept offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "accepts_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'Decline offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "declines_offer"}, :class => "btn status_btn btn-danger" %>
