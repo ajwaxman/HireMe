@@ -17,7 +17,6 @@ HireCrm::Application.configure do
   ## MAILER CONFIG ##
   ###################
 
-
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
 
