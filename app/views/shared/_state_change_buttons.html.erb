@@ -10,7 +10,6 @@
   
   <% when "interviewing" %>
   <%= link_to 'Reschedule Interview', edit_interview_path(@interview.id), :class => "btn btn-warning" %>
-  <p> Cancel Interview</p>
 
   <% when "pending" %>
     <%= link_to 'Add Another Interview', new_job_interview_path(@job), :class => "btn btn-info" %>
