@@ -1,0 +1,1660 @@
+rake aborted!
+Could not find table 'relationships'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/model_schema.rb:228:in `yield'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/model_schema.rb:228:in `default'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/model_schema.rb:228:in `columns'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/model_schema.rb:237:in `columns_hash'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/locking/optimistic.rb:131:in `locking_enabled?'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:170:in `exec_queries'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:160:in `block in to_a'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/explain.rb:41:in `logging_query_plan'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:159:in `to_a'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:189:in `exec_queries'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:160:in `block in to_a'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/explain.rb:34:in `logging_query_plan'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation.rb:159:in `to_a'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/relation/finder_methods.rb:159:in `all'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/querying.rb:5:in `all'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:5:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot_rails-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot_rails-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot_rails-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100addb98>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001064f4ed8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001026a9890>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000109058b10>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000105445100>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001075bbac8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106ce80e0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001074848f8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100e26598>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100c3b4e0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001085fce28>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000102188258>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100f99b78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010748ea38>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108c94b28>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010840c578>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100be2cf0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001070cbef0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000103ad7c18>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bdf190>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106cbeb50>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010657a510>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106a113f8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010322f958>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107862010>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108d2f808>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001076562d0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000102fec600>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010435a2f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010892ff50>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010396dc38>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108e79538>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107366908>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107865210>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000104a71340>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107e0fbe8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000103dc18c0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107ce2d88>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001083a1138>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001076a80f8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106aadfa0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010278aed0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106bb80a8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001070ab330>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001087df1a0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106cf8a30>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010734b068>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100d5cab8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001073dd7b0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001077b74a8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010771a4f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001045a2030>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001074e3538>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001095b6d78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107758a98>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106dfa1b8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001011137b0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000102ff16f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000109225f60>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108a9f4f8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107caff28>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:8:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot_solr-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot_rails-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000101529750>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106d30b38>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010459c090>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100e29d88>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106adbbd0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000104c733c8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001045cf508>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010757dd18>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001037aad38>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106c712d8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bf3e60>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001088fbbd8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010650c3d0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107596250>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107637d30>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100935368>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001083a9310>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107894560>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107de6c70>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107043708>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000109577bc8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000109359508>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010873fb78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001071954d0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010959cc98>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106b7b220>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001045f05f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106ad3f20>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100ceb1d8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010942a770>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010821c088>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108737310>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bbd130>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107023e80>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100acd388>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001076d3f00>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000104c7e610>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107f1b398>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106e86a00>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bbf4d0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107f1c720>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100e79ec8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107c5cdc8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107902d80>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001037c5188>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000104ef2e78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001082135f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000105870068>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100b14d28>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001052f78c0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107624b68>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100d387d0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100a7eaf8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108332eb8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107e763e8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001061534f0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106b41138>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010822d220>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001094b57a8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bd3458>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001077b6be8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000106a2bbe0>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bffb48>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001087b1610>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001058ad508>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001070e8000>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100bec160>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001059c10e8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010352e258>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000108cfbd50>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010557b4e8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000109464a60>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000105fc9418>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001078f4050>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001096c2140>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000107c05a78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x000001094a4520>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000105b27e78>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:12:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:7:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x0000010114b930>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:24:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:23:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:23:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+rake aborted!
+undefined method `interview_id' for #<Relationship:0x00000100e401c8>
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activemodel-3.2.13/lib/active_model/attribute_methods.rb:407:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/attribute_methods.rb:149:in `method_missing'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:20:in `block (3 levels) in <top (required)>'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:19:in `each'
+/Users/dmanaster1/flatiron_school/hire-redux/lib/tasks/post_interview.rake:19:in `block (2 levels) in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => cron:post_interview
+(See full trace by running task with --trace)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find fattr-2.2.1 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find sunspot-2.0.0 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
