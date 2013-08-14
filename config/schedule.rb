@@ -3,10 +3,12 @@ set :output, {:error => nil, :standard => nil}
 
 every 1.minutes do
 	rake "cron:post_interview", :environment => "development"
+	rake "cron:post_interview", :environment => "production"
 end
 
 every :day, :at => '12:00pm' do
 	rake "cron:send_interview_reminder", :environment => "development"
+	rake "cron:send_interview_reminder", :environment => "production"
 end
 
 # Use this file to easily define all of your cron jobs.
