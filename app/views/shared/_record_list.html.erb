@@ -23,7 +23,7 @@
         <% record_list.each do |record| %>
           
           <tr>
-            <td><%= record.created_at %></td>
+            <td><%= record.created_at.strftime "%-m/%-d/%Y %-I:%M %p" %></td>
             <td><%= record.event.description %></td>
             <td><%= record.user %></td>
             <td><%= record.company %></td>
