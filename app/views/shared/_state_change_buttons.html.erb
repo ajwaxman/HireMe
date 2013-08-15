@@ -21,11 +21,14 @@
     <%= link_to 'Accept offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "accepts_offer"}, :class => "btn status_btn btn-success" %>
     <%= link_to 'Decline offer', {:controller => :states, :action => :state_action, :job_id => @job.id, :controller_name => params[:controller], :event => "declines_offer"}, :class => "btn status_btn btn-danger" %>
   
+  <% when "user_decline" %>
+    <span> You have decided to not pursue the opportunity as a/an <%= @job.title %> at <%= @company.name %>.</span>
+
   <% when "offer_declined" %>
-    <div> You have declined an offer to be a <%= @job.title %> at <%= @company.name %>.</div>
+    <span> You have declined an offer to be a <%= @job.title %> at <%= @company.name %>.</span>
   
   <% when "company_decline" %>
-    <div> Sorry, but <%= @company.name %> doesn't think that there is a good fit right now.</div>
+    <span> Sorry, but <%= @company.name %> doesn't think that there is a good fit right now.</span>
   
   <% when "offer_accepted" %>
     <h2>Congratulations. You're going to be an awesome <%= @job.title %> at <%= @job.company.name %>!</h2>
