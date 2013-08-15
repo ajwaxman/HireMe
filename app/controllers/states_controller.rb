@@ -85,7 +85,7 @@ class StatesController < ApplicationController
   def create_relationship_and_like
     r = Relationship.create(:user_id => @u_id, :job_id => @j_id, :company_id => @c_id)
     r.like_company
-    r.save
+    Record.write_record(r) if r.save
   end
 
   def state_action_redirect
