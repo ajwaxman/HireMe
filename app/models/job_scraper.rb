@@ -6,6 +6,7 @@ class JobScraper
 
 	def initialize(url)
 		@doc = Nokogiri::HTML(open(url))
+		@url = url
 	end
 
 	#################
@@ -33,6 +34,8 @@ class JobScraper
 			return TeamTreehouseScraper.new(url)
 		when "toprubyjobs.com"
 			return TopRubyScraper.new(url)
+		when "www.crunchbase.com"
+			return CrunchbaseScraper.new(url)
 		else
 			puts "Domain not supported."
 		end
@@ -131,6 +134,20 @@ class TopRubyScraper < JobScraper
 		@company_name = @doc.css("#col-left dd")[0].text
 		@location 		= @doc.css("#col-left dd")[1].text
 		@description 	= @doc.css(".description").text
+	end
+
+end
+
+class CrunchbaseScraper < JobScraper
+
+
+	
+	def initialize(url)
+		super(url)
+	end
+
+	def scrape
+		@company_name = @url.split("/").last
 	end
 
 end
