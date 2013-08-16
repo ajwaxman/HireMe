@@ -47,22 +47,3 @@ class ChromeJobAdder
 	end
 
 end
-
-# Pass in a URL
-# Parse the Job
-
-# If Company DNE
-	# Create company via Company Parser
-# Else
-	# Find company in Database
-
-# Create Job
-# Associate Job with Company
-# Save Company
-
-#################
-
-# cja = ChromeJobAdder.new("https://toprubyjobs.com/jobs/600-housetrip-ruby-developers")
-# cja.scrape_job
-# cja.find_or_create_company
-# cja.create_and_associate_job
