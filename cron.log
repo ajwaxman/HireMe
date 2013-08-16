@@ -1658,3 +1658,3483 @@ Tasks: TOP => cron:post_interview
 	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
 	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
 	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find aasm-3.0.20 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find net-ssh-2.6.8 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+	from /usr/local/rvm/gems/ruby-1.9.3-p392/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+	from /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:45:in `require'
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+
+
+Database ready for production should now be seeded.
+

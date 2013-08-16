@@ -9,9 +9,9 @@
 ## rails console -s (test individual commands in sandbox mode)
 
     user_1 = User.create(
-      :email => "carlos.jose.lazo@gmail.com",
-      :name => "Carlos Lazo",
-      :phone => "123-456-7890",
+      :email => "jack.altman@flatironschool.com",
+      :name => "Jack Altman",
+      :phone => "314-497-4264",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
@@ -19,29 +19,29 @@
     )
 
     user_2 = User.create(
-      :email => "chris@flatironschool.com",
-      :name => "Christopher Lake",
-      :phone => "098-765-4321",
+      :email => "alex.au@flatironschool.com",
+      :name => "Alex Au",
+      :phone => "832-618-5782",
       :role => "student",
-      :hireable => false, 
+      :hireable => true, 
       :password => 'acdc', 
       :password_confirmation => 'acdc'
     )
 
     user_3 = User.create(
-      :email => "david@flatironschool.com",
-      :name => "David Manaster",
-      :phone => "111-222-3333",
+      :email => "steven.brooks@flatironschool.com",
+      :name => "Steven Brooks",
+      :phone => "201-693-2137",
       :role => "student",
-      :hireable => false, 
+      :hireable => true, 
       :password => 'acdc', 
       :password_confirmation => 'acdc'
     )
 
     user_4 = User.create(
-      :email => "awaxman11@gmail.com",
-      :name => "Adam Waxman",
-      :phone => "444-555-6666",
+      :email => "jennifer.campbell@flatironschool.com",
+      :name => "Jennifer Campbell",
+      :phone => "617-939-1395",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
@@ -49,19 +49,19 @@
     )
 
     user_5 = User.create(
-      :email => "avi@flatironschool.com",
-      :name => "Avi Flombaum",
-      :phone => "777-888-9999",
-      :role => "admin",
+      :email => "alisa.chang@flatironschool.com",
+      :name => "Alisa Chang",
+      :phone => "845-629-1437",
+      :role => "student",
       :hireable => true, 
       :password => 'acdc', 
       :password_confirmation => 'acdc'
     )
 
     user_6 = User.create(
-      :email => "katie@flatironschool.com",
-      :name => "Katie Ishibashi",
-      :phone => "212-555-6666",
+      :email => "joshua.collins@flatironschool.com",
+      :name => "Joshua Collins",
+      :phone => "651-260-6075",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
@@ -69,9 +69,9 @@
     )
 
     user_7 = User.create(
-      :email => "ruthie@flatironschool.com",
-      :name => "Ruthie Nachmany",
-      :phone => "646-888-9999",
+      :email => "micah.corn@flatironschool.com",
+      :name => "Micah Corn",
+      :phone => "718-428-5884 ",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
@@ -79,95 +79,294 @@
     )
 
     user_8 = User.create(
-      :email => "kirin@flatironschool.com",
-      :name => "Kirin Masood",
-      :phone => "917-888-9999",
+      :email => "kristen.curtis@flatironschool.com",
+      :name => "Kristen Curtis",
+      :phone => "503-537-7883",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
       :password_confirmation => 'acdc'
     )
-    ## seed companies table
 
-    company_1 = Company.create(
-      :name => "Artsy",
-      :website => "http://artsy.net/",
-      :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0008/2612/82612v6-max-250x250.png"
+    user_9 = User.create(
+      :email => "thomas.deatherage@flatironschool.com",
+      :name => "Thomas Deatherage",
+      :phone => "540-845-8682",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    company_2 = Company.create(
-      :name => "Bondsy",
-      :website => "http://www.bondsy.com/",
-      :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0018/2288/182288v4-max-250x250.png"
+    user_10 = User.create(
+      :email => "sarah.duve@flatironschool.com",
+      :name => "Sarah Duve",
+      :phone => "330-703-6872",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    company_3 = Company.create(
-      :name => "Amazon",
-      :website => "http://www.amazon.com/",
-      :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0000/3898/3898v1-max-250x250.jpg"
+    user_11 = User.create(
+      :email => "jennifer.eisenberg@flatironschool.com",
+      :name => "Jennifer Eisenberg",
+      :phone => "908-472-3113",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    company_4 = Company.create(
-      :name => "Facebook",
-      :website => "http://www.facebook.com/",
-      :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0000/4561/4561v1-max-250x250.png"
+    user_12 = User.create(
+      :email => "daniel.friedman@flatironschool.com",
+      :name => "Daniel Friedman",
+      :phone => "610-506-5381",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    company_5 = Company.create(
-      :name => "Google",
-      :website => "http://www.google.com/",
-      :logo_url => "http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0002/9578/29578v31-max-250x250.png"
+    user_13 = User.create(
+      :email => "joe.giralt@flatironschool.com",
+      :name => "Joseph Giralt",
+      :phone => "347-432-3385",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    ## seed jobs table
-
-    job_1 = Job.create(
-      :company_id => 1,
-      :description => "We're looking for a great Ruby developer to join the Artsy Team.",
-      :title => "Ruby Developer"
+    user_14 = User.create(
+      :email => "chris.gonzales@flatironschool.company",
+      :name => "Chris Gonzales",
+      :phone => "858-442-9014",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_2 = Job.create(
-      :company_id => 5,
-      :description => "Hate your life everyday working for us - everyday you're hustlin'.",
-      :title => "SQL Engineer"
+    user_15 = User.create(
+      :email => "katie.ishibashi@flatironschool.com",
+      :name => "Katie Ishibashi",
+      :phone => "518-534-4002",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_3 = Job.create(
-      :company_id => 3,
-      :description => "Looking for someone to join our balling out team, but you have to live in Seattle.",
-      :title => "Rails Developer"
+    user_16 = User.create(
+      :email => "maxwell.jacobson@gmail.com",
+      :name => "Max Jacobson",
+      :phone => "914-417-1895",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_4 = Job.create(
-      :company_id => 2,
-      :description => "Apply only if you're a good singer.",
-      :title => "Sinatra Developer"
+    user_17 = User.create(
+      :email => "mendel.kramer@flatironschool.com",
+      :name => "Mendel Kramer",
+      :phone => "213-400-4097",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_5 = Job.create(
-      :company_id => 1,
-      :description => "We're looking for a software architect to lead our team of developers here at Artsy.",
-      :title => "Senior Software Developer"
+    user_18 = User.create(
+      :email => "chris.lake@flatironschool.com",
+      :name => "Chris Lake",
+      :phone => "646-206-5929",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_6 = Job.create(
-      :company_id => 4,
-      :description => "Sustainable sunt anim assumenda pop-up semiotics meggings, brunch mollit church-key kale chips synth Odd Future. Disrupt hashtag esse polaroid Brooklyn street art. Ea wayfarers narwhal, yr vegan assumenda nostrud. Ullamco thundercats flannel aliquip, mollit fanny pack organic aute esse. Cosby sweater bespoke keytar aesthetic. Brooklyn voluptate assumenda try-hard ut, laborum wayfarers lo-fi pickled mustache pork belly iPhone nesciunt et chillwave. Aute proident meggings stumptown, exercitation brunch direct trade irure food truck.Ethical bicycle rights nesciunt, chillwave viral est cliche street art reprehenderit dolor irure church-key blue bottle swag Terry Richardson. Magna labore narwhal, mlkshk wolf Odd Future selfies mollit aliquip nihil deep v qui stumptown. Before they sold out lo-fi lomo cornhole id, craft beer twee shoreditch wolf small batch umami. Exercitation pug commodo narwhal, pop-up nihil nisi butcher letterpress intelligentsia blog ullamco consectetur. DIY tofu Marfa, enim freegan YOLO pour-over hoodie biodiesel post-ironic blog art party Terry Richardson magna deserunt. Est consectetur chambray bespoke. Gluten-free stumptown bicycle rights, Cosby sweater skateboard irony try-hard quis assumenda +1 tofu cupidatat craft beer.",
-      :title => "Haskell Developer"
+    user_19 = User.create(
+      :email => "carlos.lazo@flatironschool.com",
+      :name => "Carlos Lazo ",
+      :phone => "973-978-5064",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_7 = Job.create(
-      :company_id => 2,
-      :description => "Esse master cleanse 90's qui asymmetrical iPhone, cupidatat gastropub pitchfork fugiat Truffaut bespoke food truck tote bag. Keffiyeh nulla assumenda, sed irony adipisicing keytar deep v kale chips vero chillwave. Craft beer occaecat ullamco ut Godard actually. Nulla odio craft beer stumptown, velit next level vero ethnic. Pariatur irony blog fap freegan. Commodo american apparel cred, church-key yr beard pickled vero PBR butcher in stumptown. Single-origin coffee et veniam +1 cliche post-ironic, banjo ethnic you probably haven't heard of them",
-      :title => "iOS Growth Hacker"
+    user_20 = User.create(
+      :email => "george.lin@flatironschool.com",
+      :name => "George Lin",
+      :phone => "908-392-3650",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
 
-    job_8 = Job.create(
-      :company_id => 3,
-      :description => "Delectus mlkshk 3 wolf moon art party. Godard post-ironic occaecat chillwave gentrify Tonx scenester, dolore meggings tousled proident. Occaecat 3 wolf moon eu trust fund labore. IPhone cray craft beer, PBR anim adipisicing non church-key deserunt. Chillwave selvage cray biodiesel. 90's Neutra adipisicing, banjo viral High Life leggings 3 wolf moon bitters mlkshk. Cosby sweater enim Echo Park, cillum deserunt iPhone quis american apparel selvage try-hard delectus.",
-      :title => "Super Senior Software Developer"
+    user_21 = User.create(
+      :email => "david.manaster@flatironschool.com",
+      :name => "David Manaster",
+      :phone => "718-344-2174",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
     )
+
+    user_22 = User.create(
+      :email => "kirin.masood@flatironschool.com",
+      :name => "Kirin Masood",
+      :phone => "609-575-4728",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    user_23 = User.create(
+      :email => "ruthie.nachmany@flatironschool.com",
+      :name => "Ruthie Nachmany",
+      :phone => "646-339-1031",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    user_24 = User.create(
+      :email => "samantha.radocchia@flatironschool.com",
+      :name => "Samantha Radocchia",
+      :phone => "860-966-4332",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    user_25 = User.create(
+      :email => "desmond.rawls@flatironschool.com",
+      :name => "Desmond Rawls",
+      :phone => "206-972-5447",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    user_26 = User.create(
+      :email => "david.rodriguez@flatironschool.com",
+      :name => "David Rodriguez",
+      :phone => "305-790-3447",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_27 = User.create(
+      :email => "matthew.schmaus@flatironschool.com",
+      :name => "Matthew Schmaus",
+      :phone => "201-328-2212",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_28 = User.create(
+      :email => "sagar.shah@flatironschool.com",
+      :name => "Sagar Shah",
+      :phone => "617-640-7951",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_29 = User.create(
+      :email => "jordan.trevino@flatironschool.com",
+      :name => "Jordan Trevino",
+      :phone => "617-671-5993",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_30 = User.create(
+      :email => "anisha.vasandani@flatironschool.com",
+      :name => "Anisha Vasandani",
+      :phone => "626-802-0840",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_31 = User.create(
+      :email => "adam.waxman@flatironschool.com",
+      :name => "Adam Waxman",
+      :phone => "216-533-1493",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    user_32 = User.create(
+      :email => "ning.yap@flatironschool.com",
+      :name => "Ning Yap",
+      :phone => "646-470-5859",
+      :role => "student",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )   
+
+    admin_1 = User.create(
+      :email => "kelly@flatironschool.com",
+      :name => "Kelly Allen",
+      :phone => "305-609-3053",
+      :role => "admin",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    admin_2 = User.create(
+      :email => "adam@flatironschool.com",
+      :name => "Adam Enbar",
+      :phone => "516-250-8686",
+      :role => "admin",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    admin_3 = User.create(
+      :email => "avi@flatironschool.com",
+      :name => "Avi Flombaum",
+      :phone => "917-753-3666",
+      :role => "admin",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )
+
+    admin_4 = User.create(
+      :email => "rebekah@flatironschool.com",
+      :name => "Rebekah Rombom",
+      :phone => "516-978-2570",
+      :role => "admin",
+      :hireable => true, 
+      :password => 'acdc', 
+      :password_confirmation => 'acdc'
+    )    
 
     ## event table
 
@@ -218,491 +417,5 @@
       :state => "offer_declined"
     )
 
-
-    ## seed interviews table
-
-    interview_1 = Interview.create(
-      :start_time => "09:00:00 EST",
-      :end_time => "10:00:00 EST",
-      :date => "2013-07-26",
-      :relationship_id => 1,
-      :job_id => 4,
-      :user_id => 2
-    )
-
-    interview_2 = Interview.create(
-      :start_time => "09:00:00 EST",
-      :end_time => "10:00:00 EST",
-      :date => "2013-08-15",
-      :relationship_id => 2,
-      :job_id => 2,
-      :user_id => 7
-    )
-
-    interview_3 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-07-29",
-      :relationship_id => 3,
-      :job_id => 3,
-      :user_id => 8
-    )
-
-    interview_4 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-08-13",
-      :relationship_id => 4,
-      :job_id => 5,
-      :user_id => 6
-    )
-
-    interview_5 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-08-26",
-      :relationship_id => 5,
-      :job_id => 4,
-      :user_id => 7
-    )
-
-    interview_6 = Interview.create(
-      :start_time => "14:00:00 EST",
-      :end_time => "15:00:00 EST",
-      :date => "2013-08-11",
-      :relationship_id => 6,
-      :job_id => 2,
-      :user_id => 8
-    )
-
-    interview_7 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-08-24",
-      :relationship_id => 7,
-      :job_id => 3,
-      :user_id => 8
-    )
-
-    interview_8 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-07-29",
-      :relationship_id => 8,
-      :job_id => 5,
-      :user_id => 2
-    )
-
-    interview_9 = Interview.create(
-      :start_time => "15:00:00 EST",
-      :end_time => "16:00:00 EST",
-      :date => "2013-08-29",
-      :relationship_id => 9,
-      :job_id => 4,
-      :user_id => 6
-    )
-
-    interview_10 = Interview.create(
-      :start_time => "10:00:00 EST",
-      :end_time => "11:00:00 EST",
-      :date => "2013-08-16",
-      :relationship_id => 10,
-      :job_id => 2,
-      :user_id => 5
-    )
-
-    interview_11 = Interview.create(
-      :start_time => "12:00:00 EST",
-      :end_time => "13:00:00 EST",
-      :date => "2013-08-10",
-      :relationship_id => 11,
-      :job_id => 3,
-      :user_id => 3
-    )
-
-    interview_12 = Interview.create(
-      :start_time => "09:00:00 EST",
-      :end_time => "10:00:00 EST",
-      :date => "2013-07-25",
-      :relationship_id => 12,
-      :job_id => 5,
-      :user_id => 8
-    )
-
-    interview_13 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-08-12",
-      :relationship_id => 13,
-      :job_id => 6,
-      :user_id => 7
-    )
-
-    interview_14 = Interview.create(
-      :start_time => "15:00:00 EST",
-      :end_time => "16:00:00 EST",
-      :date => "2013-08-13",
-      :relationship_id => 14,
-      :job_id => 7,
-      :user_id => 8
-    )
-
-    interview_15 = Interview.create(
-      :start_time => "16:00:00 EST",
-      :end_time => "17:00:00 EST",
-      :date => "2013-07-28",
-      :relationship_id => 15,
-      :job_id => 6,
-      :user_id => 8
-    )
-
-    interview_16 = Interview.create(
-      :start_time => "09:00:00 EST",
-      :end_time => "10:00:00 EST",
-      :date => "2013-08-10",
-      :relationship_id => 16,
-      :job_id => 5,
-      :user_id => 2
-    )
-
-    interview_17 = Interview.create(
-      :start_time => "11:30:00 EST",
-      :end_time => "12:30:00 EST",
-      :date => "2013-07-31",
-      :relationship_id => 17,
-      :job_id => 1,
-      :user_id => 1
-    )
-
-    interview_18 = Interview.create(
-      :start_time => "11:00:00 EST",
-      :end_time => "12:00:00 EST",
-      :date => "2013-08-16",
-      :relationship_id => 18,
-      :job_id => 8,
-      :user_id => 6
-    )
-
-    interview_19 = Interview.create(
-      :start_time => "15:00:00 EST",
-      :end_time => "16:00:00 EST",
-      :date => "2013-08-20",
-      :relationship_id => 19,
-      :job_id => 7,
-      :user_id => 6
-    )
-
-    interview_20 = Interview.create(
-      :start_time => "09:30:00 EST",
-      :end_time => "10:30:00 EST",
-      :date => "2013-08-18",
-      :relationship_id => 20,
-      :job_id => 8, 
-      :user_id => 8
-    )
-
-    # seed relationships table
-
-    relationship_1 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 2,
-    :job_id => 4,
-    :user_id => 2
-    )
-
-    relationship_2 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 5,
-    :job_id => 2, 
-    :user_id => 7
-    )
-
-    relationship_3 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 3,
-    :job_id => 3, 
-    :user_id => 8
-    )
-
-    relationship_4 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 1,
-    :job_id => 5,
-    :user_id => 6
-    )
-
-    relationship_5 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 2,
-    :job_id => 4,
-    :user_id => 7
-    )
-
-    relationship_6 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 5,
-    :job_id => 2, 
-    :user_id => 8
-    )
-
-    relationship_7 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 3,
-    :job_id => 3, 
-    :user_id => 8
-    )
-
-    relationship_8 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 1,
-    :job_id => 5,
-    :user_id => 2
-    )
-
-    relationship_9 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 2,
-    :job_id => 4,
-    :user_id => 6
-    )
-
-    relationship_10 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 5,
-    :job_id => 2, 
-    :user_id => 5
-    )
-
-    relationship_11 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 3,
-    :job_id => 3, 
-    :user_id => 3
-    )
-
-    relationship_12 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 1,
-    :job_id => 5,
-    :user_id => 8
-    )
-
-    relationship_13 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 3,
-    :job_id => 6, 
-    :user_id => 7
-    )
-
-    relationship_14 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 1,
-    :job_id => 7,
-    :user_id => 8
-    )
-
-    relationship_15 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 2,
-    :job_id => 6,
-    :user_id => 8
-    )
-
-    relationship_16 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 5,
-    :job_id => 5, 
-    :user_id => 2
-    )
-
-    relationship_17 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 3,
-    :job_id => 1, 
-    :user_id => 1
-    )
-
-    relationship_18 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 1,
-    :job_id => 8,
-    :user_id => 6
-    )
-
-    relationship_19 = Relationship.create(
-    :aasm_state => "interviewing",
-    :company_id => 2,
-    :job_id => 7,
-    :user_id => 6
-    )
-
-    relationship_20 = Relationship.create(
-    :aasm_state => "like",
-    :company_id => 5,
-    :job_id => 8, 
-    :user_id => 8
-    )
-
-    ## seed records table
-
-    record_1 = Record.create(
-      :relationship_id => 1,
-      :event_id => 1,
-      :company => "Bondsy",
-      :job => "Sinatra Developer",
-      :user => "Christopher Lake"
-    )
-
-    record_2 = Record.create(
-      :relationship_id => 1,
-      :event_id => 3,
-      :company => "Bondsy",
-      :job => "Sinatra Developer",
-      :user => "Christopher Lake"
-    )
-
-    record_3 = Record.create(
-      :relationship_id => 2,
-      :company => "Google",
-      :job => "SQL Engineer",
-      :user => "Avi Flombaum",
-      :event_id => 1
-    )
-
-    record_4 = Record.create(
-      :relationship_id => 3,
-      :company => "Amazon",
-      :job => "Rails Developer",
-      :user => "David Manaster",
-      :event_id => 3
-    )
-
-    record_5 = Record.create(
-      :relationship_id => 4,
-      :company => "Artsy",
-      :job => "Senior Software Engineer",
-      :user => "Christopher Lake",
-      :event_id => 3
-    )
-
-    record_6 = Record.create(
-      :relationship_id => 6,
-      :company => "Bondsy",
-      :job => "Sinatra Developer",
-      :user => "Kirin Masood",
-      :event_id => 3
-    )
-
-    record_7 = Record.create(
-      :relationship_id => 7,
-      :company => "Facebook",
-      :job => "Sinatra Developer",
-      :user => "Christopher Lake",
-      :event_id => 3
-    )
-
-    record_8 = Record.create(
-      :relationship_id => 8,
-      :company => "Google",
-      :job => "SQL Engineer",
-      :user => "Adam Waxman",
-      :event_id => 3
-    )
-
-    record_9 = Record.create(
-      :relationship_id => 9,
-      :company => "Amazon",
-      :job => "Rails Developer",
-      :user => "David Manaster",
-      :event_id => 3
-    )
-
-    record_10 = Record.create(
-      :relationship_id => 10,
-      :company => "Artsy",
-      :job => "Senior Software Engineer",
-      :user => "Ruthie Nachmany",
-      :event_id => 3
-    )
-
-    record_11 = Record.create(
-      :relationship_id => 11,
-      :company => "Artsy",
-      :job => "iOS Growth Hacker",
-      :user => "Ruthie Nachmany",
-      :event_id => 3
-    )
-
-    record_12 = Record.create(
-      :relationship_id => 12,
-      :company => "Bondsy",
-      :job => "Facebook Haskell Baller",
-      :user => "Kirin Masood",
-      :event_id => 3
-    )
-
-    record_13 = Record.create(
-      :relationship_id => 11,
-      :company => "Google",
-      :job => "SQL Engineer",
-      :user => "Katie Ishibashi",
-      :event_id => 3
-    )
-
-    record_14 = Record.create(
-      :relationship_id => 19,
-      :company => "Amazon",
-      :job => "Rails Developer",
-      :user => "David Manaster",
-      :event_id => 3
-    )
-
-    record_15 = Record.create(
-      :relationship_id => 10,
-      :company => "Artsy",
-      :job => "Senior Software Engineer",
-      :user => "Carlos Lazo",
-      :event_id => 3
-    )
-
-    record_16 = Record.create(
-      :relationship_id => 16,
-      :company => "Bondsy",
-      :job => "Sinatra Developer",
-      :user => "Kirin Masood",
-      :event_id => 1
-    )
-
-    record_17 = Record.create(
-      :relationship_id => 17,
-      :company => "Facebook",
-      :job => "Sinatra Developer",
-      :user => "Christopher Lake",
-      :event_id => 1
-    )
-
-    record_18 = Record.create(
-      :relationship_id => 18,
-      :company => "Google",
-      :job => "SQL Engineer",
-      :user => "Katie Ishibashi",
-      :event_id => 1
-    )
-
-    record_19 = Record.create(
-      :relationship_id => 19,
-      :company => "Amazon",
-      :job => "Rails Developer",
-      :user => "David Manaster",
-      :event_id => 3
-    )
-
-    record_20 = Record.create(
-      :relationship_id => 20,
-      :company => "Artsy",
-      :job => "Senior Software Engineer",
-      :user => "Christopher Lake",
-      :event_id => 1
-    )
 
     puts "\nDone - database should now be seeded with User | Company | Job | Event | Interview | Relationship | Record data.\n\n"
