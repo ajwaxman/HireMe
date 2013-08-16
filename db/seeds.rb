@@ -376,8 +376,8 @@
     )
 
     event_2 = Event.create(
-      :description => "Job has been un-liked.",
-      :state       => "like"
+      :description => "Job has been unliked.",
+      :state       => "start"
     )
 
     event_3 = Event.create(

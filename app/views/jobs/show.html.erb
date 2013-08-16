@@ -1,11 +1,10 @@
 <% if current_user.student? %>
-
-<%= render :partial => "shared/state_change_buttons",
+  <%= render :partial => "shared/state_change_buttons",
   :locals => {:job => @job, :interview => @interview, :state => @state} %>
-
+<% elsif current_user.admin? %>
+  <%= render :partial => "shared/admin_like_button",
+  :locals => {:job => @job, :state => @state} %>
 <% end %>
-
-<br><hr>
 
 <div class="row-fluid sortable">
 
