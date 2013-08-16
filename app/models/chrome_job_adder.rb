@@ -27,10 +27,12 @@ class ChromeJobAdder
 
 	# Associates company to job.
 	def create_and_associate_job
-		@job = @company.jobs.build(
-			:title => @scraper.job_title,
-			:description => @scraper.description
-		)
+		if @scraper.job_title
+			@job = @company.jobs.build(
+				:title => @scraper.job_title,
+				:description => @scraper.description
+			)
+		end
 		@company.save
 	end
 
