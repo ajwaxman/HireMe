@@ -30,7 +30,6 @@ namespace :deploy do
 
   task :symlink_config, :roles => :app do 
     run "ln -nfs #{shared_path}/application.yml #{current_release}/config/application.yml"
-    run "ln -nfs #{shared_path}/production.sqlite3 #{current_release}/db/production.sqlite3"
   end
 
   task :setup_server do
