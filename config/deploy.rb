@@ -12,8 +12,9 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 
 default_run_options[:pty] = true
 
-role :web, "192.241.176.112"                          # Your HTTP server, Apache/etc
-role :app, "192.241.176.112"                          # This may be the same as your `Web` server
+role :web, "192.241.176.112"  # Your HTTP server, Apache/etc
+role :app, "192.241.176.112"  # This may be the same as your `Web` server
+role :db,  "192.241.176.112"  # This may be the same as your `Web` server
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
