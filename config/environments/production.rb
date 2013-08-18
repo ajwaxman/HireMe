@@ -25,7 +25,7 @@ HireCrm::Application.configure do
   ###################
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   # How mail is sent in action mailer, options are :smtp, :letter_opener, :sendmail, :file, and :test
   config.action_mailer.delivery_method = :smtp
@@ -41,7 +41,7 @@ HireCrm::Application.configure do
   }
 
   # specify what domain to use for mailer URLs
-  config.action_mailer.default_url_options = { host: "192.241.176.112" }
+  config.action_mailer.default_url_options = { host: "http://hire.flatironschool.com/" }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

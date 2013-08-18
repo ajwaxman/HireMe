@@ -2,7 +2,7 @@ require 'open-uri'
 
 class JobScraper
 
-	attr_accessor :job_title, :company_name, :location, :description
+	attr_accessor :job_title, :company_name, :location, :description, :crunchbase_name
 
 	def initialize(url)
 		@doc = Nokogiri::HTML(open(url))
@@ -148,6 +148,7 @@ class CrunchbaseScraper < JobScraper
 
 	def scrape
 		@company_name = @url.split("/").last
+		@crunchbase_name = @doc.css("head title").text.split("|").first.strip
 	end
 
 end

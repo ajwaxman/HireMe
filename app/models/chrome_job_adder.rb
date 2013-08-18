@@ -15,6 +15,7 @@ class ChromeJobAdder
 	# Find or creates company based on name provided.
 	def find_or_create_company
 		company_name = scraper.company_name
+		company_name = scraper.crunchbase_name if scraper.crunchbase_name
 		company 		 = Company.find_by_name(company_name)
 
 		if company
@@ -46,22 +47,3 @@ class ChromeJobAdder
 	end
 
 end
-
-# Pass in a URL
-# Parse the Job
-
-# If Company DNE
-	# Create company via Company Parser
-# Else
-	# Find company in Database
-
-# Create Job
-# Associate Job with Company
-# Save Company
-
-#################
-
-# cja = ChromeJobAdder.new("https://toprubyjobs.com/jobs/600-housetrip-ruby-developers")
-# cja.scrape_job
-# cja.find_or_create_company
-# cja.create_and_associate_job
