@@ -71,7 +71,7 @@
     user_7 = User.create(
       :email => "micah.corn@flatironschool.com",
       :name => "Micah Corn",
-      :phone => "718-428-5884 ",
+      :phone => "718-428-5884",
       :role => "student",
       :hireable => true, 
       :password => 'acdc', 
@@ -190,7 +190,7 @@
 
     user_19 = User.create(
       :email => "carlos.lazo@flatironschool.com",
-      :name => "Carlos Lazo ",
+      :name => "Carlos Lazo",
       :phone => "973-978-5064",
       :role => "student",
       :hireable => true, 
