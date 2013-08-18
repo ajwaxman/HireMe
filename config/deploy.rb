@@ -1,4 +1,6 @@
-require 'bundler/capistrano' # for bundler support
+require 'rvm/capistrano'
+require 'bundler/capistrano'
+require 'whenever/capistrano'
 
 set :application, "HireCRM"
 set :repository,  "git@github.com:flatiron-school/hire-redux.git"
@@ -29,9 +31,6 @@ namespace :deploy do
   	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public/assets"
 		run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/img"
   	run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/assets/img"	
-
-  	# Update crontab if there are any changes.
-  	run "cd #{release_path} && whenever --update-crontab #{application}"
   end
 
   task :symlink_config, :roles => :app do 
@@ -39,8 +38,14 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/production.sqlite3 #{current_release}/db/production.sqlite3"
   end
 
-end
+  desc "Update the crontab file"
+  task :update_crontab, :roles => :db do
+    run "cd #{release_path} && whenever --update-crontab #{application}"
+  end
+
+end 
 
 # Load assets here and create symlinks.
+after 'deploy:symlink', 'deploy:update_crontab'
 after 'deploy:update_code','deploy:setup_server'
 after 'deploy:update_code','deploy:symlink_config'

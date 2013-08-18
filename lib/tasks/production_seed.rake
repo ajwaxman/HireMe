@@ -92,6 +92,7 @@ namespace :db do
                           "http://jobs.37signals.com/jobs/13316",
                           "http://jobs.37signals.com/jobs/13251",
                           "http://jobs.37signals.com/jobs/13322"]
+    
     jobs_and_companies.each do |listing|
       job = ChromeJobAdder.new(listing)
       job.create_job_from_link
@@ -146,7 +147,6 @@ namespace :db do
       :state => "offer_declined"
     )
 
+    puts "\nDatabase ready for production should now be seeded.\n\n"
 	end 
-
-  puts "\nDatabase ready for production should now be seeded.\n\n"
 end
