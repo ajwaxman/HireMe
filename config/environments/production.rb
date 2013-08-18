@@ -1,9 +1,6 @@
 HireCrm::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  # Setup whenever gem to work for deployment.
-  set :whenever_environment, 'production'
-
   # Code is not reloaded between requests
   config.cache_classes = true
 

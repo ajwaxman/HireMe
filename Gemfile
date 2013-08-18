@@ -23,12 +23,12 @@ gem 'jquery-rails'
 # Custom Gems for Project #
 ###########################
 
-gem 'aasm'					# => State Machine for relationships
-gem 'indeed', '0.1.2'				# => Indeed API for jobs
-gem 'will_paginate'	# => Pagination for search results
-gem 'font-awesome-rails' # => gem to get awesome font icons working
+gem 'aasm'					     # => State Machine for relationships
+gem 'indeed', '0.1.2'		 # => Indeed API for jobs
+gem 'will_paginate'	     # => Pagination for search results
+gem 'font-awesome-rails' # => Gem to get awesome font icons working
 gem 'jquery-ui-rails'
-gem 'cancan' # => authorization
+gem 'cancan'             # => Authorization
 gem 'gon'
 gem 'whenever', :require => false
 gem 'nokogiri'
