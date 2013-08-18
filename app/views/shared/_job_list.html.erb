@@ -35,6 +35,9 @@
             <% end %>
               <% if current_user.admin? %>
                 <td class="center">
+                  <a class="btn btn-success" href="<%= job_path(interview) %>">
+                    <i class="icon-zoom-in icon-white"></i>  
+                  </a>
                   <a class="btn btn-info" href="<%= edit_job_path(job) %>">
                     <i class="icon-edit icon-white"></i>  
                   </a>

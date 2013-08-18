@@ -2,6 +2,8 @@
 
 <%= render 'form' %>
 
-<% if current_user.admin? %>
+<% if current_user.student? %>
+	<%= link_to 'Cancel', user_path(current_user) %>
+<% else %>
 	<%= link_to 'Cancel', users_path %>
 <% end %>

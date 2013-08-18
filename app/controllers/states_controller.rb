@@ -5,9 +5,7 @@ class StatesController < ApplicationController
   # If not, allow for a button to create a relationship
   # Given the button pressed and current state, change the state appropriately
 
-  #################
-  ## Constraints ##
-  #################
+  # -- Constraints -- #
   
   # => On the job page, no relationship initially exists
   # => params[:id] is different on the jobs page and the interview page
@@ -18,8 +16,7 @@ class StatesController < ApplicationController
     else
       create_relationship_and_like
     end
-      puts "The end"
-      state_action_redirect
+    state_action_redirect
   end
 
   def admin_like
@@ -41,8 +38,8 @@ class StatesController < ApplicationController
   end
 
   def find_relationship
-    # check to see which controller we're coming from 
-    if params[:controller_name] == "jobs" && current_user.role == "admin"
+    # Check to see which controller we're coming from 
+    if params[:controller_name] == "jobs" && current_user.admin?
       find_relationship_as_admin_from_jobs
     elsif params[:controller_name] == "jobs"
       find_relationship_from_jobs
