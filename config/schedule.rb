@@ -1,3 +1,5 @@
+env :PATH, ENV['PATH']
+
 set :output, nil
 set :output, {:error => nil, :standard => nil}
 
