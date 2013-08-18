@@ -1,6 +1,7 @@
 
 <%= form_tag(@job, :class => 'form-inline') %>
   <%= hidden_field_tag "event", "like_company" %>
+  <%= hidden_field_tag "controller_name", params[:controller] %>
   <%= collection_select(:user, :id, User.where(:role => "student"), :id, :name, {:prompt => "Please select a student"}) %>
   <%= submit_tag(value = "Like", :class => 'btn-mini btn-danger btn') %>
 

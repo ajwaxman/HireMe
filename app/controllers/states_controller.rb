@@ -26,11 +26,14 @@ class StatesController < ApplicationController
     if relationship_exist?
       if find_relationship_as_admin_from_jobs.aasm_state == "start"
         change_state
+        redirect_to(job_path(Job.find(@j_id)), :flash => { :success => "Job liked for this student." })
+      else
+        redirect_to(job_path(Job.find(@j_id)), :flash => { :warning => "Student already has a relationship with this job." })
       end
     else
       create_relationship_and_like
+      redirect_to(job_path(Job.find(@j_id)), :flash => { :success => "Job liked for this student." })
     end
-    redirect_to job_path(Job.find(@j_id))
   end
 
   def relationship_exist?
@@ -39,7 +42,7 @@ class StatesController < ApplicationController
 
   def find_relationship
     # check to see which controller we're coming from 
-    if params[:controller] == "states" && current_user.role == "admin"
+    if params[:controller_name] == "jobs" && current_user.role == "admin"
       find_relationship_as_admin_from_jobs
     elsif params[:controller_name] == "jobs"
       find_relationship_from_jobs
