@@ -30,6 +30,7 @@ HireCrm::Application.routes.draw do
   get 'interviews/:interview_id/state_action' => 'states#state_action', as: 'change_state'
   post 'interviews/:interview_id/state_action' => 'states#state_action', as: 'change_state'
 
+  post 'jobs/:id' => 'states#admin_like'
 
 
 

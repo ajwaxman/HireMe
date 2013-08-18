@@ -1,8 +1,8 @@
 
-<form class="form-inline">
-  <%= collection_select(:user, :id, User.all, :id, :name, {:prompt => true}) %>
-  <%= button_tag(:type => 'submit', :class => 'btn btn-primary') do %>
-    <i class="fa-icon-heart icon-white"></i>
-   <% end %>
+<%= form_tag(@job, :class => 'form-inline') %>
+  <%= hidden_field_tag "event", "like_company" %>
+  <%= collection_select(:user, :id, User.where(:role => "student"), :id, :name, {:prompt => "Please select a student"}) %>
+  <%= submit_tag(value = "Like", :class => 'btn-mini btn-danger btn') %>
+
 </form>
 <hr>
