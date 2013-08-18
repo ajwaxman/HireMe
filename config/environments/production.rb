@@ -1,6 +1,9 @@
 HireCrm::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # Setup whenever gem to work for deployment.
+  set :whenever_environment, 'production'
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -41,7 +44,7 @@ HireCrm::Application.configure do
   }
 
   # specify what domain to use for mailer URLs
-  config.action_mailer.default_url_options = { host: "http://hire.flatironschool.com/" }
+  config.action_mailer.default_url_options = { host: "hire.flatironschool.com" }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

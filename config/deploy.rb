@@ -1,6 +1,8 @@
 require 'bundler/capistrano'
 require 'whenever/capistrano'
 
+set :whenever_command, "bundle exec whenever"
+
 set :application, "HireCRM"
 set :repository,  "git@github.com:flatiron-school/hire-redux.git"
 
