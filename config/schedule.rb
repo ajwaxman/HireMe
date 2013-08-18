@@ -4,7 +4,7 @@ set :output, nil
 set :output, {:error => nil, :standard => nil}
 
 # Development rake tasks.
-every 1.minutes do
+every 1.minute do
 	rake "cron:post_interview", :environment => "development"
 end
 
@@ -13,7 +13,7 @@ every :day, :at => '12:00pm' do
 end
 
 # Production rake tasks.
-every 1.minutes do
+every 1.hour do
 	rake "cron:post_interview"
 end
 
