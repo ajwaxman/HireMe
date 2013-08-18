@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
-require 'whenever/capistrano'
-
 set :whenever_command, "bundle exec whenever"
+
+require 'whenever/capistrano'
 
 set :application, "HireCRM"
 set :repository,  "git@github.com:flatiron-school/hire-redux.git"
@@ -40,14 +40,8 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/production.sqlite3 #{current_release}/db/production.sqlite3"
   end
 
-  desc "Update the crontab file"
-  task :update_crontab, :roles => :db do
-    run "cd #{release_path} && whenever --update-crontab #{application}"
-  end
-
 end 
 
 # Load assets here and create symlinks.
-after 'deploy:symlink', 'deploy:update_crontab'
 after 'deploy:update_code','deploy:setup_server'
 after 'deploy:update_code','deploy:symlink_config'
