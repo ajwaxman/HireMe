@@ -15,7 +15,13 @@
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
+  <% if current_user.admin? %>
     <div class="field">
+      <%= f.label :role %>
+      <%= f.text_field :role %>
+    </div>
+  <% end %>
+  <div class="field">
     <%= f.label :hireable %>
     <%= f.check_box :hireable %>
   </div>
@@ -40,6 +46,6 @@
   </div>
   
   <div class="actions">
-    <%= f.submit 'Update Student', :class => "btn btn-success" %>
+    <%= f.submit 'Submit', :class => "btn btn-success" %>
   </div>
 <% end %>

@@ -37,7 +37,10 @@
             </tr>
           <% end %>
         </tbody>
-      </table>            
+      </table>   
+      <% if current_user.admin? %>
+        <%= link_to 'Add Student', new_user_path, :class => "btn btn-warning" %>
+      <% end %>         
   </div>
 </div>
 </div>
