@@ -152,7 +152,7 @@ class UsersController < ApplicationController
   def collect_calendar_data(interviews)
     interviews.collect do |interview|
       {
-        :title => "#{interview.company.name} interview",
+        :title => "#{interview.company.name} interview  (#{interview.user.name})",
         :start => interview.merge_datetime,
         :url => interview_path(interview),
         :allDay => false
