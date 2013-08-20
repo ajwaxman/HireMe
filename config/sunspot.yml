@@ -17,5 +17,5 @@ development:
 test:
   solr:
     hostname: localhost
-    port: 8981
+    port: 8980
     log_level: OFF

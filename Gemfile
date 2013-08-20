@@ -47,6 +47,7 @@ group :development do
   gem 'pry-debugger'        # => debugger for project.
   gem 'quiet_assets'
   gem "letter_opener"
+  gem 'guard-rspec'
 end
 
 # To use ActiveModel has_secure_password
@@ -61,6 +62,13 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Deploy with Capistrano
 gem 'capistrano'
 gem 'capistrano-ext'
+
+group :test, :development do
+  gem "rspec-rails", "~> 2.4"
+  gem 'rb-fsevent', '~> 0.9'
+  gem 'terminal-notifier-guard'
+  gem "factory_girl_rails", "~> 4.0"
+end
 
 # To use debugger
 # gem 'debugger'

@@ -13,7 +13,7 @@
 #
 
 class Relationship < ActiveRecord::Base
-  attr_accessible :company_id, :job_id, :user_id, :aasm_state
+  attr_accessible :company_id, :job_id, :user_id, :aasm_state, :job
 
   belongs_to :company
   belongs_to :job
