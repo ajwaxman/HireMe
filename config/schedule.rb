@@ -1,3 +1,4 @@
+Time.zone = "US/Eastern"
 env :PATH, ENV['PATH']
 
 set :output, nil
@@ -8,7 +9,7 @@ every 1.minute do
 	rake "cron:post_interview", :environment => "development"
 end
 
-every :day, :at => '12:00pm' do
+every :day, :at => Time.zone.parse('12:00 pm').localtime do
 	rake "cron:send_interview_reminder", :environment => "development"
 end
 
@@ -17,7 +18,7 @@ every 1.hour do
 	rake "cron:post_interview"
 end
 
-every :day, :at => '12:00pm' do
+every :day, :at => Time.zone.parse('12:00 pm').localtime do
 	rake "cron:send_interview_reminder"
 end
 
