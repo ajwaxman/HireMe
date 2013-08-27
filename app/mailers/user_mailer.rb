@@ -16,4 +16,10 @@ class UserMailer < ActionMailer::Base
     @user = interview.user
     mail to: @user.email, subject: "#{interview.company.name} Interview Reminder!"
   end
+
+  def survey_reminder(interview)
+    @interview = interview
+    @user = interview.user
+    mail to: @user.email, subject: "Interview Survey for #{interview.company.name} Reminder!"
+  end
 end

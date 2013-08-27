@@ -17,6 +17,8 @@ namespace :cron do
 		
 	end
 
+	# If original interview (in past) is rescheduled for future date, this changes its state from pending to interviewing
+
 	relationships_with_interviews = Relationship.all.select {|rel| rel.aasm_state == "pending"}
 	
 	relationships_with_interviews.each do |rel|
