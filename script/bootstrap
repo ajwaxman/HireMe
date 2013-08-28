@@ -1,0 +1,45 @@
+#!/bin/bash
+set -e
+
+
+echo "Welcome to HireMe..."
+echo "Setting up your environment..."
+
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+fi
+
+bundle install
+
+echo "copying the example files config files..."
+cp ./config/application.example.yml ./config/application.yml
+cp ./config/database.example.yml ./config/database.yml
+
+echo "please update the config/application.yml with your gmail username and password for sending email reminders and your Crunchbase API key"
+echo "when finished, you may continue..."
+read -p "continue (y/n)?"
+  if [ $REPLY != "y" ]; then
+    echo "Exiting..."
+    exit 1
+  fi
+
+echo "the database will now be created, migrated and seeded"
+echo "the current default is sqlite, if you'd like to customize your db settings"
+echo "update the config/database.yml file"
+echo "when finished, you may continue..."
+read -p "continue (y/n)?"
+  if [ $REPLY != "y" ]; then
+    echo "Exiting..."
+    exit 1
+  fi
+
+echo "creating the database..."
+bundle exec rake db:create
+
+echo "migrating the database..."
+bundle exec rake db:migrate
+
+

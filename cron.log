@@ -1,0 +1,177 @@
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:42: syntax error, unexpected '=', expecting ')'
+  :company_id = company1.id,
+               ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:43: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+  :title = "Junior Ruby Developer",
+          ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:43: syntax error, unexpected ',', expecting $end
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:47: syntax error, unexpected '=', expecting ')'
+  :company_id = company1.id,
+               ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:48: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+  :title = "Junior Ruby Developer",
+          ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:48: syntax error, unexpected ',', expecting $end
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:44: syntax error, unexpected '=', expecting ')'
+      :company_id = company1.id,
+                   ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:45: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+      :title = "Junior Ruby Developer",
+              ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:45: syntax error, unexpected ',', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:47: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:50: syntax error, unexpected '=', expecting ')'
+      :company_id = company2.id,
+                   ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:51: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+      :title = "Junior iOS Developer",
+              ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:51: syntax error, unexpected ',', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:53: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:56: syntax error, unexpected '=', expecting ')'
+      :company_id = company3.id,
+                   ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:57: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+      :title = "Junior Ruby Developer",
+              ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:57: syntax error, unexpected ',', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:59: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:62: syntax error, unexpected '=', expecting ')'
+      :company_id = company4.id,
+                   ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:63: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+      :title = "Junior Ruby Developer",
+              ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:63: syntax error, unexpected ',', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:65: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:68: syntax error, unexpected '=', expecting ')'
+      :company_id = company5.id,
+                   ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:69: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+      :title = "Junior iOS Developer",
+              ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:69: syntax error, unexpected ',', expecting keyword_end
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:71: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:129: syntax error, unexpected '\n', expecting tASSOC
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:129: syntax error, unexpected '\n', expecting tASSOC
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:129: syntax error, unexpected '\n', expecting tASSOC
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:129: syntax error, unexpected '\n', expecting tASSOC
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
+rake aborted!
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:131: syntax error, unexpected tSYMBEG, expecting ')'
+      :user_id = relationship_1.user_id
+       ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:132: syntax error, unexpected '=', expecting keyword_end
+      :job_id = relationship_1.job_id
+               ^
+/Users/awaxman/flatiron/hire-redux/lib/tasks/example_seed.rake:133: syntax error, unexpected ')', expecting keyword_end
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `block in load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `each'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/engine.rb:425:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/application.rb:145:in `load_tasks'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/Users/awaxman/flatiron/hire-redux/Rakefile:7:in `<top (required)>'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/awaxman/.rvm/gems/ruby-1.9.3-p448/bin/ruby_noexec_wrapper:14:in `<main>'
+(See full trace by running task with --trace)
