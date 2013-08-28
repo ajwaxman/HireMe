@@ -1,6 +1,6 @@
 == Welcome to HireMe
 
-HireMe is a CRM platform built to manage the interview process at the <a href="http://flatironschool.com">Flatiron School</a>. Students can browse job opportunities and keep track of progress with these companies and jobs.  
+HireMe is a CRM platform built to manage the interview process at the {Flatiron School}[link:http://flatironschool.com]. Students can browse job opportunities and keep track of progress with these companies and jobs.  
 
 ===Features / Technologies Used 
 
