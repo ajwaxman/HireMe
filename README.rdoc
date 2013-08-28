@@ -2,7 +2,7 @@
 
 HireMe is a CRM platform built to manage the interview process at the Flatiron School. Students can browse job opportunities and keep track of progress with these companies and jobs.  
 
-==Features / Technologies Used 
+=Features / Technologies Used 
 
 1. Chrome Browser Extension for adding jobs and companies to the database
 
@@ -22,11 +22,15 @@ We have included a bootstrap script that sets up the application, which requires
 
 For the bootstrap script to work below we are assuming that you have [UPDATE] installed.
 
-==Easy Set Up
+=Easy Set Up
 
 1. Clone the repo
 2. Run <tt>script/bootstrap</tt> in terminal
 3. Create an application.yml file the app/config/ directory and add your Crunchbase API key and Gmail username and password using the following syntax:
+       GMAIL_USERNAME: "[Your Gmail Username]"
+       GMAIL_PASSWORD: "[Your Gmail Password]"
+       CRUNCHBASE_API: "[Your Crunchbase API key]"
+4. This is number 4.
 
 1. <tt>Hello World</tt>
 
