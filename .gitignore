@@ -14,6 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /tmp
 /log/*.log
+/*.log
 .DS_Store
 
 # Ignore application and database configuration
