@@ -13,32 +13,41 @@ fi
 
 bundle install
 
-echo "copying the example files config files..."
+echo "\nCopying the example files config files..."
 cp ./config/application.example.yml ./config/application.yml
 cp ./config/database.example.yml ./config/database.yml
 
-echo "please update the config/application.yml with your gmail username and password for sending email reminders and your Crunchbase API key"
-echo "when finished, you may continue..."
-read -p "continue (y/n)?"
+echo "Please update the config/application.yml with your gmail username and password for sending email reminders and your Crunchbase API key"
+echo "When finished, you may continue..."
+read -p ">Enter 'y' to continue: "
   if [ $REPLY != "y" ]; then
-    echo "Exiting..."
-    exit 1
+    echo "ownward..."
   fi
 
-echo "the database will now be created, migrated and seeded"
-echo "the current default is sqlite, if you'd like to customize your db settings"
-echo "update the config/database.yml file"
-echo "when finished, you may continue..."
-read -p "continue (y/n)?"
+echo "\nThe database will now be reset, migrated and seeded"
+echo "The current default is sqlite, if you'd like to customize your db settings"
+echo "Update the config/database.yml file"
+echo "When finished, you may continue..."
+read -p ">Enter 'y' to continue: "
   if [ $REPLY != "y" ]; then
-    echo "Exiting..."
-    exit 1
+    echo "ownward..."
   fi
 
-echo "creating the database..."
-bundle exec rake db:create
+echo "\nreseting and migrating the database..."
+bundle exec rake db:reset
 
-echo "migrating the database..."
-bundle exec rake db:migrate
+echo "\nWould you like to seed the database with an example data set?"
+read -p ">Enter 'y' to seed the database, 'n' to continue without seeding the database: "
+  if [ $REPLY == "y" ]; then
+    bundle exec rake db:example_seed
+    echo "database is now populated with example data..."
+  fi
+
+
+
+
+
+
+
 
 

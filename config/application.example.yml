@@ -1,14 +1,23 @@
-development:
-  GMAIL_USERNAME: "Your Gmail Username"
-  GMAIL_PASSWORD: "Your Gmail Password"
-  CRUNCHBASE_API: "Your Crunchbase API Key"
+# If same info for all environments
 
-test:
-  GMAIL_USERNAME: "Your Gmail Username"
-  GMAIL_PASSWORD: "Your Gmail Password"
-  CRUNCHBASE_API: "Your Crunchbase API Key"
+GMAIL_USERNAME: "Your Gmail Username"
+GMAIL_PASSWORD: "Your Gmail Password"
+CRUNCHBASE_API: "Your Crunchbase API Key"
 
-production:
-  GMAIL_USERNAME: "Your Gmail Username"
-  GMAIL_PASSWORD: "Your Gmail Password"
-  CRUNCHBASE_API: "Your Crunchbase API Key"
+
+# Uncomment if you separate info for environments
+
+# development:
+#   GMAIL_USERNAME: "Your Gmail Username"
+#   GMAIL_PASSWORD: "Your Gmail Password"
+#   CRUNCHBASE_API: "Your Crunchbase API Key"
+
+# test:
+#   GMAIL_USERNAME: "Your Gmail Username"
+#   GMAIL_PASSWORD: "Your Gmail Password"
+#   CRUNCHBASE_API: "Your Crunchbase API Key"
+
+# production:
+#   GMAIL_USERNAME: "Your Gmail Username"
+#   GMAIL_PASSWORD: "Your Gmail Password"
+#   CRUNCHBASE_API: "Your Crunchbase API Key"

@@ -32,11 +32,15 @@ For the bootstrap script to work below we are assuming that you have [UPDATE] in
 
 1. Clone the repo
 2. Run <tt>script/bootstrap</tt> in terminal
-3. Create an application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password using the following syntax:
-       CRUNCHBASE_API: "[Your Crunchbase API key]"
-       GMAIL_USERNAME: "[Your Gmail Username]"
-       GMAIL_PASSWORD: "[Your Gmail Password]"
-4. TBD
+3. Update the application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password (you will see these instructions as part of the script)
+4. Seed the database (part of the script as well)
+5. You should be ready to go! Start up the rails server with <tt>rails s</tt>
+6. Login as a sample student: 
+      email: student@example.com
+      password: student
+7. Login as a sample admin: 
+      email: admin@example.com
+      password: admin
 
 =Deployment Intructions
 
