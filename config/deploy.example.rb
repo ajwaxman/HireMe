@@ -3,10 +3,10 @@ set :whenever_command, "bundle exec whenever"
 
 require 'whenever/capistrano'
 
-set :application, "HireCRM"
-set :repository,  "git@github.com:flatiron-school/hire-redux.git"
+set :application, "Your Application Name"
+set :repository,  "Your Github Repository"
 
-set :user, 'acdc'
+set :user, 'Server Username'
 set :deploy_to, "/home/#{ user }/#{ application }"
 set :use_sudo, false
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
@@ -14,9 +14,9 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 
 default_run_options[:pty] = true
 
-role :web, "192.241.176.112"  # Your HTTP server, Apache/etc
-role :app, "192.241.176.112"  # This may be the same as your `Web` server
-role :db,  "192.241.176.112"  # This may be the same as your `Web` server
+role :web, "Your HTTP Server"  # Your HTTP server, Apache/etc
+role :app, "Your HTTP Server"  # This may be the same as your `Web` server
+role :db,  "Your HTTP Server"  # This may be the same as your `Web` server
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
@@ -28,11 +28,11 @@ namespace :deploy do
 
   task :setup_server do
 
-  	# Copy all styling elements from database.
-  	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public"
-  	run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public/assets"
-		run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/img"
-  	run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/assets/img"	
+    # Copy all styling elements from database.
+    run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public"
+    run "cp #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/css/* #{current_release}/public/assets"
+    run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/img"
+    run "cp -rf #{current_release}/vendor/assets/perfectum_dashboard_1_0_5/img/* #{current_release}/public/assets/img"  
   end
 
   task :symlink_config, :roles => :app do 
