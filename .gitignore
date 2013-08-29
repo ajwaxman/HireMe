@@ -16,8 +16,9 @@
 /log/*.log
 .DS_Store
 
-# Ignore application configuration
+# Ignore application and database configuration
 /config/application.yml
+/config/database.yml
 
 # Ignore all solr data.
 /solr/data
