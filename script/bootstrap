@@ -43,6 +43,9 @@ read -p "Enter 'y' to seed, 'n' to continue: "
     bundle exec rake db:example_seed
   fi
 
+echo "initializing cron"
+whenever --update-crontab store
+
 echo "you are all set!"
 
 

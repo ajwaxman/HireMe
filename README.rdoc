@@ -31,12 +31,22 @@ For the bootstrap script to work below we are assuming that you have [UPDATE] in
 ===Easy Set Up
 
 1. Clone the repo
-2. Run <tt>script/bootstrap</tt> in terminal
-3. Create an application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password using the following syntax:
-       CRUNCHBASE_API: "[Your Crunchbase API key]"
-       GMAIL_USERNAME: "[Your Gmail Username]"
-       GMAIL_PASSWORD: "[Your Gmail Password]"
-4. TBD
+2. Run <tt>sh script/bootstrap</tt> in terminal
+3. In the script, you will be prompted to update the application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password
+4. If you'd like to change your database setup from the default (SQLite3) you can change the settings in the database.yml file located in <tt>app/config</tt>
+5. In the script you will be asked if you want to add an example dataset.  This will add several users, and the ability to login with an example student and admin account:
+      example student email: student@example.com
+      example student pass: student
+
+      example admin email: admin@example.com
+      example admin password: admin
+6. You're ready to go!
+
+TBD
+
+7. We will be adding instructions for setting up solr search locally
+
+===Chrome extension
 
 =Deployment Intructions
 
