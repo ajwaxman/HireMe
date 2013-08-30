@@ -3,10 +3,10 @@ set :whenever_command, "bundle exec whenever"
 
 require 'whenever/capistrano'
 
-set :application, "Your Application Name"
-set :repository,  "Your Github Repository"
+set :application, "hirecrm-example"
+set :repository,  "git@github.com:awaxman11/hire-redux.git"
 
-set :user, 'Server Username'
+set :user, 'acdc_example'
 set :deploy_to, "/home/#{ user }/#{ application }"
 set :use_sudo, false
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
@@ -14,9 +14,9 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 
 default_run_options[:pty] = true
 
-role :web, "Your HTTP Server"  # Your HTTP server, Apache/etc
-role :app, "Your HTTP Server"  # This may be the same as your `Web` server
-role :db,  "Your HTTP Server"  # This may be the same as your `Web` server
+role :web, "192.241.240.64"  # Your HTTP server, Apache/etc
+role :app, "192.241.240.64"  # This may be the same as your `Web` server
+role :db,  "192.241.240.64"  # This may be the same as your `Web` server
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
