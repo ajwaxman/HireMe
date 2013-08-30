@@ -43,8 +43,12 @@ read -p "Enter 'y' to seed, 'n' to continue: "
     bundle exec rake db:example_seed
   fi
 
-echo "initializing cron"
-whenever --update-crontab store
+echo "would you like to set up a cron job to send automated email? NOTE: This will write automated tasks into your crontab onto your computer"
+read -p "Enter 'y' to seed, 'n' to continue: "
+  if [ $REPLY == "y" ]; then
+    echo "initializing cron"
+    whenever --update-crontab store
+  fi
 
 echo "you are all set!"
 

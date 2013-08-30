@@ -30,8 +30,8 @@ For the bootstrap script to work below we are assuming that you have [UPDATE] in
 
 ===Easy Set Up
 
-1. Clone the repo
-2. Run <tt>sh script/bootstrap</tt> in terminal
+1. Clone the repo and cd into the hire-redux directory
+2. Run <tt>sh script/bootstrap</tt> in terminal for an automated setup process.  If you'd rather run the steps manually you can reference this script for the correct steps
 3. In the script, you will be prompted to update the application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password
 4. If you'd like to change your database setup from the default (SQLite3) you can change the settings in the database.yml file located in <tt>app/config</tt>
 5. In the script you will be asked if you want to add an example dataset.  This will add several users, and the ability to login with an example student and admin account:
