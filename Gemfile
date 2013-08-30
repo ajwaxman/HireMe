@@ -34,8 +34,6 @@ gem 'whenever', :require => false
 gem 'nokogiri'
 gem 'crunchbase'
 gem 'figaro'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
 gem 'progress_bar'
 gem 'gravatar_image_tag'
 gem 'nav_lynx'
