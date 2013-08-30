@@ -24,9 +24,10 @@ class Job < ActiveRecord::Base
 
   after_initialize :set_relationship_for_users
 
-  searchable do
-    text :title
-  end
+  #### uncomment to enable solar ####
+  # searchable do
+  #   text :title
+  # end
 
   def relationship_for_user(user)
    @relationship_for_users[user.id] ||= if relationships.loaded?

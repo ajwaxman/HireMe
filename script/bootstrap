@@ -19,26 +19,32 @@ cp ./config/database.example.yml ./config/database.yml
 
 echo "please update the config/application.yml with your gmail username and password for sending email reminders and your Crunchbase API key"
 echo "when finished, you may continue..."
-read -p "continue (y/n)?"
+read -p "Enter 'y' to continue: "
   if [ $REPLY != "y" ]; then
-    echo "Exiting..."
-    exit 1
+    " "
   fi
 
-echo "the database will now be created, migrated and seeded"
+echo "the database will now be reset, migrated and seeded"
 echo "the current default is sqlite, if you'd like to customize your db settings"
 echo "update the config/database.yml file"
 echo "when finished, you may continue..."
-read -p "continue (y/n)?"
+read -p "Enter 'y' to continue: "
   if [ $REPLY != "y" ]; then
-    echo "Exiting..."
-    exit 1
+    " "
   fi
 
-echo "creating the database..."
-bundle exec rake db:create
+echo "resetting and migrating the database..."
+bundle exec rake db:reset
 
-echo "migrating the database..."
-bundle exec rake db:migrate
+
+echo "would you like to seed the database with an example data set?"
+read -p "Enter 'y' to seed, 'n' to continue: "
+  if [ $REPLY == "y" ]; then
+    bundle exec rake db:example_seed
+  fi
+
+echo "you are all set!"
+
+
 
 

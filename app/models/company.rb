@@ -32,8 +32,9 @@ class Company < ActiveRecord::Base
   validates_presence_of   :name
   validates_presence_of   :website
 
-  searchable do
-    text :name
-  end
+  #### uncomment to enable solar ####
+  # searchable do
+  #   text :name
+  # end
 
 end

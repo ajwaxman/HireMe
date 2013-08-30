@@ -55,9 +55,10 @@ class User < ActiveRecord::Base
     self.role == "guest"
   end
 
-  searchable do
-    text :name
-  end
+  #### uncomment to enable solar ####
+  # searchable do
+  #   text :name
+  # end
   
   def relationship_for_job(job)
     @relationship_for_jobs[job.id] ||= if relationships.loaded?

@@ -2,7 +2,7 @@
 
 HireMe is a CRM platform built to manage the interview process at the {Flatiron School}[link:http://flatironschool.com]. Students can browse job opportunities and keep track of progress with these companies and jobs.  
 
-It was built by Team ACDC ({Chris Lake}[link:https://github.com/chhhris], {Carlos Lazo}[link:https://github.com/cjlwired],{David Manaster}[link: https://github.com/dmanaster], and {Adam Waxman}[link:https://github.com/awaxman11]).
+It was built by Team ACDC ({Chris Lake}[link:https://github.com/chhhris], {Carlos Lazo}[link:https://github.com/cjlwired], {David Manaster}[link: https://github.com/dmanaster], and {Adam Waxman}[link:https://github.com/awaxman11]).
 
 ===Features / Technologies Used 
 
