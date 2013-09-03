@@ -6,29 +6,23 @@ It was built by Team ACDC ({Chris Lake}[link:https://github.com/chhhris], {Carlo
 
 ===Features / Technologies Used 
 
-1. Chrome Browser Extension to easily add jobs and companies to the database
+1. Daily, weekly, and monthly Calendar views to keep track of interviews
 
-2. Apache Solr / Lucene search via the Sunspot gem (https://github.com/sunspot/sunspot)
+2. News feed for admin to keep track of daily activities
 
-3. State machine via AASM to track event-based user statuses (https://github.com/aasm/aasm)
+3. Admin analytics dashboard
 
 4. Time-based Cron jobs to automate rake tasks using the Whenever gem (https://github.com/javan/whenever)
 
-5. Admin analytics dashboard
+5. State machine via AASM to track event-based user statuses (https://github.com/aasm/aasm)
 
-6. Daily, weekly, and monthly Calendar views to keep track of interviews
+6. Chrome Browser Extension to easily add jobs and companies to the database (see below for extension instructions)
 
-7. News feed for admin to keep track of daily activities
-
-8. Deployed via Capistrano to cloud server using Nginx and Passenger
+7. Deployed via Capistrano to cloud server using Nginx and Passenger
 
 ==Setting Up HireMe
 
-We have included a bootstrap script that sets up the application, which requires [UPDATE]. The script may prompt you to install these programs if you don't already have them installed.
-
-For the bootstrap script to work below we are assuming that you have [UPDATE] installed.
-
-===Easy Set Up
+We have included a bootstrap script that sets up the application. Below are the instructions to get you up and running: 
 
 1. Clone the repo and cd into the hire-redux directory
 2. Run <tt>sh script/bootstrap</tt> in terminal for an automated setup process.  If you'd rather run the steps manually you can reference this script for the correct steps
@@ -42,17 +36,36 @@ For the bootstrap script to work below we are assuming that you have [UPDATE] in
       example admin password: admin
 6. You're ready to go!
 
-TBD
+===Chrome Extension
 
-7. We will be adding instructions for setting up solr search locally
+1. Download the extension: {Demo Chrome Extension Link}[link:https://www.dropbox.com/s/t71z2sr4bnkkiw0/chrome_extension.zip]
+2. Save it anywhere on your computer
+3. In the 'Window' menu on Chrome select 'Extensions'
+4. Click the top left grey button titled 'Load unpacked extension'
+5. Select the attached chrome extension folder from wherever you saved it
+6. Now when you go to one of the job board sites (see below) or Crunchbase, the extension will appear in the right side of your address bar.
 
-===Chrome extension
+After installing the extension, you will be able to add jobs from the following job sites: 
 
-=Deployment Intructions
+  http://jobs.37signals.com/
+  https://jobs.github.com/
+  https://coderwall.com/jobs
+  https://teamtreehouse.com/jobs
+  https://toprubyjobs.com/
 
-1. Talk about symlinks in deploy.rb
-2. SCP'ing file to the server (application.yml / database.yml)
-3. Create production database and SCP to shared folder
+After installing the extension, you will be able to add jobs from the following job sites: 
 
-=Stuff to put into script
+  http://jobs.37signals.com/
+  https://jobs.github.com/
+  https://coderwall.com/jobs
+  https://teamtreehouse.com/jobs
+  https://toprubyjobs.com/
+
+You can also add companies to the database by selecting the browser extension while on a company profile on {Crunchbase}[link:https://www.crunchbase.com]
+
+
+
+
+
+
 
