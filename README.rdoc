@@ -53,11 +53,11 @@ We have included a bootstrap script that sets up the application. Below are the 
 
 After installing the extension, you will be able to add jobs from the following job sites: 
 
-http://jobs.37signals.com/<br>
-https://jobs.github.com/<br>
-https://coderwall.com/jobs<br>
-https://teamtreehouse.com/jobs<br>
-https://toprubyjobs.com/
+http://jobs.37signals.com <br>
+https://jobs.github.com <br>
+https://coderwall.com/jobs <br>
+https://teamtreehouse.com/jobs <br>
+https://toprubyjobs.com
 
 You can also add companies to the database by selecting the browser extension while on a company profile on https://crunchbase.com
 
