@@ -4,6 +4,11 @@ HireMe is a CRM platform built to manage the interview process at the {Flatiron 
 
 It was built by Team ACDC ({Chris Lake}[link:https://github.com/chhhris], {Carlos Lazo}[link:https://github.com/cjlwired], {David Manaster}[link:https://github.com/dmanaster] , and {Adam Waxman}[link:https://github.com/awaxman11]).
 
+Check out the {demo version}[link:http://demo.hire.flatironschool.com/]! 
+
+Demo student - email: student@example.com, password: student
+Demo admin - email: admin@example.com, password: admin
+
 ===Features / Technologies Used 
 
 1. Daily, weekly, and monthly Calendar views to keep track of interviews
@@ -26,7 +31,7 @@ We have included a bootstrap script that sets up the application. Below are the 
 
 1. Clone the repo and cd into the hire-redux directory
 2. Run <tt>sh script/bootstrap</tt> in terminal for an automated setup process.  If you'd rather run the steps manually you can reference this script for the correct steps
-3. In the script, you will be prompted to update the application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password
+3. In the script, you will be prompted to update the application.yml file in the <tt>app/config</tt> directory and add your Crunchbase API key and Gmail username and password (a Crunchbase API key can be obtained {here}[link:http://developer.crunchbase.com/page]
 4. If you'd like to change your database setup from the default (SQLite3) you can change the settings in the database.yml file located in <tt>app/config</tt>
 5. In the script you will be asked if you want to add an example dataset.  This will add several users, and the ability to login with an example student and admin account:
       example student email: student@example.com
@@ -63,6 +68,8 @@ After installing the extension, you will be able to add jobs from the following 
 
 You can also add companies to the database by selecting the browser extension while on a company profile on {Crunchbase}[link:https://www.crunchbase.com]
 
+
+If you have any questions or comments please reach out to us at {flatironhireme@gmail.com}[link:mailto:flatironhireme@gmail.com]
 
 
 
