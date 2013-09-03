@@ -44,7 +44,7 @@ We have included a bootstrap script that sets up the application. Below are the 
 
 ===Chrome Extension
 
-1. Download the extension: {Demo Chrome Extension Link}[link: https://dropbox.com/s/t71z2sr4bnkkiw0/chrome_extension.zip]
+1. Download the extension: https://dropbox.com/s/t71z2sr4bnkkiw0/chrome_extension.zip
 2. Save it anywhere on your computer
 3. In the 'Window' menu on Chrome select 'Extensions'
 4. Click the top left grey button titled 'Load unpacked extension'
@@ -67,7 +67,7 @@ After installing the extension, you will be able to add jobs from the following 
   https://teamtreehouse.com/jobs
   https://toprubyjobs.com/
 
-You can also add companies to the database by selecting the browser extension while on a company profile on {Crunchbase}[link: https://crunchbase.com]
+You can also add companies to the database by selecting the browser extension while on a company profile on https://crunchbase.com
 
 
 If you have any questions or comments please reach out to us at {flatironhireme@gmail.com}[link:mailto:flatironhireme@gmail.com]
