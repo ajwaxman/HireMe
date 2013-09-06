@@ -27,11 +27,11 @@ end
 # end
 
 every :day, :at => Time.zone.parse('9:15 am').localtime do
-  rake "db:reset" RAILS_ENV=production
+  rake "db:reset RAILS_ENV=production"
 end
 
 every :day, :at => Time.zone.parse('9:18 am').localtime do
-  rake "db:example_seed" RAILS_ENV=production
+  rake "db:example_seed RAILS_ENV=production" 
 end
 
 # Use this file to easily define all of your cron jobs.
