@@ -26,12 +26,12 @@ end
 #   rake "cron:send_survey_reminder"
 # end
 
-every :day, :at => Time.zone.parse('3:00 am').localtime do
-  rake "db:reset"
+every :day, :at => Time.zone.parse('9:15 am').localtime do
+  rake "db:reset" RAILS_ENV=production
 end
 
-every :day, :at => Time.zone.parse('3:01 am').localtime do
-  rake "db:example_seed"
+every :day, :at => Time.zone.parse('9:18 am').localtime do
+  rake "db:example_seed" RAILS_ENV=production
 end
 
 # Use this file to easily define all of your cron jobs.
