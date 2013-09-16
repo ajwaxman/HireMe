@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
   # GET   => User login page.
   def new
-    @user = User.new
+    # @user = User.new
     @disable_nav = true
   end
 
